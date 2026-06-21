@@ -1,0 +1,28 @@
+{
+  "recommendations": {
+    "recommend.take_confirmation_test": "Tabriklaymiz! Siz keyingi darajaga o'tishga tayyorsiz. Buni tasdiqlash uchun qisqa nazorat testini topshiring.",
+    "recommend.focus_skill": "Eng zaif ko'nikmangiz - {skill}. Shu yo'nalishda ko'proq mashq qiling.",
+    "recommend.fix_error": "Siz ko'pincha {category} bo'yicha xatoga yo'l qo'yyapsiz. Shu mavzuni takrorlab, mustahkamlang."
+  },
+  "skills": {
+    "Speaking": "gapirish",
+    "Listening": "tinglab tushunish",
+    "Reading": "o'qib tushunish",
+    "Writing": "yozish",
+    "Grammar": "grammatika",
+    "Vocabulary": "so'z boyligi"
+  },
+  "categories": {
+    "Articles": "artikllar (a/an/the)",
+    "VerbTense": "fe'l zamonlari",
+    "Prepositions": "predloglar (in/on/at)",
+    "GerundInfinitive": "gerundiy va infinitiv",
+    "Modals": "modal fe'llar",
+    "SubjectVerbAgreement": "ega va kesim mosligi",
+    "WordOrder": "so'z tartibi",
+    "Pronunciation": "talaffuz",
+    "Vocabulary": "so'z boyligi",
+    "Spelling": "imlo",
+    "Other": "umumiy xatolar"
+  }
+}

@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "EnglishAI Manrope";
+  src: url("/assets/brand/Manrope-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+.ea-brand-logo {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 8px;
+  vertical-align: middle;
+}
+
+.ea-brand-logo__mark {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.ea-brand-logo__mark img { display: block; object-fit: contain; }
+
+.ea-brand-logo .ea-brand-name {
+  font-family: "EnglishAI Manrope", "Plus Jakarta Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.8px;
+  color: var(--ea-text, #241a39);
+  white-space: nowrap;
+}
+
+html[data-native-app] .ea-brand-name,
+html[data-native-app] .ea-brand-logo .ea-brand-name { display: none; }
+
+@media (max-width: 700px) {
+  .ea-brand-name,
+  .ea-brand-logo .ea-brand-name { display: none; }
+}

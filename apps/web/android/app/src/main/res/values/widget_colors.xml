@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="widget_white">#FFFFFFFF</color>
+    <color name="widget_text">#FF10261B</color>
+    <color name="widget_muted">#FF506359</color>
+    <color name="widget_green">#FF127A45</color>
+    <color name="widget_gold">#FFF2C94C</color>
+
+
+    <color name="widget_daily_top">#FFF5FFE1</color>
+    <color name="widget_daily_bottom">#FFDFFF35</color>
+    <color name="widget_daily_shadow">#FF92A31A</color>
+    <color name="widget_stats_top">#FFEAF8FF</color>
+    <color name="widget_stats_bottom">#FFBDEAFF</color>
+    <color name="widget_stats_shadow">#FF71AFC8</color>
+    <color name="widget_leaderboard_top">#FFF4ECFF</color>
+    <color name="widget_leaderboard_bottom">#FFDCC6FF</color>
+    <color name="widget_leaderboard_shadow">#FF9E79D2</color>
+    <color name="widget_streak_top">#FFFFF6DE</color>
+    <color name="widget_streak_bottom">#FFFFC85C</color>
+    <color name="widget_streak_shadow">#FFC38324</color>
+</resources>

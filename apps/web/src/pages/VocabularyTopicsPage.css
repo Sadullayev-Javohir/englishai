@@ -1,0 +1,22 @@
+@import "../components/catalog/CatalogTheme.css";
+.vocabulary-pen-catalog { width:100%; max-width:1440px; margin:0 auto; padding:36px 64px 44px; display:flex; flex-direction:column; gap:24px; }
+.vocabulary-pen-catalog .vocabulary-heading h1 { white-space:pre-line; }
+.vocabulary-pen-catalog__search { display:flex; align-items:center; gap:10px; min-height:51px; padding:14px 18px; border:1px solid var(--v-border,#e3dbea); border-radius:16px; background:var(--v-white,#fff); color:var(--v-muted,#6d647c); }
+.vocabulary-pen-catalog__search input { flex:1; min-width:0; border:0; padding:0; background:transparent; box-shadow:none; outline:none; font-size:14px; line-height:21px; }
+.vocabulary-pen-catalog__search:focus-within { border-color:var(--v-purple,#7545e8); }
+.vocabulary-pen-catalog__filters { display:flex; gap:10px; }
+.vocabulary-pen-catalog__filters button { padding:7px 12px; border-radius:20px; background:var(--v-white,#fff); color:var(--v-muted,#6d647c); font-size:10px; font-weight:700; line-height:15px; }
+.vocabulary-pen-catalog__filters button[aria-pressed=true] { background:var(--v-purple,#7545e8); color:var(--v-white,#fff); }
+.vocabulary-pen-catalog__grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px; }
+.vocabulary-pen-catalog__card { text-align:left; border:1px solid var(--v-border,#e3dbea); border-radius:22px; overflow:hidden; background:var(--v-white,#fff); color:var(--v-ink,#2c2144); transition:border-color .15s; }
+.vocabulary-pen-catalog__card:hover:not(:disabled) { border-color:var(--v-purple,#7545e8); }
+.vocabulary-pen-catalog__card:disabled { opacity:.6; }
+.vocabulary-pen-catalog__photo { height:179px; }
+.vocabulary-pen-catalog__details { display:flex; flex-direction:column; padding:20px; height:211px; }
+.vocabulary-pen-catalog__meta { display:flex; align-items:center; gap:10px; }
+.vocabulary-pen-catalog__meta>span:last-child { display:flex; align-items:center; gap:4px; color:var(--v-muted,#6d647c); font-size:9px; line-height:14px; }
+.vocabulary-pen-catalog__title { font:900 26px/29px "Nunito",sans-serif; margin-top:26px; overflow-wrap:anywhere; }
+.vocabulary-pen-catalog__description { font-size:12px; line-height:18px; margin-top:26px; color:var(--v-muted,#6d647c); }
+.vocabulary-pen-catalog__cta { font-size:12px; font-weight:700; line-height:18px; margin-top:auto; color:var(--v-purple,#7545e8); }
+.vocabulary-pen-catalog__state { display:flex; flex-direction:column; gap:24px; align-items:center; padding:60px; text-align:center; }
+.vocabulary-pen-catalog__state button { color:var(--v-purple,#7545e8); }

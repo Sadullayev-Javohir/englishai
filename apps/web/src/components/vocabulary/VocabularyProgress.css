@@ -1,0 +1,8 @@
+@import "../lesson/LessonProgress.css";
+
+.vocabulary-flashcards__heading > .vocabulary-progress { justify-content: initial; }
+.vocabulary-result > .vocabulary-progress { margin-bottom: 0; }
+@media (max-width: 700px) and (max-height: 700px) {
+  .vocabulary-design .vocabulary-flashcards__heading { gap: 3px; }
+  .vocabulary-design .vocabulary-flashcards__heading .vocabulary-progress { min-height: 26px; }
+}

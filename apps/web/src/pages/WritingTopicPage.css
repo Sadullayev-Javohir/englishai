@@ -1,0 +1,330 @@
+/* ───────────────────────────────────────────────────────────────────────────
+   Writing topic lesson — Professional-Indigo (/home) design language.
+   Coral writing accent (--ea-mod-writing), soft surface cards, token-only
+   shadows. No gradients / opaque-white / tactile-translate (DesignGuard).
+   ─────────────────────────────────────────────────────────────────────────── */
+
+.writing-topic {
+  --wt-accent: var(--ea-mod-writing);
+  --wt-accent-soft: var(--ea-mod-writing-soft);
+  --hp-accent: var(--ea-mod-writing);
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: var(--ea-frame-height);
+  min-height: var(--ea-frame-height);
+  max-height: var(--ea-frame-height);
+  align-content: center;
+  justify-items: center;
+  padding: clamp(14px, 2.5vw, 30px);
+  overflow: hidden;
+  color: var(--ea-text);
+  background: transparent;
+}
+
+.writing-topic__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: min(100%, 1040px);
+  height: 100%;
+  min-height: 0;
+  align-items: center;
+  justify-content: center;
+}
+.writing-topic__inner > * { width: 100%; }
+.writing-topic--centered { align-content: center; }
+.writing-topic--centered > * { width: min(100%, 480px); }
+
+.writing-topic__stage { width: min(100%, 780px); height: 100%; max-height: 100%; min-height: 0; margin: 0 auto; }
+.writing-topic__stage--focus { display: grid; align-items: center; }
+
+/* ── Slide card (LessonStageFrame) ─────────────────────────────────────────── */
+.writing-topic__slide.ea-lesson-stage {
+  height: 100%;
+  min-height: 0;
+  max-height: 100%;
+  border: 1px solid var(--ea-border);
+  border-radius: var(--ea-radius-card);
+  background: var(--ea-surface);
+  box-shadow: var(--ea-shadow-card);
+  overflow: hidden;
+}
+.writing-topic__slide .ea-lesson-stage__header { padding: max(14px, env(safe-area-inset-top)) clamp(14px, 2vw, 22px) 12px; }
+.writing-topic__slide .ea-lesson-stage__body { min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding: clamp(14px, 2vw, 24px); }
+.writing-topic__stage--focus .writing-topic__slide .ea-lesson-stage__body { align-content: center; justify-items: center; }
+.writing-topic__slide--scroll.ea-lesson-stage--flow { grid-template-rows: auto minmax(0, 1fr) auto; }
+.writing-topic__slide-body--scroll { align-content: start; overflow-x: hidden; overflow-y: auto; scroll-padding-block: 18px 132px; }
+.writing-topic__slide .ea-lesson-stage__footer {
+  padding: 12px clamp(14px, 2vw, 22px) max(14px, env(safe-area-inset-bottom));
+  border-top: 1px solid var(--ea-border);
+  background: var(--ea-surface);
+}
+.writing-topic__slide-action { width: min(100%, 680px); margin-inline: auto; }
+.writing-topic__slide-action .ea-button { width: 100%; }
+
+/* ── Slide header chrome (progress + chips + title) ────────────────────────── */
+.writing-topic__slide-header { display: grid; gap: 8px; width: 100%; }
+.writing-topic__hud { display: grid; grid-template-columns: 44px minmax(50px, 1fr) auto auto auto auto; align-items: center; gap: 8px; }
+.writing-topic__back-btn.ea-icon-button { width: 44px; height: 44px; }
+.writing-topic__progress { height: 12px; overflow: hidden; border-radius: 999px; background: var(--ea-border); }
+.writing-topic__progress > span { display: block; height: 100%; border-radius: inherit; background: var(--wt-accent); transition: width .25s ease; }
+.writing-topic__chip {
+  display: inline-flex;
+  min-height: 36px;
+  align-items: center;
+  gap: 5px;
+  border-radius: 999px;
+  padding: 6px 11px;
+  font-family: var(--ea-font-display);
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1;
+}
+.writing-topic__chip--heart { color: var(--ea-danger); background: color-mix(in srgb, var(--ea-danger), transparent 88%); }
+.writing-topic__chip--xp { color: var(--wt-accent); background: var(--wt-accent-soft); }
+.writing-topic__counter {
+  display: inline-flex;
+  min-width: 52px;
+  min-height: 36px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--ea-border);
+  border-radius: var(--ea-radius-control);
+  padding: 6px 10px;
+  color: var(--ea-muted-deep);
+  background: var(--ea-surface-soft);
+  font-family: var(--ea-font-display);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1;
+}
+.writing-topic__stop {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 40px;
+  padding: 0 12px;
+  border: 1px solid var(--ea-border);
+  border-radius: var(--ea-radius-control);
+  color: var(--ea-danger);
+  background: var(--ea-surface);
+  font-family: var(--ea-font-display);
+  font-weight: 800;
+  transition: border-color 150ms ease, background-color 150ms ease;
+}
+.writing-topic__stop:hover { border-color: var(--ea-danger); background: color-mix(in srgb, var(--ea-danger), transparent 92%); }
+.writing-topic__heading { display: grid; min-width: 0; justify-items: center; gap: 2px; }
+.writing-topic__title {
+  margin: 0;
+  max-width: 100%;
+  overflow: hidden;
+  color: var(--ea-text);
+  font-family: var(--ea-font-display);
+  font-size: clamp(15px, 2vw, 18px);
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.writing-topic__status { overflow: hidden; max-width: 100%; color: var(--ea-muted); font-size: 12px; font-weight: 700; text-overflow: ellipsis; white-space: nowrap; }
+
+/* ── DesignState (error / pending / loading) ───────────────────────────────── */
+.writing-topic__state { width: min(100%, 460px); margin-inline: auto; }
+.writing-topic__state.ea-state { border: 1px solid var(--ea-border); border-radius: var(--ea-radius-card); background: var(--ea-surface); box-shadow: var(--ea-shadow-card); padding: clamp(22px, 4vw, 34px); }
+.writing-topic__state .ea-state__icon { color: var(--wt-accent); }
+
+/* ── Hub hero ──────────────────────────────────────────────────────────────── */
+.writing-topic__hero {
+  width: min(100%, 560px);
+  margin-inline: auto;
+  border: 1px solid var(--ea-border);
+  border-radius: var(--ea-radius-card);
+  background: var(--ea-surface);
+  box-shadow: var(--ea-shadow-card);
+  padding: clamp(18px, 3vw, 30px);
+  text-align: center;
+}
+.writing-topic__hero-media {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto 18px;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border: 1px solid var(--ea-border);
+  border-radius: var(--ea-radius-inner);
+  background: var(--ea-surface-soft);
+}
+.writing-topic__hero-level { margin-inline: auto; }
+.writing-topic__hero-title { margin-top: 10px; font-family: var(--ea-font-display); font-weight: 700; font-size: clamp(28px, 5vw, 42px); line-height: 1.08; letter-spacing: -0.02em; color: var(--ea-text); }
+.writing-topic__hero-subtitle { margin-top: 8px; font-size: 16px; line-height: 1.6; color: var(--ea-muted); }
+
+/* ── Shared card (prompt / editor / assessment) ────────────────────────────── */
+.writing-topic__card {
+  width: min(100%, 680px);
+  margin-inline: auto;
+  border: 1px solid var(--ea-border);
+  border-radius: var(--ea-radius-card);
+  background: var(--ea-surface);
+  box-shadow: var(--ea-shadow-card);
+  padding: clamp(18px, 3vw, 30px);
+}
+.writing-topic__card-pill.ea-pill { width: fit-content; border: 1px solid color-mix(in srgb, var(--wt-accent), transparent 65%); color: var(--wt-accent); background: var(--wt-accent-soft); }
+
+/* ── Prompt ────────────────────────────────────────────────────────────────── */
+.writing-topic__prompt-text {
+  margin: 14px 0 0;
+  color: var(--ea-text);
+  font-family: var(--ea-font-display);
+  font-weight: 700;
+  font-size: clamp(20px, 3.4vw, 28px);
+  line-height: 1.3;
+}
+.writing-topic__guidance { margin-top: 20px; }
+.writing-topic__guidance-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 10px;
+  color: var(--ea-text);
+  font-family: var(--ea-font-display);
+  font-weight: 800;
+  font-size: 16px;
+}
+.writing-topic__guidance-title .material-symbols-rounded { color: var(--wt-accent); font-size: 20px; }
+.writing-topic__guidance-list { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.writing-topic__guidance-list li {
+  padding: 12px 16px;
+  border: 1px solid var(--ea-border);
+  border-left: 4px solid var(--wt-accent);
+  border-radius: 0 var(--ea-radius-inner) var(--ea-radius-inner) 0;
+  background: var(--ea-surface-soft);
+  color: var(--ea-text);
+  font-size: 16px;
+  line-height: 1.6;
+}
+.writing-topic__word-target {
+  margin: 20px 0 0;
+  color: var(--ea-muted-deep);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+/* ── Editor ────────────────────────────────────────────────────────────────── */
+.writing-topic__editor-label { margin: 14px 0 8px; color: var(--ea-text); font-family: var(--ea-font-display); font-weight: 800; font-size: 16px; }
+.writing-topic__editor.ea-form-control {
+  display: block;
+  width: 100%;
+  min-height: clamp(200px, 36dvh, 420px);
+  resize: vertical;
+  font-size: 17px;
+  line-height: 1.7;
+  scroll-margin-block: 72px 132px;
+}
+.writing-topic__editor-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 12px;
+  color: var(--ea-muted-deep);
+  font-size: 14px;
+  line-height: 1.45;
+}
+.writing-topic__editor-count--invalid { color: var(--ea-danger); font-weight: 800; }
+.writing-topic__feedback-slot { display: grid; min-height: 72px; margin-top: 12px; align-content: start; }
+.writing-topic__feedback-loading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px;
+  border: 1px solid color-mix(in srgb, var(--wt-accent), transparent 70%);
+  border-radius: var(--ea-radius-inner);
+  color: var(--wt-accent);
+  background: var(--wt-accent-soft);
+  font-weight: 800;
+}
+.writing-topic__submit-error { margin: 0; color: var(--ea-danger); font-weight: 800; }
+
+/* ── Assessment ────────────────────────────────────────────────────────────── */
+.writing-topic__card--assessment { position: relative; display: grid; gap: 14px; justify-items: center; text-align: center; }
+.writing-topic__score { margin: 6px 0 0; color: var(--ea-text); font-family: var(--ea-font-display); font-weight: 800; font-size: clamp(26px, 5vw, 38px); line-height: 1.15; }
+.writing-topic__band { margin: 0; color: var(--ea-muted-deep); font-size: 15px; font-weight: 700; }
+.writing-topic__dims { display: grid; gap: 16px; width: 100%; margin-top: 6px; text-align: left; }
+.writing-topic__dim { display: grid; gap: 6px; }
+.writing-topic__dim-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.writing-topic__dim-label { color: var(--ea-text); font-family: var(--ea-font-display); font-weight: 700; font-size: 15px; }
+.writing-topic__dim-score { color: var(--ea-muted-deep); font-size: 14px; font-weight: 800; }
+.writing-topic__dim-track { height: 12px; overflow: hidden; border-radius: 999px; background: var(--ea-border); }
+.writing-topic__dim-track > span { display: block; height: 100%; border-radius: inherit; background: var(--wt-accent); transition: width .3s ease; }
+.writing-topic__level { margin: 4px 0 0; color: var(--ea-muted-deep); font-size: 15px; font-weight: 700; }
+.writing-topic__level strong { color: var(--wt-accent); }
+.writing-topic__mascot { display: flex; justify-content: center; margin-top: 4px; }
+
+/* ── Result ────────────────────────────────────────────────────────────────── */
+.writing-topic__result { position: relative; display: grid; justify-items: center; gap: 18px; text-align: center; padding: clamp(24px, 5vw, 46px); }
+.writing-topic__result-title { margin: 0; color: var(--ea-text); font-family: var(--ea-font-display); font-weight: 800; font-size: clamp(26px, 5vw, 40px); line-height: 1.15; }
+
+/* ── Responsive ────────────────────────────────────────────────────────────── */
+@media (max-width: 1180px) {
+  .writing-topic {
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    grid-template-rows: minmax(0, 1fr);
+    align-content: stretch;
+  }
+  .writing-topic__inner,
+  .writing-topic__stage,
+  .writing-topic__slide.ea-lesson-stage { min-height: 0; max-height: 100%; }
+  .writing-topic__inner { height: 100%; }
+  .writing-topic__slide .ea-lesson-stage__body { -webkit-overflow-scrolling: touch; }
+}
+@supports (height: 100dvh) {
+  @media (max-width: 1180px) {
+    .writing-topic {
+      height: 100dvh;
+      min-height: 100dvh;
+      max-height: 100dvh;
+    }
+  }
+}
+@media (min-width: 701px) and (max-width: 1180px) {
+  .writing-topic__inner { width: min(100%, 940px); }
+  .writing-topic__stage { width: min(100%, 840px); }
+}
+@media (max-width: 700px) {
+  .writing-topic { padding: max(12px, env(safe-area-inset-top)) 12px max(12px, env(safe-area-inset-bottom)); overflow-x: clip; }
+  .writing-topic__hero { padding: 18px; }
+  .writing-topic__hero-media { max-height: min(28vh, 220px); }
+  .writing-topic__hero-title { font-size: clamp(26px, 8vw, 34px); }
+  .writing-topic__hero-subtitle { font-size: 16px; }
+  .writing-topic__card { padding: 18px; }
+  .writing-topic__prompt-text { font-size: clamp(20px, 6vw, 24px); }
+  .writing-topic__guidance-list li { font-size: 16px; }
+  .writing-topic__editor.ea-form-control { min-height: min(30dvh, 240px); font-size: 17px; scroll-margin-bottom: 110px; }
+  .writing-topic__editor-meta { flex-direction: column; gap: 4px; }
+  .writing-topic__hud { grid-template-columns: 40px minmax(40px, 1fr) auto auto 40px; gap: 6px; }
+  .writing-topic__counter { display: none; }
+  .writing-topic__chip { min-height: 34px; padding-inline: 8px; font-size: 13px; }
+  .writing-topic__stop { width: 40px; padding: 0; }
+  .writing-topic__stop span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .writing-topic__title { font-size: 14px; }
+  .writing-topic__score { font-size: clamp(24px, 8vw, 32px); }
+}
+@media (max-height: 600px) {
+  .writing-topic__title,
+  .writing-topic__status { display: none; }
+  .writing-topic__editor.ea-form-control { min-height: 140px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .writing-topic *,
+  .writing-topic *::before,
+  .writing-topic *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    transition-duration: .01ms !important;
+  }
+}

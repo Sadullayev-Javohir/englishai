@@ -1,0 +1,643 @@
+{
+  "wireMagic": "pb3",
+  "pens": [ {
+  
+  } ],
+  "wsWinStyles": [ {
+  
+  } ],
+  "wpWinPositions": [ {
+  
+  } ],
+  "events": [ {
+    "tStartMs": 8000,
+    "dDurationMs": 3120,
+    "segs": [ {
+      "utf8": "Hello, this is 6 Minute English\nfrom BBC Learning English."
+    } ]
+  }, {
+    "tStartMs": 11120,
+    "dDurationMs": 2200,
+    "segs": [ {
+      "utf8": "I'm Georgie.\nAnd I'm Phil."
+    } ]
+  }, {
+    "tStartMs": 13320,
+    "dDurationMs": 3280,
+    "segs": [ {
+      "utf8": "Did you have any breakfast today,\nGeorgie, or did you skip it?"
+    } ]
+  }, {
+    "tStartMs": 16600,
+    "dDurationMs": 1920,
+    "segs": [ {
+      "utf8": "I did have some breakfast."
+    } ]
+  }, {
+    "tStartMs": 18520,
+    "dDurationMs": 4280,
+    "segs": [ {
+      "utf8": "On the way to the office,\nI got myself a pastry and a coffee."
+    } ]
+  }, {
+    "tStartMs": 22800,
+    "dDurationMs": 1080,
+    "segs": [ {
+      "utf8": "What about you?"
+    } ]
+  }, {
+    "tStartMs": 23880,
+    "dDurationMs": 2120,
+    "segs": [ {
+      "utf8": "I had a big bowl of porridge,"
+    } ]
+  }, {
+    "tStartMs": 26000,
+    "dDurationMs": 4360,
+    "segs": [ {
+      "utf8": "but it was at six o'clock\nthis morning so I'm hungry again now."
+    } ]
+  }, {
+    "tStartMs": 30360,
+    "dDurationMs": 3000,
+    "segs": [ {
+      "utf8": "And you might soon be hungry as well"
+    } ]
+  }, {
+    "tStartMs": 33360,
+    "dDurationMs": 2560,
+    "segs": [ {
+      "utf8": "because we're going\nto talk about breakfast."
+    } ]
+  }, {
+    "tStartMs": 35920,
+    "dDurationMs": 2240,
+    "segs": [ {
+      "utf8": "How important is it?"
+    } ]
+  }, {
+    "tStartMs": 38160,
+    "dDurationMs": 3400,
+    "segs": [ {
+      "utf8": "Let's start by hearing\nfrom Professor Alexandra Johnstone,"
+    } ]
+  }, {
+    "tStartMs": 41560,
+    "dDurationMs": 3520,
+    "segs": [ {
+      "utf8": "a nutrition scientist who spoke\nto Ruth Alexander, host"
+    } ]
+  }, {
+    "tStartMs": 45080,
+    "dDurationMs": 4080,
+    "segs": [ {
+      "utf8": "of BBC World Service programme\nThe Food Chain."
+    } ]
+  }, {
+    "tStartMs": 49160,
+    "dDurationMs": 5400,
+    "segs": [ {
+      "utf8": "I am supporting the meme, breakfast\nlike a king and dine like a pauper."
+    } ]
+  }, {
+    "tStartMs": 54560,
+    "dDurationMs": 3720,
+    "segs": [ {
+      "utf8": "For you then, breakfast is\nthe most important meal of the day."
+    } ]
+  }, {
+    "tStartMs": 58280,
+    "dDurationMs": 4640,
+    "segs": [ {
+      "utf8": "I agree. So it's really important,\nparticularly for people who are trying"
+    } ]
+  }, {
+    "tStartMs": 62920,
+    "dDurationMs": 5040,
+    "segs": [ {
+      "utf8": "to maintain a healthy weight and\npeople who are trying to lose weight."
+    } ]
+  }, {
+    "tStartMs": 67960,
+    "dDurationMs": 5320,
+    "segs": [ {
+      "utf8": "Alexandra says that you should breakfast\nlike a king and dine like a pauper."
+    } ]
+  }, {
+    "tStartMs": 73280,
+    "dDurationMs": 3840,
+    "segs": [ {
+      "utf8": "Pauper is an old-fashioned word\nfor a very poor person."
+    } ]
+  }, {
+    "tStartMs": 77120,
+    "dDurationMs": 4040,
+    "segs": [ {
+      "utf8": "The expression means have\na big breakfast and a small dinner."
+    } ]
+  }, {
+    "tStartMs": 81160,
+    "dDurationMs": 1880,
+    "segs": [ {
+      "utf8": "We're going to find out some\nof the reasons"
+    } ]
+  }, {
+    "tStartMs": 83040,
+    "dDurationMs": 3560,
+    "segs": [ {
+      "utf8": "that Alexandra and other experts\nrecommend doing this."
+    } ]
+  }, {
+    "tStartMs": 86600,
+    "dDurationMs": 3640,
+    "segs": [ {
+      "utf8": "And as usual, we'll learn\nsome useful new words and phrases."
+    } ]
+  }, {
+    "tStartMs": 90240,
+    "dDurationMs": 3000,
+    "segs": [ {
+      "utf8": "And remember –\nyou'll find all the vocabulary"
+    } ]
+  }, {
+    "tStartMs": 93240,
+    "dDurationMs": 2360,
+    "segs": [ {
+      "utf8": "and a quiz on our website,"
+    } ]
+  }, {
+    "tStartMs": 95600,
+    "dDurationMs": 2920,
+    "segs": [ {
+      "utf8": "bbclearningenglish.com."
+    } ]
+  }, {
+    "tStartMs": 98520,
+    "dDurationMs": 3120,
+    "segs": [ {
+      "utf8": "OK. But first I have a question\nfor you, Phil."
+    } ]
+  }, {
+    "tStartMs": 101640,
+    "dDurationMs": 1760,
+    "segs": [ {
+      "utf8": "According to a recent survey,"
+    } ]
+  }, {
+    "tStartMs": 103400,
+    "dDurationMs": 4240,
+    "segs": [ {
+      "utf8": "which of the following is\nthe most popular breakfast in the UK?"
+    } ]
+  }, {
+    "tStartMs": 107640,
+    "dDurationMs": 5400,
+    "segs": [ {
+      "utf8": "Is it: a) eggs, b) toast,\nor c) cereal?"
+    } ]
+  }, {
+    "tStartMs": 113040,
+    "dDurationMs": 5080,
+    "segs": [ {
+      "utf8": "Well, I think people like to keep it\nsimple so I'm going to say toast."
+    } ]
+  }, {
+    "tStartMs": 118120,
+    "dDurationMs": 3400,
+    "segs": [ {
+      "utf8": "OK. Well, we'll find out the answer\nlater in the programme."
+    } ]
+  }, {
+    "tStartMs": 121520,
+    "dDurationMs": 4200,
+    "segs": [ {
+      "utf8": "Let's hear some reasons for why we\nshould breakfast like a king or queen."
+    } ]
+  }, {
+    "tStartMs": 125720,
+    "dDurationMs": 2960,
+    "segs": [ {
+      "utf8": "Courtney Peterson,\nwho researches eating behaviours,"
+    } ]
+  }, {
+    "tStartMs": 128680,
+    "dDurationMs": 4200,
+    "segs": [ {
+      "utf8": "explains how the time of day affects\nhow our bodies process food,"
+    } ]
+  }, {
+    "tStartMs": 132880,
+    "dDurationMs": 3280,
+    "segs": [ {
+      "utf8": "on BBC World Service programme\nThe Food Chain."
+    } ]
+  }, {
+    "tStartMs": 136160,
+    "dDurationMs": 4360,
+    "segs": [ {
+      "utf8": "And so, if you can eat\na large breakfast in the morning,"
+    } ]
+  }, {
+    "tStartMs": 140520,
+    "dDurationMs": 2920,
+    "segs": [ {
+      "utf8": "and/or I would even say a large lunch\nin the morning,"
+    } ]
+  }, {
+    "tStartMs": 143440,
+    "dDurationMs": 2480,
+    "segs": [ {
+      "utf8": "your body's going to be better\nat metabolising that food."
+    } ]
+  }, {
+    "tStartMs": 145920,
+    "dDurationMs": 2520,
+    "segs": [ {
+      "utf8": "And what that means is\nyour body is going to actually..."
+    } ]
+  }, {
+    "tStartMs": 148440,
+    "dDurationMs": 4440,
+    "segs": [ {
+      "utf8": "your blood sugar levels won't spike as\nhigh, you might burn slightly more fat,"
+    } ]
+  }, {
+    "tStartMs": 152880,
+    "dDurationMs": 3640,
+    "segs": [ {
+      "utf8": "you might burn slightly more calories\nfrom eating earlier in the day."
+    } ]
+  }, {
+    "tStartMs": 156520,
+    "dDurationMs": 1160,
+    "segs": [ {
+      "utf8": "Whereas if you had..."
+    } ]
+  }, {
+    "tStartMs": 157680,
+    "dDurationMs": 1840,
+    "segs": [ {
+      "utf8": "if you eat most of your food later\nin the day,"
+    } ]
+  }, {
+    "tStartMs": 159520,
+    "dDurationMs": 2320,
+    "segs": [ {
+      "utf8": "your metabolism is actually slower\nlater in the day."
+    } ]
+  }, {
+    "tStartMs": 161840,
+    "dDurationMs": 3720,
+    "segs": [ {
+      "utf8": "So, for instance, if you ate the\nsame, I don't know, bowl of ice cream"
+    } ]
+  }, {
+    "tStartMs": 165560,
+    "dDurationMs": 2320,
+    "segs": [ {
+      "utf8": "in the morning,\nthe afternoon and the evening,"
+    } ]
+  }, {
+    "tStartMs": 167880,
+    "dDurationMs": 3080,
+    "segs": [ {
+      "utf8": "your blood sugar levels\nwill spike significantly higher"
+    } ]
+  }, {
+    "tStartMs": 170960,
+    "dDurationMs": 1840,
+    "segs": [ {
+      "utf8": "in the afternoon and the evening."
+    } ]
+  }, {
+    "tStartMs": 172800,
+    "dDurationMs": 2120,
+    "segs": [ {
+      "utf8": "We heard the noun metabolism."
+    } ]
+  }, {
+    "tStartMs": 174920,
+    "dDurationMs": 3880,
+    "segs": [ {
+      "utf8": "This is a word that refers to\nthe chemical processes in your body,"
+    } ]
+  }, {
+    "tStartMs": 178800,
+    "dDurationMs": 4840,
+    "segs": [ {
+      "utf8": "and we most often use it to talk about\nthose that convert food into energy."
+    } ]
+  }, {
+    "tStartMs": 183640,
+    "dDurationMs": 3720,
+    "segs": [ {
+      "utf8": "And we also heard\nthe verb form – metabolise."
+    } ]
+  }, {
+    "tStartMs": 187360,
+    "dDurationMs": 3280,
+    "segs": [ {
+      "utf8": "Courtney talked\nabout blood sugar levels spiking."
+    } ]
+  }, {
+    "tStartMs": 190640,
+    "dDurationMs": 2360,
+    "segs": [ {
+      "utf8": "A spike is a sharp, pointed shape."
+    } ]
+  }, {
+    "tStartMs": 193000,
+    "dDurationMs": 1440,
+    "segs": [ {
+      "utf8": "If you see it on a line graph,"
+    } ]
+  }, {
+    "tStartMs": 194440,
+    "dDurationMs": 2800,
+    "segs": [ {
+      "utf8": "it means that something has increased\nvery rapidly."
+    } ]
+  }, {
+    "tStartMs": 197240,
+    "dDurationMs": 3240,
+    "segs": [ {
+      "utf8": "We often use the noun spike\nto mean a sudden increase"
+    } ]
+  }, {
+    "tStartMs": 200480,
+    "dDurationMs": 2080,
+    "segs": [ {
+      "utf8": "in a value that is being measured."
+    } ]
+  }, {
+    "tStartMs": 202560,
+    "dDurationMs": 3160,
+    "segs": [ {
+      "utf8": "The verb spike means\nto suddenly increase."
+    } ]
+  }, {
+    "tStartMs": 205720,
+    "dDurationMs": 4440,
+    "segs": [ {
+      "utf8": "We've heard that eating earlier\nin the day can be healthier for us."
+    } ]
+  }, {
+    "tStartMs": 210160,
+    "dDurationMs": 4640,
+    "segs": [ {
+      "utf8": "Now, people often don't eat breakfast,\nsometimes because they don't have time"
+    } ]
+  }, {
+    "tStartMs": 214800,
+    "dDurationMs": 2400,
+    "segs": [ {
+      "utf8": "and sometimes\nbecause they're trying to save money."
+    } ]
+  }, {
+    "tStartMs": 217200,
+    "dDurationMs": 2960,
+    "segs": [ {
+      "utf8": "Let's hear again\nfrom Professor Alexandra Johnstone,"
+    } ]
+  }, {
+    "tStartMs": 220160,
+    "dDurationMs": 4040,
+    "segs": [ {
+      "utf8": "talking to\nBBC World Service's The Food Chain."
+    } ]
+  }, {
+    "tStartMs": 224200,
+    "dDurationMs": 4080,
+    "segs": [ {
+      "utf8": "Now, breakfast skipping is\ninteresting because"
+    } ]
+  }, {
+    "tStartMs": 228280,
+    "dDurationMs": 3760,
+    "segs": [ {
+      "utf8": "my own work would tend to suggest –\nand that sort of observational,"
+    } ]
+  }, {
+    "tStartMs": 232040,
+    "dDurationMs": 5160,
+    "segs": [ {
+      "utf8": "large-scale, epidemiological studies\nwould also support this –"
+    } ]
+  }, {
+    "tStartMs": 237200,
+    "dDurationMs": 7640,
+    "segs": [ {
+      "utf8": "that people who have a regular\nbreakfast are actually leaner."
+    } ]
+  }, {
+    "tStartMs": 244840,
+    "dDurationMs": 6720,
+    "segs": [ {
+      "utf8": "And my own work would tend to suggest\nthat having your largest meal of the day"
+    } ]
+  }, {
+    "tStartMs": 251560,
+    "dDurationMs": 6160,
+    "segs": [ {
+      "utf8": "in the morning period gives you\na much better appetite control,"
+    } ]
+  }, {
+    "tStartMs": 257720,
+    "dDurationMs": 6480,
+    "segs": [ {
+      "utf8": "which then means it's much easier to\ncontrol food intake later in the day."
+    } ]
+  }, {
+    "tStartMs": 264200,
+    "dDurationMs": 3320,
+    "segs": [ {
+      "utf8": "Alexandra starts\nby mentioning breakfast skipping."
+    } ]
+  }, {
+    "tStartMs": 267520,
+    "dDurationMs": 2520,
+    "segs": [ {
+      "utf8": "If you skip something,\nthen you don't do it."
+    } ]
+  }, {
+    "tStartMs": 270040,
+    "dDurationMs": 3360,
+    "segs": [ {
+      "utf8": "Bad students might skip lessons –\nthey don't go to them."
+    } ]
+  }, {
+    "tStartMs": 273400,
+    "dDurationMs": 3000,
+    "segs": [ {
+      "utf8": "If you skip a meal,\nit means that you don't eat it."
+    } ]
+  }, {
+    "tStartMs": 276400,
+    "dDurationMs": 4880,
+    "segs": [ {
+      "utf8": "We also heard that people who have\na regular breakfast are leaner."
+    } ]
+  }, {
+    "tStartMs": 281280,
+    "dDurationMs": 3080,
+    "segs": [ {
+      "utf8": "If someone is lean,\nthen they're not fat."
+    } ]
+  }, {
+    "tStartMs": 284360,
+    "dDurationMs": 3080,
+    "segs": [ {
+      "utf8": "And one of the reasons given\nwhy people might be leaner"
+    } ]
+  }, {
+    "tStartMs": 287440,
+    "dDurationMs": 2600,
+    "segs": [ {
+      "utf8": "is that they have\nbetter appetite control."
+    } ]
+  }, {
+    "tStartMs": 290040,
+    "dDurationMs": 3840,
+    "segs": [ {
+      "utf8": "Appetite control is where your brain\ndecides how much you should eat."
+    } ]
+  }, {
+    "tStartMs": 293880,
+    "dDurationMs": 1080,
+    "segs": [ {
+      "utf8": "Thanks, Georgie."
+    } ]
+  }, {
+    "tStartMs": 294960,
+    "dDurationMs": 3960,
+    "segs": [ {
+      "utf8": "Now, I think it's time that\nwe heard the answer to your question."
+    } ]
+  }, {
+    "tStartMs": 298920,
+    "dDurationMs": 2600,
+    "segs": [ {
+      "utf8": "Yes it is.\nOK. I asked:"
+    } ]
+  }, {
+    "tStartMs": 301520,
+    "dDurationMs": 5240,
+    "segs": [ {
+      "utf8": "According to a recent survey, what is\nthe most popular breakfast in the UK?"
+    } ]
+  }, {
+    "tStartMs": 306760,
+    "dDurationMs": 1800,
+    "segs": [ {
+      "utf8": "And I said toast."
+    } ]
+  }, {
+    "tStartMs": 308560,
+    "dDurationMs": 3000,
+    "segs": [ {
+      "utf8": "...which was the most popular in London,"
+    } ]
+  }, {
+    "tStartMs": 311560,
+    "dDurationMs": 4040,
+    "segs": [ {
+      "utf8": "but the most popular in the country\nas a whole was cereal,"
+    } ]
+  }, {
+    "tStartMs": 315600,
+    "dDurationMs": 3520,
+    "segs": [ {
+      "utf8": "and that's according\nto a survey by a cereal manufacturer."
+    } ]
+  }, {
+    "tStartMs": 319120,
+    "dDurationMs": 2040,
+    "segs": [ {
+      "utf8": "So, I'm afraid you got it wrong. OK."
+    } ]
+  }, {
+    "tStartMs": 321160,
+    "dDurationMs": 3360,
+    "segs": [ {
+      "utf8": "Let's recap the vocabulary\nwe've learned, starting with pauper,"
+    } ]
+  }, {
+    "tStartMs": 324520,
+    "dDurationMs": 3240,
+    "segs": [ {
+      "utf8": "which is an old-fashioned word\nfor a very poor person."
+    } ]
+  }, {
+    "tStartMs": 327760,
+    "dDurationMs": 4840,
+    "segs": [ {
+      "utf8": "When we're talking about data,\nit spikes when it increases suddenly."
+    } ]
+  }, {
+    "tStartMs": 332600,
+    "dDurationMs": 2520,
+    "segs": [ {
+      "utf8": "Metabolism refers\nto the chemical processes"
+    } ]
+  }, {
+    "tStartMs": 335120,
+    "dDurationMs": 3440,
+    "segs": [ {
+      "utf8": "inside your body,\nespecially those which process food."
+    } ]
+  }, {
+    "tStartMs": 338560,
+    "dDurationMs": 3880,
+    "segs": [ {
+      "utf8": "If you skip something,\nyou miss it – you don't do it."
+    } ]
+  }, {
+    "tStartMs": 342440,
+    "dDurationMs": 2400,
+    "segs": [ {
+      "utf8": "If someone is lean,\nthen they are not fat."
+    } ]
+  }, {
+    "tStartMs": 344840,
+    "dDurationMs": 4080,
+    "segs": [ {
+      "utf8": "And finally, appetite control is\nhow your brain decides"
+    } ]
+  }, {
+    "tStartMs": 348920,
+    "dDurationMs": 1880,
+    "segs": [ {
+      "utf8": "how much you should eat."
+    } ]
+  }, {
+    "tStartMs": 350800,
+    "dDurationMs": 2200,
+    "segs": [ {
+      "utf8": "Once again, our six minutes are up,"
+    } ]
+  }, {
+    "tStartMs": 353000,
+    "dDurationMs": 4680,
+    "segs": [ {
+      "utf8": "but why not head over to our website,\nbbclearningenglish.com,"
+    } ]
+  }, {
+    "tStartMs": 357680,
+    "dDurationMs": 3640,
+    "segs": [ {
+      "utf8": "to try the quiz and worksheet\nfor this episode?"
+    } ]
+  }, {
+    "tStartMs": 361320,
+    "dDurationMs": 1200,
+    "segs": [ {
+      "utf8": "See you again soon."
+    } ]
+  }, {
+    "tStartMs": 362520,
+    "dDurationMs": 1960,
+    "segs": [ {
+      "utf8": "Goodbye!\nBye!"
+    } ]
+  } ]
+}

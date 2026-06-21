@@ -1,0 +1,37 @@
+using Application.Identity.Dtos;
+
+namespace Application.Admin.Dtos;
+
+public sealed record AdminUserDetailDto(
+    Guid Id,
+    string Email,
+    string DisplayName,
+    string? PreferredName,
+    string? Username,
+    string? PictureUrl,
+    AdminRole Role,
+    DateTimeOffset RegisteredAt,
+    DateTimeOffset LastLoginAt,
+    DateTimeOffset ProTrialExpiresAt,
+    bool IsProTrialActive,
+    bool HasOnboarded,
+    string? Level,
+    string? LearningGoal,
+    DateOnly? BirthDate,
+    string? Gender,
+    string? AcquisitionSource,
+    string? AcquisitionSourceOther,
+    DateTimeOffset? ProfileCreatedAt,
+    DateTimeOffset? ProfileUpdatedAt,
+    DateTimeOffset? LastActivityAt,
+    DateTimeOffset? ConfirmationTestPassedAt,
+    string? LastWinBackStage,
+    int SkillSeedCount,
+    int ActivityCount,
+    int ErrorObservationCount,
+    string SubscriptionStatus,
+    string? SubscriptionPlan,
+    DateTimeOffset? SubscriptionExpiresAt,
+    DateTimeOffset? SubscriptionCreatedAt,
+    DateTimeOffset? SubscriptionUpdatedAt,
+    AdminUserLearningDto Learning);

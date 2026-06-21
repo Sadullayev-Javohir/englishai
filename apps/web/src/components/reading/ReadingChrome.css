@@ -1,0 +1,51 @@
+/* Play reference tokens are local: older module palettes must not recolor Pen 31–35. */
+.reading-design {
+  --r-bg:#fffcf7; --r-ink:#2c2144; --r-muted:#6d647c; --r-purple:#7545e8;
+  --r-purple-deep:#5830b6; --r-lilac:#efe7ff; --r-line:#e3dbea; --r-surface:#fff;
+  --r-mint:#e9f4d7; --r-green:#4e762f; --r-peach:#ffe4d5; --r-brown:#96592f; --r-blue:#e4effb;
+  --r-header:88px;
+  color:var(--r-ink); background:var(--r-bg); font-family:"Plus Jakarta Sans",sans-serif; min-width:0;
+}
+.reading-design--lesson { height:100vh; height:100dvh; display:grid; grid-template-rows:auto minmax(0,1fr); overflow:clip; }
+/* The passage is deliberately a document-flow reading surface: lengthy
+   articles scroll with the page, not inside a second narrow scrollbar. */
+.reading-design--lesson:has(.reading-lesson--text) { height:auto; min-height:100dvh; display:block; overflow:visible; }
+.reading-design--catalog { min-height:100dvh; }
+.reading-design :is(h1,h2,h3,p,blockquote) { margin:0; }
+.reading-design :is(button,a,input,select,summary):focus-visible { outline:2px solid var(--r-purple); outline-offset:3px; }
+.reading-header { width:100%; max-width:1440px; min-height:var(--r-header); margin-inline:auto; display:flex; align-items:center; justify-content:space-between; gap:20px; padding:22px 64px; padding-top:max(22px,env(safe-area-inset-top)); }
+.reading-header__leading,.reading-header__status { display:flex; align-items:center; gap:12px; }
+.reading-header__status { gap:10px; }
+.reading-header__back,.reading-header__bell { display:grid; place-items:center; width:44px; height:44px; flex:none; border-radius:50%; }
+.reading-header__back { border:1px solid var(--r-line); color:var(--r-muted); }
+.reading-header__brand .ea-brand-name { font:700 24px/1.1 "EnglishAI Manrope",sans-serif; }
+.reading-header__xp,.reading-header__energy { display:flex; align-items:center; justify-content:center; gap:6px; white-space:nowrap; height:36px; padding:8px 12px; border-radius:20px; font-size:12px; font-weight:800; }
+.reading-header__xp,.reading-header__bell { color:var(--r-purple); background:var(--r-lilac); }
+.reading-header__energy { color:var(--r-brown); background:#fff0dc; }
+.reading-header__bell { position:relative; }
+.reading-header__bell>span { position:absolute; right:-2px; top:-4px; padding:1px 4px; border:2px solid var(--r-bg); border-radius:12px; background:var(--r-purple); color:var(--r-surface); font-size:9px; font-weight:800; }
+.reading-tag { display:inline-flex; width:fit-content; align-items:center; padding:7px 12px; border-radius:20px; color:var(--r-purple); background:var(--r-lilac); font:800 10px/15px "Plus Jakarta Sans",sans-serif; letter-spacing:.5px; }
+.reading-primary { display:flex; align-items:center; justify-content:center; gap:14px; width:100%; min-height:60px; padding:16px 22px; border:0; border-bottom:5px solid var(--r-purple-deep); border-radius:18px; background:var(--r-purple); color:var(--r-surface); font:800 16px/20px "Plus Jakarta Sans",sans-serif; cursor:pointer; }
+.reading-primary:hover:not(:disabled) { background:var(--r-purple-deep); }
+.reading-primary:disabled { opacity:.5; cursor:not-allowed; }
+.reading-secondary { display:flex; align-items:center; justify-content:center; gap:8px; min-height:40px; padding:8px 12px; border:1px solid var(--r-line); border-radius:14px; color:var(--r-purple); background:var(--r-surface); font-size:13px; font-weight:800; }
+.reading-heading { display:flex; flex-direction:column; align-items:flex-start; gap:10px; }
+.reading-heading h1 { font:900 44px/1.1 "Nunito",sans-serif; letter-spacing:-.8px; overflow-wrap:anywhere; }
+.reading-heading p { color:var(--r-muted); font-size:15px; line-height:1.5; }
+@media(max-width:1100px) and (min-width:701px) { .reading-header { padding-inline:32px; } }
+@media(max-width:700px) {
+  .reading-design { --r-header:68px; }
+  .reading-header { min-height:68px; padding:12px 20px; padding-top:max(12px,env(safe-area-inset-top)); gap:8px; }
+  .reading-header__leading,.reading-header__status { gap:8px; }
+  .reading-header__brand .ea-brand-name,.reading-header__module { display:none; }
+  .reading-header__xp,.reading-header__energy { font-size:11px; padding:7px 9px; }
+  .reading-heading h1 { font-size:32px; }
+  .reading-heading p { font-size:13px; }
+  .reading-primary { min-height:56px; font-size:14px; padding:14px 18px; }
+}
+@media(max-width:360px) {
+  .reading-header { padding-inline:16px; }
+  .reading-header__leading,.reading-header__status { gap:6px; }
+  .reading-header__back,.reading-header__bell { width:38px; height:38px; }
+  .reading-header__xp,.reading-header__energy { padding-inline:6px; font-size:10px; }
+}

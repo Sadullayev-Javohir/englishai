@@ -1,0 +1,613 @@
+{
+  "wireMagic": "pb3",
+  "pens": [ {
+  
+  } ],
+  "wsWinStyles": [ {
+  
+  } ],
+  "wpWinPositions": [ {
+  
+  } ],
+  "events": [ {
+    "tStartMs": 7640,
+    "dDurationMs": 3960,
+    "segs": [ {
+      "utf8": "Hello, this is 6 Minute English\nfrom BBC Learning English."
+    } ]
+  }, {
+    "tStartMs": 11600,
+    "dDurationMs": 2120,
+    "segs": [ {
+      "utf8": "I'm Phil, and I'm Beth."
+    } ]
+  }, {
+    "tStartMs": 13720,
+    "dDurationMs": 4080,
+    "segs": [ {
+      "utf8": "Nowadays, I often see people carrying\nwater bottles with them"
+    } ]
+  }, {
+    "tStartMs": 17800,
+    "dDurationMs": 1880,
+    "segs": [ {
+      "utf8": "to make sure they drink enough."
+    } ]
+  }, {
+    "tStartMs": 19680,
+    "dDurationMs": 2960,
+    "segs": [ {
+      "utf8": "How much water\ndo you drink a day, Phil?"
+    } ]
+  }, {
+    "tStartMs": 22640,
+    "dDurationMs": 3880,
+    "segs": [ {
+      "utf8": "Oh, I don't know.\nUm, maybe about a litre."
+    } ]
+  }, {
+    "tStartMs": 26520,
+    "dDurationMs": 4480,
+    "segs": [ {
+      "utf8": "OK. And do you know how much water\nyou should drink a day?"
+    } ]
+  }, {
+    "tStartMs": 31000,
+    "dDurationMs": 3280,
+    "segs": [ {
+      "utf8": "I think it's probably\nabout two litres."
+    } ]
+  }, {
+    "tStartMs": 34280,
+    "dDurationMs": 4920,
+    "segs": [ {
+      "utf8": "Ah, well, the number many people\nhave heard is two litres a day."
+    } ]
+  }, {
+    "tStartMs": 39200,
+    "dDurationMs": 3360,
+    "segs": [ {
+      "utf8": "Of course,\neveryone needs to drink some water."
+    } ]
+  }, {
+    "tStartMs": 42560,
+    "dDurationMs": 2960,
+    "segs": [ {
+      "utf8": "Over half the human body\nis made up of it."
+    } ]
+  }, {
+    "tStartMs": 45520,
+    "dDurationMs": 4240,
+    "segs": [ {
+      "utf8": "But exactly how much water\ndo we need to stay healthy?"
+    } ]
+  }, {
+    "tStartMs": 49760,
+    "dDurationMs": 2400,
+    "segs": [ {
+      "utf8": "That's what we'll be discussing\nin this programme,"
+    } ]
+  }, {
+    "tStartMs": 52160,
+    "dDurationMs": 2960,
+    "segs": [ {
+      "utf8": "along with\nsome useful new vocabulary as well."
+    } ]
+  }, {
+    "tStartMs": 55120,
+    "dDurationMs": 3960,
+    "segs": [ {
+      "utf8": "And speaking of vocabulary, remember\nyou can download all the new words"
+    } ]
+  }, {
+    "tStartMs": 59080,
+    "dDurationMs": 3320,
+    "segs": [ {
+      "utf8": "and phrases from this programme,\nplus worksheet exercises"
+    } ]
+  }, {
+    "tStartMs": 62400,
+    "dDurationMs": 4360,
+    "segs": [ {
+      "utf8": "to help you learn them\non our website, bbclearningenglish.com."
+    } ]
+  }, {
+    "tStartMs": 66760,
+    "dDurationMs": 4360,
+    "segs": [ {
+      "utf8": "Great! but first I have\na question for you, Phil."
+    } ]
+  }, {
+    "tStartMs": 71120,
+    "dDurationMs": 4600,
+    "segs": [ {
+      "utf8": "I mentioned that over half\nthe human body consists of water,"
+    } ]
+  }, {
+    "tStartMs": 75720,
+    "dDurationMs": 3880,
+    "segs": [ {
+      "utf8": "but there's an even higher percentage\nof water in our blood,"
+    } ]
+  }, {
+    "tStartMs": 79600,
+    "dDurationMs": 2560,
+    "segs": [ {
+      "utf8": "but how much? Is our blood"
+    } ]
+  }, {
+    "tStartMs": 82160,
+    "dDurationMs": 3000,
+    "segs": [ {
+      "utf8": "a) around 80% water?"
+    } ]
+  }, {
+    "tStartMs": 85160,
+    "dDurationMs": 5920,
+    "segs": [ {
+      "utf8": "b) around 90% water?\nOr c) 100% water?"
+    } ]
+  }, {
+    "tStartMs": 91080,
+    "dDurationMs": 3320,
+    "segs": [ {
+      "utf8": "I think it's around 80% water."
+    } ]
+  }, {
+    "tStartMs": 94400,
+    "dDurationMs": 3960,
+    "segs": [ {
+      "utf8": "OK, I will reveal the correct\nanswer later in the programme."
+    } ]
+  }, {
+    "tStartMs": 98360,
+    "dDurationMs": 3240,
+    "segs": [ {
+      "utf8": "Our blood needs water\nso it can carry nutrients"
+    } ]
+  }, {
+    "tStartMs": 101600,
+    "dDurationMs": 2400,
+    "segs": [ {
+      "utf8": "to the body's cells and organs."
+    } ]
+  }, {
+    "tStartMs": 104000,
+    "dDurationMs": 3760,
+    "segs": [ {
+      "utf8": "The amount recommended is often given\nas two litres a day."
+    } ]
+  }, {
+    "tStartMs": 107760,
+    "dDurationMs": 4920,
+    "segs": [ {
+      "utf8": "But why? Here to discuss this\nwith BBC World Service programme"
+    } ]
+  }, {
+    "tStartMs": 112680,
+    "dDurationMs": 3880,
+    "segs": [ {
+      "utf8": "'The Food Chain' is\nbiologist, Professor John Speakman."
+    } ]
+  }, {
+    "tStartMs": 116560,
+    "dDurationMs": 1880,
+    "segs": [ {
+      "utf8": "So, I'm not sure\nhow it was arrived at,"
+    } ]
+  }, {
+    "tStartMs": 118440,
+    "dDurationMs": 3040,
+    "segs": [ {
+      "utf8": "but it seems to be a number\nthat has taken grip"
+    } ]
+  }, {
+    "tStartMs": 121480,
+    "dDurationMs": 1880,
+    "segs": [ {
+      "utf8": "on a very large number of countries."
+    } ]
+  }, {
+    "tStartMs": 123360,
+    "dDurationMs": 3600,
+    "segs": [ {
+      "utf8": "So, if you look at government\nrecommendations around the world,"
+    } ]
+  }, {
+    "tStartMs": 126960,
+    "dDurationMs": 1520,
+    "segs": [ {
+      "utf8": "they're pretty much all the same,"
+    } ]
+  }, {
+    "tStartMs": 128480,
+    "dDurationMs": 4880,
+    "segs": [ {
+      "utf8": "they pretty much all say everybody's got\nto be drinking two litres of water."
+    } ]
+  }, {
+    "tStartMs": 133360,
+    "dDurationMs": 3000,
+    "segs": [ {
+      "utf8": "Professor Speakman doesn't know\nhow the number"
+    } ]
+  }, {
+    "tStartMs": 136360,
+    "dDurationMs": 5600,
+    "segs": [ {
+      "utf8": "of two litres a day was arrived at -\nhow it was decided or calculated."
+    } ]
+  }, {
+    "tStartMs": 141960,
+    "dDurationMs": 4960,
+    "segs": [ {
+      "utf8": "Nevertheless, the idea of drinking\ntwo litres a day has taken grip"
+    } ]
+  }, {
+    "tStartMs": 146920,
+    "dDurationMs": 2560,
+    "segs": [ {
+      "utf8": "on many governments around the world."
+    } ]
+  }, {
+    "tStartMs": 149480,
+    "dDurationMs": 3040,
+    "segs": [ {
+      "utf8": "When you say an idea has 'taken grip'\non something,"
+    } ]
+  }, {
+    "tStartMs": 152520,
+    "dDurationMs": 2440,
+    "segs": [ {
+      "utf8": "you mean it's taken control of it."
+    } ]
+  }, {
+    "tStartMs": 154960,
+    "dDurationMs": 4280,
+    "segs": [ {
+      "utf8": "Yes, Professor Speakman says that\npretty much all governments"
+    } ]
+  }, {
+    "tStartMs": 159240,
+    "dDurationMs": 3280,
+    "segs": [ {
+      "utf8": "are giving\npretty much the same recommendation."
+    } ]
+  }, {
+    "tStartMs": 162520,
+    "dDurationMs": 4040,
+    "segs": [ {
+      "utf8": "He uses the phrase 'pretty much'\nto mean 'almost'."
+    } ]
+  }, {
+    "tStartMs": 166560,
+    "dDurationMs": 5040,
+    "segs": [ {
+      "utf8": "For example, 'pretty much all governments\nadvise drinking two litres a day'"
+    } ]
+  }, {
+    "tStartMs": 171600,
+    "dDurationMs": 3040,
+    "segs": [ {
+      "utf8": "means, 'almost\nall governments advise it'."
+    } ]
+  }, {
+    "tStartMs": 174640,
+    "dDurationMs": 4280,
+    "segs": [ {
+      "utf8": "What Professor Speakman doesn't have,\nhowever, is any scientific evidence"
+    } ]
+  }, {
+    "tStartMs": 178920,
+    "dDurationMs": 1040,
+    "segs": [ {
+      "utf8": "for this advice."
+    } ]
+  }, {
+    "tStartMs": 179960,
+    "dDurationMs": 4800,
+    "segs": [ {
+      "utf8": "The number of exactly two litres\nisn't based on scientific fact."
+    } ]
+  }, {
+    "tStartMs": 184760,
+    "dDurationMs": 1840,
+    "segs": [ {
+      "utf8": "It's more of a ballpark"
+    } ]
+  }, {
+    "tStartMs": 186600,
+    "dDurationMs": 2480,
+    "segs": [ {
+      "utf8": "figure - a number, which is a guess,"
+    } ]
+  }, {
+    "tStartMs": 189080,
+    "dDurationMs": 3280,
+    "segs": [ {
+      "utf8": "but which you still believe is\napproximately correct."
+    } ]
+  }, {
+    "tStartMs": 192360,
+    "dDurationMs": 4440,
+    "segs": [ {
+      "utf8": "Actually, the amount of water in\nour bodies is changing all the time."
+    } ]
+  }, {
+    "tStartMs": 196800,
+    "dDurationMs": 3800,
+    "segs": [ {
+      "utf8": "Like your bank balance,\nwhich goes down when you spend money,"
+    } ]
+  }, {
+    "tStartMs": 200600,
+    "dDurationMs": 3840,
+    "segs": [ {
+      "utf8": "your body loses water\nall the time when you breathe, sweat,"
+    } ]
+  }, {
+    "tStartMs": 204440,
+    "dDurationMs": 1560,
+    "segs": [ {
+      "utf8": "or go to the toilet."
+    } ]
+  }, {
+    "tStartMs": 206000,
+    "dDurationMs": 2760,
+    "segs": [ {
+      "utf8": "Exactly how much\nyou need to drink depends"
+    } ]
+  }, {
+    "tStartMs": 208760,
+    "dDurationMs": 2920,
+    "segs": [ {
+      "utf8": "on how much water\nyour body needs to replace,"
+    } ]
+  }, {
+    "tStartMs": 211680,
+    "dDurationMs": 2680,
+    "segs": [ {
+      "utf8": "and that mainly depends on your size."
+    } ]
+  }, {
+    "tStartMs": 214360,
+    "dDurationMs": 3320,
+    "segs": [ {
+      "utf8": "But what happens when we drink less\nthan we should?"
+    } ]
+  }, {
+    "tStartMs": 217680,
+    "dDurationMs": 3800,
+    "segs": [ {
+      "utf8": "Here's hydration expert, Dr\nNidia Rodriguez-Sanchez,"
+    } ]
+  }, {
+    "tStartMs": 221480,
+    "dDurationMs": 5760,
+    "segs": [ {
+      "utf8": "describing the effects of dehydration\nto BBC World Service's, 'The Food Chain'."
+    } ]
+  }, {
+    "tStartMs": 227240,
+    "dDurationMs": 3120,
+    "segs": [ {
+      "utf8": "And also, many times\nwe start getting dehydrated and"
+    } ]
+  }, {
+    "tStartMs": 230360,
+    "dDurationMs": 2040,
+    "segs": [ {
+      "utf8": "we don't realise we are dehydrated."
+    } ]
+  }, {
+    "tStartMs": 232400,
+    "dDurationMs": 7280,
+    "segs": [ {
+      "utf8": "So it's very common that we feel tired\nor we feel, like, with a bit of a headache"
+    } ]
+  }, {
+    "tStartMs": 239680,
+    "dDurationMs": 3040,
+    "segs": [ {
+      "utf8": "or even we think we are hungry\nand we go and get some food."
+    } ]
+  }, {
+    "tStartMs": 242720,
+    "dDurationMs": 2400,
+    "segs": [ {
+      "utf8": "And actually what is happening is\nthat we are thirsty,"
+    } ]
+  }, {
+    "tStartMs": 245120,
+    "dDurationMs": 1040,
+    "segs": [ {
+      "utf8": "that we are dehydrated."
+    } ]
+  }, {
+    "tStartMs": 246160,
+    "dDurationMs": 5560,
+    "segs": [ {
+      "utf8": "We're starting to show some signs,\nor some symptoms of dehydration."
+    } ]
+  }, {
+    "tStartMs": 251720,
+    "dDurationMs": 4240,
+    "segs": [ {
+      "utf8": "Dr Sanchez describes the effect\nof dehydration, the condition"
+    } ]
+  }, {
+    "tStartMs": 255960,
+    "dDurationMs": 4920,
+    "segs": [ {
+      "utf8": "of not having enough water in your\nbody so that you feel ill or weak."
+    } ]
+  }, {
+    "tStartMs": 260880,
+    "dDurationMs": 3000,
+    "segs": [ {
+      "utf8": "She mentions feeling tired,\nhaving a headache,"
+    } ]
+  }, {
+    "tStartMs": 263880,
+    "dDurationMs": 3760,
+    "segs": [ {
+      "utf8": "or a dry mouth as symptoms\nof dehydration."
+    } ]
+  }, {
+    "tStartMs": 267640,
+    "dDurationMs": 4120,
+    "segs": [ {
+      "utf8": "Symptoms are signs or feelings\nin the body showing the presence"
+    } ]
+  }, {
+    "tStartMs": 271760,
+    "dDurationMs": 2320,
+    "segs": [ {
+      "utf8": "of some illness or condition."
+    } ]
+  }, {
+    "tStartMs": 274080,
+    "dDurationMs": 4800,
+    "segs": [ {
+      "utf8": "So, whether you drink a little more\nor a little less, it seems that"
+    } ]
+  }, {
+    "tStartMs": 278880,
+    "dDurationMs": 4440,
+    "segs": [ {
+      "utf8": "around two litres of water a day is\na good way to keep your blood"
+    } ]
+  }, {
+    "tStartMs": 283320,
+    "dDurationMs": 1400,
+    "segs": [ {
+      "utf8": "and body healthy."
+    } ]
+  }, {
+    "tStartMs": 284720,
+    "dDurationMs": 4480,
+    "segs": [ {
+      "utf8": "Speaking of which, Phil. It's time\nto reveal the answer to my question,"
+    } ]
+  }, {
+    "tStartMs": 289200,
+    "dDurationMs": 3200,
+    "segs": [ {
+      "utf8": "what percentage\nof our blood is water?"
+    } ]
+  }, {
+    "tStartMs": 292400,
+    "dDurationMs": 10200,
+    "segs": [ {
+      "utf8": "You said 80%, and the answer is 90%.\nOur blood consists of around 90% water."
+    } ]
+  }, {
+    "tStartMs": 302600,
+    "dDurationMs": 3080,
+    "segs": [ {
+      "utf8": "OK, let's recap the vocabulary\nwe've used,"
+    } ]
+  }, {
+    "tStartMs": 305680,
+    "dDurationMs": 3080,
+    "segs": [ {
+      "utf8": "starting with the phrase 'to arrive\nat a number',"
+    } ]
+  }, {
+    "tStartMs": 308760,
+    "dDurationMs": 3760,
+    "segs": [ {
+      "utf8": "meaning to decide it\nby doing calculations."
+    } ]
+  }, {
+    "tStartMs": 312520,
+    "dDurationMs": 5040,
+    "segs": [ {
+      "utf8": "If an idea takes grip on something,\nit takes control of it."
+    } ]
+  }, {
+    "tStartMs": 317560,
+    "dDurationMs": 3000,
+    "segs": [ {
+      "utf8": "The phrase 'pretty much' means 'almost'."
+    } ]
+  }, {
+    "tStartMs": 320560,
+    "dDurationMs": 3880,
+    "segs": [ {
+      "utf8": "For example, pretty much\neveryone likes chocolates,"
+    } ]
+  }, {
+    "tStartMs": 324440,
+    "dDurationMs": 2960,
+    "segs": [ {
+      "utf8": "which means,\n'almost everyone likes chocolate'."
+    } ]
+  }, {
+    "tStartMs": 327400,
+    "dDurationMs": 3600,
+    "segs": [ {
+      "utf8": "A ballpark figure is\na phrase meaning 'a number, which is"
+    } ]
+  }, {
+    "tStartMs": 331000,
+    "dDurationMs": 3520,
+    "segs": [ {
+      "utf8": "an acceptably accurate approximation'."
+    } ]
+  }, {
+    "tStartMs": 334520,
+    "dDurationMs": 4520,
+    "segs": [ {
+      "utf8": "Dehydration is the condition of\nnot having enough water in your body"
+    } ]
+  }, {
+    "tStartMs": 339040,
+    "dDurationMs": 2640,
+    "segs": [ {
+      "utf8": "so that you feel ill or weak."
+    } ]
+  }, {
+    "tStartMs": 341680,
+    "dDurationMs": 3120,
+    "segs": [ {
+      "utf8": "And finally,\na symptom is a sign"
+    } ]
+  }, {
+    "tStartMs": 344800,
+    "dDurationMs": 4680,
+    "segs": [ {
+      "utf8": "or feeling in the body showing the\npresence of an illness or condition."
+    } ]
+  }, {
+    "tStartMs": 349480,
+    "dDurationMs": 4320,
+    "segs": [ {
+      "utf8": "Once again, our six minutes are up,\nwhy not join me now,"
+    } ]
+  }, {
+    "tStartMs": 353800,
+    "dDurationMs": 4400,
+    "segs": [ {
+      "utf8": "and head over to\nour website bbclearningenglish.com,"
+    } ]
+  }, {
+    "tStartMs": 358200,
+    "dDurationMs": 1960,
+    "segs": [ {
+      "utf8": "download the worksheet\nfor this programme,"
+    } ]
+  }, {
+    "tStartMs": 360160,
+    "dDurationMs": 3000,
+    "segs": [ {
+      "utf8": "and test yourself to see\nhow much you remember."
+    } ]
+  }, {
+    "tStartMs": 363160,
+    "dDurationMs": 3840,
+    "segs": [ {
+      "utf8": "See you there soon.\nBye."
+    } ]
+  } ]
+}

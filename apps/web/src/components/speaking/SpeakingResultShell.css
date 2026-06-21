@@ -1,0 +1,230 @@
+.speaking-result {
+  /* Accent-aware: inside a live accent-tutor result the room sets --live-accent (per accent);
+     everywhere else (the in-page conversation/roleplay result) it falls back to the Speaking
+     module green. One shell, correct identity in both contexts. */
+  --sr-accent: var(--live-accent, var(--ea-mod-speaking));
+  --sr-soft: color-mix(in srgb, var(--sr-accent) 15%, var(--ea-surface));
+  --sr-border: color-mix(in srgb, var(--sr-accent) 30%, var(--ea-border));
+  position: relative;
+  display: grid;
+  width: min(100%, 780px);
+  min-width: 0;
+  margin-inline: auto;
+  gap: 22px;
+  padding: 8px 0 max(24px, env(safe-area-inset-bottom));
+  color: var(--ea-text);
+  overflow-wrap: anywhere;
+}
+
+.speaking-result__hero {
+  display: flex;
+  width: min(100%, 620px);
+  min-width: 0;
+  margin-inline: auto;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding: clamp(20px, 4vw, 34px);
+  border: 1px solid var(--sr-border);
+  border-radius: 30px;
+  background: var(--ea-surface);
+  box-shadow:none;
+  text-align: center;
+}
+
+.speaking-result__icon {
+  display: grid;
+  width: 104px;
+  height: 104px;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 1px solid rgb(255 255 255 / 65%);
+  border-radius: 30px;
+  color: var(--ea-on-primary);
+  background: var(--sr-accent);
+  box-shadow: var(--ea-shadow-card);
+}
+
+.speaking-result--retry .speaking-result__icon {
+  color: var(--ea-orange-800);
+  background: var(--ea-orange-50);
+  box-shadow:none;
+}
+
+.speaking-result--neutral .speaking-result__icon {
+  color: var(--sr-accent);
+  background: var(--sr-soft);
+}
+
+.speaking-result__icon svg {
+  width: 58px;
+  height: 58px;
+  filter: drop-shadow(0 5px 8px color-mix(in srgb, var(--sr-accent) 30%, transparent));
+}
+
+.speaking-result__illustration {
+  display: block;
+  width: 180px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.speaking-result__copy {
+  display: grid;
+  width: 100%;
+  min-width: 0;
+  justify-items: center;
+  gap: 8px;
+}
+
+.speaking-result__kicker {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border: 1px solid var(--sr-border);
+  border-radius: 999px;
+  color: var(--sr-accent);
+  background: var(--sr-soft);
+  font-family: var(--ea-font-display);
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.speaking-result--retry .speaking-result__kicker {
+  border-color: var(--ea-orange-200);
+  color: var(--ea-orange-800);
+  background: var(--ea-orange-50);
+}
+
+.speaking-result__copy h1 {
+  margin: 0;
+  color: var(--ea-text);
+  font-family: var(--ea-font-display);
+  font-size: clamp(28px, 5vw, 46px);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -.03em;
+  text-shadow: none;
+}
+
+.speaking-result__subtitle {
+  max-width: 500px;
+  color: var(--ea-muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.speaking-result__subtitle p { margin: 0; }
+
+.speaking-result__score {
+  display: grid;
+  width: 100%;
+  justify-items: center;
+  gap: 18px;
+  padding: 18px;
+  border: 1px solid var(--sr-border);
+  border-radius: 24px;
+  background: var(--ea-surface);
+}
+
+.speaking-result__score strong {
+  color: var(--sr-accent);
+  font-family: var(--ea-font-display);
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.speaking-result__score svg + div > span {
+  max-width: 100px;
+  color: var(--ea-muted);
+  font-size: 11px;
+  font-weight: 850;
+  line-height: 1.2;
+}
+
+.speaking-result__score-content { width: 100%; }
+.speaking-result__score-content,
+.speaking-result__score-content > * {
+  min-width: 0;
+}
+
+.speaking-result__details,
+.speaking-result__progression,
+.speaking-result__actions {
+  width: 100%;
+  min-width: 0;
+}
+
+.speaking-result__details {
+  display: grid;
+  gap: 16px;
+}
+
+.speaking-result__details-card {
+  width: 100%;
+  min-width: 0;
+  padding: clamp(18px, 3vw, 26px);
+  border: 1px solid var(--ea-border);
+  border-radius: 24px;
+  color: var(--ea-text);
+  background: var(--ea-surface);
+  box-shadow:none;
+  text-align: left;
+}
+
+.speaking-result__details-card h2 {
+  margin: 0 0 14px;
+  color: var(--ea-text);
+  font-family: var(--ea-font-display);
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.speaking-result__empty { margin: 0; color: var(--ea-muted); }
+.speaking-result__saved-note {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 14px 0 0;
+  color: var(--ea-muted);
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.speaking-result__progression {
+  display: grid;
+  gap: 16px;
+}
+
+.speaking-result__actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid var(--ea-border);
+  border-radius: 24px;
+  background: var(--ea-surface);
+  box-shadow:none;
+}
+
+.speaking-result__actions > * {
+  width: 100%;
+  min-height: 56px !important;
+  border-radius: 16px !important;
+  font-family: var(--ea-font-display) !important;
+  font-weight: 900 !important;
+}
+
+@media (max-width: 700px) {
+  .speaking-result { gap: 16px; padding-top: 0; }
+  .speaking-result__hero { padding: 18px 14px; border-radius: 22px; }
+  .speaking-result__icon { width: 88px; height: 88px; border-radius: 25px; }
+  .speaking-result__icon svg { width: 50px; height: 50px; }
+  .speaking-result__score { padding: 14px 10px; border-radius: 20px; }
+  .speaking-result__details-card { padding: 16px 14px; border-radius: 20px; }
+  .speaking-result__actions { grid-template-columns: 1fr; padding: 10px; border-radius: 20px; }
+  .speaking-result__actions > * { min-height: 52px !important; }
+}

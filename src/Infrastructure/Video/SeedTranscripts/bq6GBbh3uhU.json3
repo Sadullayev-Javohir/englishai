@@ -1,0 +1,487 @@
+{
+  "wireMagic": "pb3",
+  "pens": [ {
+  
+  } ],
+  "wsWinStyles": [ {
+  
+  } ],
+  "wpWinPositions": [ {
+  
+  } ],
+  "events": [ {
+    "tStartMs": 2480,
+    "dDurationMs": 2280,
+    "segs": [ {
+      "utf8": "Easy English Conversations."
+    } ]
+  }, {
+    "tStartMs": 6680,
+    "dDurationMs": 2320,
+    "segs": [ {
+      "utf8": "What do you do every day?"
+    } ]
+  }, {
+    "tStartMs": 9960,
+    "dDurationMs": 1080,
+    "segs": [ {
+      "utf8": "Hello, Sian."
+    } ]
+  }, {
+    "tStartMs": 11800,
+    "dDurationMs": 1960,
+    "segs": [ {
+      "utf8": "Hi, Buli. How are you?"
+    } ]
+  }, {
+    "tStartMs": 13880,
+    "dDurationMs": 1440,
+    "segs": [ {
+      "utf8": "I'm well, thanks."
+    } ]
+  }, {
+    "tStartMs": 15440,
+    "dDurationMs": 2280,
+    "segs": [ {
+      "utf8": "- How are you?\n- I'm good too."
+    } ]
+  }, {
+    "tStartMs": 18960,
+    "dDurationMs": 1960,
+    "segs": [ {
+      "utf8": "What do you do every day?"
+    } ]
+  }, {
+    "tStartMs": 21040,
+    "dDurationMs": 1200,
+    "segs": [ {
+      "utf8": "I wake up."
+    } ]
+  }, {
+    "tStartMs": 24160,
+    "dDurationMs": 1400,
+    "segs": [ {
+      "utf8": "I eat breakfast."
+    } ]
+  }, {
+    "tStartMs": 27360,
+    "dDurationMs": 1400,
+    "segs": [ {
+      "utf8": "I go jogging."
+    } ]
+  }, {
+    "tStartMs": 30840,
+    "dDurationMs": 2440,
+    "segs": [ {
+      "utf8": "I get the bus to work."
+    } ]
+  }, {
+    "tStartMs": 35320,
+    "dDurationMs": 2160,
+    "segs": [ {
+      "utf8": "I read a book on the bus."
+    } ]
+  }, {
+    "tStartMs": 40080,
+    "dDurationMs": 1480,
+    "segs": [ {
+      "utf8": "I eat lunch."
+    } ]
+  }, {
+    "tStartMs": 43920,
+    "dDurationMs": 3560,
+    "segs": [ {
+      "utf8": "After I finish work, I swim in the sea."
+    } ]
+  }, {
+    "tStartMs": 49640,
+    "dDurationMs": 1200,
+    "segs": [ {
+      "utf8": "I eat dinner."
+    } ]
+  }, {
+    "tStartMs": 52560,
+    "dDurationMs": 1680,
+    "segs": [ {
+      "utf8": "I have a shower."
+    } ]
+  }, {
+    "tStartMs": 55920,
+    "dDurationMs": 2320,
+    "segs": [ {
+      "utf8": "Then I go to sleep."
+    } ]
+  }, {
+    "tStartMs": 59720,
+    "dDurationMs": 1520,
+    "segs": [ {
+      "utf8": "How about you?"
+    } ]
+  }, {
+    "tStartMs": 61360,
+    "dDurationMs": 2000,
+    "segs": [ {
+      "utf8": "What do you do every day?"
+    } ]
+  }, {
+    "tStartMs": 63480,
+    "dDurationMs": 1160,
+    "segs": [ {
+      "utf8": "I wake up."
+    } ]
+  }, {
+    "tStartMs": 66640,
+    "dDurationMs": 1240,
+    "segs": [ {
+      "utf8": "I have a shower."
+    } ]
+  }, {
+    "tStartMs": 69560,
+    "dDurationMs": 1520,
+    "segs": [ {
+      "utf8": "I eat breakfast."
+    } ]
+  }, {
+    "tStartMs": 73160,
+    "dDurationMs": 1480,
+    "segs": [ {
+      "utf8": "I drive to work."
+    } ]
+  }, {
+    "tStartMs": 76400,
+    "dDurationMs": 1520,
+    "segs": [ {
+      "utf8": "I listen to a podcast."
+    } ]
+  }, {
+    "tStartMs": 78040,
+    "dDurationMs": 2520,
+    "segs": [ {
+      "utf8": "Welcome to Real Easy English."
+    } ]
+  }, {
+    "tStartMs": 80680,
+    "dDurationMs": 2400,
+    "segs": [ {
+      "utf8": "- I'm Beth.\n- And I'm Neil."
+    } ]
+  }, {
+    "tStartMs": 83200,
+    "dDurationMs": 1320,
+    "segs": [ {
+      "utf8": "I eat lunch."
+    } ]
+  }, {
+    "tStartMs": 85880,
+    "dDurationMs": 2520,
+    "segs": [ {
+      "utf8": "After work, I go to the park."
+    } ]
+  }, {
+    "tStartMs": 90160,
+    "dDurationMs": 2240,
+    "segs": [ {
+      "utf8": "I go home and cook dinner."
+    } ]
+  }, {
+    "tStartMs": 94360,
+    "dDurationMs": 2840,
+    "segs": [ {
+      "utf8": "After dinner, I play video games."
+    } ]
+  }, {
+    "tStartMs": 99280,
+    "dDurationMs": 2160,
+    "segs": [ {
+      "utf8": "Lastly, I go to sleep."
+    } ]
+  }, {
+    "tStartMs": 105880,
+    "dDurationMs": 3480,
+    "segs": [ {
+      "utf8": "Learn how to give directions in the next video."
+    } ]
+  }, {
+    "tStartMs": 109480,
+    "dDurationMs": 1920,
+    "segs": [ {
+      "utf8": "Go straight."
+    } ]
+  }, {
+    "tStartMs": 111520,
+    "dDurationMs": 1720,
+    "segs": [ {
+      "utf8": "Go straight."
+    } ]
+  }, {
+    "tStartMs": 113360,
+    "dDurationMs": 2000,
+    "segs": [ {
+      "utf8": "Now, back to the lesson!"
+    } ]
+  }, {
+    "tStartMs": 116240,
+    "dDurationMs": 2240,
+    "segs": [ {
+      "utf8": "- Tim?\n- Yes?"
+    } ]
+  }, {
+    "tStartMs": 118600,
+    "dDurationMs": 1520,
+    "segs": [ {
+      "utf8": "What do you do every day?"
+    } ]
+  }, {
+    "tStartMs": 121120,
+    "dDurationMs": 1840,
+    "segs": [ {
+      "utf8": "I wake up."
+    } ]
+  }, {
+    "tStartMs": 125120,
+    "dDurationMs": 2080,
+    "segs": [ {
+      "utf8": "I eat breakfast."
+    } ]
+  }, {
+    "tStartMs": 129480,
+    "dDurationMs": 1880,
+    "segs": [ {
+      "utf8": "I have a shower."
+    } ]
+  }, {
+    "tStartMs": 134200,
+    "dDurationMs": 1960,
+    "segs": [ {
+      "utf8": "I walk to work."
+    } ]
+  }, {
+    "tStartMs": 138560,
+    "dDurationMs": 2360,
+    "segs": [ {
+      "utf8": "I listen to music."
+    } ]
+  }, {
+    "tStartMs": 143680,
+    "dDurationMs": 2240,
+    "segs": [ {
+      "utf8": "I eat lunch."
+    } ]
+  }, {
+    "tStartMs": 147800,
+    "dDurationMs": 3400,
+    "segs": [ {
+      "utf8": "I go home and watch a film."
+    } ]
+  }, {
+    "tStartMs": 153680,
+    "dDurationMs": 2560,
+    "segs": [ {
+      "utf8": "I eat dinner."
+    } ]
+  }, {
+    "tStartMs": 158280,
+    "dDurationMs": 5600,
+    "segs": [ {
+      "utf8": "Then, I read a book and go to sleep."
+    } ]
+  }, {
+    "tStartMs": 166560,
+    "dDurationMs": 2440,
+    "segs": [ {
+      "utf8": "Georgie? Are you there?"
+    } ]
+  }, {
+    "tStartMs": 169120,
+    "dDurationMs": 1080,
+    "segs": [ {
+      "utf8": "Yep?"
+    } ]
+  }, {
+    "tStartMs": 170320,
+    "dDurationMs": 2440,
+    "segs": [ {
+      "utf8": "What do you do every day?"
+    } ]
+  }, {
+    "tStartMs": 172880,
+    "dDurationMs": 1200,
+    "segs": [ {
+      "utf8": "I wake up."
+    } ]
+  }, {
+    "tStartMs": 176080,
+    "dDurationMs": 1240,
+    "segs": [ {
+      "utf8": "I have a shower."
+    } ]
+  }, {
+    "tStartMs": 179600,
+    "dDurationMs": 1600,
+    "segs": [ {
+      "utf8": "I eat breakfast."
+    } ]
+  }, {
+    "tStartMs": 183600,
+    "dDurationMs": 1840,
+    "segs": [ {
+      "utf8": "I get the train to work."
+    } ]
+  }, {
+    "tStartMs": 187680,
+    "dDurationMs": 1960,
+    "segs": [ {
+      "utf8": "I read the news on the train."
+    } ]
+  }, {
+    "tStartMs": 191960,
+    "dDurationMs": 1080,
+    "segs": [ {
+      "utf8": "I eat lunch."
+    } ]
+  }, {
+    "tStartMs": 195840,
+    "dDurationMs": 3040,
+    "segs": [ {
+      "utf8": "After I finish work, I do some exercise."
+    } ]
+  }, {
+    "tStartMs": 201240,
+    "dDurationMs": 1240,
+    "segs": [ {
+      "utf8": "I eat dinner."
+    } ]
+  }, {
+    "tStartMs": 204520,
+    "dDurationMs": 2320,
+    "segs": [ {
+      "utf8": "And then, I go to sleep."
+    } ]
+  }, {
+    "tStartMs": 207960,
+    "dDurationMs": 3320,
+    "segs": [ {
+      "utf8": "What about you? What do you do every day?"
+    } ]
+  }, {
+    "tStartMs": 214720,
+    "dDurationMs": 1240,
+    "segs": [ {
+      "utf8": "I wake up."
+    } ]
+  }, {
+    "tStartMs": 221720,
+    "dDurationMs": 1400,
+    "segs": [ {
+      "utf8": "I eat breakfast."
+    } ]
+  }, {
+    "tStartMs": 229120,
+    "dDurationMs": 1400,
+    "segs": [ {
+      "utf8": "I eat lunch."
+    } ]
+  }, {
+    "tStartMs": 236120,
+    "dDurationMs": 1320,
+    "segs": [ {
+      "utf8": "I eat dinner."
+    } ]
+  }, {
+    "tStartMs": 241560,
+    "dDurationMs": 1800,
+    "segs": [ {
+      "utf8": "I go to sleep."
+    } ]
+  }, {
+    "tStartMs": 245280,
+    "dDurationMs": 2200,
+    "segs": [ {
+      "utf8": "What do you eat for breakfast, Tim?"
+    } ]
+  }, {
+    "tStartMs": 248360,
+    "dDurationMs": 3400,
+    "segs": [ {
+      "utf8": "I eat toast for breakfast."
+    } ]
+  }, {
+    "tStartMs": 251880,
+    "dDurationMs": 2360,
+    "segs": [ {
+      "utf8": "What about you, Georgie?"
+    } ]
+  }, {
+    "tStartMs": 254360,
+    "dDurationMs": 1760,
+    "segs": [ {
+      "utf8": "What do you eat for breakfast?"
+    } ]
+  }, {
+    "tStartMs": 256720,
+    "dDurationMs": 2640,
+    "segs": [ {
+      "utf8": "I eat cereal for breakfast."
+    } ]
+  }, {
+    "tStartMs": 259920,
+    "dDurationMs": 1960,
+    "segs": [ {
+      "utf8": "What do you eat for breakfast, Sian?"
+    } ]
+  }, {
+    "tStartMs": 262000,
+    "dDurationMs": 3320,
+    "segs": [ {
+      "utf8": "I eat fruit and yoghurt for breakfast."
+    } ]
+  }, {
+    "tStartMs": 265440,
+    "dDurationMs": 2160,
+    "segs": [ {
+      "utf8": "What do you eat for breakfast, Buli?"
+    } ]
+  }, {
+    "tStartMs": 267720,
+    "dDurationMs": 1960,
+    "segs": [ {
+      "utf8": "I eat porridge for breakfast."
+    } ]
+  }, {
+    "tStartMs": 270760,
+    "dDurationMs": 1920,
+    "segs": [ {
+      "utf8": "What do you eat for breakfast?"
+    } ]
+  }, {
+    "tStartMs": 280800,
+    "dDurationMs": 1880,
+    "segs": [ {
+      "utf8": "What do you do every day?"
+    } ]
+  }, {
+    "tStartMs": 282800,
+    "dDurationMs": 2440,
+    "segs": [ {
+      "utf8": "Write your answer in the comments."
+    } ]
+  }, {
+    "tStartMs": 285360,
+    "dDurationMs": 3840,
+    "segs": [ {
+      "utf8": "Click this subscribe button and see you in the next video."
+    } ]
+  }, {
+    "tStartMs": 289320,
+    "dDurationMs": 1360,
+    "segs": [ {
+      "utf8": "Bye!"
+    } ]
+  }, {
+    "tStartMs": 290800,
+    "dDurationMs": 1240,
+    "segs": [ {
+      "utf8": "Bye!"
+    } ]
+  } ]
+}

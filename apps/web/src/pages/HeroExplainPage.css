@@ -1,0 +1,169 @@
+.hero-explain {
+  --hero-ink: var(--ea-text);
+  --hero-muted: var(--ea-muted);
+  --hero-line: var(--ea-border);
+  --hero-surface: rgb(var(--ea-surface-rgb) / 0.94);
+  --hero-green: var(--ea-green-200);
+  --hero-green-dark: var(--ea-green-600);
+  min-height: 100dvh;
+  overflow-x: hidden;
+  background: var(--ea-bg);
+  color: var(--hero-ink);
+}
+
+.hero-explain__scene,
+.hero-explain__veil {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+.hero-explain__scene { z-index: 0; opacity: 0.36; }
+.hero-explain__veil {
+  z-index: 1;
+  background: var(--ea-surface);
+
+
+}
+
+.hero-explain__header { position: fixed; inset: 0 0 auto; z-index: 40; padding-top: env(safe-area-inset-top); }
+.hero-explain__header-inner,
+.hero-explain__container,
+.hero-explain__hero { width: min(1180px, calc(100% - 32px)); margin-inline: auto; }
+.hero-explain__header-inner { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.hero-explain__brand,
+.hero-explain__header-cta,
+.hero-explain__secondary-cta {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(35, 73, 58, 0.12);
+  font-family: var(--font-duo);
+  font-weight: 800;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+.hero-explain__brand { gap: 9px; border-radius: 18px; padding: 5px 14px 5px 6px; background: rgb(var(--ea-surface-rgb) / .88); box-shadow:none;  }
+.hero-explain__brand-name { color: var(--hero-ink); font-size: 1rem; }
+.hero-explain__header-cta { gap: 7px; border: 0; border-radius: 16px; padding: 0 18px; color: var(--ea-green-900); background: var(--ea-green-200); box-shadow:none; }
+.hero-explain__brand:hover,
+.hero-explain__header-cta:hover,
+.hero-explain__secondary-cta:hover {  }
+.hero-explain__brand:active,
+.hero-explain__header-cta:active,
+.hero-explain__secondary-cta:active {  box-shadow: none; }
+.hero-explain__button-icon { font-size: 19px; }
+
+.hero-explain__main { position: relative; z-index: 2; }
+.hero-explain__hero { min-height: 100dvh; padding: calc(env(safe-area-inset-top) + 112px) 0 64px; display: flex; flex-direction: column; justify-content: center; }
+.hero-explain__hero-grid { display: grid; grid-template-columns: minmax(0, 1.04fr) minmax(360px, .96fr); align-items: center; gap: clamp(36px, 6vw, 78px); }
+.hero-explain__eyebrow { display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; border: 1px solid var(--ea-border); border-radius: 999px; background: rgb(var(--ea-surface-rgb) / .82); color: var(--ea-green-600); font-family: var(--font-duo); font-size: .75rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.hero-explain__eyebrow-icon { font-size: 19px; }
+.hero-explain__title { max-width: 700px; margin: 20px 0 0; font-family: var(--font-duo); font-size: clamp(3.1rem, 6.3vw, 5.6rem); font-weight: 900; line-height: .96; letter-spacing: -.055em; }
+.hero-explain__title span { color: var(--hero-green-dark); }
+.hero-explain__lead { max-width: 630px; margin: 22px 0 0; color: var(--hero-muted); font-size: clamp(1rem, 1.7vw, 1.18rem); line-height: 1.72; }
+.hero-explain__actions { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 12px; }
+.hero-explain__secondary-cta { gap: 8px; padding: 0 22px; border-radius: var(--ea-radius-control); background: var(--ea-surface); color: var(--hero-ink); box-shadow:none; }
+
+.hero-explain__demo-card { position: relative; padding: clamp(20px, 3vw, 28px); border: 1px solid var(--ea-border); border-radius: 32px; background: var(--hero-surface); box-shadow:none; }
+.hero-explain__demo-card::before { content: ""; position: absolute; inset: 10px 16px auto; height: 14px; border-radius: 999px; background: var(--ea-surface); opacity: .75; }
+.hero-explain__demo-topline { margin-top: 12px; display: flex; align-items: center; gap: 8px; color: var(--ea-muted-deep); font-family: var(--font-duo); font-size: .75rem; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
+.hero-explain__live-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--ea-green-200); box-shadow: 0 0 0 5px var(--ea-bg); }
+.hero-explain__message { margin-top: 18px; display: flex; align-items: flex-start; gap: 12px; }
+.hero-explain__message--learner { justify-content: flex-end; text-align: right; }
+.hero-explain__message > div { max-width: 78%; padding: 13px 15px; border: 1px solid var(--ea-border); border-radius: 9px 20px 20px; background: var(--ea-bg); }
+.hero-explain__message--learner > div { border-radius: 20px 9px 20px 20px; background: var(--ea-bg); }
+.hero-explain__message strong,
+.hero-explain__feedback strong { font-family: var(--font-duo); font-size: .86rem; }
+.hero-explain__message p,
+.hero-explain__feedback p { margin: 4px 0 0; color: var(--hero-muted); font-size: .83rem; line-height: 1.5; }
+.hero-explain__avatar { flex: 0 0 40px; height: 40px; display: grid; place-items: center; border-radius: 14px; background: var(--ea-purple-100); color: var(--ea-purple-600); }
+.hero-explain__avatar--learner { background: var(--ea-green-200); color: var(--ea-green-600); }
+.hero-explain__feedback { margin-top: 18px; display: flex; gap: 10px; padding: 14px; border: 1px solid var(--ea-green-200); border-radius: 18px; background: var(--ea-bg); color: var(--ea-green-600); }
+.hero-explain__feedback > .material-symbols-rounded { font-size: 24px; }
+.hero-explain__mini-stats { margin-top: 16px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.hero-explain__mini-stat,
+.hero-explain__proof,
+.hero-explain__reason,
+  .hero-explain__stat { border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--ea-border)); background: color-mix(in srgb, var(--accent) 12%, var(--ea-surface)); }
+.hero-explain__mini-stat { min-width: 0; padding: 12px; border-radius: 17px; }
+.hero-explain__mini-stat > div { display: flex; align-items: center; gap: 6px; color: color-mix(in srgb, var(--accent) 70%, var(--ea-text)); }
+.hero-explain__mini-stat .material-symbols-rounded { font-size: 18px; }
+.hero-explain__mini-stat strong { font-family: var(--font-duo); font-size: .88rem; }
+.hero-explain__mini-stat p { margin: 5px 0 0; color: var(--hero-muted); font-size: .7rem; overflow-wrap: anywhere; }
+.hero-explain--green { --accent: var(--ea-green-200); }
+.hero-explain--blue { --accent: var(--ea-blue-600); }
+.hero-explain--purple { --accent: var(--ea-purple-600); }
+.hero-explain--amber { --accent: var(--ea-brand-yellow); }
+.hero-explain--teal { --accent: var(--ea-green-600); }
+
+.hero-explain__proof-grid { list-style: none; margin: clamp(44px, 6vw, 68px) 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.hero-explain__proof { min-width: 0; padding: 19px; border-radius: 23px; box-shadow:none; }
+.hero-explain__proof > .material-symbols-rounded { color: color-mix(in srgb, var(--accent) 78%, var(--ea-text)); font-size: 26px; }
+.hero-explain__proof h2 { margin: 12px 0 0; font-family: var(--font-duo); font-size: 1rem; }
+.hero-explain__proof p { margin: 6px 0 0; color: var(--hero-muted); font-size: .78rem; line-height: 1.55; }
+
+.hero-explain__why { scroll-margin-top: 80px; padding: 92px 0 100px; border-top: 1px solid var(--ea-border); background: rgb(var(--ea-surface-rgb) / .82);  }
+.hero-explain__section-heading { max-width: 820px; margin-inline: auto; text-align: center; }
+.hero-explain__section-heading > span { display: inline-flex; padding: 8px 14px; border: 1px solid var(--ea-border); border-radius: 999px; background: var(--ea-surface); color: var(--ea-green-600); font-family: var(--font-duo); font-size: .75rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.hero-explain__section-heading h2 { margin: 16px 0 0; font-family: var(--font-duo); font-size: clamp(2.1rem, 5vw, 3.8rem); line-height: 1.06; letter-spacing: -.04em; }
+.hero-explain__section-heading p { max-width: 700px; margin: 16px auto 0; color: var(--hero-muted); font-size: 1.04rem; line-height: 1.65; }
+.hero-explain__reason-grid { margin-top: 42px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.hero-explain__reason { padding: 25px; border-radius: 27px; box-shadow:none; }
+.hero-explain__reason-top { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.hero-explain__reason-top > span { width: 48px; height: 48px; display: grid; place-items: center; border-radius: 16px; background: color-mix(in srgb, var(--accent) 22%, var(--ea-surface)); color: color-mix(in srgb, var(--accent) 75%, var(--ea-muted-deep)); }
+.hero-explain__reason-top > span .material-symbols-rounded { font-size: 25px; }
+.hero-explain__reason-top > strong { color: color-mix(in srgb, var(--accent) 45%, var(--ea-text)); font-family: var(--font-duo); font-size: 2.6rem; }
+.hero-explain__reason h3 { margin: 21px 0 0; font-family: var(--font-duo); font-size: 1.2rem; }
+.hero-explain__reason p { margin: 9px 0 0; color: var(--hero-muted); font-size: .9rem; line-height: 1.65; }
+.hero-explain__stats { margin-top: 38px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.hero-explain__stat { padding: 22px; border-radius: 22px; text-align: center; }
+.hero-explain__stat strong { display: block; color: color-mix(in srgb, var(--accent) 74%, var(--ea-text)); font-family: var(--font-duo); font-size: 2rem; }
+.hero-explain__stat span { display: block; margin-top: 5px; color: var(--hero-muted); font-size: .86rem; }
+.hero-explain__final-card { margin-top: 54px; padding: clamp(30px, 6vw, 58px); border: 1px solid var(--ea-green-200); border-radius: 34px; background: var(--ea-surface); text-align: center; box-shadow:none; }
+.hero-explain__final-card h2 { margin: 0; font-family: var(--font-duo); font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.08; }
+.hero-explain__final-card p { max-width: 620px; margin: 14px auto 24px; color: var(--hero-muted); line-height: 1.6; }
+
+@media (max-width: 900px){
+  .hero-explain__hero { padding-top: calc(env(safe-area-inset-top) + 86px); }
+  .hero-explain__hero-grid { grid-template-columns: 1fr; }
+  .hero-explain__copy { text-align: center; }
+  .hero-explain__title,
+  .hero-explain__lead { margin-inline: auto; }
+  .hero-explain__actions { justify-content: center; }
+  .hero-explain__demo-card { width: min(560px, 100%); margin-inline: auto; }
+  .hero-explain__proof-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .hero-explain__reason-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 700px){
+  .hero-explain__header-inner,
+  .hero-explain__container,
+  .hero-explain__hero { width: min(100% - 24px, 1180px); }
+  .hero-explain__header-inner { min-height: 64px; }
+  .hero-explain__brand-name { display: none; }
+  .hero-explain__brand { padding-right: 6px; }
+  .hero-explain__header-cta { padding-inline: 14px; font-size: .8rem; }
+  .hero-explain__hero { padding-bottom: 40px; }
+  .hero-explain__title { font-size: clamp(2.25rem, 11vw, 3.25rem); }
+  .hero-explain__actions { flex-direction: column; }
+  .hero-explain__actions > * { width: 100%; }
+  .hero-explain__demo-card { border-radius: 25px; }
+  .hero-explain__mini-stats { grid-template-columns: 1fr; }
+  .hero-explain__mini-stat { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .hero-explain__mini-stat p { margin: 0; text-align: right; }
+  .hero-explain__proof-grid { grid-template-columns: 1fr; }
+  .hero-explain__why { padding: 70px 0 78px; }
+  .hero-explain__stats { grid-template-columns: 1fr; }
+}
+
+@media (max-height: 700px) and (max-width: 700px){
+  .hero-explain__hero { padding-top: calc(env(safe-area-inset-top) + 76px); }
+  .hero-explain__demo-card { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .hero-explain__brand,
+  .hero-explain__header-cta,
+  .hero-explain__secondary-cta { transition: none; }
+}

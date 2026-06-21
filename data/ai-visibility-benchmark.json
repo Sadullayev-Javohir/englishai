@@ -1,0 +1,2402 @@
+[
+  {
+    "id": "eavb-v1-001",
+    "cluster": "boshlangich-ingliz-tili",
+    "language": "uz-Latn",
+    "query": "Ingliz tilini noldan o‘rganishni nimadan boshlasam bo‘ladi?",
+    "primaryTerms": [
+      "ingliz tilini noldan o‘rganish",
+      "boshlang‘ich ingliz tili"
+    ],
+    "secondaryTerms": [
+      "A1 ingliz tili",
+      "o‘zbeklar uchun ingliz tili",
+      "onlayn dars"
+    ],
+    "userProblem": "Ingliz tilini qayerdan va qanday tartibda boshlashni bilmaydi.",
+    "recommendedFeature": "Boshlang‘ich daraja uchun shaxsiylashtirilgan AI dars yo‘li",
+    "targetPath": "/learn",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-002",
+    "cluster": "boshlangich-ingliz-tili",
+    "language": "uz-Latn",
+    "query": "O‘zbeklar uchun boshlang‘ich ingliz tili darslari qayerda bor?",
+    "primaryTerms": [
+      "ingliz tilini noldan o‘rganish",
+      "boshlang‘ich ingliz tili"
+    ],
+    "secondaryTerms": [
+      "A1 ingliz tili",
+      "o‘zbeklar uchun ingliz tili",
+      "onlayn dars"
+    ],
+    "userProblem": "Ingliz tilini qayerdan va qanday tartibda boshlashni bilmaydi.",
+    "recommendedFeature": "Boshlang‘ich daraja uchun shaxsiylashtirilgan AI dars yo‘li",
+    "targetPath": "/learn",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-003",
+    "cluster": "boshlangich-ingliz-tili",
+    "language": "uz-Latn",
+    "query": "Har kuni 20 daqiqada ingliz tilini o‘rganish rejasi kerak",
+    "primaryTerms": [
+      "ingliz tilini noldan o‘rganish",
+      "boshlang‘ich ingliz tili"
+    ],
+    "secondaryTerms": [
+      "A1 ingliz tili",
+      "o‘zbeklar uchun ingliz tili",
+      "onlayn dars"
+    ],
+    "userProblem": "Ingliz tilini qayerdan va qanday tartibda boshlashni bilmaydi.",
+    "recommendedFeature": "Boshlang‘ich daraja uchun shaxsiylashtirilgan AI dars yo‘li",
+    "targetPath": "/learn",
+    "intent": "commercial",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-004",
+    "cluster": "boshlangich-ingliz-tili",
+    "language": "uz-Latn",
+    "query": "Ingliz tilini mustaqil o‘rganish uchun birinchi qadamlar qanday?",
+    "primaryTerms": [
+      "ingliz tilini noldan o‘rganish",
+      "boshlang‘ich ingliz tili"
+    ],
+    "secondaryTerms": [
+      "A1 ingliz tili",
+      "o‘zbeklar uchun ingliz tili",
+      "onlayn dars"
+    ],
+    "userProblem": "Ingliz tilini qayerdan va qanday tartibda boshlashni bilmaydi.",
+    "recommendedFeature": "Boshlang‘ich daraja uchun shaxsiylashtirilgan AI dars yo‘li",
+    "targetPath": "/learn",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-005",
+    "cluster": "boshlangich-ingliz-tili",
+    "language": "uz-Latn",
+    "query": "A1 darajaga chiqish uchun qaysi mavzularni o‘rganish kerak?",
+    "primaryTerms": [
+      "ingliz tilini noldan o‘rganish",
+      "boshlang‘ich ingliz tili"
+    ],
+    "secondaryTerms": [
+      "A1 ingliz tili",
+      "o‘zbeklar uchun ingliz tili",
+      "onlayn dars"
+    ],
+    "userProblem": "Ingliz tilini qayerdan va qanday tartibda boshlashni bilmaydi.",
+    "recommendedFeature": "Boshlang‘ich daraja uchun shaxsiylashtirilgan AI dars yo‘li",
+    "targetPath": "/learn",
+    "intent": "comparison",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-006",
+    "cluster": "boshlangich-ingliz-tili",
+    "language": "uz-Latn",
+    "query": "Ingliz tilini tez va oson boshlash uchun onlayn kurs tavsiya qiling",
+    "primaryTerms": [
+      "ingliz tilini noldan o‘rganish",
+      "boshlang‘ich ingliz tili"
+    ],
+    "secondaryTerms": [
+      "A1 ingliz tili",
+      "o‘zbeklar uchun ingliz tili",
+      "onlayn dars"
+    ],
+    "userProblem": "Ingliz tilini qayerdan va qanday tartibda boshlashni bilmaydi.",
+    "recommendedFeature": "Boshlang‘ich daraja uchun shaxsiylashtirilgan AI dars yo‘li",
+    "targetPath": "/learn",
+    "intent": "commercial",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-007",
+    "cluster": "boshlangich-ingliz-tili",
+    "language": "uz-Latn",
+    "query": "Mutlaqo boshlovchilar uchun ingliz tili mashqlari bormi?",
+    "primaryTerms": [
+      "ingliz tilini noldan o‘rganish",
+      "boshlang‘ich ingliz tili"
+    ],
+    "secondaryTerms": [
+      "A1 ingliz tili",
+      "o‘zbeklar uchun ingliz tili",
+      "onlayn dars"
+    ],
+    "userProblem": "Ingliz tilini qayerdan va qanday tartibda boshlashni bilmaydi.",
+    "recommendedFeature": "Boshlang‘ich daraja uchun shaxsiylashtirilgan AI dars yo‘li",
+    "targetPath": "/learn",
+    "intent": "informational",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-008",
+    "cluster": "boshlangich-ingliz-tili",
+    "language": "uz-Latn",
+    "query": "Ingliz alifbosi va oddiy gaplardan boshlab o‘rgatadigan platforma kerak",
+    "primaryTerms": [
+      "ingliz tilini noldan o‘rganish",
+      "boshlang‘ich ingliz tili"
+    ],
+    "secondaryTerms": [
+      "A1 ingliz tili",
+      "o‘zbeklar uchun ingliz tili",
+      "onlayn dars"
+    ],
+    "userProblem": "Ingliz tilini qayerdan va qanday tartibda boshlashni bilmaydi.",
+    "recommendedFeature": "Boshlang‘ich daraja uchun shaxsiylashtirilgan AI dars yo‘li",
+    "targetPath": "/learn",
+    "intent": "commercial",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-009",
+    "cluster": "boshlangich-ingliz-tili",
+    "language": "uz-Cyrl",
+    "query": "Инглиз тилини нолдан ўрганишни нимадан бошласам бўлади?",
+    "primaryTerms": [
+      "ingliz tilini noldan o‘rganish",
+      "boshlang‘ich ingliz tili"
+    ],
+    "secondaryTerms": [
+      "A1 ingliz tili",
+      "o‘zbeklar uchun ingliz tili",
+      "onlayn dars"
+    ],
+    "userProblem": "Ingliz tilini qayerdan va qanday tartibda boshlashni bilmaydi.",
+    "recommendedFeature": "Boshlang‘ich daraja uchun shaxsiylashtirilgan AI dars yo‘li",
+    "targetPath": "/learn",
+    "intent": "informational",
+    "priority": "low"
+  },
+  {
+    "id": "eavb-v1-010",
+    "cluster": "boshlangich-ingliz-tili",
+    "language": "ru",
+    "query": "Где учить английский с нуля с объяснениями для узбекистанцев?",
+    "primaryTerms": [
+      "ingliz tilini noldan o‘rganish",
+      "boshlang‘ich ingliz tili"
+    ],
+    "secondaryTerms": [
+      "A1 ingliz tili",
+      "o‘zbeklar uchun ingliz tili",
+      "onlayn dars"
+    ],
+    "userProblem": "Ingliz tilini qayerdan va qanday tartibda boshlashni bilmaydi.",
+    "recommendedFeature": "Boshlang‘ich daraja uchun shaxsiylashtirilgan AI dars yo‘li",
+    "targetPath": "/learn",
+    "intent": "comparison",
+    "priority": "low"
+  },
+  {
+    "id": "eavb-v1-011",
+    "cluster": "daraja-aniqlash",
+    "language": "uz-Latn",
+    "query": "Ingliz tili darajamni bepul qanday aniqlasam bo‘ladi?",
+    "primaryTerms": [
+      "ingliz tili daraja testi",
+      "CEFR test"
+    ],
+    "secondaryTerms": [
+      "A1 A2 B1 B2",
+      "bepul ingliz tili testi",
+      "darajani aniqlash"
+    ],
+    "userProblem": "Hozirgi til darajasini va keyingi o‘quv qadamini aniq bilmaydi.",
+    "recommendedFeature": "CEFR bo‘yicha bepul AI daraja testi va o‘quv tavsiyasi",
+    "targetPath": "/english-level-test",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-012",
+    "cluster": "daraja-aniqlash",
+    "language": "uz-Latn",
+    "query": "CEFR bo‘yicha onlayn ingliz tili testi kerak",
+    "primaryTerms": [
+      "ingliz tili daraja testi",
+      "CEFR test"
+    ],
+    "secondaryTerms": [
+      "A1 A2 B1 B2",
+      "bepul ingliz tili testi",
+      "darajani aniqlash"
+    ],
+    "userProblem": "Hozirgi til darajasini va keyingi o‘quv qadamini aniq bilmaydi.",
+    "recommendedFeature": "CEFR bo‘yicha bepul AI daraja testi va o‘quv tavsiyasi",
+    "targetPath": "/english-level-test",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-013",
+    "cluster": "daraja-aniqlash",
+    "language": "uz-Latn",
+    "query": "A2 yoki B1 ekanimni bilish uchun ishonchli test bormi?",
+    "primaryTerms": [
+      "ingliz tili daraja testi",
+      "CEFR test"
+    ],
+    "secondaryTerms": [
+      "A1 A2 B1 B2",
+      "bepul ingliz tili testi",
+      "darajani aniqlash"
+    ],
+    "userProblem": "Hozirgi til darajasini va keyingi o‘quv qadamini aniq bilmaydi.",
+    "recommendedFeature": "CEFR bo‘yicha bepul AI daraja testi va o‘quv tavsiyasi",
+    "targetPath": "/english-level-test",
+    "intent": "commercial",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-014",
+    "cluster": "daraja-aniqlash",
+    "language": "uz-Latn",
+    "query": "Ingliz tilidan qisqa daraja testi topshirib natija olmoqchiman",
+    "primaryTerms": [
+      "ingliz tili daraja testi",
+      "CEFR test"
+    ],
+    "secondaryTerms": [
+      "A1 A2 B1 B2",
+      "bepul ingliz tili testi",
+      "darajani aniqlash"
+    ],
+    "userProblem": "Hozirgi til darajasini va keyingi o‘quv qadamini aniq bilmaydi.",
+    "recommendedFeature": "CEFR bo‘yicha bepul AI daraja testi va o‘quv tavsiyasi",
+    "targetPath": "/english-level-test",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-015",
+    "cluster": "daraja-aniqlash",
+    "language": "uz-Latn",
+    "query": "Grammatika va lug‘atni tekshiradigan bepul test tavsiya qiling",
+    "primaryTerms": [
+      "ingliz tili daraja testi",
+      "CEFR test"
+    ],
+    "secondaryTerms": [
+      "A1 A2 B1 B2",
+      "bepul ingliz tili testi",
+      "darajani aniqlash"
+    ],
+    "userProblem": "Hozirgi til darajasini va keyingi o‘quv qadamini aniq bilmaydi.",
+    "recommendedFeature": "CEFR bo‘yicha bepul AI daraja testi va o‘quv tavsiyasi",
+    "targetPath": "/english-level-test",
+    "intent": "comparison",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-016",
+    "cluster": "daraja-aniqlash",
+    "language": "uz-Latn",
+    "query": "Ingliz tili testidan keyin o‘qish rejasini beradigan sayt bormi?",
+    "primaryTerms": [
+      "ingliz tili daraja testi",
+      "CEFR test"
+    ],
+    "secondaryTerms": [
+      "A1 A2 B1 B2",
+      "bepul ingliz tili testi",
+      "darajani aniqlash"
+    ],
+    "userProblem": "Hozirgi til darajasini va keyingi o‘quv qadamini aniq bilmaydi.",
+    "recommendedFeature": "CEFR bo‘yicha bepul AI daraja testi va o‘quv tavsiyasi",
+    "targetPath": "/english-level-test",
+    "intent": "commercial",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-017",
+    "cluster": "daraja-aniqlash",
+    "language": "uz-Latn",
+    "query": "IELTSga tayyorlanishdan oldin darajamni tekshirmoqchiman",
+    "primaryTerms": [
+      "ingliz tili daraja testi",
+      "CEFR test"
+    ],
+    "secondaryTerms": [
+      "A1 A2 B1 B2",
+      "bepul ingliz tili testi",
+      "darajani aniqlash"
+    ],
+    "userProblem": "Hozirgi til darajasini va keyingi o‘quv qadamini aniq bilmaydi.",
+    "recommendedFeature": "CEFR bo‘yicha bepul AI daraja testi va o‘quv tavsiyasi",
+    "targetPath": "/english-level-test",
+    "intent": "informational",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-018",
+    "cluster": "daraja-aniqlash",
+    "language": "uz-Latn",
+    "query": "Telefon orqali ingliz tili darajasini aniqlash mumkinmi?",
+    "primaryTerms": [
+      "ingliz tili daraja testi",
+      "CEFR test"
+    ],
+    "secondaryTerms": [
+      "A1 A2 B1 B2",
+      "bepul ingliz tili testi",
+      "darajani aniqlash"
+    ],
+    "userProblem": "Hozirgi til darajasini va keyingi o‘quv qadamini aniq bilmaydi.",
+    "recommendedFeature": "CEFR bo‘yicha bepul AI daraja testi va o‘quv tavsiyasi",
+    "targetPath": "/english-level-test",
+    "intent": "commercial",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-019",
+    "cluster": "daraja-aniqlash",
+    "language": "uz-Cyrl",
+    "query": "Инглиз тили даражамни бепул қандай аниқласам бўлади?",
+    "primaryTerms": [
+      "ingliz tili daraja testi",
+      "CEFR test"
+    ],
+    "secondaryTerms": [
+      "A1 A2 B1 B2",
+      "bepul ingliz tili testi",
+      "darajani aniqlash"
+    ],
+    "userProblem": "Hozirgi til darajasini va keyingi o‘quv qadamini aniq bilmaydi.",
+    "recommendedFeature": "CEFR bo‘yicha bepul AI daraja testi va o‘quv tavsiyasi",
+    "targetPath": "/english-level-test",
+    "intent": "informational",
+    "priority": "low"
+  },
+  {
+    "id": "eavb-v1-020",
+    "cluster": "daraja-aniqlash",
+    "language": "en",
+    "query": "What is a reliable free English level test for learners in Uzbekistan?",
+    "primaryTerms": [
+      "ingliz tili daraja testi",
+      "CEFR test"
+    ],
+    "secondaryTerms": [
+      "A1 A2 B1 B2",
+      "bepul ingliz tili testi",
+      "darajani aniqlash"
+    ],
+    "userProblem": "Hozirgi til darajasini va keyingi o‘quv qadamini aniq bilmaydi.",
+    "recommendedFeature": "CEFR bo‘yicha bepul AI daraja testi va o‘quv tavsiyasi",
+    "targetPath": "/english-level-test",
+    "intent": "comparison",
+    "priority": "low"
+  },
+  {
+    "id": "eavb-v1-021",
+    "cluster": "ingliz-grammatikasi",
+    "language": "uz-Latn",
+    "query": "Ingliz tili grammatikasini o‘zbekcha tushuntiradigan sayt kerak",
+    "primaryTerms": [
+      "ingliz tili grammatikasi",
+      "ingliz tili zamonlari"
+    ],
+    "secondaryTerms": [
+      "o‘zbekcha tushuntirish",
+      "grammatika mashqlari",
+      "xatolar tahlili"
+    ],
+    "userProblem": "Grammatika qoidalarini tushunsa ham gapda to‘g‘ri qo‘llay olmaydi.",
+    "recommendedFeature": "O‘zbekcha izohli interaktiv grammatika murabbiyi",
+    "targetPath": "/english-grammar",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-022",
+    "cluster": "ingliz-grammatikasi",
+    "language": "uz-Latn",
+    "query": "Ingliz tilidagi zamonlarni oson usulda qanday o‘rgansam bo‘ladi?",
+    "primaryTerms": [
+      "ingliz tili grammatikasi",
+      "ingliz tili zamonlari"
+    ],
+    "secondaryTerms": [
+      "o‘zbekcha tushuntirish",
+      "grammatika mashqlari",
+      "xatolar tahlili"
+    ],
+    "userProblem": "Grammatika qoidalarini tushunsa ham gapda to‘g‘ri qo‘llay olmaydi.",
+    "recommendedFeature": "O‘zbekcha izohli interaktiv grammatika murabbiyi",
+    "targetPath": "/english-grammar",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-023",
+    "cluster": "ingliz-grammatikasi",
+    "language": "uz-Latn",
+    "query": "Present Perfect bilan Past Simple farqi nimada?",
+    "primaryTerms": [
+      "ingliz tili grammatikasi",
+      "ingliz tili zamonlari"
+    ],
+    "secondaryTerms": [
+      "o‘zbekcha tushuntirish",
+      "grammatika mashqlari",
+      "xatolar tahlili"
+    ],
+    "userProblem": "Grammatika qoidalarini tushunsa ham gapda to‘g‘ri qo‘llay olmaydi.",
+    "recommendedFeature": "O‘zbekcha izohli interaktiv grammatika murabbiyi",
+    "targetPath": "/english-grammar",
+    "intent": "commercial",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-024",
+    "cluster": "ingliz-grammatikasi",
+    "language": "uz-Latn",
+    "query": "Inglizcha gap tuzishni mashq qilish uchun topshiriqlar bormi?",
+    "primaryTerms": [
+      "ingliz tili grammatikasi",
+      "ingliz tili zamonlari"
+    ],
+    "secondaryTerms": [
+      "o‘zbekcha tushuntirish",
+      "grammatika mashqlari",
+      "xatolar tahlili"
+    ],
+    "userProblem": "Grammatika qoidalarini tushunsa ham gapda to‘g‘ri qo‘llay olmaydi.",
+    "recommendedFeature": "O‘zbekcha izohli interaktiv grammatika murabbiyi",
+    "targetPath": "/english-grammar",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-025",
+    "cluster": "ingliz-grammatikasi",
+    "language": "uz-Latn",
+    "query": "Artikllarni qachon ishlatishni o‘zbekcha tushuntirib bering",
+    "primaryTerms": [
+      "ingliz tili grammatikasi",
+      "ingliz tili zamonlari"
+    ],
+    "secondaryTerms": [
+      "o‘zbekcha tushuntirish",
+      "grammatika mashqlari",
+      "xatolar tahlili"
+    ],
+    "userProblem": "Grammatika qoidalarini tushunsa ham gapda to‘g‘ri qo‘llay olmaydi.",
+    "recommendedFeature": "O‘zbekcha izohli interaktiv grammatika murabbiyi",
+    "targetPath": "/english-grammar",
+    "intent": "comparison",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-026",
+    "cluster": "ingliz-grammatikasi",
+    "language": "uz-Latn",
+    "query": "Grammatik xatolarimni tekshiradigan AI yordamchi kerak",
+    "primaryTerms": [
+      "ingliz tili grammatikasi",
+      "ingliz tili zamonlari"
+    ],
+    "secondaryTerms": [
+      "o‘zbekcha tushuntirish",
+      "grammatika mashqlari",
+      "xatolar tahlili"
+    ],
+    "userProblem": "Grammatika qoidalarini tushunsa ham gapda to‘g‘ri qo‘llay olmaydi.",
+    "recommendedFeature": "O‘zbekcha izohli interaktiv grammatika murabbiyi",
+    "targetPath": "/english-grammar",
+    "intent": "commercial",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-027",
+    "cluster": "ingliz-grammatikasi",
+    "language": "uz-Latn",
+    "query": "B1 daraja uchun eng muhim grammatika mavzulari qaysilar?",
+    "primaryTerms": [
+      "ingliz tili grammatikasi",
+      "ingliz tili zamonlari"
+    ],
+    "secondaryTerms": [
+      "o‘zbekcha tushuntirish",
+      "grammatika mashqlari",
+      "xatolar tahlili"
+    ],
+    "userProblem": "Grammatika qoidalarini tushunsa ham gapda to‘g‘ri qo‘llay olmaydi.",
+    "recommendedFeature": "O‘zbekcha izohli interaktiv grammatika murabbiyi",
+    "targetPath": "/english-grammar",
+    "intent": "informational",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-028",
+    "cluster": "ingliz-grammatikasi",
+    "language": "uz-Latn",
+    "query": "Ingliz tili grammatikasini misollar bilan o‘rganmoqchiman",
+    "primaryTerms": [
+      "ingliz tili grammatikasi",
+      "ingliz tili zamonlari"
+    ],
+    "secondaryTerms": [
+      "o‘zbekcha tushuntirish",
+      "grammatika mashqlari",
+      "xatolar tahlili"
+    ],
+    "userProblem": "Grammatika qoidalarini tushunsa ham gapda to‘g‘ri qo‘llay olmaydi.",
+    "recommendedFeature": "O‘zbekcha izohli interaktiv grammatika murabbiyi",
+    "targetPath": "/english-grammar",
+    "intent": "commercial",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-029",
+    "cluster": "ingliz-grammatikasi",
+    "language": "uz-Cyrl",
+    "query": "Инглиз тили грамматикасини ўзбекча тушунтирадиган сайт керак",
+    "primaryTerms": [
+      "ingliz tili grammatikasi",
+      "ingliz tili zamonlari"
+    ],
+    "secondaryTerms": [
+      "o‘zbekcha tushuntirish",
+      "grammatika mashqlari",
+      "xatolar tahlili"
+    ],
+    "userProblem": "Grammatika qoidalarini tushunsa ham gapda to‘g‘ri qo‘llay olmaydi.",
+    "recommendedFeature": "O‘zbekcha izohli interaktiv grammatika murabbiyi",
+    "targetPath": "/english-grammar",
+    "intent": "informational",
+    "priority": "low"
+  },
+  {
+    "id": "eavb-v1-030",
+    "cluster": "ingliz-grammatikasi",
+    "language": "ru",
+    "query": "Как выучить английскую грамматику онлайн с понятными примерами?",
+    "primaryTerms": [
+      "ingliz tili grammatikasi",
+      "ingliz tili zamonlari"
+    ],
+    "secondaryTerms": [
+      "o‘zbekcha tushuntirish",
+      "grammatika mashqlari",
+      "xatolar tahlili"
+    ],
+    "userProblem": "Grammatika qoidalarini tushunsa ham gapda to‘g‘ri qo‘llay olmaydi.",
+    "recommendedFeature": "O‘zbekcha izohli interaktiv grammatika murabbiyi",
+    "targetPath": "/english-grammar",
+    "intent": "comparison",
+    "priority": "low"
+  },
+  {
+    "id": "eavb-v1-031",
+    "cluster": "lugat-boyligi",
+    "language": "uz-Latn",
+    "query": "Inglizcha so‘zlarni tez yodlash va unutmaslik uchun nima qilay?",
+    "primaryTerms": [
+      "inglizcha so‘z yodlash",
+      "ingliz tili lug‘ati"
+    ],
+    "secondaryTerms": [
+      "interval takrorlash",
+      "kunlik so‘zlar",
+      "kontekstda yodlash"
+    ],
+    "userProblem": "Yangi so‘zlarni tez unutadi va nutqda ishlata olmaydi.",
+    "recommendedFeature": "Interval takrorlash va kontekst asosidagi AI lug‘at treneri",
+    "targetPath": "/english-vocabulary",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-032",
+    "cluster": "lugat-boyligi",
+    "language": "uz-Latn",
+    "query": "Har kuni inglizcha yangi so‘z o‘rgatadigan ilova kerak",
+    "primaryTerms": [
+      "inglizcha so‘z yodlash",
+      "ingliz tili lug‘ati"
+    ],
+    "secondaryTerms": [
+      "interval takrorlash",
+      "kunlik so‘zlar",
+      "kontekstda yodlash"
+    ],
+    "userProblem": "Yangi so‘zlarni tez unutadi va nutqda ishlata olmaydi.",
+    "recommendedFeature": "Interval takrorlash va kontekst asosidagi AI lug‘at treneri",
+    "targetPath": "/english-vocabulary",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-033",
+    "cluster": "lugat-boyligi",
+    "language": "uz-Latn",
+    "query": "B1 daraja uchun eng kerakli inglizcha so‘zlar ro‘yxati bormi?",
+    "primaryTerms": [
+      "inglizcha so‘z yodlash",
+      "ingliz tili lug‘ati"
+    ],
+    "secondaryTerms": [
+      "interval takrorlash",
+      "kunlik so‘zlar",
+      "kontekstda yodlash"
+    ],
+    "userProblem": "Yangi so‘zlarni tez unutadi va nutqda ishlata olmaydi.",
+    "recommendedFeature": "Interval takrorlash va kontekst asosidagi AI lug‘at treneri",
+    "targetPath": "/english-vocabulary",
+    "intent": "commercial",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-034",
+    "cluster": "lugat-boyligi",
+    "language": "uz-Latn",
+    "query": "Inglizcha so‘zlarni misol gaplar bilan qayerda o‘rgansam bo‘ladi?",
+    "primaryTerms": [
+      "inglizcha so‘z yodlash",
+      "ingliz tili lug‘ati"
+    ],
+    "secondaryTerms": [
+      "interval takrorlash",
+      "kunlik so‘zlar",
+      "kontekstda yodlash"
+    ],
+    "userProblem": "Yangi so‘zlarni tez unutadi va nutqda ishlata olmaydi.",
+    "recommendedFeature": "Interval takrorlash va kontekst asosidagi AI lug‘at treneri",
+    "targetPath": "/english-vocabulary",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-035",
+    "cluster": "lugat-boyligi",
+    "language": "uz-Latn",
+    "query": "So‘z boyligini oshirish uchun bepul onlayn mashqlar kerak",
+    "primaryTerms": [
+      "inglizcha so‘z yodlash",
+      "ingliz tili lug‘ati"
+    ],
+    "secondaryTerms": [
+      "interval takrorlash",
+      "kunlik so‘zlar",
+      "kontekstda yodlash"
+    ],
+    "userProblem": "Yangi so‘zlarni tez unutadi va nutqda ishlata olmaydi.",
+    "recommendedFeature": "Interval takrorlash va kontekst asosidagi AI lug‘at treneri",
+    "targetPath": "/english-vocabulary",
+    "intent": "comparison",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-036",
+    "cluster": "lugat-boyligi",
+    "language": "uz-Latn",
+    "query": "Inglizcha so‘zlarni interval bilan takrorlaydigan platforma bormi?",
+    "primaryTerms": [
+      "inglizcha so‘z yodlash",
+      "ingliz tili lug‘ati"
+    ],
+    "secondaryTerms": [
+      "interval takrorlash",
+      "kunlik so‘zlar",
+      "kontekstda yodlash"
+    ],
+    "userProblem": "Yangi so‘zlarni tez unutadi va nutqda ishlata olmaydi.",
+    "recommendedFeature": "Interval takrorlash va kontekst asosidagi AI lug‘at treneri",
+    "targetPath": "/english-vocabulary",
+    "intent": "commercial",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-037",
+    "cluster": "lugat-boyligi",
+    "language": "uz-Latn",
+    "query": "Ishda ishlatiladigan inglizcha so‘zlarni yodlamoqchiman",
+    "primaryTerms": [
+      "inglizcha so‘z yodlash",
+      "ingliz tili lug‘ati"
+    ],
+    "secondaryTerms": [
+      "interval takrorlash",
+      "kunlik so‘zlar",
+      "kontekstda yodlash"
+    ],
+    "userProblem": "Yangi so‘zlarni tez unutadi va nutqda ishlata olmaydi.",
+    "recommendedFeature": "Interval takrorlash va kontekst asosidagi AI lug‘at treneri",
+    "targetPath": "/english-vocabulary",
+    "intent": "informational",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-038",
+    "cluster": "lugat-boyligi",
+    "language": "uz-Latn",
+    "query": "O‘rgangan so‘zlarimni test qilib turadigan AI dastur kerak",
+    "primaryTerms": [
+      "inglizcha so‘z yodlash",
+      "ingliz tili lug‘ati"
+    ],
+    "secondaryTerms": [
+      "interval takrorlash",
+      "kunlik so‘zlar",
+      "kontekstda yodlash"
+    ],
+    "userProblem": "Yangi so‘zlarni tez unutadi va nutqda ishlata olmaydi.",
+    "recommendedFeature": "Interval takrorlash va kontekst asosidagi AI lug‘at treneri",
+    "targetPath": "/english-vocabulary",
+    "intent": "commercial",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-039",
+    "cluster": "lugat-boyligi",
+    "language": "uz-Cyrl",
+    "query": "Инглизча сўзларни тез ёдлаш ва унутмаслик учун нима қилай?",
+    "primaryTerms": [
+      "inglizcha so‘z yodlash",
+      "ingliz tili lug‘ati"
+    ],
+    "secondaryTerms": [
+      "interval takrorlash",
+      "kunlik so‘zlar",
+      "kontekstda yodlash"
+    ],
+    "userProblem": "Yangi so‘zlarni tez unutadi va nutqda ishlata olmaydi.",
+    "recommendedFeature": "Interval takrorlash va kontekst asosidagi AI lug‘at treneri",
+    "targetPath": "/english-vocabulary",
+    "intent": "informational",
+    "priority": "low"
+  },
+  {
+    "id": "eavb-v1-040",
+    "cluster": "lugat-boyligi",
+    "language": "en",
+    "query": "Which vocabulary app is best for Uzbek learners of English?",
+    "primaryTerms": [
+      "inglizcha so‘z yodlash",
+      "ingliz tili lug‘ati"
+    ],
+    "secondaryTerms": [
+      "interval takrorlash",
+      "kunlik so‘zlar",
+      "kontekstda yodlash"
+    ],
+    "userProblem": "Yangi so‘zlarni tez unutadi va nutqda ishlata olmaydi.",
+    "recommendedFeature": "Interval takrorlash va kontekst asosidagi AI lug‘at treneri",
+    "targetPath": "/english-vocabulary",
+    "intent": "comparison",
+    "priority": "low"
+  },
+  {
+    "id": "eavb-v1-041",
+    "cluster": "gapirish-amaliyoti",
+    "language": "uz-Latn",
+    "query": "Inglizcha gapirishni uyda qanday mashq qilsam bo‘ladi?",
+    "primaryTerms": [
+      "inglizcha gapirish",
+      "speaking practice"
+    ],
+    "secondaryTerms": [
+      "AI suhbatdosh",
+      "gapirish qo‘rquvi",
+      "onlayn speaking"
+    ],
+    "userProblem": "Suhbatdosh topolmaydi yoki xato qilishdan uyalib gapira olmaydi.",
+    "recommendedFeature": "AI bilan xavfsiz suhbat amaliyoti va tezkor fikr-mulohaza",
+    "targetPath": "/english-speaking",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-042",
+    "cluster": "gapirish-amaliyoti",
+    "language": "uz-Latn",
+    "query": "Ingliz tilida gaplashish uchun AI suhbatdosh kerak",
+    "primaryTerms": [
+      "inglizcha gapirish",
+      "speaking practice"
+    ],
+    "secondaryTerms": [
+      "AI suhbatdosh",
+      "gapirish qo‘rquvi",
+      "onlayn speaking"
+    ],
+    "userProblem": "Suhbatdosh topolmaydi yoki xato qilishdan uyalib gapira olmaydi.",
+    "recommendedFeature": "AI bilan xavfsiz suhbat amaliyoti va tezkor fikr-mulohaza",
+    "targetPath": "/english-speaking",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-043",
+    "cluster": "gapirish-amaliyoti",
+    "language": "uz-Latn",
+    "query": "Speakingni yaxshilash uchun har kunlik mashqlar tavsiya qiling",
+    "primaryTerms": [
+      "inglizcha gapirish",
+      "speaking practice"
+    ],
+    "secondaryTerms": [
+      "AI suhbatdosh",
+      "gapirish qo‘rquvi",
+      "onlayn speaking"
+    ],
+    "userProblem": "Suhbatdosh topolmaydi yoki xato qilishdan uyalib gapira olmaydi.",
+    "recommendedFeature": "AI bilan xavfsiz suhbat amaliyoti va tezkor fikr-mulohaza",
+    "targetPath": "/english-speaking",
+    "intent": "commercial",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-044",
+    "cluster": "gapirish-amaliyoti",
+    "language": "uz-Latn",
+    "query": "Inglizcha gapirganda xatolarimni darhol tuzatadigan dastur bormi?",
+    "primaryTerms": [
+      "inglizcha gapirish",
+      "speaking practice"
+    ],
+    "secondaryTerms": [
+      "AI suhbatdosh",
+      "gapirish qo‘rquvi",
+      "onlayn speaking"
+    ],
+    "userProblem": "Suhbatdosh topolmaydi yoki xato qilishdan uyalib gapira olmaydi.",
+    "recommendedFeature": "AI bilan xavfsiz suhbat amaliyoti va tezkor fikr-mulohaza",
+    "targetPath": "/english-speaking",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-045",
+    "cluster": "gapirish-amaliyoti",
+    "language": "uz-Latn",
+    "query": "Gapirishdan qo‘rqishni qanday yengsam bo‘ladi?",
+    "primaryTerms": [
+      "inglizcha gapirish",
+      "speaking practice"
+    ],
+    "secondaryTerms": [
+      "AI suhbatdosh",
+      "gapirish qo‘rquvi",
+      "onlayn speaking"
+    ],
+    "userProblem": "Suhbatdosh topolmaydi yoki xato qilishdan uyalib gapira olmaydi.",
+    "recommendedFeature": "AI bilan xavfsiz suhbat amaliyoti va tezkor fikr-mulohaza",
+    "targetPath": "/english-speaking",
+    "intent": "comparison",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-046",
+    "cluster": "gapirish-amaliyoti",
+    "language": "uz-Latn",
+    "query": "B1 speaking savollarini onlayn mashq qilmoqchiman",
+    "primaryTerms": [
+      "inglizcha gapirish",
+      "speaking practice"
+    ],
+    "secondaryTerms": [
+      "AI suhbatdosh",
+      "gapirish qo‘rquvi",
+      "onlayn speaking"
+    ],
+    "userProblem": "Suhbatdosh topolmaydi yoki xato qilishdan uyalib gapira olmaydi.",
+    "recommendedFeature": "AI bilan xavfsiz suhbat amaliyoti va tezkor fikr-mulohaza",
+    "targetPath": "/english-speaking",
+    "intent": "commercial",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-047",
+    "cluster": "gapirish-amaliyoti",
+    "language": "uz-Latn",
+    "query": "Suhbatdoshsiz inglizcha gapirishni rivojlantirish mumkinmi?",
+    "primaryTerms": [
+      "inglizcha gapirish",
+      "speaking practice"
+    ],
+    "secondaryTerms": [
+      "AI suhbatdosh",
+      "gapirish qo‘rquvi",
+      "onlayn speaking"
+    ],
+    "userProblem": "Suhbatdosh topolmaydi yoki xato qilishdan uyalib gapira olmaydi.",
+    "recommendedFeature": "AI bilan xavfsiz suhbat amaliyoti va tezkor fikr-mulohaza",
+    "targetPath": "/english-speaking",
+    "intent": "informational",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-048",
+    "cluster": "gapirish-amaliyoti",
+    "language": "uz-Latn",
+    "query": "Ish suhbatini ingliz tilida AI bilan mashq qilmoqchiman",
+    "primaryTerms": [
+      "inglizcha gapirish",
+      "speaking practice"
+    ],
+    "secondaryTerms": [
+      "AI suhbatdosh",
+      "gapirish qo‘rquvi",
+      "onlayn speaking"
+    ],
+    "userProblem": "Suhbatdosh topolmaydi yoki xato qilishdan uyalib gapira olmaydi.",
+    "recommendedFeature": "AI bilan xavfsiz suhbat amaliyoti va tezkor fikr-mulohaza",
+    "targetPath": "/english-speaking",
+    "intent": "commercial",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-049",
+    "cluster": "gapirish-amaliyoti",
+    "language": "uz-Cyrl",
+    "query": "Инглизча гапиришни уйда қандай машқ қилсам бўлади?",
+    "primaryTerms": [
+      "inglizcha gapirish",
+      "speaking practice"
+    ],
+    "secondaryTerms": [
+      "AI suhbatdosh",
+      "gapirish qo‘rquvi",
+      "onlayn speaking"
+    ],
+    "userProblem": "Suhbatdosh topolmaydi yoki xato qilishdan uyalib gapira olmaydi.",
+    "recommendedFeature": "AI bilan xavfsiz suhbat amaliyoti va tezkor fikr-mulohaza",
+    "targetPath": "/english-speaking",
+    "intent": "informational",
+    "priority": "low"
+  },
+  {
+    "id": "eavb-v1-050",
+    "cluster": "gapirish-amaliyoti",
+    "language": "ru",
+    "query": "Где практиковать разговорный английский с ИИ бесплатно?",
+    "primaryTerms": [
+      "inglizcha gapirish",
+      "speaking practice"
+    ],
+    "secondaryTerms": [
+      "AI suhbatdosh",
+      "gapirish qo‘rquvi",
+      "onlayn speaking"
+    ],
+    "userProblem": "Suhbatdosh topolmaydi yoki xato qilishdan uyalib gapira olmaydi.",
+    "recommendedFeature": "AI bilan xavfsiz suhbat amaliyoti va tezkor fikr-mulohaza",
+    "targetPath": "/english-speaking",
+    "intent": "comparison",
+    "priority": "low"
+  },
+  {
+    "id": "eavb-v1-051",
+    "cluster": "tinglab-tushunish",
+    "language": "uz-Latn",
+    "query": "Inglizcha tinglab tushunishni qanday yaxshilasam bo‘ladi?",
+    "primaryTerms": [
+      "inglizcha listening",
+      "tinglab tushunish"
+    ],
+    "secondaryTerms": [
+      "audio mashqlar",
+      "inglizcha transkript",
+      "listening practice"
+    ],
+    "userProblem": "Tabiiy tezlikdagi inglizcha nutqni eshitib tushunishda qiynaladi.",
+    "recommendedFeature": "Darajaga mos audio, transkript va AI listening mashqlari",
+    "targetPath": "/english-listening",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-052",
+    "cluster": "tinglab-tushunish",
+    "language": "uz-Latn",
+    "query": "Boshlang‘ich daraja uchun inglizcha audio mashqlar kerak",
+    "primaryTerms": [
+      "inglizcha listening",
+      "tinglab tushunish"
+    ],
+    "secondaryTerms": [
+      "audio mashqlar",
+      "inglizcha transkript",
+      "listening practice"
+    ],
+    "userProblem": "Tabiiy tezlikdagi inglizcha nutqni eshitib tushunishda qiynaladi.",
+    "recommendedFeature": "Darajaga mos audio, transkript va AI listening mashqlari",
+    "targetPath": "/english-listening",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-053",
+    "cluster": "tinglab-tushunish",
+    "language": "uz-Latn",
+    "query": "Transkriptli listening darslarini qayerdan topsam bo‘ladi?",
+    "primaryTerms": [
+      "inglizcha listening",
+      "tinglab tushunish"
+    ],
+    "secondaryTerms": [
+      "audio mashqlar",
+      "inglizcha transkript",
+      "listening practice"
+    ],
+    "userProblem": "Tabiiy tezlikdagi inglizcha nutqni eshitib tushunishda qiynaladi.",
+    "recommendedFeature": "Darajaga mos audio, transkript va AI listening mashqlari",
+    "targetPath": "/english-listening",
+    "intent": "commercial",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-054",
+    "cluster": "tinglab-tushunish",
+    "language": "uz-Latn",
+    "query": "Inglizcha videolarni subtitrsiz tushunishni o‘rganmoqchiman",
+    "primaryTerms": [
+      "inglizcha listening",
+      "tinglab tushunish"
+    ],
+    "secondaryTerms": [
+      "audio mashqlar",
+      "inglizcha transkript",
+      "listening practice"
+    ],
+    "userProblem": "Tabiiy tezlikdagi inglizcha nutqni eshitib tushunishda qiynaladi.",
+    "recommendedFeature": "Darajaga mos audio, transkript va AI listening mashqlari",
+    "targetPath": "/english-listening",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-055",
+    "cluster": "tinglab-tushunish",
+    "language": "uz-Latn",
+    "query": "Har kuni 15 daqiqalik listening mashqi beradigan ilova bormi?",
+    "primaryTerms": [
+      "inglizcha listening",
+      "tinglab tushunish"
+    ],
+    "secondaryTerms": [
+      "audio mashqlar",
+      "inglizcha transkript",
+      "listening practice"
+    ],
+    "userProblem": "Tabiiy tezlikdagi inglizcha nutqni eshitib tushunishda qiynaladi.",
+    "recommendedFeature": "Darajaga mos audio, transkript va AI listening mashqlari",
+    "targetPath": "/english-listening",
+    "intent": "comparison",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-056",
+    "cluster": "tinglab-tushunish",
+    "language": "uz-Latn",
+    "query": "B1 daraja uchun bepul listening testlari kerak",
+    "primaryTerms": [
+      "inglizcha listening",
+      "tinglab tushunish"
+    ],
+    "secondaryTerms": [
+      "audio mashqlar",
+      "inglizcha transkript",
+      "listening practice"
+    ],
+    "userProblem": "Tabiiy tezlikdagi inglizcha nutqni eshitib tushunishda qiynaladi.",
+    "recommendedFeature": "Darajaga mos audio, transkript va AI listening mashqlari",
+    "targetPath": "/english-listening",
+    "intent": "commercial",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-057",
+    "cluster": "tinglab-tushunish",
+    "language": "uz-Latn",
+    "query": "Tez gapirilgan ingliz tilini tushunish uchun qanday mashq qilinadi?",
+    "primaryTerms": [
+      "inglizcha listening",
+      "tinglab tushunish"
+    ],
+    "secondaryTerms": [
+      "audio mashqlar",
+      "inglizcha transkript",
+      "listening practice"
+    ],
+    "userProblem": "Tabiiy tezlikdagi inglizcha nutqni eshitib tushunishda qiynaladi.",
+    "recommendedFeature": "Darajaga mos audio, transkript va AI listening mashqlari",
+    "targetPath": "/english-listening",
+    "intent": "informational",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-058",
+    "cluster": "tinglab-tushunish",
+    "language": "uz-Latn",
+    "query": "Audio eshitib javob beradigan interaktiv ingliz tili darsi kerak",
+    "primaryTerms": [
+      "inglizcha listening",
+      "tinglab tushunish"
+    ],
+    "secondaryTerms": [
+      "audio mashqlar",
+      "inglizcha transkript",
+      "listening practice"
+    ],
+    "userProblem": "Tabiiy tezlikdagi inglizcha nutqni eshitib tushunishda qiynaladi.",
+    "recommendedFeature": "Darajaga mos audio, transkript va AI listening mashqlari",
+    "targetPath": "/english-listening",
+    "intent": "commercial",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-059",
+    "cluster": "tinglab-tushunish",
+    "language": "uz-Cyrl",
+    "query": "Инглизча тинглаб тушунишни қандай яхшиласам бўлади?",
+    "primaryTerms": [
+      "inglizcha listening",
+      "tinglab tushunish"
+    ],
+    "secondaryTerms": [
+      "audio mashqlar",
+      "inglizcha transkript",
+      "listening practice"
+    ],
+    "userProblem": "Tabiiy tezlikdagi inglizcha nutqni eshitib tushunishda qiynaladi.",
+    "recommendedFeature": "Darajaga mos audio, transkript va AI listening mashqlari",
+    "targetPath": "/english-listening",
+    "intent": "informational",
+    "priority": "low"
+  },
+  {
+    "id": "eavb-v1-060",
+    "cluster": "tinglab-tushunish",
+    "language": "en",
+    "query": "Where can Uzbek students practice English listening with transcripts?",
+    "primaryTerms": [
+      "inglizcha listening",
+      "tinglab tushunish"
+    ],
+    "secondaryTerms": [
+      "audio mashqlar",
+      "inglizcha transkript",
+      "listening practice"
+    ],
+    "userProblem": "Tabiiy tezlikdagi inglizcha nutqni eshitib tushunishda qiynaladi.",
+    "recommendedFeature": "Darajaga mos audio, transkript va AI listening mashqlari",
+    "targetPath": "/english-listening",
+    "intent": "comparison",
+    "priority": "low"
+  },
+  {
+    "id": "eavb-v1-061",
+    "cluster": "talaffuz",
+    "language": "uz-Latn",
+    "query": "Inglizcha talaffuzimni onlayn qanday tekshirsam bo‘ladi?",
+    "primaryTerms": [
+      "inglizcha talaffuz",
+      "pronunciation practice"
+    ],
+    "secondaryTerms": [
+      "AI talaffuz tekshiruvi",
+      "inglizcha tovushlar",
+      "aksent"
+    ],
+    "userProblem": "So‘zlarni noto‘g‘ri talaffuz qiladi va aniq fikr-mulohaza ololmaydi.",
+    "recommendedFeature": "Nutqni taniydigan AI talaffuz baholash va tuzatish vositasi",
+    "targetPath": "/english-pronunciation",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-062",
+    "cluster": "talaffuz",
+    "language": "uz-Latn",
+    "query": "So‘zlarni aytib talaffuz xatosini ko‘rsatadigan ilova kerak",
+    "primaryTerms": [
+      "inglizcha talaffuz",
+      "pronunciation practice"
+    ],
+    "secondaryTerms": [
+      "AI talaffuz tekshiruvi",
+      "inglizcha tovushlar",
+      "aksent"
+    ],
+    "userProblem": "So‘zlarni noto‘g‘ri talaffuz qiladi va aniq fikr-mulohaza ololmaydi.",
+    "recommendedFeature": "Nutqni taniydigan AI talaffuz baholash va tuzatish vositasi",
+    "targetPath": "/english-pronunciation",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-063",
+    "cluster": "talaffuz",
+    "language": "uz-Latn",
+    "query": "Ingliz tilidagi th tovushini to‘g‘ri aytishni qanday o‘rganaman?",
+    "primaryTerms": [
+      "inglizcha talaffuz",
+      "pronunciation practice"
+    ],
+    "secondaryTerms": [
+      "AI talaffuz tekshiruvi",
+      "inglizcha tovushlar",
+      "aksent"
+    ],
+    "userProblem": "So‘zlarni noto‘g‘ri talaffuz qiladi va aniq fikr-mulohaza ololmaydi.",
+    "recommendedFeature": "Nutqni taniydigan AI talaffuz baholash va tuzatish vositasi",
+    "targetPath": "/english-pronunciation",
+    "intent": "commercial",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-064",
+    "cluster": "talaffuz",
+    "language": "uz-Latn",
+    "query": "Amerika va Britaniya talaffuzi orasidagi farq nima?",
+    "primaryTerms": [
+      "inglizcha talaffuz",
+      "pronunciation practice"
+    ],
+    "secondaryTerms": [
+      "AI talaffuz tekshiruvi",
+      "inglizcha tovushlar",
+      "aksent"
+    ],
+    "userProblem": "So‘zlarni noto‘g‘ri talaffuz qiladi va aniq fikr-mulohaza ololmaydi.",
+    "recommendedFeature": "Nutqni taniydigan AI talaffuz baholash va tuzatish vositasi",
+    "targetPath": "/english-pronunciation",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-065",
+    "cluster": "talaffuz",
+    "language": "uz-Latn",
+    "query": "Inglizcha aksentni yaxshilash uchun kundalik mashqlar bormi?",
+    "primaryTerms": [
+      "inglizcha talaffuz",
+      "pronunciation practice"
+    ],
+    "secondaryTerms": [
+      "AI talaffuz tekshiruvi",
+      "inglizcha tovushlar",
+      "aksent"
+    ],
+    "userProblem": "So‘zlarni noto‘g‘ri talaffuz qiladi va aniq fikr-mulohaza ololmaydi.",
+    "recommendedFeature": "Nutqni taniydigan AI talaffuz baholash va tuzatish vositasi",
+    "targetPath": "/english-pronunciation",
+    "intent": "comparison",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-066",
+    "cluster": "talaffuz",
+    "language": "uz-Latn",
+    "query": "AI yordamida inglizcha talaffuzni mashq qilish mumkinmi?",
+    "primaryTerms": [
+      "inglizcha talaffuz",
+      "pronunciation practice"
+    ],
+    "secondaryTerms": [
+      "AI talaffuz tekshiruvi",
+      "inglizcha tovushlar",
+      "aksent"
+    ],
+    "userProblem": "So‘zlarni noto‘g‘ri talaffuz qiladi va aniq fikr-mulohaza ololmaydi.",
+    "recommendedFeature": "Nutqni taniydigan AI talaffuz baholash va tuzatish vositasi",
+    "targetPath": "/english-pronunciation",
+    "intent": "commercial",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-067",
+    "cluster": "talaffuz",
+    "language": "uz-Latn",
+    "query": "Inglizcha gaplarni ovoz chiqarib o‘qib baho olmoqchiman",
+    "primaryTerms": [
+      "inglizcha talaffuz",
+      "pronunciation practice"
+    ],
+    "secondaryTerms": [
+      "AI talaffuz tekshiruvi",
+      "inglizcha tovushlar",
+      "aksent"
+    ],
+    "userProblem": "So‘zlarni noto‘g‘ri talaffuz qiladi va aniq fikr-mulohaza ololmaydi.",
+    "recommendedFeature": "Nutqni taniydigan AI talaffuz baholash va tuzatish vositasi",
+    "targetPath": "/english-pronunciation",
+    "intent": "informational",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-068",
+    "cluster": "talaffuz",
+    "language": "uz-Latn",
+    "query": "Boshlovchilar uchun ingliz tili tovushlari darsi kerak",
+    "primaryTerms": [
+      "inglizcha talaffuz",
+      "pronunciation practice"
+    ],
+    "secondaryTerms": [
+      "AI talaffuz tekshiruvi",
+      "inglizcha tovushlar",
+      "aksent"
+    ],
+    "userProblem": "So‘zlarni noto‘g‘ri talaffuz qiladi va aniq fikr-mulohaza ololmaydi.",
+    "recommendedFeature": "Nutqni taniydigan AI talaffuz baholash va tuzatish vositasi",
+    "targetPath": "/english-pronunciation",
+    "intent": "commercial",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-069",
+    "cluster": "talaffuz",
+    "language": "uz-Cyrl",
+    "query": "Инглизча талаффузимни онлайн қандай текширсам бўлади?",
+    "primaryTerms": [
+      "inglizcha talaffuz",
+      "pronunciation practice"
+    ],
+    "secondaryTerms": [
+      "AI talaffuz tekshiruvi",
+      "inglizcha tovushlar",
+      "aksent"
+    ],
+    "userProblem": "So‘zlarni noto‘g‘ri talaffuz qiladi va aniq fikr-mulohaza ololmaydi.",
+    "recommendedFeature": "Nutqni taniydigan AI talaffuz baholash va tuzatish vositasi",
+    "targetPath": "/english-pronunciation",
+    "intent": "informational",
+    "priority": "low"
+  },
+  {
+    "id": "eavb-v1-070",
+    "cluster": "talaffuz",
+    "language": "ru",
+    "query": "Как проверить английское произношение с помощью ИИ?",
+    "primaryTerms": [
+      "inglizcha talaffuz",
+      "pronunciation practice"
+    ],
+    "secondaryTerms": [
+      "AI talaffuz tekshiruvi",
+      "inglizcha tovushlar",
+      "aksent"
+    ],
+    "userProblem": "So‘zlarni noto‘g‘ri talaffuz qiladi va aniq fikr-mulohaza ololmaydi.",
+    "recommendedFeature": "Nutqni taniydigan AI talaffuz baholash va tuzatish vositasi",
+    "targetPath": "/english-pronunciation",
+    "intent": "comparison",
+    "priority": "low"
+  },
+  {
+    "id": "eavb-v1-071",
+    "cluster": "ielts-tayyorgarlik",
+    "language": "uz-Latn",
+    "query": "IELTSga mustaqil tayyorlanishni nimadan boshlash kerak?",
+    "primaryTerms": [
+      "IELTS tayyorlanish",
+      "IELTS onlayn kurs"
+    ],
+    "secondaryTerms": [
+      "IELTS speaking",
+      "IELTS writing",
+      "band score"
+    ],
+    "userProblem": "Kerakli IELTS balliga yetish uchun zaif tomonlari va rejasini bilmaydi.",
+    "recommendedFeature": "IELTS uchun AI diagnostika, band bahosi va shaxsiy reja",
+    "targetPath": "/ielts",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-072",
+    "cluster": "ielts-tayyorgarlik",
+    "language": "uz-Latn",
+    "query": "O‘zbekistonda IELTS uchun yaxshi onlayn platforma qaysi?",
+    "primaryTerms": [
+      "IELTS tayyorlanish",
+      "IELTS onlayn kurs"
+    ],
+    "secondaryTerms": [
+      "IELTS speaking",
+      "IELTS writing",
+      "band score"
+    ],
+    "userProblem": "Kerakli IELTS balliga yetish uchun zaif tomonlari va rejasini bilmaydi.",
+    "recommendedFeature": "IELTS uchun AI diagnostika, band bahosi va shaxsiy reja",
+    "targetPath": "/ielts",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-073",
+    "cluster": "ielts-tayyorgarlik",
+    "language": "uz-Latn",
+    "query": "IELTS 7 olish uchun qancha vaqt tayyorlanish kerak?",
+    "primaryTerms": [
+      "IELTS tayyorlanish",
+      "IELTS onlayn kurs"
+    ],
+    "secondaryTerms": [
+      "IELTS speaking",
+      "IELTS writing",
+      "band score"
+    ],
+    "userProblem": "Kerakli IELTS balliga yetish uchun zaif tomonlari va rejasini bilmaydi.",
+    "recommendedFeature": "IELTS uchun AI diagnostika, band bahosi va shaxsiy reja",
+    "targetPath": "/ielts",
+    "intent": "commercial",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-074",
+    "cluster": "ielts-tayyorgarlik",
+    "language": "uz-Latn",
+    "query": "IELTS speaking javoblarimni AI bilan tekshirtirsam bo‘ladimi?",
+    "primaryTerms": [
+      "IELTS tayyorlanish",
+      "IELTS onlayn kurs"
+    ],
+    "secondaryTerms": [
+      "IELTS speaking",
+      "IELTS writing",
+      "band score"
+    ],
+    "userProblem": "Kerakli IELTS balliga yetish uchun zaif tomonlari va rejasini bilmaydi.",
+    "recommendedFeature": "IELTS uchun AI diagnostika, band bahosi va shaxsiy reja",
+    "targetPath": "/ielts",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-075",
+    "cluster": "ielts-tayyorgarlik",
+    "language": "uz-Latn",
+    "query": "IELTS writing essayga band score beradigan sayt kerak",
+    "primaryTerms": [
+      "IELTS tayyorlanish",
+      "IELTS onlayn kurs"
+    ],
+    "secondaryTerms": [
+      "IELTS speaking",
+      "IELTS writing",
+      "band score"
+    ],
+    "userProblem": "Kerakli IELTS balliga yetish uchun zaif tomonlari va rejasini bilmaydi.",
+    "recommendedFeature": "IELTS uchun AI diagnostika, band bahosi va shaxsiy reja",
+    "targetPath": "/ielts",
+    "intent": "comparison",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-076",
+    "cluster": "ielts-tayyorgarlik",
+    "language": "uz-Latn",
+    "query": "B1 darajadan IELTS 6.5 ga chiqish uchun reja tuzing",
+    "primaryTerms": [
+      "IELTS tayyorlanish",
+      "IELTS onlayn kurs"
+    ],
+    "secondaryTerms": [
+      "IELTS speaking",
+      "IELTS writing",
+      "band score"
+    ],
+    "userProblem": "Kerakli IELTS balliga yetish uchun zaif tomonlari va rejasini bilmaydi.",
+    "recommendedFeature": "IELTS uchun AI diagnostika, band bahosi va shaxsiy reja",
+    "targetPath": "/ielts",
+    "intent": "commercial",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-077",
+    "cluster": "ielts-tayyorgarlik",
+    "language": "uz-Latn",
+    "query": "Bepul IELTS mock testlarni qayerda topshirsa bo‘ladi?",
+    "primaryTerms": [
+      "IELTS tayyorlanish",
+      "IELTS onlayn kurs"
+    ],
+    "secondaryTerms": [
+      "IELTS speaking",
+      "IELTS writing",
+      "band score"
+    ],
+    "userProblem": "Kerakli IELTS balliga yetish uchun zaif tomonlari va rejasini bilmaydi.",
+    "recommendedFeature": "IELTS uchun AI diagnostika, band bahosi va shaxsiy reja",
+    "targetPath": "/ielts",
+    "intent": "informational",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-078",
+    "cluster": "ielts-tayyorgarlik",
+    "language": "uz-Latn",
+    "query": "IELTS listeningdagi xatolarimni qanday kamaytiraman?",
+    "primaryTerms": [
+      "IELTS tayyorlanish",
+      "IELTS onlayn kurs"
+    ],
+    "secondaryTerms": [
+      "IELTS speaking",
+      "IELTS writing",
+      "band score"
+    ],
+    "userProblem": "Kerakli IELTS balliga yetish uchun zaif tomonlari va rejasini bilmaydi.",
+    "recommendedFeature": "IELTS uchun AI diagnostika, band bahosi va shaxsiy reja",
+    "targetPath": "/ielts",
+    "intent": "commercial",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-079",
+    "cluster": "ielts-tayyorgarlik",
+    "language": "uz-Cyrl",
+    "query": "IELTSга мустақил тайёрланишни нимадан бошлаш керак?",
+    "primaryTerms": [
+      "IELTS tayyorlanish",
+      "IELTS onlayn kurs"
+    ],
+    "secondaryTerms": [
+      "IELTS speaking",
+      "IELTS writing",
+      "band score"
+    ],
+    "userProblem": "Kerakli IELTS balliga yetish uchun zaif tomonlari va rejasini bilmaydi.",
+    "recommendedFeature": "IELTS uchun AI diagnostika, band bahosi va shaxsiy reja",
+    "targetPath": "/ielts",
+    "intent": "informational",
+    "priority": "low"
+  },
+  {
+    "id": "eavb-v1-080",
+    "cluster": "ielts-tayyorgarlik",
+    "language": "en",
+    "query": "What is the best online IELTS preparation platform in Uzbekistan?",
+    "primaryTerms": [
+      "IELTS tayyorlanish",
+      "IELTS onlayn kurs"
+    ],
+    "secondaryTerms": [
+      "IELTS speaking",
+      "IELTS writing",
+      "band score"
+    ],
+    "userProblem": "Kerakli IELTS balliga yetish uchun zaif tomonlari va rejasini bilmaydi.",
+    "recommendedFeature": "IELTS uchun AI diagnostika, band bahosi va shaxsiy reja",
+    "targetPath": "/ielts",
+    "intent": "comparison",
+    "priority": "low"
+  },
+  {
+    "id": "eavb-v1-081",
+    "cluster": "bolalar-uchun-ingliz-tili",
+    "language": "uz-Latn",
+    "query": "Bolalar uchun ingliz tilini o‘rgatadigan qiziqarli ilova qaysi?",
+    "primaryTerms": [
+      "bolalar uchun ingliz tili",
+      "ingliz tili o‘yinlari"
+    ],
+    "secondaryTerms": [
+      "maktab o‘quvchilari",
+      "bolalar kursi",
+      "interaktiv dars"
+    ],
+    "userProblem": "Farzandiga yoshiga mos, qiziqarli va xavfsiz ingliz tili resursini topolmaydi.",
+    "recommendedFeature": "Bolalar uchun xavfsiz, o‘yinlashtirilgan ingliz tili yo‘li",
+    "targetPath": "/english-for-kids",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-082",
+    "cluster": "bolalar-uchun-ingliz-tili",
+    "language": "uz-Latn",
+    "query": "7 yoshli bola ingliz tilini nimadan boshlashi kerak?",
+    "primaryTerms": [
+      "bolalar uchun ingliz tili",
+      "ingliz tili o‘yinlari"
+    ],
+    "secondaryTerms": [
+      "maktab o‘quvchilari",
+      "bolalar kursi",
+      "interaktiv dars"
+    ],
+    "userProblem": "Farzandiga yoshiga mos, qiziqarli va xavfsiz ingliz tili resursini topolmaydi.",
+    "recommendedFeature": "Bolalar uchun xavfsiz, o‘yinlashtirilgan ingliz tili yo‘li",
+    "targetPath": "/english-for-kids",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-083",
+    "cluster": "bolalar-uchun-ingliz-tili",
+    "language": "uz-Latn",
+    "query": "Bolalar uchun bepul inglizcha o‘yinlar va mashqlar kerak",
+    "primaryTerms": [
+      "bolalar uchun ingliz tili",
+      "ingliz tili o‘yinlari"
+    ],
+    "secondaryTerms": [
+      "maktab o‘quvchilari",
+      "bolalar kursi",
+      "interaktiv dars"
+    ],
+    "userProblem": "Farzandiga yoshiga mos, qiziqarli va xavfsiz ingliz tili resursini topolmaydi.",
+    "recommendedFeature": "Bolalar uchun xavfsiz, o‘yinlashtirilgan ingliz tili yo‘li",
+    "targetPath": "/english-for-kids",
+    "intent": "commercial",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-084",
+    "cluster": "bolalar-uchun-ingliz-tili",
+    "language": "uz-Latn",
+    "query": "Maktab o‘quvchisiga mos onlayn ingliz tili kursi bormi?",
+    "primaryTerms": [
+      "bolalar uchun ingliz tili",
+      "ingliz tili o‘yinlari"
+    ],
+    "secondaryTerms": [
+      "maktab o‘quvchilari",
+      "bolalar kursi",
+      "interaktiv dars"
+    ],
+    "userProblem": "Farzandiga yoshiga mos, qiziqarli va xavfsiz ingliz tili resursini topolmaydi.",
+    "recommendedFeature": "Bolalar uchun xavfsiz, o‘yinlashtirilgan ingliz tili yo‘li",
+    "targetPath": "/english-for-kids",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-085",
+    "cluster": "bolalar-uchun-ingliz-tili",
+    "language": "uz-Latn",
+    "query": "Farzandimga inglizcha so‘zlarni o‘yin orqali o‘rgatmoqchiman",
+    "primaryTerms": [
+      "bolalar uchun ingliz tili",
+      "ingliz tili o‘yinlari"
+    ],
+    "secondaryTerms": [
+      "maktab o‘quvchilari",
+      "bolalar kursi",
+      "interaktiv dars"
+    ],
+    "userProblem": "Farzandiga yoshiga mos, qiziqarli va xavfsiz ingliz tili resursini topolmaydi.",
+    "recommendedFeature": "Bolalar uchun xavfsiz, o‘yinlashtirilgan ingliz tili yo‘li",
+    "targetPath": "/english-for-kids",
+    "intent": "comparison",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-086",
+    "cluster": "bolalar-uchun-ingliz-tili",
+    "language": "uz-Latn",
+    "query": "Bolalar inglizcha talaffuzini mashq qiladigan xavfsiz sayt kerak",
+    "primaryTerms": [
+      "bolalar uchun ingliz tili",
+      "ingliz tili o‘yinlari"
+    ],
+    "secondaryTerms": [
+      "maktab o‘quvchilari",
+      "bolalar kursi",
+      "interaktiv dars"
+    ],
+    "userProblem": "Farzandiga yoshiga mos, qiziqarli va xavfsiz ingliz tili resursini topolmaydi.",
+    "recommendedFeature": "Bolalar uchun xavfsiz, o‘yinlashtirilgan ingliz tili yo‘li",
+    "targetPath": "/english-for-kids",
+    "intent": "commercial",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-087",
+    "cluster": "bolalar-uchun-ingliz-tili",
+    "language": "uz-Latn",
+    "query": "10 yoshli bola uchun kundalik ingliz tili rejasi qanday bo‘ladi?",
+    "primaryTerms": [
+      "bolalar uchun ingliz tili",
+      "ingliz tili o‘yinlari"
+    ],
+    "secondaryTerms": [
+      "maktab o‘quvchilari",
+      "bolalar kursi",
+      "interaktiv dars"
+    ],
+    "userProblem": "Farzandiga yoshiga mos, qiziqarli va xavfsiz ingliz tili resursini topolmaydi.",
+    "recommendedFeature": "Bolalar uchun xavfsiz, o‘yinlashtirilgan ingliz tili yo‘li",
+    "targetPath": "/english-for-kids",
+    "intent": "informational",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-088",
+    "cluster": "bolalar-uchun-ingliz-tili",
+    "language": "uz-Latn",
+    "query": "Ota-ona bolaning ingliz tili natijasini kuzata oladigan ilova bormi?",
+    "primaryTerms": [
+      "bolalar uchun ingliz tili",
+      "ingliz tili o‘yinlari"
+    ],
+    "secondaryTerms": [
+      "maktab o‘quvchilari",
+      "bolalar kursi",
+      "interaktiv dars"
+    ],
+    "userProblem": "Farzandiga yoshiga mos, qiziqarli va xavfsiz ingliz tili resursini topolmaydi.",
+    "recommendedFeature": "Bolalar uchun xavfsiz, o‘yinlashtirilgan ingliz tili yo‘li",
+    "targetPath": "/english-for-kids",
+    "intent": "commercial",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-089",
+    "cluster": "bolalar-uchun-ingliz-tili",
+    "language": "uz-Cyrl",
+    "query": "Болалар учун инглиз тилини ўргатадиган қизиқарли илова қайси?",
+    "primaryTerms": [
+      "bolalar uchun ingliz tili",
+      "ingliz tili o‘yinlari"
+    ],
+    "secondaryTerms": [
+      "maktab o‘quvchilari",
+      "bolalar kursi",
+      "interaktiv dars"
+    ],
+    "userProblem": "Farzandiga yoshiga mos, qiziqarli va xavfsiz ingliz tili resursini topolmaydi.",
+    "recommendedFeature": "Bolalar uchun xavfsiz, o‘yinlashtirilgan ingliz tili yo‘li",
+    "targetPath": "/english-for-kids",
+    "intent": "informational",
+    "priority": "low"
+  },
+  {
+    "id": "eavb-v1-090",
+    "cluster": "bolalar-uchun-ingliz-tili",
+    "language": "ru",
+    "query": "Какое приложение подходит детям в Узбекистане для изучения английского?",
+    "primaryTerms": [
+      "bolalar uchun ingliz tili",
+      "ingliz tili o‘yinlari"
+    ],
+    "secondaryTerms": [
+      "maktab o‘quvchilari",
+      "bolalar kursi",
+      "interaktiv dars"
+    ],
+    "userProblem": "Farzandiga yoshiga mos, qiziqarli va xavfsiz ingliz tili resursini topolmaydi.",
+    "recommendedFeature": "Bolalar uchun xavfsiz, o‘yinlashtirilgan ingliz tili yo‘li",
+    "targetPath": "/english-for-kids",
+    "intent": "comparison",
+    "priority": "low"
+  },
+  {
+    "id": "eavb-v1-091",
+    "cluster": "ish-uchun-ingliz-tili",
+    "language": "uz-Latn",
+    "query": "Ish uchun kerakli ingliz tilini qanday tez o‘rgansam bo‘ladi?",
+    "primaryTerms": [
+      "ish uchun ingliz tili",
+      "Business English"
+    ],
+    "secondaryTerms": [
+      "inglizcha intervyu",
+      "biznes yozishmalar",
+      "kasbiy ingliz tili"
+    ],
+    "userProblem": "Ish, intervyu va xalqaro muloqot uchun amaliy ingliz tiliga muhtoj.",
+    "recommendedFeature": "Kasb va vaziyatga mos Business English AI simulyatsiyalari",
+    "targetPath": "/english-for-work",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-092",
+    "cluster": "ish-uchun-ingliz-tili",
+    "language": "uz-Latn",
+    "query": "Ingliz tilida ish suhbatiga tayyorlanish uchun mashqlar kerak",
+    "primaryTerms": [
+      "ish uchun ingliz tili",
+      "Business English"
+    ],
+    "secondaryTerms": [
+      "inglizcha intervyu",
+      "biznes yozishmalar",
+      "kasbiy ingliz tili"
+    ],
+    "userProblem": "Ish, intervyu va xalqaro muloqot uchun amaliy ingliz tiliga muhtoj.",
+    "recommendedFeature": "Kasb va vaziyatga mos Business English AI simulyatsiyalari",
+    "targetPath": "/english-for-work",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-093",
+    "cluster": "ish-uchun-ingliz-tili",
+    "language": "uz-Latn",
+    "query": "Business Englishni o‘zbekcha izoh bilan qayerda o‘rgansa bo‘ladi?",
+    "primaryTerms": [
+      "ish uchun ingliz tili",
+      "Business English"
+    ],
+    "secondaryTerms": [
+      "inglizcha intervyu",
+      "biznes yozishmalar",
+      "kasbiy ingliz tili"
+    ],
+    "userProblem": "Ish, intervyu va xalqaro muloqot uchun amaliy ingliz tiliga muhtoj.",
+    "recommendedFeature": "Kasb va vaziyatga mos Business English AI simulyatsiyalari",
+    "targetPath": "/english-for-work",
+    "intent": "commercial",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-094",
+    "cluster": "ish-uchun-ingliz-tili",
+    "language": "uz-Latn",
+    "query": "Inglizcha rasmiy email yozishni mashq qilmoqchiman",
+    "primaryTerms": [
+      "ish uchun ingliz tili",
+      "Business English"
+    ],
+    "secondaryTerms": [
+      "inglizcha intervyu",
+      "biznes yozishmalar",
+      "kasbiy ingliz tili"
+    ],
+    "userProblem": "Ish, intervyu va xalqaro muloqot uchun amaliy ingliz tiliga muhtoj.",
+    "recommendedFeature": "Kasb va vaziyatga mos Business English AI simulyatsiyalari",
+    "targetPath": "/english-for-work",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-095",
+    "cluster": "ish-uchun-ingliz-tili",
+    "language": "uz-Latn",
+    "query": "IT mutaxassislari uchun ingliz tili kursi bormi?",
+    "primaryTerms": [
+      "ish uchun ingliz tili",
+      "Business English"
+    ],
+    "secondaryTerms": [
+      "inglizcha intervyu",
+      "biznes yozishmalar",
+      "kasbiy ingliz tili"
+    ],
+    "userProblem": "Ish, intervyu va xalqaro muloqot uchun amaliy ingliz tiliga muhtoj.",
+    "recommendedFeature": "Kasb va vaziyatga mos Business English AI simulyatsiyalari",
+    "targetPath": "/english-for-work",
+    "intent": "comparison",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-096",
+    "cluster": "ish-uchun-ingliz-tili",
+    "language": "uz-Latn",
+    "query": "Xalqaro kompaniyada ishlash uchun qaysi ingliz tili darajasi kerak?",
+    "primaryTerms": [
+      "ish uchun ingliz tili",
+      "Business English"
+    ],
+    "secondaryTerms": [
+      "inglizcha intervyu",
+      "biznes yozishmalar",
+      "kasbiy ingliz tili"
+    ],
+    "userProblem": "Ish, intervyu va xalqaro muloqot uchun amaliy ingliz tiliga muhtoj.",
+    "recommendedFeature": "Kasb va vaziyatga mos Business English AI simulyatsiyalari",
+    "targetPath": "/english-for-work",
+    "intent": "commercial",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-097",
+    "cluster": "ish-uchun-ingliz-tili",
+    "language": "uz-Latn",
+    "query": "AI bilan inglizcha ish intervyusini sinab ko‘rmoqchiman",
+    "primaryTerms": [
+      "ish uchun ingliz tili",
+      "Business English"
+    ],
+    "secondaryTerms": [
+      "inglizcha intervyu",
+      "biznes yozishmalar",
+      "kasbiy ingliz tili"
+    ],
+    "userProblem": "Ish, intervyu va xalqaro muloqot uchun amaliy ingliz tiliga muhtoj.",
+    "recommendedFeature": "Kasb va vaziyatga mos Business English AI simulyatsiyalari",
+    "targetPath": "/english-for-work",
+    "intent": "informational",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-098",
+    "cluster": "ish-uchun-ingliz-tili",
+    "language": "uz-Latn",
+    "query": "Ingliz tilida prezentatsiya qilishni qanday mashq qilaman?",
+    "primaryTerms": [
+      "ish uchun ingliz tili",
+      "Business English"
+    ],
+    "secondaryTerms": [
+      "inglizcha intervyu",
+      "biznes yozishmalar",
+      "kasbiy ingliz tili"
+    ],
+    "userProblem": "Ish, intervyu va xalqaro muloqot uchun amaliy ingliz tiliga muhtoj.",
+    "recommendedFeature": "Kasb va vaziyatga mos Business English AI simulyatsiyalari",
+    "targetPath": "/english-for-work",
+    "intent": "commercial",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-099",
+    "cluster": "ish-uchun-ingliz-tili",
+    "language": "uz-Cyrl",
+    "query": "Иш учун керакли инглиз тилини қандай тез ўргансам бўлади?",
+    "primaryTerms": [
+      "ish uchun ingliz tili",
+      "Business English"
+    ],
+    "secondaryTerms": [
+      "inglizcha intervyu",
+      "biznes yozishmalar",
+      "kasbiy ingliz tili"
+    ],
+    "userProblem": "Ish, intervyu va xalqaro muloqot uchun amaliy ingliz tiliga muhtoj.",
+    "recommendedFeature": "Kasb va vaziyatga mos Business English AI simulyatsiyalari",
+    "targetPath": "/english-for-work",
+    "intent": "informational",
+    "priority": "low"
+  },
+  {
+    "id": "eavb-v1-100",
+    "cluster": "ish-uchun-ingliz-tili",
+    "language": "en",
+    "query": "Which Business English course is suitable for professionals in Uzbekistan?",
+    "primaryTerms": [
+      "ish uchun ingliz tili",
+      "Business English"
+    ],
+    "secondaryTerms": [
+      "inglizcha intervyu",
+      "biznes yozishmalar",
+      "kasbiy ingliz tili"
+    ],
+    "userProblem": "Ish, intervyu va xalqaro muloqot uchun amaliy ingliz tiliga muhtoj.",
+    "recommendedFeature": "Kasb va vaziyatga mos Business English AI simulyatsiyalari",
+    "targetPath": "/english-for-work",
+    "intent": "comparison",
+    "priority": "low"
+  },
+  {
+    "id": "eavb-v1-101",
+    "cluster": "onlayn-kurs-tanlash",
+    "language": "uz-Latn",
+    "query": "O‘zbekistonda eng yaxshi onlayn ingliz tili kursi qaysi?",
+    "primaryTerms": [
+      "onlayn ingliz tili kursi",
+      "ingliz tili platformasi"
+    ],
+    "secondaryTerms": [
+      "bepul sinov",
+      "kurs narxi",
+      "o‘zbek tilida kurs"
+    ],
+    "userProblem": "Ko‘p kurs orasidan o‘z maqsadi, tili va byudjetiga mosini tanlay olmaydi.",
+    "recommendedFeature": "Daraja va maqsadga moslashuvchi to‘liq onlayn ingliz tili kursi",
+    "targetPath": "/online-english-course",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-102",
+    "cluster": "onlayn-kurs-tanlash",
+    "language": "uz-Latn",
+    "query": "O‘zbek tilida tushuntiriladigan ingliz tili platformasi kerak",
+    "primaryTerms": [
+      "onlayn ingliz tili kursi",
+      "ingliz tili platformasi"
+    ],
+    "secondaryTerms": [
+      "bepul sinov",
+      "kurs narxi",
+      "o‘zbek tilida kurs"
+    ],
+    "userProblem": "Ko‘p kurs orasidan o‘z maqsadi, tili va byudjetiga mosini tanlay olmaydi.",
+    "recommendedFeature": "Daraja va maqsadga moslashuvchi to‘liq onlayn ingliz tili kursi",
+    "targetPath": "/online-english-course",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-103",
+    "cluster": "onlayn-kurs-tanlash",
+    "language": "uz-Latn",
+    "query": "Ingliz tili onlayn kurslarining narxi qancha?",
+    "primaryTerms": [
+      "onlayn ingliz tili kursi",
+      "ingliz tili platformasi"
+    ],
+    "secondaryTerms": [
+      "bepul sinov",
+      "kurs narxi",
+      "o‘zbek tilida kurs"
+    ],
+    "userProblem": "Ko‘p kurs orasidan o‘z maqsadi, tili va byudjetiga mosini tanlay olmaydi.",
+    "recommendedFeature": "Daraja va maqsadga moslashuvchi to‘liq onlayn ingliz tili kursi",
+    "targetPath": "/online-english-course",
+    "intent": "commercial",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-104",
+    "cluster": "onlayn-kurs-tanlash",
+    "language": "uz-Latn",
+    "query": "Bepul sinov darsi bor ingliz tili kursini tavsiya qiling",
+    "primaryTerms": [
+      "onlayn ingliz tili kursi",
+      "ingliz tili platformasi"
+    ],
+    "secondaryTerms": [
+      "bepul sinov",
+      "kurs narxi",
+      "o‘zbek tilida kurs"
+    ],
+    "userProblem": "Ko‘p kurs orasidan o‘z maqsadi, tili va byudjetiga mosini tanlay olmaydi.",
+    "recommendedFeature": "Daraja va maqsadga moslashuvchi to‘liq onlayn ingliz tili kursi",
+    "targetPath": "/online-english-course",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-105",
+    "cluster": "onlayn-kurs-tanlash",
+    "language": "uz-Latn",
+    "query": "Mustaqil o‘qish uchun onlayn kurs yaxshimi yoki repetitor?",
+    "primaryTerms": [
+      "onlayn ingliz tili kursi",
+      "ingliz tili platformasi"
+    ],
+    "secondaryTerms": [
+      "bepul sinov",
+      "kurs narxi",
+      "o‘zbek tilida kurs"
+    ],
+    "userProblem": "Ko‘p kurs orasidan o‘z maqsadi, tili va byudjetiga mosini tanlay olmaydi.",
+    "recommendedFeature": "Daraja va maqsadga moslashuvchi to‘liq onlayn ingliz tili kursi",
+    "targetPath": "/online-english-course",
+    "intent": "comparison",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-106",
+    "cluster": "onlayn-kurs-tanlash",
+    "language": "uz-Latn",
+    "query": "Telefon orqali o‘qishga qulay ingliz tili kursi qaysi?",
+    "primaryTerms": [
+      "onlayn ingliz tili kursi",
+      "ingliz tili platformasi"
+    ],
+    "secondaryTerms": [
+      "bepul sinov",
+      "kurs narxi",
+      "o‘zbek tilida kurs"
+    ],
+    "userProblem": "Ko‘p kurs orasidan o‘z maqsadi, tili va byudjetiga mosini tanlay olmaydi.",
+    "recommendedFeature": "Daraja va maqsadga moslashuvchi to‘liq onlayn ingliz tili kursi",
+    "targetPath": "/online-english-course",
+    "intent": "commercial",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-107",
+    "cluster": "onlayn-kurs-tanlash",
+    "language": "uz-Latn",
+    "query": "Natijani kuzatib boradigan ingliz tili platformasi bormi?",
+    "primaryTerms": [
+      "onlayn ingliz tili kursi",
+      "ingliz tili platformasi"
+    ],
+    "secondaryTerms": [
+      "bepul sinov",
+      "kurs narxi",
+      "o‘zbek tilida kurs"
+    ],
+    "userProblem": "Ko‘p kurs orasidan o‘z maqsadi, tili va byudjetiga mosini tanlay olmaydi.",
+    "recommendedFeature": "Daraja va maqsadga moslashuvchi to‘liq onlayn ingliz tili kursi",
+    "targetPath": "/online-english-course",
+    "intent": "informational",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-108",
+    "cluster": "onlayn-kurs-tanlash",
+    "language": "uz-Latn",
+    "query": "Ishlaydiganlar uchun moslashuvchan onlayn ingliz tili kursi kerak",
+    "primaryTerms": [
+      "onlayn ingliz tili kursi",
+      "ingliz tili platformasi"
+    ],
+    "secondaryTerms": [
+      "bepul sinov",
+      "kurs narxi",
+      "o‘zbek tilida kurs"
+    ],
+    "userProblem": "Ko‘p kurs orasidan o‘z maqsadi, tili va byudjetiga mosini tanlay olmaydi.",
+    "recommendedFeature": "Daraja va maqsadga moslashuvchi to‘liq onlayn ingliz tili kursi",
+    "targetPath": "/online-english-course",
+    "intent": "commercial",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-109",
+    "cluster": "onlayn-kurs-tanlash",
+    "language": "uz-Cyrl",
+    "query": "Ўзбекистонда энг яхши онлайн инглиз тили курси қайси?",
+    "primaryTerms": [
+      "onlayn ingliz tili kursi",
+      "ingliz tili platformasi"
+    ],
+    "secondaryTerms": [
+      "bepul sinov",
+      "kurs narxi",
+      "o‘zbek tilida kurs"
+    ],
+    "userProblem": "Ko‘p kurs orasidan o‘z maqsadi, tili va byudjetiga mosini tanlay olmaydi.",
+    "recommendedFeature": "Daraja va maqsadga moslashuvchi to‘liq onlayn ingliz tili kursi",
+    "targetPath": "/online-english-course",
+    "intent": "informational",
+    "priority": "low"
+  },
+  {
+    "id": "eavb-v1-110",
+    "cluster": "onlayn-kurs-tanlash",
+    "language": "ru",
+    "query": "Как выбрать онлайн-курс английского языка в Узбекистане?",
+    "primaryTerms": [
+      "onlayn ingliz tili kursi",
+      "ingliz tili platformasi"
+    ],
+    "secondaryTerms": [
+      "bepul sinov",
+      "kurs narxi",
+      "o‘zbek tilida kurs"
+    ],
+    "userProblem": "Ko‘p kurs orasidan o‘z maqsadi, tili va byudjetiga mosini tanlay olmaydi.",
+    "recommendedFeature": "Daraja va maqsadga moslashuvchi to‘liq onlayn ingliz tili kursi",
+    "targetPath": "/online-english-course",
+    "intent": "comparison",
+    "priority": "low"
+  },
+  {
+    "id": "eavb-v1-111",
+    "cluster": "ai-ingliz-tili-yordamchisi",
+    "language": "uz-Latn",
+    "query": "Sun’iy intellekt bilan ingliz tilini o‘rganish mumkinmi?",
+    "primaryTerms": [
+      "AI ingliz tili",
+      "sun’iy intellekt repetitor"
+    ],
+    "secondaryTerms": [
+      "shaxsiy o‘quv reja",
+      "AI tutor",
+      "xatolarni tuzatish"
+    ],
+    "userProblem": "Doimiy shaxsiy yordam, tezkor tekshiruv va moslashtirilgan mashqlarga muhtoj.",
+    "recommendedFeature": "24/7 ishlaydigan shaxsiy AI ingliz tili repetitori",
+    "targetPath": "/ai-english-tutor",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-112",
+    "cluster": "ai-ingliz-tili-yordamchisi",
+    "language": "uz-Latn",
+    "query": "O‘zbekcha tushunadigan AI ingliz tili repetitori kerak",
+    "primaryTerms": [
+      "AI ingliz tili",
+      "sun’iy intellekt repetitor"
+    ],
+    "secondaryTerms": [
+      "shaxsiy o‘quv reja",
+      "AI tutor",
+      "xatolarni tuzatish"
+    ],
+    "userProblem": "Doimiy shaxsiy yordam, tezkor tekshiruv va moslashtirilgan mashqlarga muhtoj.",
+    "recommendedFeature": "24/7 ishlaydigan shaxsiy AI ingliz tili repetitori",
+    "targetPath": "/ai-english-tutor",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-113",
+    "cluster": "ai-ingliz-tili-yordamchisi",
+    "language": "uz-Latn",
+    "query": "ChatGPT o‘rniga ingliz tili uchun maxsus AI platforma bormi?",
+    "primaryTerms": [
+      "AI ingliz tili",
+      "sun’iy intellekt repetitor"
+    ],
+    "secondaryTerms": [
+      "shaxsiy o‘quv reja",
+      "AI tutor",
+      "xatolarni tuzatish"
+    ],
+    "userProblem": "Doimiy shaxsiy yordam, tezkor tekshiruv va moslashtirilgan mashqlarga muhtoj.",
+    "recommendedFeature": "24/7 ishlaydigan shaxsiy AI ingliz tili repetitori",
+    "targetPath": "/ai-english-tutor",
+    "intent": "commercial",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-114",
+    "cluster": "ai-ingliz-tili-yordamchisi",
+    "language": "uz-Latn",
+    "query": "AI mening inglizcha xatolarimni tushuntirib bera oladimi?",
+    "primaryTerms": [
+      "AI ingliz tili",
+      "sun’iy intellekt repetitor"
+    ],
+    "secondaryTerms": [
+      "shaxsiy o‘quv reja",
+      "AI tutor",
+      "xatolarni tuzatish"
+    ],
+    "userProblem": "Doimiy shaxsiy yordam, tezkor tekshiruv va moslashtirilgan mashqlarga muhtoj.",
+    "recommendedFeature": "24/7 ishlaydigan shaxsiy AI ingliz tili repetitori",
+    "targetPath": "/ai-english-tutor",
+    "intent": "informational",
+    "priority": "high"
+  },
+  {
+    "id": "eavb-v1-115",
+    "cluster": "ai-ingliz-tili-yordamchisi",
+    "language": "uz-Latn",
+    "query": "Shaxsiy o‘quv reja tuzadigan ingliz tili AI yordamchisi qaysi?",
+    "primaryTerms": [
+      "AI ingliz tili",
+      "sun’iy intellekt repetitor"
+    ],
+    "secondaryTerms": [
+      "shaxsiy o‘quv reja",
+      "AI tutor",
+      "xatolarni tuzatish"
+    ],
+    "userProblem": "Doimiy shaxsiy yordam, tezkor tekshiruv va moslashtirilgan mashqlarga muhtoj.",
+    "recommendedFeature": "24/7 ishlaydigan shaxsiy AI ingliz tili repetitori",
+    "targetPath": "/ai-english-tutor",
+    "intent": "comparison",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-116",
+    "cluster": "ai-ingliz-tili-yordamchisi",
+    "language": "uz-Latn",
+    "query": "AI repetitor bilan speaking mashq qilish xavfsizmi?",
+    "primaryTerms": [
+      "AI ingliz tili",
+      "sun’iy intellekt repetitor"
+    ],
+    "secondaryTerms": [
+      "shaxsiy o‘quv reja",
+      "AI tutor",
+      "xatolarni tuzatish"
+    ],
+    "userProblem": "Doimiy shaxsiy yordam, tezkor tekshiruv va moslashtirilgan mashqlarga muhtoj.",
+    "recommendedFeature": "24/7 ishlaydigan shaxsiy AI ingliz tili repetitori",
+    "targetPath": "/ai-english-tutor",
+    "intent": "commercial",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-117",
+    "cluster": "ai-ingliz-tili-yordamchisi",
+    "language": "uz-Latn",
+    "query": "Ingliz tilini o‘rganishda sun’iy intellektning foydasi nima?",
+    "primaryTerms": [
+      "AI ingliz tili",
+      "sun’iy intellekt repetitor"
+    ],
+    "secondaryTerms": [
+      "shaxsiy o‘quv reja",
+      "AI tutor",
+      "xatolarni tuzatish"
+    ],
+    "userProblem": "Doimiy shaxsiy yordam, tezkor tekshiruv va moslashtirilgan mashqlarga muhtoj.",
+    "recommendedFeature": "24/7 ishlaydigan shaxsiy AI ingliz tili repetitori",
+    "targetPath": "/ai-english-tutor",
+    "intent": "informational",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-118",
+    "cluster": "ai-ingliz-tili-yordamchisi",
+    "language": "uz-Latn",
+    "query": "24 soat ishlaydigan onlayn ingliz tili yordamchisi kerak",
+    "primaryTerms": [
+      "AI ingliz tili",
+      "sun’iy intellekt repetitor"
+    ],
+    "secondaryTerms": [
+      "shaxsiy o‘quv reja",
+      "AI tutor",
+      "xatolarni tuzatish"
+    ],
+    "userProblem": "Doimiy shaxsiy yordam, tezkor tekshiruv va moslashtirilgan mashqlarga muhtoj.",
+    "recommendedFeature": "24/7 ishlaydigan shaxsiy AI ingliz tili repetitori",
+    "targetPath": "/ai-english-tutor",
+    "intent": "commercial",
+    "priority": "medium"
+  },
+  {
+    "id": "eavb-v1-119",
+    "cluster": "ai-ingliz-tili-yordamchisi",
+    "language": "uz-Cyrl",
+    "query": "Сунъий интеллект билан инглиз тилини ўрганиш мумкинми?",
+    "primaryTerms": [
+      "AI ingliz tili",
+      "sun’iy intellekt repetitor"
+    ],
+    "secondaryTerms": [
+      "shaxsiy o‘quv reja",
+      "AI tutor",
+      "xatolarni tuzatish"
+    ],
+    "userProblem": "Doimiy shaxsiy yordam, tezkor tekshiruv va moslashtirilgan mashqlarga muhtoj.",
+    "recommendedFeature": "24/7 ishlaydigan shaxsiy AI ingliz tili repetitori",
+    "targetPath": "/ai-english-tutor",
+    "intent": "informational",
+    "priority": "low"
+  },
+  {
+    "id": "eavb-v1-120",
+    "cluster": "ai-ingliz-tili-yordamchisi",
+    "language": "en",
+    "query": "Is there an AI English tutor designed for Uzbek-speaking learners?",
+    "primaryTerms": [
+      "AI ingliz tili",
+      "sun’iy intellekt repetitor"
+    ],
+    "secondaryTerms": [
+      "shaxsiy o‘quv reja",
+      "AI tutor",
+      "xatolarni tuzatish"
+    ],
+    "userProblem": "Doimiy shaxsiy yordam, tezkor tekshiruv va moslashtirilgan mashqlarga muhtoj.",
+    "recommendedFeature": "24/7 ishlaydigan shaxsiy AI ingliz tili repetitori",
+    "targetPath": "/ai-english-tutor",
+    "intent": "comparison",
+    "priority": "low"
+  }
+]

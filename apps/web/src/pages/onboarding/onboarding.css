@@ -1,0 +1,501 @@
+/*
+ * Shared onboarding design system — the login → /home journey.
+ *
+ * Every screen a learner sees before the dashboard (sign-in, username, profile
+ * details, goal, welcome, level assessment, placement test + result) shares this
+ * one system so the whole first-run feels like a single, deliberate product.
+ *
+ * It is a 1:1 sibling of the `/home` "professional-indigo" language
+ * (`professionalHome.css`): the same #4f46e5 indigo, #f4f6fb canvas, soft-bordered
+ * white cards, Poppins display / Manrope body type, uppercase micro-eyebrows and
+ * calm 0 12px 32px shadows — recoloured only where a screen needs a premium dark
+ * brand panel. Tokens are scoped to `.ob` and flip cleanly in `.dark`.
+ */
+
+.ob {
+  --ob-bg: var(--ea-bg);
+  --ob-surface: var(--ea-surface);
+  --ob-soft: var(--ea-primary-soft);
+  --ob-raised: var(--ea-bg);
+  --ob-text: var(--ea-text);
+  --ob-muted: var(--ea-muted);
+  --ob-muted-soft: var(--ea-muted-deep);
+  --ob-border: var(--ea-border);
+  --ob-border-strong: var(--ea-purple-200);
+  --ob-primary: var(--ea-primary);
+  --ob-primary-hover: var(--ea-primary-deep);
+  --ob-primary-soft: var(--ea-primary-soft);
+  --ob-on-primary: var(--ea-on-primary);
+  --ob-success: #16875d;
+  --ob-success-soft: #e4f4ec;
+  --ob-danger: #dc4c64;
+  --ob-danger-soft: #fdecef;
+  --ob-reward: #f59e0b;
+  /* Premium brand panel — the deep indigo "feature" side of split screens. */
+  --ob-feature-grad: var(--ea-primary-soft);
+  --ob-on-feature: var(--ea-text);
+  --ob-feature-line: var(--ea-border);
+  --ob-feature-fill: var(--ea-surface);
+  --ob-radius-card: 26px;
+  --ob-radius-inner: 18px;
+  --ob-radius-control: 15px;
+
+  min-height: 100dvh;
+  background: var(--ob-bg);
+  color: var(--ob-text);
+  font-family: var(--ea-font-body, "Plus Jakarta Sans", system-ui, sans-serif);
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+}
+
+.ob *,
+.ob *::before,
+.ob *::after { box-sizing: border-box; }
+.ob h1, .ob h2, .ob h3, .ob p { margin: 0; }
+/* Only normalise the font here — colour is owned by each button variant
+   (.ob-btn*, .ob-link, .ob-option, .ob-select); inheriting it would beat those
+   single-class rules on specificity and repaint buttons the wrong colour. */
+.ob button { font: inherit; }
+
+/* ── Page canvas ───────────────────────────────────────────────────────── */
+.ob-page {
+  display: grid;
+  place-items: center;
+  min-height: 100dvh;
+  padding: clamp(16px, 4vw, 48px)
+           max(16px, env(safe-area-inset-right))
+           max(16px, env(safe-area-inset-bottom))
+           max(16px, env(safe-area-inset-left));
+}
+.ob-page--scroll { align-content: start; }
+
+/* ── The signature split card (feature panel + working area) ───────────── */
+.ob-card {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: min(1080px, 100%);
+  overflow: hidden;
+  border: 0;
+  border-radius: var(--ob-radius-card);
+  background: var(--ob-bg);
+  box-shadow: none;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
+  gap: 48px;
+}
+.ob-card--single { width: min(560px, 100%); grid-template-columns: 1fr; }
+.ob-card--wide { width: min(1180px, 100%); }
+
+/* Brand / feature panel — the deep indigo side. */
+.ob-feature {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  padding: clamp(28px, 3vw, 46px);
+  background: var(--ob-feature-grad);
+  color: var(--ob-on-feature);
+  overflow: hidden;
+}
+.ob-feature::after {
+  content: "";
+  position: absolute;
+  right: -90px;
+  bottom: -120px;
+  width: 320px;
+  height: 320px;
+  border: 1px solid var(--ob-feature-line);
+  border-radius: 50%;
+}
+.ob-feature::before {
+  content: "";
+  position: absolute;
+  right: -30px;
+  bottom: -60px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid var(--ob-feature-line);
+  border-radius: 50%;
+}
+.ob-feature > * { position: relative; z-index: 1; }
+.ob-feature__top { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.ob-feature__headline { margin-top: auto; }
+.ob-feature__headline h1,
+.ob-feature__headline h2 {
+  font-family: var(--ea-font-display, "Nunito", sans-serif);
+  font-size: clamp(28px, 3vw, 42px);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+.ob-feature__headline p {
+  margin-top: 14px;
+  max-width: 42ch;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ob-muted);
+}
+.ob-feature__list { display: grid; gap: 10px; }
+.ob-feature__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 15px;
+  border: 1px solid var(--ob-feature-line);
+  border-radius: var(--ob-radius-inner);
+  background: var(--ob-feature-fill);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.ob-feature__item svg,
+.ob-feature__item .material-symbols-rounded { flex: none; }
+.ob-feature__item-icon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  flex: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.14);
+  color: var(--ob-primary);
+}
+.ob-feature__item strong { display: block; font-weight: 800; }
+.ob-feature__item span > span,
+.ob-feature__item small { display: block; margin-top: 2px; font-weight: 600; color: var(--ob-muted); }
+
+/* Working area — white side that holds the form / choices. */
+.ob-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: clamp(26px, 3vw, 46px);
+  background: var(--ob-surface);
+}
+.ob-panel--center { justify-content: center; }
+
+/* ── Brand lockup ──────────────────────────────────────────────────────── */
+.ob-brand { display: inline-flex; align-items: center; gap: 12px; }
+.ob-brand__word {
+  font-family: var(--ea-font-display, "Nunito", sans-serif);
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.ob-feature .ob-brand__word { color: var(--ob-primary); }
+
+/* ── Eyebrow / step chips ──────────────────────────────────────────────── */
+.ob-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ob-primary);
+}
+.ob-eyebrow svg,
+.ob-eyebrow .material-symbols-rounded { font-size: 16px; }
+.ob-step {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 13px;
+  border: 1px solid var(--ob-feature-line);
+  border-radius: 999px;
+  background: var(--ob-feature-fill);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* ── Titles ────────────────────────────────────────────────────────────── */
+.ob-title {
+  font-family: var(--ea-font-display, "Nunito", sans-serif);
+  font-size: clamp(26px, 3.2vw, 40px);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+.ob-title--sm { font-size: clamp(21px, 2.4vw, 28px); }
+.ob-lede { margin-top: 12px; color: var(--ob-muted); font-size: 15px; line-height: 1.6; }
+.ob-panel__head { display: grid; gap: 11px; }
+
+/* ── Buttons ───────────────────────────────────────────────────────────── */
+.ob-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 54px;
+  padding: 0 26px;
+  border: 1px solid transparent;
+  border-radius: var(--ob-radius-control);
+  background: var(--ob-primary);
+  color: var(--ob-on-primary);
+  font-family: var(--ea-font-display, "Nunito", sans-serif);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+  transition: background 0.16s ease, transform 0.12s ease, border-color 0.16s ease, box-shadow 0.16s ease;
+}
+.ob-btn:hover:not(:disabled) { background: var(--ob-primary-hover); }
+.ob-btn:active:not(:disabled) { transform: scale(0.985); }
+.ob-btn:disabled { cursor: not-allowed; opacity: 0.55; }
+.ob-btn--full { width: 100%; }
+.ob-btn--lg { min-height: 58px; font-size: 16px; }
+.ob-btn svg,
+.ob-btn .material-symbols-rounded { font-size: 21px; }
+
+.ob-btn--ghost {
+  background: var(--ob-surface);
+  border-color: var(--ob-border);
+  color: var(--ob-text);
+}
+.ob-btn--ghost:hover:not(:disabled) { background: var(--ob-soft); border-color: var(--ob-border-strong); }
+
+.ob-btn--soft {
+  background: var(--ob-primary-soft);
+  color: var(--ob-primary);
+}
+.ob-btn--soft:hover:not(:disabled) { background: color-mix(in srgb, var(--ob-primary-soft) 78%, var(--ob-primary) 22%); }
+
+/* On the dark feature panel — white is intentional and theme-invariant here (the
+   panel is always deep indigo), so it comes from a token, not a literal. */
+.ob-btn--on-feature {
+  background: var(--ob-on-feature);
+  color: #201b4d;
+}
+.ob-btn--on-feature:hover:not(:disabled) { background: rgba(255, 255, 255, 0.9); }
+.ob-btn--outline-feature {
+  background: transparent;
+  border-color: var(--ob-feature-line);
+  color: var(--ob-primary);
+}
+.ob-btn--outline-feature:hover:not(:disabled) { background: rgba(255, 255, 255, 0.12); }
+
+.ob-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: transparent;
+  color: var(--ob-muted);
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.14s ease, color 0.14s ease;
+}
+.ob-link:hover { background: var(--ob-soft); color: var(--ob-text); }
+
+/* ── Benefits list (light side) ───────────────────────────────────────── */
+.ob-benefits { display: grid; gap: 10px; }
+.ob-benefit {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 14px;
+  border: 1px solid var(--ob-border);
+  border-radius: var(--ob-radius-inner);
+  background: var(--ob-raised);
+}
+.ob-benefit__icon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  flex: none;
+  border-radius: 13px;
+  background: var(--ob-primary-soft);
+  color: var(--ob-primary);
+}
+.ob-benefit__icon svg,
+.ob-benefit__icon .material-symbols-rounded { font-size: 24px; }
+.ob-benefit strong { display: block; font-size: 14px; font-weight: 850; }
+.ob-benefit > span > span,
+.ob-benefit small { display: block; margin-top: 3px; font-size: 12.5px; font-weight: 600; line-height: 1.45; color: var(--ob-muted); }
+
+/* ── Selectable option tiles (goal, gender, source…) ──────────────────── */
+.ob-options { display: grid; gap: 12px; }
+.ob-options--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.ob-options--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.ob-option {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-height: 76px;
+  padding: 14px 15px;
+  border: 1px solid var(--ob-border);
+  border-radius: var(--ob-radius-inner);
+  background: var(--ob-surface);
+  color: var(--ob-text);
+  text-align: left;
+  cursor: pointer;
+  box-shadow: var(--ea-shadow-card);
+  transition: border-color 0.16s ease, background 0.16s ease, transform 0.12s ease, box-shadow 0.16s ease;
+}
+.ob-option:hover:not(:disabled) { border-color: var(--ob-border-strong); transform: translateY(-1px); }
+.ob-option:active:not(:disabled) { transform: scale(0.99); }
+.ob-option:disabled { cursor: not-allowed; opacity: 0.55; }
+.ob-option.is-selected {
+  border-color: var(--ob-primary);
+  background: var(--ob-primary-soft);
+}
+.ob-option__icon {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  flex: none;
+  border-radius: 14px;
+  background: var(--ob-soft);
+  color: var(--ob-primary);
+}
+.ob-option.is-selected .ob-option__icon { background: var(--ob-surface); }
+.ob-option__icon svg,
+.ob-option__icon .material-symbols-rounded { font-size: 25px; }
+.ob-option__copy { min-width: 0; flex: 1; }
+.ob-option__copy strong { display: block; font-family: var(--ea-font-display, "Nunito", sans-serif); font-size: 14.5px; font-weight: 800; letter-spacing: -0.01em; }
+.ob-option__copy span { display: block; margin-top: 3px; font-size: 12.5px; font-weight: 600; line-height: 1.4; color: var(--ob-muted); }
+.ob-option__check {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  flex: none;
+  border: 1px solid var(--ob-border-strong);
+  border-radius: 999px;
+  background: var(--ob-surface);
+  color: transparent;
+  transition: all 0.15s ease;
+}
+.ob-option.is-selected .ob-option__check { border-color: var(--ob-primary); background: var(--ob-primary); color: var(--ob-primary); }
+.ob-option__check svg { font-size: 16px; }
+
+/* ── Text fields ───────────────────────────────────────────────────────── */
+.ob-field { display: grid; gap: 8px; }
+.ob-field__label { font-size: 12px; font-weight: 850; letter-spacing: 0.02em; color: var(--ob-muted-soft); }
+.ob-input {
+  width: 100%;
+  min-height: 54px;
+  padding: 0 16px;
+  border: 1px solid var(--ob-border);
+  border-radius: var(--ob-radius-control);
+  background: var(--ob-raised);
+  color: var(--ob-text);
+  font-size: 15px;
+  font-weight: 700;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+.ob-input::placeholder { color: var(--ob-muted); font-weight: 600; }
+.ob-input:focus {
+  outline: none;
+  border-color: var(--ob-primary);
+  background: var(--ob-surface);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--ob-primary) 20%, transparent);
+}
+.ob-textarea { min-height: 168px; padding: 14px 16px; resize: vertical; line-height: 1.6; font-weight: 600; }
+
+/* Select-style trigger (date pickers etc.) */
+.ob-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  min-height: 54px;
+  padding: 0 14px;
+  border: 1px solid var(--ob-border);
+  border-radius: var(--ob-radius-control);
+  background: var(--ob-raised);
+  color: var(--ob-text);
+  font-size: 15px;
+  font-weight: 750;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+.ob-select:hover { border-color: var(--ob-border-strong); }
+.ob-select.is-placeholder { color: var(--ob-muted); font-weight: 600; }
+.ob-select svg { color: var(--ob-muted); }
+
+/* ── Small meta rows ───────────────────────────────────────────────────── */
+.ob-note {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 14px;
+  border: 1px solid var(--ob-border);
+  border-radius: 14px;
+  background: var(--ob-raised);
+  color: var(--ob-muted);
+  font-size: 12.5px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+.ob-note svg,
+.ob-note .material-symbols-rounded { flex: none; color: var(--ob-success); font-size: 19px; }
+.ob-trust {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--ob-muted);
+  font-size: 12.5px;
+  font-weight: 700;
+}
+.ob-trust svg { font-size: 17px; }
+
+/* ── Alerts ────────────────────────────────────────────────────────────── */
+.ob-alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 13px 15px;
+  border: 1px solid color-mix(in srgb, var(--ob-danger) 40%, var(--ob-border));
+  border-radius: 14px;
+  background: var(--ob-danger-soft);
+  color: var(--ob-danger);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+.ob-alert svg { flex: none; margin-top: 1px; }
+
+/* ── Focus visibility ──────────────────────────────────────────────────── */
+/* Inputs/textareas carry their own focus ring (border + soft shadow), so the
+   generic outline is limited to buttons and links to avoid doubled rings. */
+.ob :where(button, a, [tabindex]):focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--ob-primary) 40%, transparent);
+  outline-offset: 3px;
+}
+
+/* ── Responsive: collapse the split into a stack ──────────────────────── */
+@media (max-width: 900px) {
+  .ob-card { grid-template-columns: 1fr; }
+  .ob-feature { gap: 20px; }
+  .ob-feature__headline { margin-top: 0; }
+  .ob-options--3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 700px) {
+  .ob-page { padding: 0; place-items: stretch; }
+  .ob-card {
+    width: 100%;
+    min-height: 100dvh;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    align-content: start;
+  }
+  .ob-card--single { min-height: 100dvh; }
+  .ob-feature { padding: max(22px, env(safe-area-inset-top)) 20px 22px; }
+  .ob-panel { padding: 22px 20px max(28px, env(safe-area-inset-bottom)); }
+  .ob-options--2 { grid-template-columns: 1fr; }
+  .ob-btn { min-height: 52px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ob * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+}

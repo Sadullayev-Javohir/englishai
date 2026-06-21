@@ -1,0 +1,259 @@
+/* Offline dialog - 1:1 with englishai.pen screens "81 - WEB/MOBILE - /home -
+   Internet aloqasi yo'q" (components `Internet / Offline dialog - web|mobile`).
+
+   Brand colours come from the global --ea-* tokens. The three shades with no global
+   token (the lilac close chip, and the amber / green state strips) are declared as
+   feature-local variables below, following the same convention as
+   components/speaking/SpeakingChrome.css. */
+.offline-modal {
+  --off-chip: #f5f1fa;
+  --off-amber-bg: #fff5e5;
+  --off-amber-ink: #92520c;
+  --off-green-bg: #ebf6ef;
+  --off-green-ink: #277750;
+}
+
+/* The canonical overlay header renders a title + close button that this design does not
+   use. It stays in the DOM as the dialog's accessible name and is hidden visually. */
+.offline-modal .ea-overlay__header {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* Panel: 520px card, 32px padding, 24px radius. The three-class selector outranks the
+   width and radius set by overlays.responsive.css inside its media queries. */
+.ea-responsive-overlay .ea-overlay__panel.offline-modal {
+  width: min(100%, 520px);
+  max-height: min(88dvh, 900px);
+  border: 1px solid var(--ea-border);
+  border-radius: 24px;
+  background: var(--ea-surface);
+}
+
+.offline-modal .ea-overlay__body {
+  padding: 32px;
+}
+
+.offline-dialog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* 1 - eyebrow + close */
+.offline-dialog__bar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.offline-dialog__eyebrow {
+  margin: 0;
+  color: var(--ea-primary);
+  font: 700 10px/1.55 var(--ea-font-body);
+  letter-spacing: 1px;
+}
+
+/* 28x28 per the design. `min-height` is set explicitly because the global dialog rule
+   (`:where([role="dialog"]) :where(button)`) raises every dialog button to the 48px
+   control height, which would also make the whole card 20px taller than the design. */
+.offline-dialog__close {
+  position: relative;
+  display: inline-flex;
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  min-height: 28px;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 9px;
+  background: var(--off-chip);
+  color: var(--ea-muted);
+  cursor: pointer;
+}
+
+/* Keeps the 44px touch target the shrunken chip would otherwise lose, without
+   adding 16px of layout the design does not have. */
+.offline-dialog__close::after {
+  content: "";
+  position: absolute;
+  inset: -8px;
+}
+
+.offline-dialog__close:hover {
+  background: var(--ea-primary-soft);
+  color: var(--ea-primary-deep);
+}
+
+/* 2 - wifi-off tile */
+.offline-dialog__tile {
+  display: inline-flex;
+  width: 64px;
+  height: 64px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background: var(--ea-primary-soft);
+  color: var(--ea-primary);
+}
+
+/* 3 - title + explanation */
+.offline-dialog__message {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.offline-dialog__title {
+  margin: 0;
+  color: var(--ea-text);
+  font: 800 30px/1.2 var(--ea-font-display);
+  letter-spacing: -0.035em;
+  text-align: center;
+}
+
+.offline-dialog__text {
+  margin: 0;
+  color: var(--ea-muted);
+  font: 400 14px/1.65 var(--ea-font-body);
+  text-align: center;
+}
+
+/* 4 - "no energy was spent" reassurance */
+.offline-dialog__notice {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 12px;
+  background: var(--off-amber-bg);
+  color: var(--off-amber-ink);
+}
+
+.offline-dialog__notice p {
+  margin: 0;
+  font: 600 12px/1.5 var(--ea-font-body);
+}
+
+/* 4b - retry feedback (pen: Internet / Checking | Still offline | Reconnected) */
+.offline-dialog__strip {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 12px;
+  padding: 18px;
+  border-radius: 14px;
+}
+
+.offline-dialog__strip--checking {
+  background: var(--ea-primary-soft);
+  color: var(--ea-primary);
+}
+
+.offline-dialog__strip--still-offline {
+  background: var(--off-amber-bg);
+  color: var(--off-amber-ink);
+}
+
+.offline-dialog__strip--reconnected {
+  background: var(--off-green-bg);
+  color: var(--off-green-ink);
+}
+
+.offline-dialog__strip-title {
+  margin: 0;
+  font: 700 13px/1.55 var(--ea-font-body);
+}
+
+.offline-dialog__strip-text {
+  margin: 4px 0 0;
+  font: 400 12px/1.55 var(--ea-font-body);
+}
+
+.offline-dialog__spinner {
+  animation: ea-spin 800ms linear infinite;
+}
+
+/* 5 - recovery actions */
+.offline-dialog__actions {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* The pen uses a 3px offset shadow under the button; DesignGuard bans offset shadows, so
+   the same weight is carried by a bottom border (as .vocabulary-primary already does). */
+.offline-dialog__retry.ea-button {
+  min-height: 48px;
+  border-bottom: 3px solid var(--ea-primary-deep);
+  border-radius: 14px;
+  gap: 9px;
+  font: 700 14px/1.55 var(--ea-font-body);
+}
+
+.offline-dialog__retry.ea-button svg {
+  width: 18px;
+  height: 18px;
+}
+
+.offline-dialog__dismiss {
+  min-height: 38px;
+  border: 0;
+  background: none;
+  color: var(--ea-muted);
+  font: 600 13px/1.55 var(--ea-font-body);
+  cursor: pointer;
+}
+
+.offline-dialog__dismiss:hover {
+  color: var(--ea-text);
+}
+
+/* 6 - footer hint */
+.offline-dialog__hint {
+  margin: 0;
+  width: 100%;
+  color: var(--ea-muted);
+  font: 400 11px/1.55 var(--ea-font-body);
+  text-align: center;
+}
+
+/* Mobile: the design keeps a centred 342px card, so the shared bottom-sheet treatment
+   that overlays.responsive.css applies under 700px is opted out of here. */
+@media (max-width: 700px) {
+  .ea-responsive-overlay:has(> .offline-modal) {
+    align-items: center;
+    justify-content: center;
+    padding: max(24px, env(safe-area-inset-top)) 24px max(24px, env(safe-area-inset-bottom));
+  }
+
+  .ea-responsive-overlay .ea-overlay__panel.offline-modal {
+    width: 100%;
+    max-width: 342px;
+    height: auto;
+    border-radius: 24px;
+    padding-bottom: 0;
+  }
+
+  .offline-modal .ea-overlay__body {
+    padding: 24px;
+  }
+
+  .offline-dialog__title {
+    font-size: 26px;
+  }
+}

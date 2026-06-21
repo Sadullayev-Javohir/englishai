@@ -1,0 +1,42 @@
+.ps-header,
+.ps-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  width: min(1440px, 100%);
+  margin-inline: auto;
+  padding: 24px clamp(20px, 5.55vw, 80px);
+  color: var(--ea-text);
+  font-family: var(--ea-font-body);
+}
+.ps-brand { display: inline-flex; flex-shrink: 0; align-items: center; gap: 4px; color: var(--ea-text); font: 900 24px var(--ea-font-display); text-decoration: none; }
+.ps-brand strong span { color: var(--ea-primary); }
+.ps-navigation { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px; }
+.ps-navigation a,
+.ps-footer nav a { color: var(--ea-muted-deep); font-size: 13px; text-decoration: none; }
+.ps-navigation a { display: inline-flex; align-items: center; min-height: 44px; }
+.ps-navigation a[aria-current="page"] { color: var(--ea-primary); font-weight: 800; }
+.ps-header a:hover,
+.ps-footer a:hover { color: var(--ea-primary); }
+.ps-header-actions { display: flex; flex-shrink: 0; align-items: center; gap: 18px; }
+.ps-language { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 44px; min-width: 44px; font-size: 12px; font-weight: 800; color: var(--ea-muted-deep); }
+.ps-footer { padding-block: 40px; }
+.ps-footer p { margin-top: 8px; color: var(--ea-muted-deep); font-size: 12px; }
+.ps-footer nav { display: flex; flex-wrap: wrap; gap: 10px 24px; }
+.ps-footer nav a { display: inline-flex; align-items: center; min-height: 44px; }
+:is(.ps-header, .ps-footer) a:focus-visible { outline: 3px solid var(--ea-focus); outline-offset: 5px; border-radius: 6px; }
+@media (max-width: 900px) {
+  .ps-header { flex-wrap: wrap; gap: 12px; }
+  .ps-navigation { order: 3; width: 100%; justify-content: center; gap: 8px 24px; }
+  .ps-header-actions { margin-left: auto; gap: 12px; }
+  .ps-footer { flex-wrap: wrap; }
+}
+@media (max-width: 700px) {
+  .ps-header { padding-block: 16px; }
+  .ps-brand { font-size: 22px; }
+  .ps-header-actions .ea-button { padding-inline: 12px; font-size: 12px; }
+  .ps-navigation { justify-content: space-between; gap: 4px 12px; }
+  .ps-navigation a { font-size: 11px; }
+  .ps-footer nav { gap: 4px 18px; }
+}

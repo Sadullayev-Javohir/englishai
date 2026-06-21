@@ -1,0 +1,589 @@
+{
+  "wireMagic": "pb3",
+  "pens": [ {
+  
+  } ],
+  "wsWinStyles": [ {
+  
+  } ],
+  "wpWinPositions": [ {
+  
+  } ],
+  "events": [ {
+    "tStartMs": 7960,
+    "dDurationMs": 3320,
+    "segs": [ {
+      "utf8": "Hello, this is Six Minute English\nfrom BBC Learning English."
+    } ]
+  }, {
+    "tStartMs": 11280,
+    "dDurationMs": 1760,
+    "segs": [ {
+      "utf8": "I'm Phil. And I'm Georgie."
+    } ]
+  }, {
+    "tStartMs": 13040,
+    "dDurationMs": 2880,
+    "segs": [ {
+      "utf8": "For me, there's nothing\nlike reading a book –"
+    } ]
+  }, {
+    "tStartMs": 15920,
+    "dDurationMs": 3960,
+    "segs": [ {
+      "utf8": "I love turning the pages\nand the smell of the paper."
+    } ]
+  }, {
+    "tStartMs": 19880,
+    "dDurationMs": 3520,
+    "segs": [ {
+      "utf8": "But nowadays, the fact is that much\nof the time we read"
+    } ]
+  }, {
+    "tStartMs": 23400,
+    "dDurationMs": 2880,
+    "segs": [ {
+      "utf8": "from electronic screens, not paper."
+    } ]
+  }, {
+    "tStartMs": 26280,
+    "dDurationMs": 2880,
+    "segs": [ {
+      "utf8": "Yes, like Georgie, I love books."
+    } ]
+  }, {
+    "tStartMs": 29160,
+    "dDurationMs": 3400,
+    "segs": [ {
+      "utf8": "I also find that\ntoo much screen time hurts my eyes."
+    } ]
+  }, {
+    "tStartMs": 32560,
+    "dDurationMs": 3160,
+    "segs": [ {
+      "utf8": "But the availability of digital\ninformation means"
+    } ]
+  }, {
+    "tStartMs": 35720,
+    "dDurationMs": 3560,
+    "segs": [ {
+      "utf8": "that I end up\nreading from screens most days."
+    } ]
+  }, {
+    "tStartMs": 39280,
+    "dDurationMs": 3640,
+    "segs": [ {
+      "utf8": "So, apart from sore eyes,\nis this a problem?"
+    } ]
+  }, {
+    "tStartMs": 42920,
+    "dDurationMs": 4560,
+    "segs": [ {
+      "utf8": "Is reading from screens harmless, or\ncould it be damaging us in some way,"
+    } ]
+  }, {
+    "tStartMs": 47480,
+    "dDurationMs": 3600,
+    "segs": [ {
+      "utf8": "such as reducing our attention span –\nthe length of time"
+    } ]
+  }, {
+    "tStartMs": 51080,
+    "dDurationMs": 3360,
+    "segs": [ {
+      "utf8": "that someone can keep concentrated\non what they are doing?"
+    } ]
+  }, {
+    "tStartMs": 54440,
+    "dDurationMs": 2600,
+    "segs": [ {
+      "utf8": "That's what we'll be discussing\nin this program,"
+    } ]
+  }, {
+    "tStartMs": 57040,
+    "dDurationMs": 3640,
+    "segs": [ {
+      "utf8": "and of course, we'll be learning\nsome useful new vocabulary too."
+    } ]
+  }, {
+    "tStartMs": 60680,
+    "dDurationMs": 5600,
+    "segs": [ {
+      "utf8": "Great. But first, it's time for\nmy question. Whether you prefer paper"
+    } ]
+  }, {
+    "tStartMs": 66280,
+    "dDurationMs": 5520,
+    "segs": [ {
+      "utf8": "or screens, as humans we're now\nreading more words than ever before."
+    } ]
+  }, {
+    "tStartMs": 71800,
+    "dDurationMs": 5920,
+    "segs": [ {
+      "utf8": "So how many words\ndoes the average person read a day?"
+    } ]
+  }, {
+    "tStartMs": 77720,
+    "dDurationMs": 3880,
+    "segs": [ {
+      "utf8": "Is it a) 50,000 words?"
+    } ]
+  }, {
+    "tStartMs": 81600,
+    "dDurationMs": 6720,
+    "segs": [ {
+      "utf8": "b) 100,000 words?\nor, c) 200,000 words?"
+    } ]
+  }, {
+    "tStartMs": 88320,
+    "dDurationMs": 3000,
+    "segs": [ {
+      "utf8": "I'll guess it's 50,000 words a day."
+    } ]
+  }, {
+    "tStartMs": 91320,
+    "dDurationMs": 4640,
+    "segs": [ {
+      "utf8": "OK, Georgie, we'll find out the\ncorrect answer later in the programme."
+    } ]
+  }, {
+    "tStartMs": 95960,
+    "dDurationMs": 4520,
+    "segs": [ {
+      "utf8": "Of course, there's little doubt that\nany kind of reading is good for you."
+    } ]
+  }, {
+    "tStartMs": 100480,
+    "dDurationMs": 3320,
+    "segs": [ {
+      "utf8": "Here's Cressida Cowell,\nauthor of the 'How to Train"
+    } ]
+  }, {
+    "tStartMs": 103800,
+    "dDurationMs": 4240,
+    "segs": [ {
+      "utf8": "Your Dragon' children's books,\nspeaking with BBC Ideas."
+    } ]
+  }, {
+    "tStartMs": 108040,
+    "dDurationMs": 7640,
+    "segs": [ {
+      "utf8": "Reading brings three magical powers\n– creativity, intelligence and empathy."
+    } ]
+  }, {
+    "tStartMs": 115680,
+    "dDurationMs": 2520,
+    "segs": [ {
+      "utf8": "Reading for the joy of it\nis one of the two key factors in"
+    } ]
+  }, {
+    "tStartMs": 118200,
+    "dDurationMs": 1960,
+    "segs": [ {
+      "utf8": "a kid's later economic success."
+    } ]
+  }, {
+    "tStartMs": 120160,
+    "dDurationMs": 5000,
+    "segs": [ {
+      "utf8": "You're more likely to not be in\nprison, to vote, to own your own home."
+    } ]
+  }, {
+    "tStartMs": 125160,
+    "dDurationMs": 4440,
+    "segs": [ {
+      "utf8": "All of these advantages and benefits\nhappen as a result of literacy."
+    } ]
+  }, {
+    "tStartMs": 129600,
+    "dDurationMs": 3880,
+    "segs": [ {
+      "utf8": "Cressida talks about the importance\nof reading for the joy of it."
+    } ]
+  }, {
+    "tStartMs": 133480,
+    "dDurationMs": 2640,
+    "segs": [ {
+      "utf8": "When you do an activity\nfor the joy of it,"
+    } ]
+  }, {
+    "tStartMs": 136120,
+    "dDurationMs": 2840,
+    "segs": [ {
+      "utf8": "you do it simply for the pleasure\nof doing it,"
+    } ]
+  }, {
+    "tStartMs": 138960,
+    "dDurationMs": 3280,
+    "segs": [ {
+      "utf8": "rather than\nas a way to gain something else."
+    } ]
+  }, {
+    "tStartMs": 142240,
+    "dDurationMs": 3440,
+    "segs": [ {
+      "utf8": "Cressida lists the many benefits\nof reading for children,"
+    } ]
+  }, {
+    "tStartMs": 145680,
+    "dDurationMs": 2800,
+    "segs": [ {
+      "utf8": "including economic success\nin later life."
+    } ]
+  }, {
+    "tStartMs": 148480,
+    "dDurationMs": 5800,
+    "segs": [ {
+      "utf8": "But many of these benefits depend\non a state known as 'deep reading',"
+    } ]
+  }, {
+    "tStartMs": 154280,
+    "dDurationMs": 3120,
+    "segs": [ {
+      "utf8": "analysing a text to understand\nits deeper meaning."
+    } ]
+  }, {
+    "tStartMs": 157400,
+    "dDurationMs": 3720,
+    "segs": [ {
+      "utf8": "And in test after test,\nresearchers have shown"
+    } ]
+  }, {
+    "tStartMs": 161120,
+    "dDurationMs": 5320,
+    "segs": [ {
+      "utf8": "that 'deep reading' skills develop\nbetter when kids read from books."
+    } ]
+  }, {
+    "tStartMs": 166440,
+    "dDurationMs": 2240,
+    "segs": [ {
+      "utf8": "Professor Maryanne Wolf is a teacher,"
+    } ]
+  }, {
+    "tStartMs": 168680,
+    "dDurationMs": 3240,
+    "segs": [ {
+      "utf8": "and advocate for children's literacy\naround the world."
+    } ]
+  }, {
+    "tStartMs": 171920,
+    "dDurationMs": 4280,
+    "segs": [ {
+      "utf8": "Here, she explains more\nabout 'deep reading' to BBC Ideas."
+    } ]
+  }, {
+    "tStartMs": 176200,
+    "dDurationMs": 4320,
+    "segs": [ {
+      "utf8": "When we read at a surface level,\nwe're just getting the information."
+    } ]
+  }, {
+    "tStartMs": 180520,
+    "dDurationMs": 5960,
+    "segs": [ {
+      "utf8": "When we read deeply, we use much more\nof our cerebral cortex."
+    } ]
+  }, {
+    "tStartMs": 186480,
+    "dDurationMs": 3040,
+    "segs": [ {
+      "utf8": "Deep reading means\nthat we make analogies,"
+    } ]
+  }, {
+    "tStartMs": 189520,
+    "dDurationMs": 5160,
+    "segs": [ {
+      "utf8": "we make inferences,\nwhich allows us to be truly critical,"
+    } ]
+  }, {
+    "tStartMs": 194680,
+    "dDurationMs": 4320,
+    "segs": [ {
+      "utf8": "analytic, empathic human beings."
+    } ]
+  }, {
+    "tStartMs": 199000,
+    "dDurationMs": 4920,
+    "segs": [ {
+      "utf8": "The reality is, it's not what,\nor how much, we read, but how we read,"
+    } ]
+  }, {
+    "tStartMs": 203920,
+    "dDurationMs": 1480,
+    "segs": [ {
+      "utf8": "that's really important."
+    } ]
+  }, {
+    "tStartMs": 205400,
+    "dDurationMs": 4080,
+    "segs": [ {
+      "utf8": "The very volume\nis having negative effects"
+    } ]
+  }, {
+    "tStartMs": 209480,
+    "dDurationMs": 4800,
+    "segs": [ {
+      "utf8": "because to absorb that much, there's\na propensity towards skimming."
+    } ]
+  }, {
+    "tStartMs": 214280,
+    "dDurationMs": 4760,
+    "segs": [ {
+      "utf8": "Professor Wolf's research shows that\nreading from screens encourages reading"
+    } ]
+  }, {
+    "tStartMs": 219040,
+    "dDurationMs": 3200,
+    "segs": [ {
+      "utf8": "at the surface level, quickly\nand superficially"
+    } ]
+  }, {
+    "tStartMs": 222240,
+    "dDurationMs": 2920,
+    "segs": [ {
+      "utf8": "looking at\nwhat can be easily understood."
+    } ]
+  }, {
+    "tStartMs": 225160,
+    "dDurationMs": 4360,
+    "segs": [ {
+      "utf8": "Reading books, on the other hand,\nactivates different areas of the brain,"
+    } ]
+  }, {
+    "tStartMs": 229520,
+    "dDurationMs": 3400,
+    "segs": [ {
+      "utf8": "allowing a reader to develop\npositive traits like empathy,"
+    } ]
+  }, {
+    "tStartMs": 232920,
+    "dDurationMs": 2880,
+    "segs": [ {
+      "utf8": "and to understand the deeper level\nof a book,"
+    } ]
+  }, {
+    "tStartMs": 235800,
+    "dDurationMs": 2640,
+    "segs": [ {
+      "utf8": "including analogies and inferences."
+    } ]
+  }, {
+    "tStartMs": 238440,
+    "dDurationMs": 4720,
+    "segs": [ {
+      "utf8": "An analogy is a comparison between\nthings that have similar features."
+    } ]
+  }, {
+    "tStartMs": 243160,
+    "dDurationMs": 5560,
+    "segs": [ {
+      "utf8": "For example, you might talk about the\nhuman heart using the analogy of a pump."
+    } ]
+  }, {
+    "tStartMs": 248720,
+    "dDurationMs": 1880,
+    "segs": [ {
+      "utf8": "An inference is a guess, opinion,"
+    } ]
+  }, {
+    "tStartMs": 250600,
+    "dDurationMs": 4240,
+    "segs": [ {
+      "utf8": "or conclusion that you make based\non the information you already have."
+    } ]
+  }, {
+    "tStartMs": 254840,
+    "dDurationMs": 3720,
+    "segs": [ {
+      "utf8": "For example, seeing smoke in the\ndistance, you would make an inference"
+    } ]
+  }, {
+    "tStartMs": 258560,
+    "dDurationMs": 1400,
+    "segs": [ {
+      "utf8": "that there's fire."
+    } ]
+  }, {
+    "tStartMs": 259960,
+    "dDurationMs": 3840,
+    "segs": [ {
+      "utf8": "It's these types of deeper,\nmore subtle understanding that we get"
+    } ]
+  }, {
+    "tStartMs": 263800,
+    "dDurationMs": 1400,
+    "segs": [ {
+      "utf8": "from reading books."
+    } ]
+  }, {
+    "tStartMs": 265200,
+    "dDurationMs": 4040,
+    "segs": [ {
+      "utf8": "So, why is it that reading from\nscreens doesn't develop these skills"
+    } ]
+  }, {
+    "tStartMs": 269240,
+    "dDurationMs": 1120,
+    "segs": [ {
+      "utf8": "in the same way?"
+    } ]
+  }, {
+    "tStartMs": 270360,
+    "dDurationMs": 3520,
+    "segs": [ {
+      "utf8": "Well, the answer has to do\nwith the volume,"
+    } ]
+  }, {
+    "tStartMs": 273880,
+    "dDurationMs": 6000,
+    "segs": [ {
+      "utf8": "the sheer number of words, pings and\nnotifications that screens bombard us"
+    } ]
+  }, {
+    "tStartMs": 279880,
+    "dDurationMs": 1520,
+    "segs": [ {
+      "utf8": "with every day."
+    } ]
+  }, {
+    "tStartMs": 281400,
+    "dDurationMs": 4760,
+    "segs": [ {
+      "utf8": "Instead of deep reading, this\nencourages skimming – reading rapidly"
+    } ]
+  }, {
+    "tStartMs": 286160,
+    "dDurationMs": 3200,
+    "segs": [ {
+      "utf8": "in order to get a general overview\nof something."
+    } ]
+  }, {
+    "tStartMs": 289360,
+    "dDurationMs": 3720,
+    "segs": [ {
+      "utf8": "I think it's time to reveal\nthe answer to my question, Georgie."
+    } ]
+  }, {
+    "tStartMs": 293080,
+    "dDurationMs": 6200,
+    "segs": [ {
+      "utf8": "I asked you, how many words does\nthe average modern person read a day."
+    } ]
+  }, {
+    "tStartMs": 299280,
+    "dDurationMs": 3120,
+    "segs": [ {
+      "utf8": "And I guessed it was 50,000 words."
+    } ]
+  }, {
+    "tStartMs": 302400,
+    "dDurationMs": 2360,
+    "segs": [ {
+      "utf8": "Well, you were half right."
+    } ]
+  }, {
+    "tStartMs": 304760,
+    "dDurationMs": 7080,
+    "segs": [ {
+      "utf8": "In fact, the correct answer\nwas double that, 100,000 words."
+    } ]
+  }, {
+    "tStartMs": 311840,
+    "dDurationMs": 3800,
+    "segs": [ {
+      "utf8": "Right, let's recap the vocabulary\nwe've learned from this programme,"
+    } ]
+  }, {
+    "tStartMs": 315640,
+    "dDurationMs": 2520,
+    "segs": [ {
+      "utf8": "starting with 'attention span',"
+    } ]
+  }, {
+    "tStartMs": 318160,
+    "dDurationMs": 4280,
+    "segs": [ {
+      "utf8": "the length of time that someone\ncan stay concentrated on one thing."
+    } ]
+  }, {
+    "tStartMs": 322440,
+    "dDurationMs": 3160,
+    "segs": [ {
+      "utf8": "If you do something\nfor the joy of it, you do it simply"
+    } ]
+  }, {
+    "tStartMs": 325600,
+    "dDurationMs": 4000,
+    "segs": [ {
+      "utf8": "for the pleasure you get, rather\nthan as a way to get something else."
+    } ]
+  }, {
+    "tStartMs": 329600,
+    "dDurationMs": 4720,
+    "segs": [ {
+      "utf8": "The phrase 'on the surface level',\ndescribes looking at something quickly"
+    } ]
+  }, {
+    "tStartMs": 334320,
+    "dDurationMs": 5200,
+    "segs": [ {
+      "utf8": "and superficially rather than trying\nto understand its full, deeper meaning."
+    } ]
+  }, {
+    "tStartMs": 339520,
+    "dDurationMs": 4200,
+    "segs": [ {
+      "utf8": "An analogy is a comparison between\nthings that have similar features,"
+    } ]
+  }, {
+    "tStartMs": 343720,
+    "dDurationMs": 2600,
+    "segs": [ {
+      "utf8": "for example,\na human heart and a pump,"
+    } ]
+  }, {
+    "tStartMs": 346320,
+    "dDurationMs": 3360,
+    "segs": [ {
+      "utf8": "and an inference is a guess\nor conclusion that you make"
+    } ]
+  }, {
+    "tStartMs": 349680,
+    "dDurationMs": 2520,
+    "segs": [ {
+      "utf8": "based on the information\nyou already have,"
+    } ]
+  }, {
+    "tStartMs": 352200,
+    "dDurationMs": 3040,
+    "segs": [ {
+      "utf8": "like inferring fire\nfrom seeing smoke."
+    } ]
+  }, {
+    "tStartMs": 355240,
+    "dDurationMs": 3360,
+    "segs": [ {
+      "utf8": "And finally,\nskimming is reading rapidly"
+    } ]
+  }, {
+    "tStartMs": 358600,
+    "dDurationMs": 3760,
+    "segs": [ {
+      "utf8": "in order to get a general overview\nof the text being read."
+    } ]
+  }, {
+    "tStartMs": 362360,
+    "dDurationMs": 2240,
+    "segs": [ {
+      "utf8": "Once again, our six minutes are up."
+    } ]
+  }, {
+    "tStartMs": 364600,
+    "dDurationMs": 2800,
+    "segs": [ {
+      "utf8": "Goodbye for now!\nBye!"
+    } ]
+  } ]
+}

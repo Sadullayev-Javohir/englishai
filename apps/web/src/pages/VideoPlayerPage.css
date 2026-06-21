@@ -1,0 +1,138 @@
+@font-face { font-family:"Roboto"; src:url("/assets/video/Roboto-400.ttf") format("truetype"); font-weight:400; font-display:swap; }
+@font-face { font-family:"Roboto"; src:url("/assets/video/Roboto-500.ttf") format("truetype"); font-weight:500; font-display:swap; }
+.video-player-page {
+  --vp-surface:#fff; --vp-paper:#fffcf7; --vp-ink:#2c2144; --vp-muted:#6d647c;
+  --vp-primary:#7545e8; --vp-deep:#5126b8; --vp-soft:#efe7ff; --vp-border:#e9e2ee;
+  --vp-ai:#faf7ff; --vp-energy:#fff0d9; --vp-energy-border:#f3d5a3; --vp-energy-ink:#92520c;
+  display:flex; flex-direction:column; height:100vh; height:var(--video-viewport-height,100dvh); min-height:0;
+  width:100%; background:var(--vp-surface); color:var(--vp-ink); font-family:"Plus Jakarta Sans",sans-serif;
+}
+.video-player-page :is(button,a,textarea):focus-visible { outline:2px solid var(--vp-primary); outline-offset:3px; }
+/* The composer owns the focus border; its textarea must not draw a second one. */
+.video-player-page .video-ai-contextual__composer textarea:focus { outline:none; box-shadow:none; }
+.video-player-page button:disabled { cursor:not-allowed; opacity:.45; }
+.video-player-header { display:flex; flex:none; align-items:center; justify-content:space-between; gap:20px; width:100%; max-width:1440px; height:80px; margin:0 auto; padding:16px 40px; }
+.video-player-header__leading { display:flex; align-items:center; gap:12px; }
+.video-player-header__back { display:grid; place-items:center; width:44px; height:44px; flex:none; border:1px solid var(--vp-border); border-radius:14px; background:var(--vp-paper); color:var(--vp-ink); }
+.video-player-header__status { display:flex; align-items:center; gap:10px; }
+.video-player-stat { display:flex; align-items:center; gap:6px; height:36px; padding:8px 10px; border:1px solid #e1d3fc; border-radius:12px; color:#6436ce; background:var(--vp-soft); font-size:12px; font-weight:800; white-space:nowrap; }
+.video-player-stat--energy { color:var(--vp-energy-ink); border-color:var(--vp-energy-border); background:var(--vp-energy); }
+.video-player-stat--energy svg { color:#b56a0c; }
+.video-player-stat--xp svg { color:var(--vp-primary); }
+.video-player-header__module { border-radius:20px; padding:7px 12px; color:var(--vp-primary); background:var(--vp-soft); font-size:10px; line-height:15px; font-weight:800; }
+.video-player-header__bell { position:relative; display:grid; place-items:center; width:44px; height:44px; border-radius:14px; color:var(--vp-primary); background:var(--vp-soft); }
+.video-player-header__bell>span { position:absolute; top:0; right:0; display:grid; place-items:center; min-width:22px; height:20px; padding:0 4px; border:2px solid var(--vp-surface); border-radius:10px; background:var(--vp-primary); color:var(--vp-surface); font-size:10px; font-weight:800; }
+.video-player-main { display:grid; flex:1; min-height:0; grid-template-columns:minmax(260px,488fr) minmax(0,848fr); grid-template-rows:auto minmax(0,1fr) 18px; grid-template-areas:"captions watch" "captions ai" "actions ai"; gap:14px 24px; width:100%; max-width:1440px; margin:0 auto; padding:8px 40px max(24px,env(safe-area-inset-bottom)); }
+.video-player-watch { grid-area:watch; display:flex; min-width:0; flex-direction:column; gap:14px; }
+.video-player-stage { display:flex; justify-content:center; min-width:0; }
+.video-player-frame { position:relative; width:min(100%, max(320px, calc((var(--video-viewport-height,100dvh) - 420px) * 16 / 9))); aspect-ratio:16/9; overflow:hidden; border-radius:12px; background:#000; }
+.video-player-embed,.video-player-embed>div,.video-player-embed iframe { position:absolute; inset:0; display:block; width:100%!important; height:100%!important; min-width:0; border:0; pointer-events:auto!important; }
+.video-player-info { display:flex; min-width:0; flex-direction:column; gap:6px; }
+.video-player-title { margin:0; overflow-wrap:anywhere; color:var(--vp-ink); font:700 22px/1.25 "Nunito",sans-serif; }
+.video-player-source { display:flex; align-items:center; gap:10px; min-width:0; }
+.video-player-metadata { flex:1; min-width:0; margin:0; color:var(--vp-muted); font:500 12px/1.35 "Roboto",sans-serif; }
+.video-player-source-link { flex:none; color:var(--vp-primary); font:500 12px/1.35 "Roboto",sans-serif; text-decoration:none; }
+.video-player-source-link:hover { text-decoration:underline; }
+.video-player-mobile-meta { display:none; }
+.video-player-captions { grid-area:captions; display:flex; min-width:0; min-height:0; flex-direction:column; gap:14px; padding:24px; border:1px solid var(--vp-border); border-radius:16px; background:var(--vp-surface); }
+.video-player-captions__heading { display:flex; flex:none; align-items:center; justify-content:space-between; gap:8px; }
+.video-player-captions__heading h2 { flex:1; margin:0; font:800 24px/1.5 "Nunito",sans-serif; color:var(--vp-ink); }
+.video-player-translation-toggle { position:relative; display:grid; place-items:center; color:var(--vp-primary); width:24px; height:28px; flex:none; }
+.video-player-translation-toggle::after { content:""; position:absolute; inset:-6px; }
+.video-player-mobile-quiz { display:none; }
+.video-player-captions__hint { margin:0; font-size:12px; line-height:1.5; color:var(--vp-muted); }
+.video-practice-list { display:flex; min-height:0; flex:1; flex-direction:column; gap:14px; padding:0; margin:0; list-style:none; }
+.video-practice-line { display:flex; flex:none; align-items:flex-start; gap:12px; padding:18px 12px; border-bottom:1px solid var(--vp-border); border-radius:8px; cursor:pointer; }
+.video-practice-line:hover { background:var(--vp-ai); }
+.video-practice-timestamp { flex:none; padding:0; min-height:0; color:var(--vp-muted); font:400 10px/1.5 "Plus Jakarta Sans",sans-serif; text-align:left; }
+.video-practice-line.is-selected { flex-direction:column; align-items:stretch; gap:10px; padding:18px; border:0; border-radius:12px; background:var(--vp-soft); }
+.video-practice-line.is-selected .video-practice-timestamp { color:var(--vp-deep); font-weight:700; }
+.video-practice-text { min-width:0; margin:0; overflow-wrap:anywhere; font-size:16px; font-weight:500; line-height:1.5; }
+.video-practice-line.is-selected .video-practice-text { font-size:19px; font-weight:800; }
+.video-practice-word { min-height:0; padding:0; border:0; color:inherit; background:transparent; font:inherit; }
+.video-practice-word.is-speaking { border-radius:4px; color:var(--vp-surface); background:var(--vp-primary); outline:2px solid var(--vp-primary); }
+.video-practice-translation { padding-top:10px; border-top:1px solid #d9c9fc; }
+.video-practice-translation>span { display:block; margin-bottom:5px; color:var(--vp-deep); font-size:9px; line-height:11px; font-weight:800; }
+.video-practice-translation>p { margin:0; overflow-wrap:anywhere; font-size:14px; line-height:1.5; }
+.video-practice-ask { display:flex; align-self:flex-start; align-items:center; gap:7px; padding-top:8px; color:var(--vp-primary); font-size:12px; line-height:16px; font-weight:700; }
+.video-transcript-navigation { display:flex; flex:none; gap:8px; align-items:center; padding-top:12px; border-top:1px solid var(--vp-border); }
+.video-transcript-navigation>button:not(.video-transcript-follow) { display:grid; place-items:center; flex:none; width:36px; height:36px; border:1px solid var(--vp-border); border-radius:10px; background:var(--vp-surface); }
+.video-transcript-follow { display:flex; flex:1; min-width:0; align-items:center; gap:8px; color:var(--vp-muted); font-size:11px; line-height:1.4; text-align:left; }
+.video-transcript-follow svg { flex:none; color:var(--vp-primary); }
+.video-player-actions { grid-area:actions; display:flex; align-items:center; justify-content:center; }
+.video-player-quiz-button { color:var(--vp-muted); font:600 12px/18px "Plus Jakarta Sans",sans-serif; }
+.video-player-quiz-button:hover:not(:disabled) { color:var(--vp-primary); text-decoration:underline; }
+.video-player-contextual-ai { grid-area:ai; min-height:0; min-width:0; }
+.video-player-ai-toggle { display:none; }
+.video-player-unavailable { min-height:0; margin:0; overflow-wrap:anywhere; color:var(--vp-muted); font-size:13px; line-height:1.5; }
+.video-player-streaming { margin:0; color:var(--vp-muted); font-size:11px; }
+.video-practice-list.is-single-caption>.video-practice-line { flex:0 1 auto; min-height:0; overflow-y:auto; overscroll-behavior:contain; scrollbar-width:thin; scrollbar-color:var(--vp-border) transparent; }
+@media (min-width:701px) and (max-height:760px) {
+  .video-player-captions { padding:16px; gap:10px; }
+  .video-player-captions__hint { display:none; }
+  .video-practice-line { padding:10px; }
+  .video-practice-line.is-selected { padding:12px; gap:6px; }
+  .video-practice-translation { padding-top:6px; }
+  .video-player-main { grid-template-columns:minmax(260px,40%) minmax(0,1fr); }
+}
+@media (min-width:701px) and (max-width:1050px) {
+  .video-player-header { padding-inline:24px; }
+  .video-player-main { padding-inline:24px; gap:14px 16px; grid-template-columns:minmax(280px,40%) minmax(0,1fr); }
+  .video-player-captions { padding:16px; }
+  .video-practice-line { padding:12px 8px; }
+  .video-practice-line.is-selected { padding:12px; }
+}
+@media (max-width:700px) {
+  .video-player-header { height:60px; gap:8px; padding:8px 16px; }
+  .video-player-header__leading,.video-player-header__status { gap:8px; }
+  .video-player-header .ea-brand-logo__mark,.video-player-header .ea-brand-logo__mark img { width:36px!important; height:36px!important; }
+  .video-player-header__module { display:none; }
+  .video-player-main { display:flex; flex-direction:column; gap:10px; padding:0 0 max(16px,env(safe-area-inset-bottom)); }
+  .video-player-watch { flex:none; gap:10px; }
+  .video-player-frame { border-radius:0; width:min(100%, max(160px, calc((var(--video-viewport-height,100dvh) - 330px) * 16 / 9))); }
+  .video-player-info { gap:3px; padding:0 16px; }
+  .video-player-title { font-size:18px; }
+  .video-player-metadata { color:#a9630b; font-size:10px; }
+  .video-player-source-link { font-size:11px; }
+  .video-player-desktop-meta { display:none; }
+  .video-player-mobile-meta { display:inline; }
+  .video-player-captions { flex:1 1 262px; min-height:170px; gap:8px; margin:0 16px; padding:0; border:0; border-radius:0; }
+  .video-player-captions__heading h2 { font-size:18px; }
+  .video-player-captions__hint { display:none; }
+  .video-player-translation-toggle svg { width:18px; height:18px; }
+  .video-player-mobile-quiz { display:grid; place-items:center; width:28px; height:28px; color:var(--vp-primary); }
+  .video-practice-list { gap:8px; }
+  .video-practice-line { gap:12px; padding:8px 10px; border-bottom:0; border-radius:8px; }
+  .video-practice-text { font-size:13px; }
+  .video-practice-line.is-selected { gap:5px; padding:12px; border-radius:10px; }
+  .video-practice-line.is-selected .video-practice-timestamp { font-size:9px; }
+  .video-practice-line.is-selected .video-practice-text { font-size:15px; line-height:1.4; }
+  .video-practice-translation { padding:0; border:0; color:var(--vp-deep); }
+  .video-practice-translation>span { display:none; }
+  .video-practice-translation>p { font-size:12px; }
+  .video-practice-ask { display:none; }
+  .video-transcript-navigation { padding:0; border:0; }
+  .video-transcript-follow { gap:6px; font-size:10px; }
+  .video-player-actions { display:none; }
+  .video-player-contextual-ai { flex:1 1 190px; min-height:160px; margin:0 16px; }
+}
+@media (max-width:374px) {
+  .video-player-header { padding-inline:12px; }
+  .video-player-header__leading,.video-player-header__status { gap:6px; }
+  .video-player-stat { padding-inline:8px; }
+}
+@media (max-width:700px) and (max-height:759px), (min-width:500px) and (max-width:700px) {
+  .video-player-contextual-ai { display:none; }
+  .video-player-ai-toggle { display:flex; flex:none; align-items:center; gap:8px; min-height:42px; margin:0 16px; padding:10px 12px; border:1px solid var(--vp-border); border-radius:12px; color:var(--vp-primary); background:var(--vp-ai); font:800 15px/20px "Nunito",sans-serif; }
+  .video-player-ai-toggle>svg:last-child { margin-left:auto; }
+  .is-ai-open .video-player-captions,.is-ai-open .video-player-ai-toggle { display:none; }
+  .is-ai-open .video-player-contextual-ai { display:block; flex:1; min-height:0; }
+  .is-ai-open .video-ai-contextual__close { display:grid; }
+}
+@media (max-width:700px) {
+  .video-player-page[data-keyboard="true"] .video-player-frame { max-height:120px; width:auto; height:120px; }
+  .video-player-page[data-keyboard="true"] .video-player-info { display:none; }
+  .video-player-page[data-keyboard="true"] .video-player-captions,.video-player-page[data-keyboard="true"] .video-player-ai-toggle { display:none; }
+  .video-player-page[data-keyboard="true"] .video-player-contextual-ai { display:block; flex:1; min-height:0; }
+  .video-player-page[data-keyboard="true"] .video-ai-contextual__close { display:grid; }
+}

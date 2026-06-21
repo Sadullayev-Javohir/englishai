@@ -1,0 +1,265 @@
+/* Listening 37–40: the chrome owns 100dvh; this is only its remaining grid row.
+   Do not hide overflow on the document: long text belongs in the body scroller. */
+.listening-topic {
+  --vt-accent:var(--ea-primary);
+  --vt-accent-soft:var(--ea-primary-soft);
+  height:100%; min-height:0; min-width:0; width:100%; display:grid;
+  grid-template-rows:minmax(0,1fr); justify-items:center; overflow:hidden;
+  padding:12px 24px max(18px,env(safe-area-inset-bottom)); color:var(--ea-text);
+}
+.listening-topic__inner { width:min(100%,960px); height:100%; min-height:0; min-width:0; display:grid; grid-template-rows:minmax(0,1fr); }
+.listening-topic__stage { width:100%; height:100%; min-height:0; min-width:0; }
+.listening-topic :is(.listening-topic__slide,.listening-topic__practice,.listening-topic__result).ea-lesson-stage {
+  width:100%; height:100%; min-height:0; max-height:100%; margin:0; padding:0;
+  grid-template-rows:auto minmax(0,1fr) auto; gap:12px;
+  border:0; border-radius:0; box-shadow:none; background:transparent; overflow:hidden;
+}
+.listening-topic .ea-lesson-stage > .ea-lesson-stage__header { min-height:32px; padding:0; border:0; background:transparent; }
+.listening-topic .ea-lesson-stage > .ea-lesson-stage__body {
+  display:flex; flex-direction:column; gap:18px; min-height:0; min-width:0; padding:4px 3px;
+  overflow:auto; overscroll-behavior:contain; scrollbar-gutter:auto; align-items:stretch;
+  /* A scrollbar appears only when real content exceeds the available row. */
+  scrollbar-width:thin;
+}
+.listening-topic .ea-lesson-stage > .listening-topic__practice-body { gap:16px; }
+.listening-topic .ea-lesson-stage__body > * { flex-shrink:0; }
+.listening-topic .ea-lesson-stage__body::-webkit-scrollbar { display:block; width:5px; }
+.listening-topic .ea-lesson-stage__body::-webkit-scrollbar-thumb { background:var(--ea-border); border-radius:4px; }
+.listening-topic .ea-lesson-stage > .ea-lesson-stage__footer { min-height:56px; padding:2px 3px; border:0; background:var(--ea-bg); }
+.listening-topic__slide-action,.listening-topic__footer-action { width:100%; }
+.listening-topic__footer-action { display:grid; gap:6px; }
+.listening-topic__footer-action--reserved { min-height:52px; }
+.listening-topic__footer-hint { margin:0; font-size:12px; line-height:17px; text-align:center; color:var(--ea-muted-deep); }
+.listening-topic .listening-progress { --lp-purple:var(--ea-primary); }
+.listening-topic .listening-progress__segment.is-done::before { background:#b49adf; }
+.listening-topic__heading { display:flex; flex-direction:column; align-items:flex-start; gap:8px; }
+.listening-topic__heading h1 { margin:0; font:900 clamp(28px,3vw,44px)/1.09 var(--ea-font-display); letter-spacing:-.6px; overflow-wrap:anywhere; }
+.listening-topic__heading p { color:var(--ea-muted-deep); font-size:14px; line-height:21px; }
+.listening-topic__hero { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px; text-align:center; background:#fff1c6; border-radius:24px; padding:24px; }
+.listening-topic__hero-media { width:144px; height:120px; border-radius:18px; overflow:hidden; }
+.listening-topic__hero-title { font:900 32px/1.12 var(--ea-font-display); }
+.listening-topic__hero-subtitle { color:var(--ea-muted-deep); font-size:14px; }
+.listening-topic__steps { display:flex; justify-content:center; flex-wrap:wrap; gap:12px; }
+.listening-topic__step { display:flex; align-items:center; gap:6px; font-size:12px; font-weight:700; }
+.listening-topic__step-icon { display:flex; color:var(--ea-primary); }
+.listening-topic__step-arrow { color:var(--ea-muted-deep); }
+.listening-topic__audio-card { display:grid; gap:18px; }
+.listening-topic__audio-content { background:#fff1c6; border-radius:24px; padding:20px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; text-align:center; }
+.listening-topic__episode-photo { width:68px; height:68px; border-radius:16px; overflow:hidden; }
+.listening-topic__audio-content h2 { font:900 32px/1.1 var(--ea-font-display); }
+.listening-topic__audio-hint { display:flex; align-items:center; gap:8px; color:var(--ea-muted-deep); font-size:13px; line-height:20px; }
+.listening-topic__audio-hint .material-symbols-rounded { color:#91521f; font-size:20px; flex:none; }
+.listening-player { border-radius:20px; background:var(--ea-primary-soft); padding:16px 20px; display:grid; gap:10px; color:var(--ea-primary); }
+.listening-player__transport { display:flex; gap:14px; align-items:center; }
+.listening-player__play { display:grid; place-items:center; width:44px; height:44px; flex:none; background:var(--ea-primary); color:var(--ea-on-primary); border-radius:14px; }
+.listening-player__play:disabled { opacity:.5; }
+.listening-player__seek { position:relative; flex:1; min-width:0; height:48px; }
+.listening-player__seek input { position:absolute; inset:0; width:100%; height:100%; margin:0; opacity:0; cursor:pointer; }
+.listening-player__seek:focus-within { outline:2px solid var(--ea-primary); outline-offset:3px; border-radius:4px; }
+.listening-player__wave { display:flex; align-items:center; gap:4px; height:100%; }
+.listening-player__wave>span { flex:1; min-width:1px; border-radius:3px; background:#c8b5eb; max-height:100%; }
+.listening-player__wave>span.is-played { background:var(--ea-primary); }
+.listening-player__speed { flex:none; min-width:30px; min-height:40px; font-size:12px; font-weight:800; }
+.listening-player__meta { display:flex; align-items:center; justify-content:space-between; gap:12px; color:var(--ea-muted-deep); font-size:11px; line-height:16px; }
+.listening-player__meta button { display:flex; align-items:center; gap:5px; color:var(--ea-primary); min-height:24px; }
+.listening-player__error { font-size:12px; color:var(--ea-danger); }
+.listening-topic__disclosure { border:1px solid var(--ea-border); border-radius:14px; background:var(--ea-surface); }
+.listening-topic__disclosure summary { padding:12px 16px; font-size:12px; line-height:20px; color:var(--ea-primary); cursor:pointer; }
+.listening-topic__disclosure p { padding:0 16px 16px; white-space:pre-wrap; overflow-wrap:anywhere; line-height:1.7; font-size:16px; }
+.listening-topic__exercise { display:grid; gap:12px; }
+.listening-topic__question { margin:0; font:900 clamp(20px,2.3vw,30px)/1.2 var(--ea-font-display); overflow-wrap:anywhere; }
+.listening-topic__options-grid { display:grid; grid-template-columns:minmax(0,1fr); gap:12px; }
+/* The shared lesson answer card is also used by Vocabulary. This keeps every
+   listening question, including the corrective state, in the same Pen card
+   system instead of falling back to the older game-card treatment. */
+.listening-topic__options-grid .listening-topic__option.listening-topic__option { min-height:70px; }
+.listening-topic__answer-status { display:grid; min-height:64px; }
+.listening-topic__checking-slot,.listening-topic__feedback-slot { grid-area:1/1; min-height:0; }
+.listening-topic__checking { display:flex; justify-content:center; align-items:center; gap:8px; font-size:13px; }
+.listening-topic__feedback { display:flex; align-items:flex-start; gap:10px; padding:12px 16px; border-radius:16px; }
+.listening-topic__feedback.is-correct { color:#4e762f; background:#e9f4d7; }
+.listening-topic__feedback.is-wrong { color:#91521f; background:#fff0e6; }
+.listening-topic__feedback-copy { min-width:0; overflow-wrap:anywhere; }
+.listening-topic__feedback-title { font:800 17px/22px var(--ea-font-display); }
+.listening-topic__feedback-note { font-size:12px; line-height:18px; margin-top:4px; }
+/* Correct answers advance automatically. Keep the confirmed card in view while
+   the timer runs, rather than making the learner scroll past three inactive
+   choices to reach the feedback and Next control. */
+.listening-topic__exercise:has(.listening-topic__feedback.is-correct) .listening-topic__option:not([data-answer-state="correct"]) { display:none; }
+/* Before grading we reserve feedback space so the footer does not jump. Once a
+   correct response has arrived, the reserved slot can collapse: the result is
+   immediately actionable and needs to fit alongside all four Vocabulary-style
+   answer cards in the same viewport. */
+.listening-topic__practice:has(.listening-topic__feedback.is-correct) .listening-topic__answer-status { min-height:0; }
+.listening-topic__practice:has(.listening-topic__feedback.is-correct) > .listening-topic__practice-body { gap:14px; }
+.listening-topic__transcript-evidence { display:grid; gap:12px; border-radius:18px; padding:16px 18px; background:#fff1c6; }
+.listening-topic__transcript-evidence>p { color:var(--ea-text); font-size:14px; font-weight:700; line-height:1.65; overflow-wrap:anywhere; }
+.listening-topic__transcript-card { border-radius:22px; padding:24px; background:#fff1c6; }
+.listening-topic__transcript-card p { white-space:pre-wrap; overflow-wrap:anywhere; font-size:18px; line-height:1.8; }
+.listening-topic .listening-topic__result.ea-lesson-stage { grid-template-rows:auto minmax(0,1fr) auto; }
+.listening-topic__result-content { width:100%; margin:auto; display:flex; flex-direction:column; align-items:center; gap:16px; text-align:center; }
+.listening-topic__parrot { width:clamp(96px,18vh,180px); height:clamp(80px,15vh,150px); object-fit:contain; }
+.listening-topic__result-content>h1 { font:900 clamp(28px,3vw,42px)/1.12 var(--ea-font-display); }
+.listening-topic__metrics { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); width:100%; gap:12px; }
+.listening-topic__metrics>div { background:#e9f4d7; padding:16px; border-radius:18px; }
+.listening-topic__metrics>div:nth-child(2) { background:var(--ea-primary-soft); }
+.listening-topic__metrics dd { font:900 32px/1.1 var(--ea-font-display); }
+.listening-topic__metrics dt { color:var(--ea-muted-deep); font-size:12px; margin-top:6px; }
+.listening-topic__saved,.listening-topic__remember { width:100%; padding:18px 20px; text-align:left; border-radius:18px; background:#e9f4d7; color:#4e762f; }
+.listening-topic__saved h2 { display:flex; align-items:center; gap:8px; font:900 22px/1.2 var(--ea-font-display); }
+.listening-topic__saved p,.listening-topic__remember p { font-size:13px; line-height:20px; margin-top:6px; }
+.listening-topic__remember { background:#fff1c6; color:var(--ea-text); }
+.listening-topic__remember>span { font-size:10px; font-weight:800; }
+.listening-topic__remember h2 { font:900 28px/1.2 var(--ea-font-display); margin-top:6px; }
+.listening-topic__retry { justify-self:center; font-size:12px; line-height:20px; color:var(--ea-muted-deep); padding:4px; }
+.listening-topic--centered,.listening-topic__empty-wrap,.listening-topic__loading { display:grid; place-items:center; min-height:0; height:100%; overflow:auto; }
+.listening-topic__state { width:min(100%,460px); padding:24px; }
+.listening-topic__state-actions { display:flex; flex-wrap:wrap; justify-content:center; gap:10px; }
+@media(min-width:701px) and (max-height:820px) {
+  .listening-topic { padding-block:4px 12px; }
+  .listening-topic .ea-lesson-stage > .ea-lesson-stage__body { gap:12px; }
+  .listening-topic__heading h1 { font-size:34px; }
+  .listening-topic__audio-content { padding:12px; gap:8px; }
+  .listening-topic__episode-photo { width:50px; height:50px; }
+  .listening-topic__audio-content h2 { font-size:28px; }
+  .listening-topic__audio-card { gap:12px; }
+  .listening-topic .lesson-quiz-options .listening-topic__option.listening-topic__option { min-height:44px; padding-block:6px; }
+  .listening-topic__question { font-size:24px; }
+  .listening-topic__result-content { gap:12px; }
+  .listening-topic__parrot { width:88px; height:72px; }
+  .listening-topic__result-content>h1 { font-size:30px; }
+  .listening-topic__metrics>div { padding:12px; }
+  .listening-topic__metrics dd { font-size:28px; }
+  .listening-topic__saved,.listening-topic__remember { padding:12px 16px; }
+}
+@media(max-width:700px) {
+  .listening-topic { padding:6px 20px max(12px,env(safe-area-inset-bottom)); }
+  .listening-topic :is(.listening-topic__slide,.listening-topic__practice,.listening-topic__result).ea-lesson-stage { gap:8px; }
+  .listening-topic .ea-lesson-stage > .ea-lesson-stage__body { gap:14px; }
+  .listening-topic__heading h1 { font-size:30px; }
+  .listening-topic__heading p { font-size:12px; line-height:18px; }
+  .listening-topic__hero { padding:20px 14px; }
+  .listening-topic__hero-title { font-size:28px; }
+  .listening-topic__audio-content { padding:20px 12px; }
+  .listening-topic__audio-content h2 { font-size:28px; }
+  .listening-topic__audio-card { gap:14px; }
+  .listening-player { padding:12px 16px; gap:6px; }
+  .listening-player__transport { gap:10px; }
+  .listening-player__seek { height:40px; }
+  .listening-player__wave { gap:3px; }
+  .listening-topic .lesson-quiz-options .listening-topic__option.listening-topic__option { min-height:64px; }
+  .listening-topic__question { font-size:24px; }
+  .listening-topic__result-content { gap:14px; }
+  .listening-topic__metrics>div { padding:14px 10px; }
+  .listening-topic__metrics dd { font-size:28px; }
+  .listening-topic__saved,.listening-topic__remember { padding:16px; }
+  .listening-topic__saved h2 { font-size:21px; }
+}
+@media(max-height:740px) {
+  .listening-topic { padding-block:2px max(8px,env(safe-area-inset-bottom)); }
+  .listening-topic .ea-lesson-stage > .ea-lesson-stage__body { gap:10px; }
+  .listening-topic__heading { gap:5px; }
+  .listening-topic__heading h1 { font-size:28px; }
+  .listening-topic__hero { gap:8px; padding:14px; }
+  .listening-topic__hero-media { width:100px; height:80px; }
+  .listening-topic__hero-title,.listening-topic__audio-content h2 { font-size:24px; }
+  .listening-topic__audio-content { padding:12px; gap:6px; }
+  .listening-topic__episode-photo { width:44px; height:44px; }
+  .listening-topic__audio-card { gap:10px; }
+  .listening-player { padding:8px 12px; gap:3px; }
+  .listening-player__seek { height:32px; }
+  .listening-player__play { width:36px; height:36px; }
+  .listening-topic__question { font-size:20px; }
+  .listening-topic__exercise { gap:8px; }
+  .listening-topic__options-grid { gap:6px; }
+  .listening-topic .lesson-quiz-options .listening-topic__option.listening-topic__option { min-height:44px; padding-block:6px; }
+  .listening-topic__answer-status { min-height:56px; }
+  .listening-topic__feedback { padding:8px 12px; }
+  .listening-topic__result-content { gap:10px; }
+  .listening-topic__parrot { width:96px; height:80px; }
+  .listening-topic__result-content>h1 { font-size:28px; }
+  .listening-topic__metrics>div { padding:10px; }
+  .listening-topic__saved,.listening-topic__remember { padding:12px 14px; }
+}
+@media(max-width:700px) and (max-height:700px) {
+  .listening-topic__transcript-evidence { grid-template-columns:minmax(0,1fr) auto; gap:6px 10px; padding:10px 12px; }
+  .listening-topic__transcript-evidence>p { grid-column:1; grid-row:2; font-size:12px; line-height:16px; }
+  .listening-topic__transcript-evidence>.listening-player { grid-column:2; grid-row:1/3; align-self:center; display:flex; padding:0; background:transparent; }
+  .listening-topic__transcript-evidence .listening-player__transport { gap:0; }
+  .listening-topic__transcript-evidence .listening-player__play { width:36px; height:36px; border-radius:11px; }
+  .listening-topic__transcript-evidence .listening-player__seek,
+  .listening-topic__transcript-evidence .listening-player__speed,
+  .listening-topic__transcript-evidence .listening-player__meta { display:none; }
+  .listening-topic__result-content { gap:7px; }
+  .listening-topic__parrot { width:68px; height:54px; }
+  .listening-topic__result-content>h1 { font-size:25px; line-height:1.04; }
+  .listening-topic__metrics { gap:8px; }
+  .listening-topic__metrics>div { padding:8px; }
+  .listening-topic__metrics dd { font-size:24px; }
+  .listening-topic__metrics dt { margin-top:2px; }
+  .listening-topic__saved,.listening-topic__remember { padding:8px 12px; }
+  .listening-topic__saved h2 { font-size:17px; }
+  .listening-topic__remember h2 { font-size:21px; }
+  .listening-topic__saved p,.listening-topic__remember p { margin-top:3px; font-size:11px; line-height:15px; }
+}
+/* At phone/tablet widths the floating assistant has no outer canvas gutter.
+   Give it a real slot alongside (not on top of) the footer actions. */
+@media(max-width:1100px) {
+  .listening-topic .ea-lesson-stage > .ea-lesson-stage__footer { padding-right:68px; }
+}
+/* Short phones keep normal content readable and fit by reducing decoration,
+   never by clipping prose or shrinking the answer touch targets below 44px. */
+@media(max-width:700px) and (max-height:600px) {
+  .listening-topic { padding-inline:12px; }
+  .listening-topic .ea-lesson-stage > .ea-lesson-stage__body { gap:6px; }
+  .listening-topic__heading h1 { font-size:24px; }
+  .listening-topic__hero { padding:10px; gap:6px; }
+  .listening-topic__hero-media { width:64px; height:52px; }
+  .listening-topic__hero-title { font-size:22px; }
+  .listening-topic__hero-subtitle { display:none; }
+  .listening-topic__steps { gap:8px; }
+  .listening-topic__step-label { font-size:11px; }
+  .listening-topic__step-icon,.listening-topic__step-arrow { display:none; }
+  .listening-topic__audio-content { padding:8px; gap:4px; }
+  .listening-topic__audio-content h2 { font-size:22px; }
+  .listening-topic__episode-photo { display:none; }
+  .listening-topic__audio-hint { font-size:12px; line-height:17px; }
+  .listening-topic__disclosure summary { padding:8px 12px; }
+  .listening-topic__result-content { gap:8px; }
+  .listening-topic__parrot { display:none; }
+  .listening-topic__result-content>h1 { font-size:24px; }
+  .listening-topic__metrics>div { padding:8px; }
+  .listening-topic__metrics dd { font-size:24px; }
+  .listening-topic__metrics dt { margin-top:3px; }
+  .listening-topic__saved,.listening-topic__remember { padding:10px 12px; }
+  .listening-topic__saved h2 { font-size:18px; }
+  .listening-topic__remember h2 { font-size:22px; }
+  .listening-topic__saved p,.listening-topic__remember p { font-size:12px; line-height:17px; }
+  /* Short-screen quiz: keep the question and 44px answers, remove redundant
+     module decoration/empty feedback, then focus the checked answer. */
+  .listening-topic__practice .listening-topic__heading .listening-tag { display:none; }
+  .listening-topic__practice .listening-topic__heading h1 { font-size:20px; line-height:1.05; }
+  .listening-topic__practice .listening-player { padding-block:4px; gap:0; }
+  .listening-topic__practice .listening-player__meta button { min-height:16px; }
+  .listening-topic__answer-status:not(:has(.listening-topic__feedback,.listening-topic__checking)) { display:none; }
+  .listening-topic__exercise:has(.listening-topic__feedback.is-correct) .listening-topic__option:not([data-answer-state="correct"]) { display:none; }
+  .listening-topic__exercise:has(.listening-topic__feedback.is-wrong) .listening-topic__question { display:none; }
+  .listening-topic__exercise:has(.listening-topic__feedback.is-wrong) { gap:5px; }
+  .listening-topic__exercise:has(.listening-topic__feedback.is-wrong) .listening-topic__options-grid { gap:5px; }
+  .listening-topic .listening-topic__exercise:has(.listening-topic__feedback.is-wrong) .listening-topic__option.listening-topic__option { min-height:38px; padding:4px 10px; }
+  .listening-topic__exercise:has(.listening-topic__feedback.is-wrong) .listening-topic__option__key { width:24px; height:24px; }
+  .listening-topic__exercise:has(.listening-topic__feedback.is-wrong) .listening-topic__answer-status { min-height:0; }
+  .listening-topic__exercise:has(.listening-topic__feedback.is-wrong) .listening-topic__feedback { gap:7px; padding:7px 10px; }
+  .listening-topic__exercise:has(.listening-topic__feedback.is-wrong) .listening-topic__feedback-title { font-size:15px; line-height:18px; }
+  .listening-topic__exercise:has(.listening-topic__feedback.is-wrong) .listening-topic__feedback-note { margin-top:2px; font-size:10px; line-height:14px; }
+  .listening-topic__transcript-evidence { grid-template-columns:minmax(0,1fr) auto; gap:5px 8px; padding:8px 10px; border-radius:14px; }
+  .listening-topic__transcript-evidence>p { grid-column:1; grid-row:2; }
+  .listening-topic__transcript-evidence>.listening-player { grid-column:2; grid-row:1/3; align-self:center; display:flex; padding:0; background:transparent; }
+  .listening-topic__transcript-evidence>p { font-size:11px; line-height:15px; }
+  .listening-topic__transcript-evidence .listening-tag { padding:3px 7px; font-size:8px; line-height:12px; }
+  .listening-topic__transcript-evidence .listening-player__transport { gap:0; }
+  .listening-topic__transcript-evidence .listening-player__play { width:32px; height:32px; border-radius:10px; }
+  .listening-topic__transcript-evidence .listening-player__seek,
+  .listening-topic__transcript-evidence .listening-player__speed { display:none; }
+  .listening-topic__transcript-evidence .listening-player__meta { display:none; }
+}

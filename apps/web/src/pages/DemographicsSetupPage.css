@@ -1,0 +1,68 @@
+/*
+ * Profile-details chrome. Card, colours, options and buttons come from the shared
+ * onboarding system (onboarding.css). This file only handles the fieldset rhythm,
+ * the three-up date row and the value-picker modal grid.
+ */
+
+.demographics-form { gap: 20px; }
+.demographics-intro .ob-feature__list { margin-top: auto; }
+
+.demographics-fieldset { border: 0; margin: 0; padding: 0; }
+.demographics-fieldset legend {
+  padding: 0;
+  margin-bottom: 11px;
+  color: var(--ob-muted-soft);
+  font-family: var(--ea-font-display, "Nunito", sans-serif);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+/* Date row — three tappable select triggers. */
+.demographics-date { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.demographics-date > label {
+  display: grid;
+  gap: 7px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: var(--ob-muted);
+}
+.demographics-date .ob-select { min-height: 52px; }
+
+.demographics-option { min-height: 66px; }
+.demographics-other { margin-top: 12px; }
+
+/* ── Value picker modal (day / month / year) ──────────────────────────── */
+.demographics-select-modal .demographics-select-grid { display: grid; gap: 8px; }
+.demographics-select-grid--day { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.demographics-select-grid--month { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.demographics-select-grid--year { grid-template-columns: repeat(3, minmax(0, 1fr)); max-height: 46vh; overflow-y: auto; padding-right: 4px; }
+
+.demographics-select-grid button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  min-height: 46px;
+  padding: 0 10px;
+  border: 1px solid var(--ea-border);
+  border-radius: 12px;
+  background: var(--ea-surface);
+  color: var(--ea-text);
+  font-size: 14px;
+  font-weight: 750;
+  cursor: pointer;
+  transition: border-color 0.14s ease, background 0.14s ease;
+}
+.demographics-select-grid button:hover { border-color: var(--ea-primary); background: var(--ea-primary-soft); }
+.demographics-select-grid button.is-selected {
+  border-color: var(--ea-primary);
+  background: var(--ea-primary-soft);
+  color: var(--ea-primary);
+}
+.demographics-select-grid button.is-selected svg { color: var(--ea-primary); }
+
+@media (max-width: 700px) {
+  .demographics-select-grid--day { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}

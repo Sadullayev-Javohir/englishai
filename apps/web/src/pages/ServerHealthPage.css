@@ -1,0 +1,395 @@
+.server-health-page {
+  display: grid;
+  gap: 20px;
+  width: min(1240px, 100%);
+  margin: 0 auto;
+  color: var(--ea-text);
+}
+
+.server-health-page__logs-head,
+.server-health-page__live-head,
+.server-health-page__detail-head,
+.server-health-page__log-head,
+.server-health-page__log-group-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.server-health-page__eyebrow {
+  color: var(--ea-primary-deep);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.server-health-page__content {
+  display: grid;
+  gap: 20px;
+}
+
+.server-health-page__section,
+.server-health-page__log-groups,
+.server-health-page__logs {
+  display: grid;
+  gap: 16px;
+}
+
+/* Section head: eyebrow + display title on the left, count pill on the right
+   (matches the ProfessionalHome ph-section-head rhythm). */
+.server-health-page__section-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.server-health-page__section-head h2 {
+  margin: 5px 0 0;
+  font: 700 var(--responsive-heading-size) / 1.12 var(--ea-font-display);
+  letter-spacing: -0.045em;
+}
+
+.server-health-page__status {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
+}
+
+.server-health-page__status-icon,
+.server-health-page__card-icon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  color: var(--ea-primary-deep);
+  background: var(--ea-primary-soft);
+}
+
+.server-health-page__status-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+}
+
+.server-health-page__card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 13px;
+}
+
+/* Status-tinted icon chips + hairline so operators scan health by colour. */
+.server-health-page__detail-card[data-state="healthy"] .server-health-page__card-icon,
+.server-health-page__service[data-state="healthy"] .server-health-page__card-icon {
+  color: var(--ea-success);
+  background: color-mix(in srgb, var(--ea-success), var(--ea-surface) 86%);
+}
+.server-health-page__detail-card[data-state="warning"] .server-health-page__card-icon,
+.server-health-page__service[data-state="warning"] .server-health-page__card-icon {
+  color: var(--ea-warning);
+  background: color-mix(in srgb, var(--ea-warning), var(--ea-surface) 86%);
+}
+.server-health-page__detail-card[data-state="error"] .server-health-page__card-icon {
+  color: var(--ea-danger);
+  background: color-mix(in srgb, var(--ea-danger), var(--ea-surface) 88%);
+}
+.server-health-page__detail-card[data-state="error"] {
+  border-color: color-mix(in srgb, var(--ea-danger), transparent 62%);
+}
+
+.server-health-page__status--healthy .server-health-page__status-icon {
+  color: var(--ea-success);
+  background: color-mix(in srgb, var(--ea-success), var(--ea-surface) 88%);
+}
+
+.server-health-page__status--degraded .server-health-page__status-icon {
+  color: var(--ea-warning);
+  background: color-mix(in srgb, var(--ea-warning), var(--ea-surface) 88%);
+}
+
+.server-health-page__status--unhealthy .server-health-page__status-icon {
+  color: var(--ea-danger);
+  background: color-mix(in srgb, var(--ea-danger), var(--ea-surface) 90%);
+}
+
+.server-health-page__status h2,
+.server-health-page__detail-card h3,
+.server-health-page__service h3 {
+  margin: 0;
+  font-family: var(--ea-font-display);
+}
+
+.server-health-page__status p,
+.server-health-page__detail-card p,
+.server-health-page__service p,
+.server-health-page__meta,
+.server-health-page__updated {
+  margin: 5px 0 0;
+  color: var(--ea-muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.server-health-page__metric-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.server-health-page__metric {
+  min-width: 0;
+}
+
+/* Runtime metric values are text (version hash, "722.2 MB", "788:39", dates),
+   not big headline numbers — the default StatCard value size (clamp 32-52px) is
+   far too large and the version string overflows. Keep them compact + wrapping. */
+.server-health-page__metric > strong {
+  font-size: 16px;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  overflow-wrap: anywhere;
+}
+
+.server-health-page__card-grid,
+.server-health-page__charts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.server-health-page__chart-card {
+  min-width: 0;
+}
+
+.server-health-page__chart-card .ea-chart-card__canvas {
+  height: 260px;
+  min-height: 260px;
+}
+
+.server-health-page__live-head {
+  color: var(--ea-muted);
+  font-size: 11px;
+}
+
+.server-health-page__live-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--ea-success);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.server-health-page__live-badge i {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--ea-success);
+}
+
+.server-health-page__live-badge.is-connecting,
+.server-health-page__live-badge.is-reconnecting {
+  color: var(--ea-warning);
+}
+
+.server-health-page__live-badge.is-connecting i,
+.server-health-page__live-badge.is-reconnecting i {
+  background: var(--ea-warning);
+  animation: server-live-pulse 1.4s ease-in-out infinite;
+}
+
+.server-health-page__live-badge.is-fallback {
+  color: var(--ea-danger);
+}
+
+.server-health-page__live-badge.is-fallback i {
+  background: var(--ea-danger);
+}
+
+@keyframes server-live-pulse {
+  50% { opacity: .35; transform: scale(.75); }
+}
+
+.server-health-page__detail-card,
+.server-health-page__service {
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+}
+
+.server-health-page__service {
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+}
+
+.server-health-page__badge,
+.server-health-page__service-state,
+.server-health-page__latency,
+.server-health-page__log-level {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 5px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.server-health-page__badge,
+.server-health-page__latency {
+  padding: 6px 9px;
+  color: var(--ea-primary-deep);
+  background: var(--ea-primary-soft);
+}
+
+.server-health-page__badge--healthy,
+.server-health-page__service-state {
+  color: var(--ea-success);
+}
+
+.server-health-page__badge--warning,
+.server-health-page__service-state--off,
+.server-health-page__log-group--warning .server-health-page__log-group-title,
+.server-health-page__log-level {
+  color: var(--ea-warning);
+}
+
+.server-health-page__badge--error,
+.server-health-page__log-group--danger .server-health-page__log-group-title,
+.server-health-page__log-level--error,
+.server-health-page__log-failed {
+  color: var(--ea-danger);
+}
+
+.server-health-page__logs-head > span {
+  color: var(--ea-muted);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.server-health-page__warning-toggle {
+  justify-content: space-between;
+}
+
+.server-health-page__log {
+  display: grid;
+  gap: 10px;
+  padding: 14px;
+  border: 1px solid var(--ea-border);
+  border-radius: var(--ea-radius-md);
+  background: var(--ea-surface);
+}
+
+.server-health-page__log--error {
+  border-color: color-mix(in srgb, var(--ea-danger), transparent 55%);
+}
+
+.server-health-page__log-head time {
+  margin-right: auto;
+  color: var(--ea-muted);
+  font-size: 11px;
+}
+
+.server-health-page__log-level {
+  padding: 4px 7px;
+  background: color-mix(in srgb, var(--ea-warning), var(--ea-surface) 90%);
+}
+
+.server-health-page__log-level--error {
+  background: color-mix(in srgb, var(--ea-danger), var(--ea-surface) 92%);
+}
+
+.server-health-page__log p {
+  margin: 0;
+  overflow-wrap: anywhere;
+  line-height: 1.55;
+}
+
+.server-health-page__log-meta {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+}
+
+.server-health-page__log-meta div {
+  display: grid;
+  grid-template-columns: 100px minmax(0, 1fr);
+  gap: 10px;
+}
+
+.server-health-page__log-meta dt {
+  color: var(--ea-muted);
+  font-size: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.server-health-page__log-meta dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+  font-size: 12px;
+}
+
+.server-health-page__log details {
+  min-width: 0;
+}
+
+.server-health-page__log pre {
+  max-width: 100%;
+  overflow: auto;
+  padding: 12px;
+  border-radius: var(--ea-radius-sm);
+  color: var(--ea-text);
+  background: var(--ea-surface-soft);
+  white-space: pre-wrap;
+}
+
+.server-health-page__updated {
+  text-align: right;
+}
+
+@media (max-width: 900px) {
+  .server-health-page__metric-grid,
+  .server-health-page__card-grid,
+  .server-health-page__charts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .server-health-page__logs-head,
+  .server-health-page__live-head {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .server-health-page__status,
+  .server-health-page__metric-grid,
+  .server-health-page__card-grid,
+  .server-health-page__charts {
+    grid-template-columns: 1fr;
+  }
+
+  .server-health-page__status {
+    align-items: start;
+  }
+
+  .server-health-page__log-head {
+    flex-wrap: wrap;
+  }
+
+  .server-health-page__log-meta div {
+    grid-template-columns: 1fr;
+    gap: 3px;
+  }
+
+  .server-health-page__updated {
+    text-align: left;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .server-health-page__live-badge i { animation: none; }
+}

@@ -1,0 +1,262 @@
+{
+  "provider": "Unsplash",
+  "usage": "Topic photography for the EnglishAI canvas; book-topic images are illustrative, not official published covers.",
+  "assets": [
+    {
+      "file": "my-mother.jpg",
+      "topics": [
+        "My Mother",
+        "Present Perfect",
+        "Someone Who Inspires Me"
+      ],
+      "sourceUrl": "https://images.unsplash.com/photo-1752652012237-ba62a2c65a76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxMTI1MDN8&ixlib=rb-4.1.0&q=80&w=1080",
+      "canvasNodeIds": [
+        "vmejw",
+        "GTDrd",
+        "d1lceO",
+        "pVzOj",
+        "zxbKe",
+        "Cy6Sm",
+        "Dm4ja",
+        "OHJpd",
+        "AKOc8",
+        "mwU93",
+        "SKHDa",
+        "ZvT99",
+        "U1QvNa"
+      ]
+    },
+    {
+      "file": "the-island-secret.jpg",
+      "topics": [
+        "The Island Secret"
+      ],
+      "sourceUrl": "https://images.unsplash.com/photo-1688263638792-2ede6002db03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxMTI4NTV8&ixlib=rb-4.1.0&q=80&w=1080",
+      "canvasNodeIds": [
+        "V0vmL"
+      ]
+    },
+    {
+      "file": "daily-routines.jpg",
+      "topics": [
+        "Daily Routines"
+      ],
+      "sourceUrl": "https://images.unsplash.com/photo-1556191041-c2401936d851?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxMTI1NDR8&ixlib=rb-4.1.0&q=80&w=1080",
+      "canvasNodeIds": [
+        "Uh4op",
+        "TvVbt"
+      ]
+    },
+    {
+      "file": "at-the-market.jpg",
+      "topics": [
+        "At the Market"
+      ],
+      "sourceUrl": "https://images.unsplash.com/photo-1627798133922-270bb80af5ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxMTI0ODV8&ixlib=rb-4.1.0&q=80&w=1080",
+      "canvasNodeIds": [
+        "FdBk0",
+        "RzqKq"
+      ]
+    },
+    {
+      "file": "travel-plans.jpg",
+      "topics": [
+        "Travel Plans"
+      ],
+      "sourceUrl": "https://images.unsplash.com/photo-1732605548227-5679cb62193b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxMTI4NTN8&ixlib=rb-4.1.0&q=80&w=1080",
+      "canvasNodeIds": [
+        "ubAlX",
+        "TdxLN"
+      ]
+    },
+    {
+      "file": "first-conditional.jpg",
+      "topics": [
+        "First Conditional"
+      ],
+      "sourceUrl": "https://images.unsplash.com/photo-1590547889805-a71bf012603f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxMTMwMjh8&ixlib=rb-4.1.0&q=80&w=1080",
+      "canvasNodeIds": [
+        "jWf5z",
+        "nY2xJ"
+      ]
+    },
+    {
+      "file": "passive-voice.jpg",
+      "topics": [
+        "Passive Voice"
+      ],
+      "sourceUrl": "https://images.unsplash.com/photo-1543324402-c711a3d43289?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxMTI2NDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+      "canvasNodeIds": [
+        "SfI5Z",
+        "pmQWR"
+      ]
+    },
+    {
+      "file": "reported-speech.jpg",
+      "topics": [
+        "Reported Speech"
+      ],
+      "sourceUrl": "https://images.unsplash.com/photo-1582298537624-c6a00f906e51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxMTI2NDN8&ixlib=rb-4.1.0&q=80&w=1080",
+      "canvasNodeIds": [
+        "iXSjU",
+        "l3T8yt"
+      ]
+    },
+    {
+      "file": "a-weekend-away.jpg",
+      "topics": [
+        "A Weekend Away"
+      ],
+      "sourceUrl": "https://images.unsplash.com/photo-1788534544664-e627531b3662?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxMTI3MDh8&ixlib=rb-4.1.0&q=80&w=1080",
+      "canvasNodeIds": [
+        "iKAzM",
+        "hfhw8"
+      ]
+    },
+    {
+      "file": "the-small-garden.jpg",
+      "topics": [
+        "The Small Garden"
+      ],
+      "sourceUrl": "https://images.unsplash.com/photo-1621541097476-f20e6c077eb8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxMTI3MDh8&ixlib=rb-4.1.0&q=80&w=1080",
+      "canvasNodeIds": [
+        "yaOUF",
+        "fpC95"
+      ]
+    },
+    {
+      "file": "a-new-skill.jpg",
+      "topics": [
+        "A New Skill"
+      ],
+      "sourceUrl": "https://images.unsplash.com/photo-1609881583657-47689c7db361?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxMTI3MDl8&ixlib=rb-4.1.0&q=80&w=1080",
+      "canvasNodeIds": [
+        "Oi6Iq",
+        "a6xhF"
+      ]
+    },
+    {
+      "file": "a-morning-at-the-library.jpg",
+      "topics": [
+        "A Morning at the Library"
+      ],
+      "sourceUrl": "https://images.unsplash.com/photo-1631528312327-ff94760f7bc1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxMTI3NDF8&ixlib=rb-4.1.0&q=80&w=1080",
+      "canvasNodeIds": [
+        "PcZcq",
+        "l3bYbQ",
+        "l11AXX",
+        "Kftgx"
+      ]
+    },
+    {
+      "file": "weekend-plans.jpg",
+      "topics": [
+        "Weekend Plans"
+      ],
+      "sourceUrl": "https://images.unsplash.com/photo-1767239650394-861cf96f403b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxMTI3NDF8&ixlib=rb-4.1.0&q=80&w=1080",
+      "canvasNodeIds": [
+        "pdhJ4",
+        "DORcD"
+      ]
+    },
+    {
+      "file": "at-the-station.jpg",
+      "topics": [
+        "At the Station"
+      ],
+      "sourceUrl": "https://images.unsplash.com/photo-1585585819719-fe03f0c77f35?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxMTI3NDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+      "canvasNodeIds": [
+        "koGaC",
+        "mp6Gm"
+      ]
+    },
+    {
+      "file": "a-voice-message.jpg",
+      "topics": [
+        "A Voice Message"
+      ],
+      "sourceUrl": "https://images.unsplash.com/photo-1758273237062-0c1477dcca68?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxMTI3NDN8&ixlib=rb-4.1.0&q=80&w=1080",
+      "canvasNodeIds": [
+        "mdCXy",
+        "iOr3f"
+      ]
+    },
+    {
+      "file": "a-place-i-recommend.jpg",
+      "topics": [
+        "A Place I Recommend"
+      ],
+      "sourceUrl": "https://images.unsplash.com/photo-1690573460456-a391616cc9c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxMTI3OTF8&ixlib=rb-4.1.0&q=80&w=1080",
+      "canvasNodeIds": [
+        "OAVZK",
+        "poi31"
+      ]
+    },
+    {
+      "file": "my-next-adventure.jpg",
+      "topics": [
+        "My Next Adventure"
+      ],
+      "sourceUrl": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxMTI3OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+      "canvasNodeIds": [
+        "ShbnD",
+        "d7JnPx"
+      ]
+    },
+    {
+      "file": "one-small-change.jpg",
+      "topics": [
+        "One Small Change"
+      ],
+      "sourceUrl": "https://images.unsplash.com/photo-1781749086604-b8d10b9103f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxMTI5MTl8&ixlib=rb-4.1.0&q=80&w=1080",
+      "canvasNodeIds": [
+        "t151z",
+        "EORUL"
+      ]
+    },
+    {
+      "file": "the-night-train.jpg",
+      "topics": [
+        "The Night Train"
+      ],
+      "sourceUrl": "https://images.unsplash.com/photo-1667130197136-0b2bb937837e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxMTI5MTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+      "canvasNodeIds": [
+        "wFINq",
+        "b1tC1"
+      ]
+    },
+    {
+      "file": "following-a-dream.jpg",
+      "topics": [
+        "Following a Dream"
+      ],
+      "sourceUrl": "https://images.unsplash.com/photo-1625647891375-91463187659f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxMTI5MTd8&ixlib=rb-4.1.0&q=80&w=1080",
+      "canvasNodeIds": [
+        "M056Im",
+        "mHLto"
+      ]
+    },
+    {
+      "file": "the-bookshop-on-the-corner.jpg",
+      "topics": [
+        "The Bookshop on the Corner"
+      ],
+      "sourceUrl": "https://images.unsplash.com/photo-1773379109361-eab6391d6920?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxMTMxNzB8&ixlib=rb-4.1.0&q=80&w=1080",
+      "canvasNodeIds": [
+        "CUnhp",
+        "toz5s"
+      ]
+    },
+    {
+      "file": "my-family.jpg",
+      "topics": [
+        "My Family"
+      ],
+      "sourceUrl": "https://images.unsplash.com/photo-1627662057433-57fe8756a4f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxMjExMDR8&ixlib=rb-4.1.0&q=80&w=1080",
+      "canvasNodeIds": [
+        "urKcD",
+        "a0KRXj"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+.topic-skills-overview {
+  display: grid;
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid var(--ea-border);
+  border-radius: 22px;
+  color: var(--ea-text);
+  background: var(--ea-surface);
+  box-shadow: var(--ea-shadow-card);
+}
+.topic-skills-overview__heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; }
+.topic-skills-overview__eyebrow { display: block; margin-bottom: 3px; color: var(--ea-purple-600); font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.topic-skills-overview__heading h2 { margin: 0; color: var(--ea-text); font-family: var(--ea-font-display); font-size: clamp(19px, 2.4vw, 24px); font-weight: 850; line-height: 1.1; }
+.topic-skills-overview__progress { flex: 0 0 auto; padding: 6px 10px; border: 1px solid var(--ea-purple-100); border-radius: 999px; color: var(--ea-purple-800); background: var(--ea-purple-50); font-size: 11px; font-weight: 800; }
+.topic-skills-overview__hint { margin: 0; color: var(--ea-muted-deep); font-size: 12px; font-weight: 650; line-height: 1.5; }
+.topic-skills-overview__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin: 0; padding: 0; list-style: none; }
+/* Soft tint is derived from the per-skill accent mixed with the CURRENT surface, so the highlighted
+   ("is-current") card and the icon chip stay readable in dark mode too (was a hardcoded light hex). */
+.topic-skills-overview__step { --skill-soft: color-mix(in srgb, var(--skill-accent) 14%, var(--ea-surface)); display: grid; width: 100%; min-height: 68px; grid-template-columns: 38px minmax(0, 1fr); align-items: center; gap: 10px; padding: 10px; border: 1px solid var(--ea-border); border-radius: 16px; color: var(--ea-text); text-align: left; background: var(--ea-surface-soft); }
+.topic-skills-overview__step.is-interactive:hover { border-color: var(--skill-accent); background: var(--skill-soft); }
+.topic-skills-overview__step:focus-visible { outline: 3px solid color-mix(in srgb, var(--skill-accent) 28%, transparent); outline-offset: 2px; }
+.topic-skills-overview__step.is-current { border-color: var(--skill-accent); border-inline-start-width: 3px; background: var(--skill-soft); }
+.topic-skills-overview__step.is-locked { opacity: .58; }
+.topic-skills-overview__icon { display: grid; width: 38px; height: 38px; place-items: center; border-radius: 12px; color: var(--skill-accent); background: var(--skill-soft); }
+.topic-skills-overview__step.is-done { border-color: color-mix(in srgb, var(--skill-accent) 38%, var(--ea-border)); }
+.topic-skills-overview__step.is-done .topic-skills-overview__icon { color: var(--ea-on-primary); background: var(--skill-accent); }
+.topic-skills-overview__copy { min-width: 0; }
+.topic-skills-overview__title, .topic-skills-overview__state { display: block; overflow-wrap: anywhere; }
+.topic-skills-overview__title { color: var(--ea-text); font-size: 13px; font-weight: 850; line-height: 1.2; }
+.topic-skills-overview__state { margin-top: 3px; color: var(--ea-muted-deep); font-size: 10px; font-weight: 800; }
+.topic-skills-overview__continue { justify-content: space-between; text-align: left; }
+.topic-skills-overview__continue > span { min-width: 0; }
+.topic-skills-overview__continue-copy { display: inline-flex; min-width: 0; align-items: baseline; flex-wrap: wrap; }
+.topic-skills-overview__continue-space { width: 8px; flex: 0 0 8px; }
+.topic-skills-overview__continue small { font-size: 10px; font-weight: 700; opacity: .75; }
+.topic-skills-overview__continue strong { font-size: 13px; }
+@media (max-width: 700px) {
+  .topic-skills-overview { padding: 14px; border-radius: 18px; }
+  .topic-skills-overview__heading { align-items: flex-start; }
+  .topic-skills-overview__grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 420px) {
+  .topic-skills-overview__grid { grid-template-columns: 1fr; }
+}

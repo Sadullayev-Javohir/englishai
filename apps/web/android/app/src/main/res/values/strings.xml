@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">EnglishAI.uz</string>
+    <string name="title_activity_main">EnglishAI.uz</string>
+    <string name="package_name">uz.englishai.app</string>
+    <string name="custom_url_scheme">uz.englishai.app</string>
+    <string name="daily_skills_widget_description">Bugungi 6 ta skill vazifasini kuzating</string>
+    <string name="skill_stats_widget_description">6 skill bo‘yicha joriy statistikani ko‘ring</string>
+    <string name="leaderboard_widget_description">Liga va leaderboard o‘rningizni ko‘ring</string>
+    <string name="streak_widget_description">Kunlik o‘rganish seriyangizni kuzating</string>
+    <string name="widget_leaderboard_title">Leaderboard</string>
+    <string name="widget_skill_stats_title">6 skill statistikasi</string>
+    <string name="widget_streak_icon">🔥</string>
+    <string name="widget_streak_label">kunlik seriya</string>
+    <string name="notification_learning_title">EnglishAI.uz</string>
+    <string name="notification_learning_body">EnglishAI.uzda ingliz tilini o‘rganing</string>
+</resources>

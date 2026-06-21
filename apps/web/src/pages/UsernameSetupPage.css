@@ -1,0 +1,62 @@
+/*
+ * Username-setup chrome. Layout, card, colours and buttons come from the shared
+ * onboarding system (onboarding.css); this file only restyles the reusable
+ * UsernameField (variant="setup") so its live-validation control matches the
+ * professional-indigo inputs, plus a couple of page spacing helpers.
+ */
+
+.username-setup__form { display: grid; gap: 18px; }
+
+.username-field--setup { display: grid; gap: 8px; }
+.username-field--setup .username-field__label {
+  color: var(--ob-muted-soft);
+  font-family: var(--ea-font-body);
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: 0.02em;
+}
+
+.username-field--setup .username-field__control {
+  min-height: 56px;
+  border: 1px solid var(--ob-border);
+  border-radius: var(--ob-radius-control);
+  background: var(--ob-raised);
+  box-shadow: none;
+}
+.username-field--setup .username-field__control:hover { border-color: var(--ob-border-strong); }
+.username-field--setup .username-field__control:focus-within {
+  border-color: var(--ob-primary);
+  background: var(--ob-surface);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--ob-primary) 20%, transparent);
+}
+.username-field--setup .username-field__control--success {
+  border-color: color-mix(in srgb, var(--ob-success) 55%, var(--ob-border));
+  background: var(--ob-success-soft);
+}
+.username-field--setup .username-field__control--error {
+  border-color: color-mix(in srgb, var(--ob-danger) 55%, var(--ob-border));
+  background: var(--ob-danger-soft);
+}
+.username-field--setup .username-field__control--checking { border-color: color-mix(in srgb, var(--ob-primary) 45%, var(--ob-border)); }
+
+.username-field--setup .username-field__prefix { color: var(--ob-muted); }
+.username-field--setup .username-field__prefix svg,
+.username-field--setup .username-field__status-icon { width: 21px; height: 21px; }
+
+.username-field--setup .username-field__input {
+  min-width: 0;
+  color: var(--ob-text);
+  font-family: var(--ea-font-body);
+  font-size: 16px;
+  font-weight: 700;
+}
+.username-field--setup .username-field__input::placeholder { color: var(--ob-muted); font-weight: 600; opacity: 0.85; }
+
+.username-field--setup .username-field__status {
+  margin-top: 8px;
+  color: var(--ob-muted);
+  font-family: var(--ea-font-body);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.45;
+}

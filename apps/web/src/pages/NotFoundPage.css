@@ -1,0 +1,118 @@
+.not-found-page {
+  position: relative;
+  display: grid;
+  /* `dvh`, not `vh`: on mobile `100vh` is the tall viewport, so the centred card
+     sat half an address-bar height too low. */
+  min-height: var(--ea-frame-height);
+  place-items: center;
+  overflow: hidden;
+  padding: 32px;
+  color: var(--ea-text);
+  background: var(--ea-bg);
+
+
+
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+.not-found-page__glow { position: absolute; border-radius: 999px;  pointer-events: none; }
+.not-found-page__glow--purple { top: -120px; right: 12%; width: 320px; height: 320px; background: rgb(189 166 234 / 32%); }
+.not-found-page__glow--blue { bottom: -150px; left: 8%; width: 360px; height: 360px; background: rgb(151 211 241 / 28%); }
+
+.not-found-page__panel {
+  position: relative;
+  z-index: 1;
+  width: min(1120px, 100%);
+  overflow: hidden;
+  padding: 28px;
+  border: 1px solid rgb(255 255 255 / 84%);
+  border-radius: 32px;
+  background: rgb(255 255 255 / 76%);
+  box-shadow:none;
+  
+}
+
+.not-found-page__brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ea-ink-deep); }
+.not-found-page__brand strong { font-family: "Nunito", "Plus Jakarta Sans", system-ui, sans-serif; font-size: 22px; font-weight: 900; line-height: 1; letter-spacing: -.06em; }
+.not-found-page__brand strong span { color: var(--ea-primary); -webkit-text-stroke: 1px var(--ea-ink-deep); paint-order: stroke fill; }
+
+.not-found-page__layout { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(340px, .92fr); align-items: center; gap: 48px; min-height: 500px; padding: 28px 30px 22px; }
+.not-found-page__copy { max-width: 590px; }
+.not-found-page__eyebrow { display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border: 1px solid var(--ea-purple-100); border-radius: 999px; color: var(--ea-purple-800); background: var(--ea-purple-50); font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.not-found-page__eyebrow svg { width: 17px; height: 17px; }
+.not-found-page__code { margin-top: 18px; color: var(--ea-primary); font-family: "Nunito", "Plus Jakarta Sans", system-ui, sans-serif; font-size: clamp(76px, 10vw, 138px); font-weight: 800; line-height: .78; letter-spacing: -.085em; -webkit-text-stroke: 1px var(--ea-ink-deep); paint-order: stroke fill; text-shadow: 0 8px 0 var(--ea-primary-deep); }
+.not-found-page__copy h1 { margin: 30px 0 12px; font-family: "Nunito", "Plus Jakarta Sans", system-ui, sans-serif; font-size: clamp(38px, 5vw, 58px); font-weight: 800; line-height: 1; letter-spacing: -.055em; }
+.not-found-page__copy > p { max-width: 520px; margin: 0; color: var(--ea-muted); font-size: 16px; font-weight: 600; line-height: 1.65; }
+
+.not-found-page__actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.not-found-page__button { display: inline-flex; min-height: 52px; align-items: center; justify-content: center; gap: 9px; padding: 0 20px; border: 1px solid transparent; border-radius: 17px; font: inherit; font-size: 14px; font-weight: 800; cursor: pointer; transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease; }
+.not-found-page__button svg { width: 20px; height: 20px; }
+.not-found-page__button:hover {  }
+.not-found-page__button:active {  box-shadow: none; }
+.not-found-page__button:focus-visible { outline: 4px solid rgb(22 93 255 / 24%); outline-offset: 3px; }
+.not-found-page__button--back { color: var(--ea-purple-800); border-color: var(--ea-purple-200); background: var(--ea-purple-50); box-shadow:none; }
+.not-found-page__button--back:hover { background: var(--ea-purple-50); }
+.not-found-page__button--home { color: var(--ea-on-primary); border-color: var(--ea-primary-shadow); background: var(--ea-primary); box-shadow:none; }
+.not-found-page__button--home:hover { background: var(--ea-primary); }
+
+.not-found-page__illustration { position: relative; display: grid; width: min(390px, 100%); aspect-ratio: 1; place-items: center; justify-self: center; }
+.not-found-page__orbit { position: absolute; border: 2px dashed rgb(190 219 40 / 60%); border-radius: 50%; }
+.not-found-page__orbit--outer { inset: 3%; transform: rotate(-12deg); }
+.not-found-page__orbit--inner { inset: 18%; transform: rotate(22deg); border-color: rgb(218 250 51 / 72%); }
+.not-found-page__planet { position: relative; display: grid; width: 190px; height: 190px; place-items: center; overflow: hidden; border: 1px solid var(--ea-primary-shadow); border-radius: 42% 58% 54% 46% / 48% 43% 57% 52%; color: var(--ea-on-primary); background: var(--ea-primary); box-shadow:none; transform: rotate(-7deg); }
+.not-found-page__planet::after { position: absolute; right: -28px; bottom: -34px; width: 128px; height: 110px; border-radius: 50%; background: rgb(169 197 34 / 34%); content: ""; }
+.not-found-page__planet > svg { width: 78px; height: 78px; stroke-width: 1.6; }
+.not-found-page__planet-dot { position: absolute; border-radius: 50%; background: rgb(255 255 255 / 22%); }
+.not-found-page__planet-dot--one { top: 24px; left: 36px; width: 34px; height: 34px; }
+.not-found-page__planet-dot--two { right: 28px; bottom: 45px; width: 22px; height: 22px; }
+.not-found-page__satellite { position: absolute; display: grid; width: 66px; height: 66px; place-items: center; border: 1px solid rgb(255 255 255 / 85%); border-radius: 21px; box-shadow: var(--ea-shadow-card); }
+.not-found-page__satellite svg { width: 29px; height: 29px; }
+.not-found-page__satellite--book { top: 28px; right: 42px; color: var(--ea-on-primary); background: var(--ea-primary); transform: rotate(8deg); }
+.not-found-page__satellite--language { bottom: 42px; left: 21px; color: var(--ea-on-primary); background: var(--ea-primary); transform: rotate(-9deg); }
+.not-found-page__satellite--spark { top: 78px; left: 12px; width: 52px; height: 52px; color: var(--ea-on-primary); background: var(--ea-primary); transform: rotate(12deg); }
+
+.not-found-page__tips { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.not-found-page__tip { display: flex; min-width: 0; align-items: center; gap: 12px; padding: 15px; border: 1px solid transparent; border-radius: 18px; }
+.not-found-page__tip > svg { width: 25px; height: 25px; flex: 0 0 auto; }
+.not-found-page__tip span { color: var(--ea-muted); font-size: 12px; font-weight: 600; line-height: 1.45; }
+.not-found-page__tip strong { display: block; margin-bottom: 2px; color: var(--ea-text); font-size: 13px; }
+.not-found-page__tip--purple { color: var(--ea-purple-600); border-color: var(--ea-purple-100); background: var(--ea-purple-50); }
+.not-found-page__tip--blue { color: var(--ea-blue-600); border-color: var(--ea-border); background: var(--ea-blue-50); }
+.not-found-page__tip--orange { color: var(--ea-orange-600); border-color: var(--ea-border); background: var(--ea-orange-50); }
+
+@media (max-width: 900px){
+  .not-found-page { padding: 22px; }
+  .not-found-page__panel { padding: 22px; }
+  .not-found-page__layout { grid-template-columns: 1fr; gap: 8px; padding: 30px 18px 24px; text-align: center; }
+  .not-found-page__copy { max-width: 650px; justify-self: center; }
+  .not-found-page__copy > p { margin-inline: auto; }
+  .not-found-page__actions { justify-content: center; }
+  .not-found-page__illustration { width: min(310px, 74vw); }
+  .not-found-page__planet { width: 154px; height: 154px; }
+  .not-found-page__planet > svg { width: 62px; height: 62px; }
+  .not-found-page__tips { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 700px){
+  .not-found-page { min-height: 100svh; padding: 12px; }
+  .not-found-page__panel { padding: 17px; border-radius: 24px; }
+  .not-found-page__brand strong { font-size: 20px; }
+  .not-found-page__layout { min-height: auto; padding: 34px 0 20px; }
+  .not-found-page__code { font-size: 82px; text-shadow: 0 6px 0 var(--ea-primary-deep); }
+  .not-found-page__copy h1 { margin-top: 24px; font-size: 36px; }
+  .not-found-page__copy > p { font-size: 14px; }
+  .not-found-page__actions { display: grid; width: 100%; }
+  .not-found-page__button { width: 100%; }
+  .not-found-page__illustration { width: min(250px, 72vw); }
+  .not-found-page__planet { width: 126px; height: 126px; }
+  .not-found-page__planet > svg { width: 50px; height: 50px; }
+  .not-found-page__satellite { width: 50px; height: 50px; border-radius: 16px; }
+  .not-found-page__satellite svg { width: 23px; height: 23px; }
+  .not-found-page__satellite--spark { width: 42px; height: 42px; }
+  .not-found-page__tips { gap: 9px; }
+  .not-found-page__tip { padding: 13px; text-align: left; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .not-found-page__button { transition: none; }
+}

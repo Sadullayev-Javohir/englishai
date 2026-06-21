@@ -1,0 +1,57 @@
+{
+  "name": "EnglishAI.uz",
+  "url": "https://englishai.uz/",
+  "language": "uz",
+  "locale": "uz_UZ",
+  "lastModified": "2026-08-13",
+  "title": "EnglishAI.uz - 3 yil o'rganib ham gapira olmayotganlar uchun AI tutor",
+  "description": "Ingliz tilini yillardan beri o'rganib, gapira olmayapsizmi? EnglishAI sizga 24/7 AI tutor, bitta mavzuga bog'langan 6 skill, har darajada 50 dars, Books va Video kutubxonasini beradi. Bepul boshlang.",
+  "shortDescription": "Yillardan beri ingliz tili o'rganib, amalda gapira olmayotgan o'zbeklar uchun 24/7 AI tutor va bog'langan 6 skill platformasi.",
+  "audience": [
+    "O'zbek tilida so'zlashuvchi ingliz tili o'rganuvchilar",
+    "CEFR yoki IELTS uchun tayyorlanayotgan o'quvchilar",
+    "Ish uchun ingliz tilini rivojlantirayotgan mutaxassislar",
+    "Mustaqil ingliz tili o'rganuvchilar"
+  ],
+  "levels": "CEFR A1–C2",
+  "learningCycle": [
+    "Tushunarli kirish: materialning 80–90 foizi tanish, 10–20 foizi yangi",
+    "Gapirish va yozish orqali majburiy faol ishlatish",
+    "AI orqali darhol fikr-mulohaza",
+    "3/7/21 kunlik faol takrorlash"
+  ],
+  "modules": [
+    { "name": "Speaking", "description": "AI tutor bilan suhbat, talaffuz baholash va viseme vizual yordami." },
+    { "name": "Listening", "description": "CEFR darajalangan audio va video, interaktiv transkript va tushunish mashqlari." },
+    { "name": "Reading", "description": "Darajalangan matnlar va tushunish savollari." },
+    { "name": "Vocabulary", "description": "Mavzu lug'ati va 3/7/21 kunlik faol SRS takrorlash." },
+    { "name": "Grammar", "description": "Kontekstli darslar va o'zbek o'rganuvchilarga xos ustuvor mavzular." },
+    { "name": "Writing", "description": "Vazifa, mantiq, lug'at, grammatika va mavzu qamrovi bo'yicha AI baholash." }
+  ],
+  "differentiators": [
+    "Yillardan beri o'rganib, amalda gapira olmayotgan foydalanuvchiga yo'naltirilgan",
+    "24/7 AI tutor va istalgan savol uchun AI yordamchi",
+    "Har bir CEFR darajasida 50 ta tartiblangan dars",
+    "O'zbek tilida so'zlashuvchilar uchun maxsus qurilgan",
+    "Vocabulary, Grammar, Reading, Listening, Speaking va Writing bitta Topic atrofida bog'lanadi",
+    "Passiv yodlash o'rniga gapirish va yozish majburiy faol natija sifatida ishlatiladi",
+    "O'zbekcha UI va pedagogik izohlar tasdiqlangan statik shablonlardan beriladi"
+  ],
+  "platforms": ["Web", "Android"],
+  "pricingSummary": "Bepul boshlash mumkin; kengaytirilgan imkoniyatlar uchun Premium rejalar mavjud.",
+  "image": "https://englishai.uz/assets/og-image-20260815.png",
+  "logo": "https://englishai.uz/assets/brand/icon-512.png",
+  "authoritativePages": [
+    { "label": "Rasmiy sayt va mahsulot tavsifi", "url": "https://englishai.uz/" },
+    { "label": "Qidiruv tizimlari uchun sitemap", "url": "https://englishai.uz/sitemap.xml" },
+    { "label": "AI tizimlari uchun batafsil faktlar", "url": "https://englishai.uz/llms-full.txt" }
+  ],
+  "faq": [
+    { "question": "Bu qanday platforma?", "answer": "EnglishAI ingliz tilini yillardan beri o'rganib, amalda gapira olmayotgan o'zbeklar uchun yaratilgan. Sizga 24/7 AI tutor biriktiriladi; Vocabulary, Grammar, Reading, Writing, Speaking va Listening bitta mavzu atrofida ishlaydi." },
+    { "question": "Bepul boshlash mumkinmi?", "answer": "Ha. Birinchi 2 ta mavzu, daraja aniqlash testi va kunlik mashq bepul. Barcha mavzular va cheksiz sessiyalar uchun Premium obuna mavjud." },
+    { "question": "Platforma qanday ishlaydi?", "answer": "Darajangiz aniqlanadi, so'ng har darajadagi 50 mavzudan birini tanlaysiz. O'sha mavzu lug'ati oltita skill bo'ylab qayta ishlatiladi, AI tutor gapirtiradi, AI yordamchi savollaringizni tushuntiradi va 3/7/21 takrorlash bilimni mustahkamlaydi." },
+    { "question": "Qaysi darajalar uchun mos?", "answer": "Boshlang'ich (A1) dan ilg'or (C2) gacha. Daraja aniqlash testi sizni to'g'ri darajaga joylashtiradi, keyin kontent siz o'sgan sari qiyinlashadi." },
+    { "question": "Telefonda ishlaydimi?", "answer": "Ha. Brauzerda ochiladi va Android ilovasi mavjud - mikrofon orqali gapirish mashqlari telefonda ham to'liq ishlaydi." },
+    { "question": "To'lov qanday amalga oshiriladi?", "answer": "Premium obuna Click yoki Payme orqali to'lanadi. Oylik, 3 oylik, 6 oylik yoki 1 yillik rejalardan birini tanlaysiz; istalgan vaqtda bekor qilish mumkin." }
+  ]
+}

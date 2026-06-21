@@ -1,0 +1,128 @@
+.progress-pen {
+  --progress-ink: #2c2144;
+  --progress-muted: #6d647c;
+  --progress-line: #e9e2ee;
+  --progress-violet: #7545e8;
+  --progress-violet-deep: #5126b8;
+  --progress-lilac: #efe7ff;
+  --progress-green: #e9f4d7;
+  --progress-peach: #ffe4d5;
+  color: var(--progress-ink);
+  font-family: "Plus Jakarta Sans", var(--ea-font-body), sans-serif;
+}
+.progress-pen * { box-sizing: border-box; }
+.progress-pen h1, .progress-pen h2, .progress-pen p { margin: 0; }
+.progress-pen button { font: inherit; }
+.progress-pen button:focus-visible { outline: 3px solid rgb(117 69 232 / 32%); outline-offset: 3px; }
+.progress-pen__mobile-actions { display: none; }
+
+.progress-pen__heading { display: grid; min-height: 111px; gap: 8px; }
+.progress-pen__heading > span { color: var(--progress-violet); font-size: 10px; font-weight: 800; letter-spacing: .12em; }
+.progress-pen__heading h1 { font-family: "Nunito", var(--ea-font-display), sans-serif; font-size: 30px; font-weight: 900; letter-spacing: -.045em; line-height: 1.17; }
+.progress-pen__heading p { color: var(--progress-muted); font-size: 13px; font-weight: 500; line-height: 1.5; }
+
+.progress-pen__periods { display: flex; gap: 12px; margin-top: 24px; }
+.progress-pen__periods button { min-height: 31px; border: 0; border-radius: 999px; background: transparent; color: var(--progress-muted); cursor: pointer; font-size: 11px; font-weight: 700; padding: 6px 11px; }
+.progress-pen__periods button[aria-pressed="true"] { background: var(--progress-lilac); color: var(--progress-violet); }
+
+.progress-pen__metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 24px; }
+.progress-pen__metric { display: grid; min-height: 145px; align-content: start; gap: 12px; border-radius: 24px; padding: 24px; }
+.progress-pen__metric--xp { background: var(--progress-lilac); }
+.progress-pen__metric--words { background: var(--progress-green); }
+.progress-pen__metric--streak { background: var(--progress-peach); }
+.progress-pen__metric small { color: var(--progress-muted); font-size: 10px; font-weight: 800; letter-spacing: .08em; }
+.progress-pen__metric strong { font-family: "Nunito", var(--ea-font-display), sans-serif; font-size: 25px; font-weight: 900; letter-spacing: -.035em; line-height: 1.1; }
+.progress-pen__metric span { color: var(--progress-muted); font-size: 12px; font-weight: 600; line-height: 1.45; }
+
+.progress-pen__chart-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 24px; }
+.progress-pen__panel { min-width: 0; border-radius: 24px; background: #fff; padding: 24px; }
+.progress-pen__panel-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.progress-pen__panel-head h2, .progress-pen__achievements > h2 { font-family: "Nunito", var(--ea-font-display), sans-serif; font-size: 18px; font-weight: 900; letter-spacing: -.035em; line-height: 1.3; }
+.progress-pen__panel-head span { border-radius: 999px; background: var(--progress-lilac); color: var(--progress-violet); font-size: 10px; font-weight: 700; padding: 7px 11px; }
+
+.progress-pen__activity { display: grid; min-height: 394px; grid-template-rows: auto auto 1fr auto; gap: 16px; }
+.progress-pen__activity-total { display: flex; align-items: center; gap: 12px; }
+.progress-pen__activity-total strong { font-family: "Nunito", var(--ea-font-display), sans-serif; font-size: 30px; font-weight: 900; letter-spacing: -.04em; line-height: 1; }
+.progress-pen__activity-total span { color: var(--progress-muted); font-size: 12px; font-weight: 600; }
+.progress-pen__bar-chart { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); align-items: end; gap: 12px; min-height: 209px; }
+.progress-pen__bar-day { display: grid; min-width: 0; height: 100%; grid-template-rows: 1fr auto; align-items: end; gap: 12px; }
+.progress-pen__bar-day i { display: block; width: 100%; max-width: 34px; min-height: 0; justify-self: center; align-self: end; border-radius: 3px 3px 0 0; background: #dac5ff; }
+.progress-pen__bar-day span { color: var(--progress-muted); font-size: 11px; font-weight: 600; text-align: center; }
+.progress-pen__positive { color: #4e762f; font-size: 12px; font-weight: 700; }
+
+.progress-pen__skills { min-height: 374px; }
+.progress-pen__skills-list { display: grid; gap: 16px; margin-top: 22px; }
+.progress-pen__skill { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 12px; width: 100%; padding: 0; border: 0; background: transparent; color: var(--progress-ink); cursor: pointer; text-align: left; }
+.progress-pen__skill > span, .progress-pen__skill > b { font-size: 11px; font-weight: 700; line-height: 1.25; }
+.progress-pen__skill > b { color: var(--progress-violet); }
+.progress-pen__skill > i { grid-column: 1 / -1; display: block; height: 8px; overflow: hidden; border-radius: 99px; background: #f0eaf7; }
+.progress-pen__skill > i > em { display: block; height: 100%; border-radius: inherit; background: var(--progress-violet); transition: width .2s ease; }
+.progress-pen__skill:hover > span, .progress-pen__skill:hover > b { color: var(--progress-violet-deep); }
+
+.progress-pen__recommendation { display: grid; gap: 16px; min-height: 176px; margin-top: 24px; border-radius: 24px; background: var(--progress-lilac); padding: 24px; }
+.progress-pen__recommendation-title { display: flex; align-items: center; gap: 12px; }
+.progress-pen__recommendation-title > span { display: grid; width: 26px; height: 26px; place-items: center; color: var(--progress-violet); }
+.progress-pen__recommendation-title .material-symbols-rounded { font-size: 22px; }
+.progress-pen__recommendation h2 { font-family: "Nunito", var(--ea-font-display), sans-serif; font-size: 18px; font-weight: 900; letter-spacing: -.035em; }
+.progress-pen__recommendation p { color: var(--progress-muted); font-size: 13px; font-weight: 500; line-height: 1.5; }
+.progress-pen__recommendation button, .progress-pen__state button { display: inline-flex; width: fit-content; min-height: 48px; align-items: center; justify-content: center; gap: 8px; border: 0; border-bottom: 3px solid var(--progress-violet-deep); border-radius: 14px; background: var(--progress-violet); color: #fff; cursor: pointer; font-size: 12px; font-weight: 800; padding: 12px 18px 14px; }
+.progress-pen__recommendation button:hover, .progress-pen__state button:hover { background: var(--progress-violet-deep); }
+.progress-pen__recommendation button .material-symbols-rounded, .progress-pen__state button .material-symbols-rounded { font-size: 18px; }
+
+.progress-pen__achievements { margin-top: 24px; }
+.progress-pen__achievements > div { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 24px; }
+.progress-pen__achievement { display: flex; min-width: 0; min-height: 85px; align-items: center; gap: 12px; border: 0; border-radius: 18px; background: #fff; color: var(--progress-ink); cursor: pointer; padding: 18px; text-align: left; }
+.progress-pen__achievement:hover { background: #fbf7ff; }
+.progress-pen__achievement > .material-symbols-rounded { color: var(--progress-violet); font-size: 26px; }
+.progress-pen__achievement > span { display: grid; gap: 7px; min-width: 0; }
+.progress-pen__achievement strong { font-size: 13px; font-weight: 800; line-height: 1.25; }
+.progress-pen__achievement small { color: var(--progress-muted); font-size: 11px; font-weight: 500; line-height: 1.45; }
+
+.progress-pen__state { display: grid; min-height: 300px; place-items: center; align-content: center; gap: 12px; border-radius: 24px; background: #fff; color: var(--progress-muted); text-align: center; }
+.progress-pen__state > .material-symbols-rounded { color: var(--progress-violet); font-size: 32px; }
+.progress-pen__state h1 { color: var(--progress-ink); font-family: "Nunito", var(--ea-font-display), sans-serif; font-size: 24px; }
+.progress-pen__state p { font-size: 13px; }
+
+.progress-pen-topbar { min-height: 84px; padding: 20px 40px; }
+.progress-pen-topbar .lvmap-shell-topbar__brand { display: flex; align-items: center; gap: 8px; }
+.progress-pen-topbar .lvmap-shell-topbar__back { display: grid; width: 44px; height: 44px; place-items: center; border: 0; border-radius: 12px; background: transparent; color: var(--ea-primary); cursor: pointer; }
+.progress-pen-topbar .lvmap-shell-topbar__back:hover { background: var(--progress-lilac); }
+.progress-pen-topbar .lvmap-shell-topbar__back .material-symbols-rounded { font-size: 22px; }
+
+@media (min-width: 901px) {
+  body:has(.progress-pen) .play-topbar { min-height: 84px; padding: 20px 40px; }
+  body:has(.progress-pen) .play-sidebar { inset-top: 84px; width: 240px; padding: 28px 16px; }
+  body:has(.progress-pen) .play-sidebar__notifications { display: none; }
+  body:has(.progress-pen) .play-workspace { margin-left: 0; padding-top: 84px; }
+  body:has(.progress-pen) .play-page-content { max-width: none; padding: 36px 40px 44px; }
+}
+@media (max-width: 900px) {
+  .progress-pen-topbar { min-height: 76px; padding: 16px; }
+  .progress-pen-topbar .lvmap-shell-topbar__back { width: 44px; height: 44px; }
+  body:has(.progress-pen) .play-topbar { min-height: 76px; }
+  body:has(.progress-pen) .play-workspace { padding-top: 76px; }
+  .progress-pen__mobile-actions { display: block; margin: 6px 0 36px; }
+  .progress-pen__mobile-actions button { display: inline-flex; min-height: 48px; align-items: center; gap: 8px; border: 1px solid var(--progress-line); border-radius: 14px; background: #fff; color: var(--progress-violet); cursor: pointer; font-size: 13px; font-weight: 800; padding: 12px 18px; }
+  .progress-pen__mobile-actions .material-symbols-rounded { font-size: 18px; }
+  .progress-pen__heading h1 { max-width: 330px; font-size: 26px; }
+  .progress-pen__metrics, .progress-pen__chart-grid, .progress-pen__achievements > div { grid-template-columns: 1fr; }
+  .progress-pen__metrics, .progress-pen__chart-grid { gap: 12px; }
+  .progress-pen__metric { min-height: 145px; }
+  .progress-pen__recommendation { min-height: 224px; }
+  .progress-pen__recommendation button { width: 100%; }
+}
+@media (max-width: 700px) {
+  .progress-pen__panel, .progress-pen__metric, .progress-pen__recommendation { border-radius: 20px; }
+  .progress-pen__bar-chart { gap: 10px; }
+  .progress-pen__achievement { min-height: 85px; }
+}
+
+@media (max-width: 900px) {
+  body:has(.progress-pen) .play-page-content { padding-inline: 20px; }
+  .progress-pen__heading { min-height: 129px; }
+  .progress-pen__heading h1 { max-width: 320px; }
+  .progress-pen-topbar .play-hud { gap: 8px; }
+  .progress-pen-topbar .play-xp { display: inline-flex; width: 86px; min-height: 36px; align-items: center; justify-content: center; padding: 8px 10px; }
+  .progress-pen-topbar .play-energy { display: inline-flex; width: 72px; min-height: 36px; align-items: center; justify-content: center; padding: 8px 10px; }
+  .progress-pen-topbar .play-avatar { width: 38px; height: 38px; }
+}

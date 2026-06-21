@@ -1,0 +1,485 @@
+.pronunciation-home-page {
+  --pronunciation-bg: var(--ea-bg);
+  --pronunciation-panel: var(--ea-surface);
+  --pronunciation-text: var(--ea-text);
+  --pronunciation-muted: var(--ea-muted);
+  --pronunciation-line: var(--ea-border);
+  --pronunciation-inset: color-mix(in srgb, var(--ea-surface-soft) 82%, var(--ea-surface));
+  --pronunciation-inset-strong: color-mix(in srgb, rgb(var(--ea-mod-speaking-soft-rgb)) 60%, var(--ea-surface));
+  --pronunciation-lime: var(--ea-primary);
+  /* Speaking module green — the shared accent across the speaking practice flow
+     (practice-words queue + this pronunciation screen). */
+  --pron-accent: rgb(var(--ea-mod-speaking-rgb));
+  --pron-accent-deep: color-mix(in srgb, rgb(var(--ea-mod-speaking-rgb)) 78%, #000);
+  --pron-accent-soft: rgb(var(--ea-mod-speaking-soft-rgb));
+  position: relative;
+  isolation: isolate;
+  min-height: calc(100dvh - var(--speaking-header-height, 88px));
+  padding-bottom: 44px;
+  background: #fffcf7;
+  color: var(--pronunciation-text);
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+.pronunciation-home-error h2,
+.pronunciation-home-error p {
+  color: var(--pronunciation-text) !important;
+}
+
+.pronunciation-home-shell:has(> .pronunciation-home-error) {
+  display: grid;
+  min-height: calc(100dvh - 104px);
+  grid-template-rows: auto minmax(280px, 1fr);
+}
+
+.pronunciation-home-error {
+  width: min(640px, 100%);
+  margin: 0 auto;
+  align-self: center;
+}
+
+.pronunciation-home-error > .pronunciation-home-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pronunciation-home-error__copy {
+  display: grid;
+  gap: 8px;
+}
+
+.pronunciation-home-error__actions {
+  margin-top: 4px;
+}
+
+.pronunciation-home-page::before,
+.pronunciation-home-page::after {
+  position: fixed;
+  z-index: -1;
+  border-radius: 999px;
+  content: "";
+  pointer-events: none;
+}
+
+.pronunciation-home-page::before {
+  top: 76px;
+  right: 5%;
+  width: 260px;
+  height: 260px;
+  background: rgb(var(--ea-primary-rgb) / 20%);
+}
+
+.pronunciation-home-page::after {
+  bottom: 8%;
+  left: 20%;
+  width: 220px;
+  height: 220px;
+  background: rgb(189 166 234 / 18%);
+}
+
+.pronunciation-home-page button { font: inherit; }
+
+.pronunciation-home-mic-icon {
+  color: #fff !important;
+}
+
+.pronunciation-home-page,
+.pronunciation-home-page .nh-sport { background: transparent !important; }
+
+body:has(.pronunciation-home-page),
+body:has(.pronunciation-home-page) #root,
+body:has(.pronunciation-home-page) [data-testid="app-shell-layout"],
+body:has(.pronunciation-home-page) .nh-sport-workspace,
+body:has(.pronunciation-home-page) #main,
+body:has(.pronunciation-home-page) #main > .nh-sport,
+body:has(.pronunciation-home-page) [data-testid="app-shell-page"],
+body:has(.pronunciation-home-page) .nh-sport > [data-testid="app-shell-page"] {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+.pronunciation-home-shell {
+  width: min(960px, 100%);
+  margin: 0 auto;
+  padding: 22px 24px 0;
+}
+
+.pronunciation-home-header {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 22px;
+}
+
+.pronunciation-home-back {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 1px solid var(--ea-border);
+  border-radius: 15px;
+  background: var(--ea-surface);
+  color: var(--pronunciation-text);
+  box-shadow:none;
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+.pronunciation-home-back:hover {
+  background: var(--ea-primary-soft);
+  box-shadow:none;
+}
+
+.pronunciation-home-back:active {
+  box-shadow:none;
+}
+
+.pronunciation-home-back:focus-visible,
+.pronunciation-home-page button:focus-visible {
+  outline: 3px solid var(--ea-focus);
+  outline-offset: 3px;
+}
+
+.pronunciation-home-header__copy p {
+  margin: 0 0 4px;
+  color: #7545e8;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.pronunciation-home-header__copy strong {
+  display: block;
+  font-family: "Nunito", "Plus Jakarta Sans", system-ui, sans-serif;
+  color: #2c2144;
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+
+.pronunciation-home-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 310px;
+  gap: 18px;
+  align-items: start;
+}
+
+.pronunciation-home-main {
+  display: grid;
+  min-width: 0;
+  gap: 22px;
+}
+
+.pronunciation-home-aside {
+  position: sticky;
+  top: 20px;
+  min-width: 0;
+}
+
+.pronunciation-home-card {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  padding: 24px;
+  border: 1px solid #e9e2ee !important;
+  border-radius: 20px !important;
+  background: #fff;
+  box-shadow: none !important;
+  color: var(--pronunciation-text) !important;
+}
+
+.pronunciation-home-card > span { display: none; }
+.pronunciation-home-card__content { position: relative; }
+
+.pronunciation-home-hero {
+  padding: 0;
+  border-radius: 22px !important;
+  background: #efe7ff;
+}
+
+.pronunciation-home-hero > .pronunciation-home-card__content > div:first-child {
+  padding: 26px;
+}
+
+.pronunciation-home-hero h1 {
+  margin-top: 10px;
+  color: #2c2144 !important;
+  font-family: "Nunito", "Plus Jakarta Sans", system-ui, sans-serif !important;
+  font-size: clamp(46px, 7vw, 76px) !important;
+  font-weight: 800 !important;
+  line-height: 0.98 !important;
+  letter-spacing: -0.055em;
+  text-shadow: none !important;
+}
+
+.pronunciation-home-hero p {
+  color: #6d647c !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+}
+
+.pronunciation-home-hero > .pronunciation-home-card__content > div:first-child > div:first-child > span {
+  border: 1px solid color-mix(in srgb, var(--pron-accent) 30%, var(--ea-border));
+  background: var(--pronunciation-inset-strong);
+  color: var(--pron-accent);
+  box-shadow: none;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+}
+
+.pronunciation-home-hero .bg-white\/95 {
+  border: 1px solid var(--ea-primary-end);
+  border-radius: 38px;
+  background: var(--ea-surface);
+  box-shadow:none;
+  transform: rotate(3deg);
+}
+
+.pronunciation-home-hero > .pronunciation-home-card__content > div:last-child {
+  gap: 12px;
+  padding: 18px 34px 25px;
+  border-top: 1px solid #e9e2ee;
+  background: #fff;
+}
+
+.pronunciation-home-hero button {
+  min-height: 52px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.pronunciation-home-hero button:first-child {
+  border-bottom: 4px solid #5830b6;
+  background: #7545e8 !important;
+  box-shadow:none !important;
+  color: #fff !important;
+}
+
+.pronunciation-home-hero button:last-child {
+  border-color: #e9e2ee;
+  background: #fff !important;
+  box-shadow:none !important;
+  color: var(--pronunciation-text) !important;
+}
+
+.pronunciation-home-hero button:active {  box-shadow:none !important; }
+
+.pronunciation-home-panel h2,
+.pronunciation-home-practice h3,
+.pronunciation-home-context .text-headline-md {
+  color: var(--pronunciation-text) !important;
+  font-family: "Nunito", "Plus Jakarta Sans", system-ui, sans-serif !important;
+  font-size: 22px !important;
+  font-weight: 800 !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.035em;
+}
+
+.pronunciation-home-panel p,
+.pronunciation-home-practice p { color: var(--pronunciation-muted) !important; }
+
+.pronunciation-home-panel .bg-white\/20,
+.pronunciation-home-practice .bg-white\/20 {
+  background: var(--pronunciation-text) !important;
+  color: var(--ea-surface) !important;
+  box-shadow: none;
+}
+
+.pronunciation-home-panel .bg-white\/15,
+.pronunciation-home-practice .bg-white\/15,
+.pronunciation-home-practice .bg-white\/10 {
+  border: 1px solid var(--ea-border);
+  background: var(--pronunciation-inset) !important;
+  color: var(--pronunciation-text) !important;
+}
+
+.pronunciation-home-panel .text-white,
+.pronunciation-home-practice .text-white { color: var(--pronunciation-text) !important; }
+.pronunciation-home-panel .text-white\/80,
+.pronunciation-home-panel .text-white\/90,
+.pronunciation-home-practice .text-white\/75,
+.pronunciation-home-practice .text-white\/85,
+.pronunciation-home-practice .text-white\/90,
+.pronunciation-home-practice .text-white\/95 { color: var(--pronunciation-muted) !important; }
+
+.pronunciation-home-phoneme {
+  min-height: 70px;
+  border: 1px solid var(--ea-border);
+  border-radius: 18px;
+  background: var(--ea-surface) !important;
+  box-shadow:none !important;
+  color: var(--pronunciation-text) !important;
+  font-family: "Nunito", "Plus Jakarta Sans", system-ui, sans-serif !important;
+  font-size: 21px !important;
+  font-weight: 800 !important;
+}
+
+.pronunciation-home-panel .bg-ea-primary {
+  border-color: var(--pron-accent-deep);
+  background: var(--pron-accent) !important;
+  box-shadow:none !important;
+  color: #fff !important;
+}
+
+.pronunciation-home-context {
+  background: var(--ea-surface);
+}
+
+.pronunciation-home-practice {
+  background: var(--ea-surface);
+}
+
+.pronunciation-home-practice .font-caption { font-size: 13px !important; line-height: 1.55 !important; }
+.pronunciation-home-practice .font-label-md { font-size: 13px !important; }
+.pronunciation-home-practice .font-display-sm {
+  font-family: "Nunito", "Plus Jakarta Sans", system-ui, sans-serif !important;
+  font-size: 34px !important;
+}
+
+.pronunciation-home-practice button[aria-label] {
+  border: 1px solid var(--pron-accent-deep);
+  background: var(--pron-accent) !important;
+  box-shadow:none !important;
+  color: #fff !important;
+}
+
+.pronunciation-home-practice button[aria-label] .material-symbols-rounded {
+  color: #fff !important;
+}
+
+/* 3-success mastery streak: N slots that fill green as the learner clears 85+. */
+.pron-streak {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 4px;
+}
+.pron-streak__dot {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid var(--ea-border);
+  border-radius: 999px;
+  background: var(--pronunciation-inset);
+  color: var(--pronunciation-muted);
+  font-family: "Nunito", "Plus Jakarta Sans", system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  transition: background 200ms ease, color 200ms ease, transform 200ms ease;
+}
+.pron-streak__dot.is-done {
+  border-color: var(--pron-accent-deep);
+  background: var(--pron-accent);
+  color: #fff;
+  transform: scale(1.06);
+}
+
+/* --- "You mastered this word" modal --- */
+.pron-mastered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 6px 0 4px;
+  text-align: center;
+}
+.pron-mastered__badge {
+  display: grid;
+  width: 84px;
+  height: 84px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--pron-accent-soft);
+  color: var(--pron-accent);
+}
+.pron-mastered__badge svg { width: 44px; height: 44px; }
+.pron-mastered__score {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.pron-mastered__score b {
+  font-family: "Nunito", "Plus Jakarta Sans", system-ui, sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: var(--pron-accent);
+}
+.pron-mastered__score small {
+  color: var(--ea-muted);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.pron-mastered__note {
+  margin: 0;
+  color: var(--ea-muted);
+  font-size: 14px;
+  font-weight: 600;
+}
+.pron-mastered-modal .ea-overlay__footer { justify-content: center; }
+
+.pronunciation-home-practice button[aria-label]:hover {  }
+
+.pronunciation-home-page .font-duo,
+.pronunciation-home-page .font-body-md,
+.pronunciation-home-page .font-body-lg,
+.pronunciation-home-page .font-caption,
+.pronunciation-home-page .font-label-md {
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif !important;
+}
+
+@media (max-width: 1180px) {
+  .pronunciation-home-layout { grid-template-columns: 1fr; }
+  .pronunciation-home-aside { position: static; }
+  .pronunciation-home-page { padding-bottom: calc(108px + env(safe-area-inset-bottom)); }
+  .pronunciation-home-shell {
+    padding-right: max(20px, env(safe-area-inset-right));
+    padding-left: max(20px, env(safe-area-inset-left));
+  }
+  .pronunciation-home-card { scroll-margin-top: calc(12px + env(safe-area-inset-top)); }
+  .pronunciation-home-practice button,
+  .pronunciation-home-hero button { min-height: 48px; }
+}
+
+@media (max-width: 700px) {
+  .pronunciation-home-page {
+    padding-bottom: calc(104px + env(safe-area-inset-bottom));
+    overflow-x: clip;
+  }
+  .pronunciation-home-shell {
+    padding: max(8px, env(safe-area-inset-top)) max(10px, env(safe-area-inset-right)) 0 max(10px, env(safe-area-inset-left));
+  }
+  .pronunciation-home-page::before { right: -95px; width: 210px; height: 210px; }
+  .pronunciation-home-page::after { bottom: 16%; left: -100px; width: 190px; height: 190px; }
+  .pronunciation-home-header { margin-bottom: 18px; }
+  .pronunciation-home-back { width: 44px; height: 44px; border-radius: 13px; }
+  .pronunciation-home-header__copy strong { font-size: 19px; }
+  .pronunciation-home-card { padding: 17px; border-radius: 20px !important; }
+  .pronunciation-home-hero { padding: 0; border-radius: 24px !important; }
+  .pronunciation-home-hero > .pronunciation-home-card__content > div:first-child { padding: 24px 18px; }
+  .pronunciation-home-hero h1 { font-size: clamp(44px, 16vw, 68px) !important; }
+  .pronunciation-home-hero .bg-white\/95 { border-radius: 26px; transform: none; }
+  .pronunciation-home-hero > .pronunciation-home-card__content > div:last-child { padding: 15px 18px 21px; }
+  .pronunciation-home-panel h2,
+  .pronunciation-home-practice h3,
+  .pronunciation-home-context .text-headline-md { font-size: 20px !important; }
+  .pronunciation-home-hero > .pronunciation-home-card__content > div:last-child {
+    align-items: stretch;
+    grid-template-columns: 1fr;
+  }
+  .pronunciation-home-hero button { width: 100%; min-height: 50px; }
+  .pronunciation-home-practice button[aria-label] { min-width: 52px; min-height: 52px; }
+  .pronunciation-home-card { overflow-wrap: anywhere; }
+}

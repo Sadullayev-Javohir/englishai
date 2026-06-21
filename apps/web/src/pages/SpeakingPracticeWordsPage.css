@@ -1,0 +1,289 @@
+/* Speaking pronunciation practice queue — shares the /home professional design
+   language: --ea-* token surfaces (full light+dark), soft card shadows, display
+   typography, and the Speaking module's green accent (--ea-mod-speaking). */
+
+.spw-page {
+  width: min(960px, 100%);
+  margin: 0 auto;
+  padding: 24px 24px 44px;
+  color: #2c2144;
+  background: #fffcf7;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.spw-page :is(h1,h2,p,dl) { margin-top: 0; }
+
+/* --- Hero --- */
+.spw-hero {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 28px;
+  padding: 4px 0 22px;
+}
+.spw-hero__copy { min-width: 0; }
+.spw-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #7545e8;
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.spw-eyebrow svg { width: 16px; height: 16px; }
+.spw-hero h1 {
+  margin: 11px 0 0;
+  max-width: 720px;
+  color: #2c2144;
+  font-family: "Nunito", sans-serif;
+  font-size: clamp(34px, 4vw, 46px);
+  font-weight: 900;
+  line-height: 1.06;
+  letter-spacing: -.02em;
+}
+.spw-hero p {
+  margin: 12px 0 0;
+  max-width: 560px;
+  color: #6d647c;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+/* Hero stat tiles — mirror the /home quick-stats card. */
+.spw-hero__stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(88px, auto));
+  gap: 8px;
+  margin: 0;
+  padding: 8px;
+  border: 1px solid #e9e2ee;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: none;
+}
+.spw-hero__stats > div {
+  display: grid;
+  gap: 6px;
+  padding: 12px 16px;
+  border-radius: 14px;
+  background: #efe7ff;
+}
+.spw-hero__stats dt {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #6d647c;
+  font-size: 9px;
+  font-weight: 850;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.spw-hero__stats dt svg { width: 13px; height: 13px; }
+.spw-hero__stats dd {
+  margin: 0;
+  color: #2c2144;
+  font-family: "Nunito", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -.03em;
+}
+
+.spw-hero--skeleton {
+  min-height: 120px;
+  border-radius: var(--ea-radius-card);
+  background: var(--ea-surface);
+  box-shadow: var(--ea-shadow-card);
+}
+
+/* --- Card grid --- */
+.spw-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.spw-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 18px;
+  border: 1px solid #e9e2ee;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: none;
+  transition: border-color .16s ease, transform .12s ease, box-shadow .16s ease;
+}
+.spw-card:hover {
+  border-color: #cbb7f2;
+  transform: translateY(-2px);
+  box-shadow: none;
+}
+
+.spw-card__head { display: flex; align-items: center; gap: 15px; }
+
+/* Progress ring — arc coloured by score band; starts at 12 o'clock. Only the
+   ring's own svg is rotated (scoping this to .spw-card svg would also tip the
+   mic/arrow glyphs in the CTA onto their side). */
+.spw-card__ring { flex: none; }
+.spw-card .progress-ring-circle { transition: stroke-dashoffset .6s cubic-bezier(.22, 1, .36, 1); }
+.spw-card__ring svg { transform: rotate(-90deg); }
+.spw-ring__track { color: #e9e2ee; }
+.spw-card[data-band="good"]   .spw-ring__arc { color: #7545e8; }
+.spw-card[data-band="warn"]   .spw-ring__arc { color: #b66a08; }
+.spw-card[data-band="danger"] .spw-ring__arc { color: #ce6756; }
+.spw-card__score {
+  font-family: var(--ea-font-display);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -.03em;
+}
+.spw-card[data-band="good"]   .spw-card__score { color: #7545e8; }
+.spw-card[data-band="warn"]   .spw-card__score { color: #b66a08; }
+.spw-card[data-band="danger"] .spw-card__score { color: #ce6756; }
+.spw-card__target { margin-top: 1px; color: #6d647c; font-size: 10px; font-weight: 800; }
+
+.spw-card__id { min-width: 0; }
+.spw-card__id h2 {
+  margin: 0;
+  overflow: hidden;
+  color: #2c2144;
+  font-family: "Nunito", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -.02em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.spw-card__error {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #efe7ff;
+  color: #7545e8;
+  font-size: 11px;
+  font-weight: 800;
+}
+.spw-card__error svg { width: 13px; height: 13px; }
+
+/* Stat trio */
+.spw-card__stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0;
+  padding: 12px;
+  border-radius: 14px;
+  background: #f8f5fd;
+}
+.spw-card__stats > div { display: grid; gap: 4px; min-width: 0; }
+.spw-card__stats dt {
+  color: #6d647c;
+  font-size: 9px;
+  font-weight: 850;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+.spw-card__stats dd {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 850;
+  color: #2c2144;
+}
+
+/* Primary CTA — speaking green, matching the /home action buttons. */
+.spw-card__cta {
+  display: flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: auto;
+  border: 0;
+  border-bottom: 4px solid #5830b6;
+  border-radius: 15px;
+  background: #7545e8;
+  color: #fff;
+  font-family: var(--ea-font-body);
+  font-size: 14px;
+  font-weight: 850;
+  cursor: pointer;
+  transition: filter .16s ease, transform .12s ease;
+}
+.spw-card__cta:hover { filter: brightness(1.06); }
+.spw-card__cta:active { transform: scale(.985); }
+.spw-card__cta svg { width: 18px; height: 18px; }
+.spw-card__cta-arrow { transition: transform .16s ease; }
+.spw-card__cta:hover .spw-card__cta-arrow { transform: translateX(3px); }
+
+.spw-page :where(button, a):focus-visible {
+  outline: 3px solid rgb(117 69 232 / 30%);
+  outline-offset: 3px;
+}
+
+/* --- Empty / error state --- */
+.spw-state {
+  display: flex;
+  min-height: 340px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  padding: 40px 28px;
+  border: 1px solid var(--ea-border);
+  border-radius: var(--ea-radius-card);
+  background: var(--ea-surface);
+  box-shadow: var(--ea-shadow-card);
+  text-align: center;
+}
+.spw-state__icon {
+  display: grid;
+  width: 76px;
+  height: 76px;
+  place-items: center;
+  border-radius: 24px;
+  background: rgb(var(--ea-mod-speaking-soft-rgb));
+  color: rgb(var(--ea-mod-speaking-rgb));
+}
+.spw-state__icon svg { width: 36px; height: 36px; }
+.spw-state--error .spw-state__icon {
+  background: var(--ea-danger-50);
+  color: var(--ea-danger);
+}
+.spw-state h2 { margin: 20px 0 8px; font-family: var(--ea-font-display); font-size: 26px; letter-spacing: -.02em; }
+.spw-state p { max-width: 460px; margin: 0 0 22px; color: var(--ea-muted); font-weight: 600; }
+.spw-state__cta {
+  display: inline-flex;
+  min-height: 48px;
+  min-width: 190px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 22px;
+  border: 0;
+  border-radius: 15px;
+  background: rgb(var(--ea-mod-speaking-rgb));
+  color: #fff;
+  font-weight: 850;
+  cursor: pointer;
+}
+.spw-state--error .spw-state__cta { background: var(--ea-primary); color: var(--ea-on-primary); }
+
+@media (max-width: 1180px) {
+  .spw-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 900px) {
+  .spw-hero { flex-direction: column; align-items: stretch; gap: 16px; }
+  .spw-hero__stats { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 700px) {
+  .spw-page { padding: 18px 20px max(28px, env(safe-area-inset-bottom)); }
+  .spw-grid { grid-template-columns: 1fr; }
+  .spw-hero h1 { font-size: 32px; }
+}

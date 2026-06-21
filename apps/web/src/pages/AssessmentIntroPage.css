@@ -1,0 +1,150 @@
+/*
+ * Assessment-intro chrome. Tokens, buttons and the indigo feature aside come from
+ * the shared onboarding system (onboarding.css). This file lays out the two-column
+ * grid, the info card, the six-skill points and the microphone-check aside.
+ */
+
+.assessment-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 20px;
+  width: min(1120px, 100%);
+  grid-template-columns: minmax(0, 1.06fr) minmax(320px, 0.94fr);
+  align-items: start;
+}
+
+.ob-surface-card {
+  border: 1px solid var(--ob-border);
+  border-radius: var(--ob-radius-card);
+  background: var(--ob-surface);
+  box-shadow: var(--ea-shadow-card);
+}
+.assessment-main { padding: clamp(24px, 3vw, 38px); }
+
+.assessment-hero { display: flex; align-items: center; gap: 18px; }
+.assessment-hero__logo {
+  display: grid;
+  place-items: center;
+  width: 76px;
+  height: 76px;
+  flex: none;
+  border-radius: 20px;
+  background: var(--ob-primary-soft);
+}
+.assessment-sub { max-width: 60ch; margin-top: 18px; }
+
+.assessment-points { margin-top: 22px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.assessment-point {
+  padding: 16px;
+  border: 1px solid var(--ob-border);
+  border-radius: var(--ob-radius-inner);
+  background: var(--ob-raised);
+}
+.assessment-point__icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 13px;
+  background: var(--ob-primary-soft);
+  color: var(--ob-primary);
+}
+.assessment-point h2 { margin-top: 14px; font-family: var(--ea-font-display, "Nunito", sans-serif); font-size: 15px; font-weight: 800; letter-spacing: -0.01em; line-height: 1.2; }
+.assessment-point p { margin-top: 6px; color: var(--ob-muted); font-size: 12.5px; font-weight: 600; line-height: 1.5; }
+
+.assessment-req {
+  margin-top: 18px;
+  padding: 18px;
+  border: 1px solid var(--ob-border);
+  border-radius: var(--ob-radius-inner);
+  background: var(--ob-soft);
+}
+.assessment-req__head { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+.assessment-req__title { font-family: var(--ea-font-display, "Nunito", sans-serif); font-size: 15px; font-weight: 800; }
+.assessment-req__hint { margin-top: 3px; color: var(--ob-muted); font-size: 12.5px; font-weight: 600; }
+.assessment-req__badge {
+  flex: none;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: var(--ob-primary-soft);
+  color: var(--ob-primary);
+  font-size: 11.5px;
+  font-weight: 800;
+}
+.assessment-req__list { margin-top: 14px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.assessment-req__list li {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--ob-border);
+  border-radius: 13px;
+  background: var(--ob-surface);
+  font-size: 12.5px;
+  font-weight: 750;
+}
+.assessment-req__list svg { flex: none; color: var(--ob-success); }
+
+/* ── Microphone-check aside (indigo feature panel) ────────────────────── */
+.assessment-aside { gap: 18px; }
+.assessment-aside::before, .assessment-aside::after { opacity: 0.8; }
+.assessment-aside__icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.16);
+}
+.assessment-aside .ob-feature__headline h2 { font-size: clamp(22px, 2.4vw, 28px); }
+
+.assessment-mic {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  min-height: 56px;
+  padding: 0 16px;
+  border: 1px solid var(--ob-feature-line);
+  border-radius: var(--ob-radius-control);
+  background: var(--ob-feature-fill);
+  color: #fff;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.assessment-mic:hover:not(:disabled) { background: rgba(255, 255, 255, 0.16); }
+.assessment-mic:disabled { cursor: default; }
+.assessment-mic__label { display: flex; align-items: center; gap: 11px; font-size: 14px; font-weight: 800; }
+.assessment-mic__ok { color: #c7f9e5; }
+.assessment-mic__bad { color: #ffc2cd; }
+.assessment-mic__cta {
+  flex: none;
+  padding: 6px 13px;
+  border-radius: 999px;
+  background: var(--ob-on-feature);
+  color: #201b4d;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.assessment-aside__actions { display: grid; gap: 12px; margin-top: auto; }
+.assessment-aside__alert {
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 192, 203, 0.35);
+  border-radius: 14px;
+  background: rgba(255, 128, 152, 0.16);
+  color: #ffe0e6;
+  font-size: 12.5px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .assessment-grid { grid-template-columns: 1fr; }
+  .assessment-req__list { grid-template-columns: 1fr; }
+}
+@media (max-width: 700px) {
+  .assessment-points { grid-template-columns: 1fr; }
+}

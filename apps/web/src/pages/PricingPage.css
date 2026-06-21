@@ -1,0 +1,159 @@
+/* Pricing grid shown above the editorial article. Uses the same tokens as the public content pages
+   so the two halves of the page read as one document. */
+
+.pricing-page__grid-wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 1rem;
+}
+
+.pricing-page__intro h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.6rem, 4vw, 2.25rem);
+}
+
+.pricing-page__intro p {
+  margin: 0 0 2rem;
+  max-width: 60ch;
+  color: var(--ea-text-muted, #55606d);
+}
+
+.pricing-page__grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.pricing-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1.5rem 1.25rem;
+  border: 1px solid var(--ea-border, #e3e7ee);
+  border-radius: 1rem;
+  background: var(--ea-surface, #fff);
+}
+
+.pricing-card--best {
+  border-color: var(--ea-accent, #4f46e5);
+  /* Token only - the design guard rejects a literal shadow, including as a var() fallback. */
+  box-shadow: var(--ea-shadow-md);
+}
+
+.pricing-card__badge {
+  position: absolute;
+  top: -0.7rem;
+  left: 1.25rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  background: var(--ea-accent, #4f46e5);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.pricing-card__label {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ea-text-muted, #55606d);
+}
+
+.pricing-card__price {
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+.pricing-card__price span {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--ea-text-muted, #55606d);
+}
+
+.pricing-card__per-month,
+.pricing-card__save,
+.pricing-card__state {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--ea-text-muted, #55606d);
+}
+
+.pricing-card__save {
+  font-weight: 600;
+  color: var(--ea-success, #157347);
+}
+
+.pricing-card__state {
+  margin-top: 0.6rem;
+}
+
+.pricing-page__waitlist {
+  margin-top: 2rem;
+  padding: 1.5rem 1.25rem;
+  border: 1px solid var(--ea-border, #e3e7ee);
+  border-radius: 1rem;
+  background: var(--ea-surface-soft, #f7f8fb);
+}
+
+.pricing-page__waitlist h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1.15rem;
+}
+
+.pricing-page__waitlist p {
+  margin: 0 0 1rem;
+  max-width: 60ch;
+  color: var(--ea-text-muted, #55606d);
+}
+
+.pc-waitlist__label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.pc-waitlist__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pc-waitlist__input {
+  flex: 1 1 260px;
+  min-width: 0;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid var(--ea-border, #e3e7ee);
+  border-radius: 0.6rem;
+  font: inherit;
+}
+
+.pc-waitlist__submit {
+  padding: 0.65rem 1.1rem;
+  border: 0;
+  border-radius: 0.6rem;
+  background: var(--ea-accent, #4f46e5);
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.pc-waitlist__submit:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.pc-waitlist__hint,
+.pc-waitlist__done {
+  margin: 0.6rem 0 0;
+  font-size: 0.82rem;
+  color: var(--ea-text-muted, #55606d);
+}
+
+.pc-waitlist__done {
+  font-weight: 600;
+  color: var(--ea-success, #157347);
+}

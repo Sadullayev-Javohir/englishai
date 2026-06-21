@@ -1,0 +1,62 @@
+.energy-modal {
+  --energy-ink: #2b2531;
+  --energy-muted: #736a7a;
+  --energy-line: #e9e2ee;
+  --energy-orange: #b56a0c;
+  width: min(520px, calc(100vw - 32px));
+  max-width: 520px;
+  overflow: hidden;
+  border: 1px solid #e9e2ee;
+  border-radius: 28px !important;
+  background: #fefefe !important;
+  color: var(--energy-ink);
+  box-shadow: var(--ea-shadow-lg);
+}
+
+.energy-modal .ea-overlay__header { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); padding: 0; }
+.energy-modal .ea-overlay__body { padding: 0; overflow: visible; }
+.energy-modal__content { padding: 32px; text-align: center; }
+.energy-modal__hero { position: relative; display: grid; place-items: center; width: 88px; height: 88px; margin: 0 auto 20px; border-radius: 28px; background: #fff0d9; }
+.energy-modal__hero-bolt { position: relative; z-index: 1; display: grid; place-items: center; width: 54px; height: 54px; border-radius: 18px; background: #ffe0ad; color: var(--energy-orange); }
+.energy-modal__hero-bolt .material-symbols-rounded { font-size: 34px; }
+.energy-modal__hero-orbit { position: absolute; border: 1px solid #f1c57c; border-radius: 50%; opacity: .7; }
+.energy-modal__hero-orbit--one { width: 76px; height: 76px; }
+.energy-modal__hero-orbit--two { width: 98px; height: 98px; border-style: dashed; }
+.energy-modal__eyebrow { margin: 0 0 8px; color: #9c6417; font-size: 12px; font-weight: 800; letter-spacing: .12em; }
+.energy-modal h3 { margin: 0; color: var(--energy-ink); font-family: var(--ea-font-display); font-size: 32px; font-weight: 900; letter-spacing: -.035em; line-height: 1.08; }
+.energy-modal__description { max-width: 420px; margin: 12px auto 18px; color: #5e5664; font-size: 15px; line-height: 1.55; }
+.energy-modal__cells { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin: 0 auto 9px; }
+.energy-modal__cell { display: grid; min-width: 0; height: 56px; place-items: center; border: 1px solid #e9e2ee; border-radius: 14px; background: #f5f2f8; color: #c9bfd7; }
+.energy-modal__cell.is-full { border-color: #e9c990; background: #fff0d9; color: var(--energy-orange); }
+.energy-modal__cell .material-symbols-rounded { font-size: 24px; }
+.energy-modal__one-at-a-time { margin: 0 0 20px; color: var(--energy-muted); font-size: 13px; }
+.energy-modal__clock { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 12px; min-height: 82px; margin-bottom: 20px; padding: 14px 16px; border-radius: 16px; background: #fff5e5; color: #92520c; text-align: left; }
+.energy-modal__clock > .material-symbols-rounded { font-size: 26px; }
+.energy-modal__clock div { display: grid; gap: 3px; }
+.energy-modal__clock span { font-size: 12px; font-weight: 700; line-height: 1.2; }
+.energy-modal__clock strong { font-variant-numeric: tabular-nums; font-size: 16px; font-weight: 900; line-height: 1.2; }
+.energy-modal__clock-score { text-align: right; }
+.energy-modal__clock--ready { background: #ecf6e5; color: #477c2c; }
+.energy-modal__actions { display: grid; gap: 10px; }
+.energy-modal__primary, .energy-modal__secondary { min-height: 52px; border-radius: 14px; font: inherit; font-weight: 800; cursor: pointer; }
+.energy-modal__primary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 0; background: #f28a18; color: #fff; }
+.energy-modal__primary .material-symbols-rounded { font-size: 20px; }
+.energy-modal__secondary { border: 1px solid #ded7e5; background: #fefefe; color: #554d5b; }
+.energy-modal__hint { display: inline-flex; align-items: center; justify-content: center; gap: 6px; margin: 17px 0 0; color: #827888; font-size: 12px; }
+.energy-modal__hint .material-symbols-rounded { font-size: 16px; }
+
+@media (max-width: 700px) {
+  .ea-responsive-overlay:has(.energy-modal) { align-items: center; padding: 16px; }
+  .ea-responsive-overlay:has(.energy-modal) .energy-modal { width: min(342px, calc(100vw - 32px)); max-height: calc(100dvh - 32px); border-radius: 24px !important; padding-bottom: 0; }
+  .energy-modal__content { padding: 24px; }
+  .energy-modal__hero { width: 76px; height: 76px; margin-bottom: 16px; border-radius: 24px; }
+  .energy-modal__hero-bolt { width: 46px; height: 46px; border-radius: 15px; }
+  .energy-modal__hero-bolt .material-symbols-rounded { font-size: 29px; }
+  .energy-modal__hero-orbit--one { width: 64px; height: 64px; }
+  .energy-modal__hero-orbit--two { width: 84px; height: 84px; }
+  .energy-modal h3 { font-size: 28px; }
+  .energy-modal__description { margin-top: 10px; font-size: 14px; }
+  .energy-modal__cell { height: 48px; border-radius: 12px; }
+  .energy-modal__clock { grid-template-columns: auto 1fr; gap: 10px; margin-bottom: 16px; padding: 12px; }
+  .energy-modal__clock-score { grid-column: 2; text-align: left; }
+}

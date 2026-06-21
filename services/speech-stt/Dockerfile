@@ -1,0 +1,46 @@
+FROM python:3.12-slim AS python-base
+# Same intent as the `apk upgrade` in services/transcript/Dockerfile: the Debian base carries
+# whatever OS CVEs were open the day the tag was published, and the release scan fails the build
+# on any HIGH. Upgrading here patches both the build and the runtime stage in one layer.
+RUN apt-get update \
+    && apt-get upgrade -y --no-install-recommends \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/* \
+    && rm -rf /usr/local/lib/python3.12/site-packages/msgpack* \
+        /usr/local/lib/python3.12/site-packages/setuptools*
+
+FROM python-base AS build
+WORKDIR /app
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
+ARG WHISPER_MODEL=base.en
+ARG WHISPER_COMPUTE_TYPE=int8
+COPY requirements.txt .
+# The model weights are downloaded at BUILD time into the image. Downloading them on first request
+# would make the first learner of every deployment wait minutes for a turn, and would make the
+# container depend on Hugging Face being reachable from the VPS at runtime.
+RUN python -m venv /opt/venv \
+    && /opt/venv/bin/pip install --no-cache-dir --upgrade pip \
+    && /opt/venv/bin/pip install --no-cache-dir -r requirements.txt \
+    && HF_HOME=/opt/models /opt/venv/bin/python -c "\
+from faster_whisper import WhisperModel; \
+import os; \
+WhisperModel(os.environ['WHISPER_MODEL'], device='cpu', compute_type=os.environ['WHISPER_COMPUTE_TYPE'])" \
+    && rm -rf /opt/venv/lib/python3.12/site-packages/pip* \
+        /opt/venv/lib64/python3.12/site-packages/pip* \
+        /opt/venv/lib/python3.12/site-packages/setuptools* \
+        /opt/venv/lib64/python3.12/site-packages/setuptools*
+ENV WHISPER_MODEL=${WHISPER_MODEL} WHISPER_COMPUTE_TYPE=${WHISPER_COMPUTE_TYPE}
+
+FROM python-base
+WORKDIR /app
+ENV PATH="/opt/venv/bin:$PATH" PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 HF_HOME=/opt/models
+COPY --from=build /opt/venv /opt/venv
+COPY --from=build /opt/models /opt/models
+COPY app.py .
+RUN useradd --create-home --uid 10001 appuser \
+    && chown -R appuser:appuser /opt/models
+USER appuser
+EXPOSE 8080
+# One worker: the model is loaded per process, so a second worker would double the memory for a
+# service whose throughput is bounded by CPU anyway.
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8080", "--workers", "1"]

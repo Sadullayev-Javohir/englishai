@@ -1,0 +1,367 @@
+{
+  "wireMagic": "pb3",
+  "pens": [ {
+  
+  } ],
+  "wsWinStyles": [ {
+  
+  } ],
+  "wpWinPositions": [ {
+  
+  } ],
+  "events": [ {
+    "tStartMs": 2795,
+    "dDurationMs": 2001,
+    "segs": [ {
+      "utf8": "Easy English Conversations."
+    } ]
+  }, {
+    "tStartMs": 6798,
+    "dDurationMs": 1631,
+    "segs": [ {
+      "utf8": "Hello, what's your name?"
+    } ]
+  }, {
+    "tStartMs": 9468,
+    "dDurationMs": 1254,
+    "segs": [ {
+      "utf8": "Hi, I'm Tim. "
+    } ]
+  }, {
+    "tStartMs": 12666,
+    "dDurationMs": 923,
+    "segs": [ {
+      "utf8": "What's your name?"
+    } ]
+  }, {
+    "tStartMs": 14038,
+    "dDurationMs": 1621,
+    "segs": [ {
+      "utf8": "Hello, I'm Sian. "
+    } ]
+  }, {
+    "tStartMs": 16204,
+    "dDurationMs": 994,
+    "segs": [ {
+      "utf8": "What's your name?"
+    } ]
+  }, {
+    "tStartMs": 17583,
+    "dDurationMs": 1082,
+    "segs": [ {
+      "utf8": "My name's Tim."
+    } ]
+  }, {
+    "tStartMs": 18665,
+    "dDurationMs": 1063,
+    "segs": [ {
+      "utf8": "It's nice to meet you."
+    } ]
+  }, {
+    "tStartMs": 19728,
+    "dDurationMs": 2216,
+    "segs": [ {
+      "utf8": "Lovely to meet you too."
+    } ]
+  }, {
+    "tStartMs": 22293,
+    "dDurationMs": 2039,
+    "segs": [ {
+      "utf8": "Hello, how's it going?"
+    } ]
+  }, {
+    "tStartMs": 24332,
+    "dDurationMs": 1113,
+    "segs": [ {
+      "utf8": "Hi."
+    } ]
+  }, {
+    "tStartMs": 25445,
+    "dDurationMs": 1171,
+    "segs": [ {
+      "utf8": "Hey."
+    } ]
+  }, {
+    "tStartMs": 27045,
+    "dDurationMs": 1013,
+    "segs": [ {
+      "utf8": "What are your names?"
+    } ]
+  }, {
+    "tStartMs": 28546,
+    "dDurationMs": 883,
+    "segs": [ {
+      "utf8": "I'm Tim."
+    } ]
+  }, {
+    "tStartMs": 29429,
+    "dDurationMs": 1313,
+    "segs": [ {
+      "utf8": "And I'm Sian."
+    } ]
+  }, {
+    "tStartMs": 30957,
+    "dDurationMs": 1425,
+    "segs": [ {
+      "utf8": "What's your name?"
+    } ]
+  }, {
+    "tStartMs": 32382,
+    "dDurationMs": 1315,
+    "segs": [ {
+      "utf8": "My name's Georgie."
+    } ]
+  }, {
+    "tStartMs": 33697,
+    "dDurationMs": 1215,
+    "segs": [ {
+      "utf8": "Nice to meet you."
+    } ]
+  }, {
+    "tStartMs": 34912,
+    "dDurationMs": 1730,
+    "segs": [ {
+      "utf8": "Yeah, great to meet you too."
+    } ]
+  }, {
+    "tStartMs": 38305,
+    "dDurationMs": 809,
+    "segs": [ {
+      "utf8": "Hello!"
+    } ]
+  }, {
+    "tStartMs": 39114,
+    "dDurationMs": 781,
+    "segs": [ {
+      "utf8": "Hiya."
+    } ]
+  }, {
+    "tStartMs": 40176,
+    "dDurationMs": 650,
+    "segs": [ {
+      "utf8": "Hey."
+    } ]
+  }, {
+    "tStartMs": 40826,
+    "dDurationMs": 1622,
+    "segs": [ {
+      "utf8": "Hi. What's your name?"
+    } ]
+  }, {
+    "tStartMs": 43390,
+    "dDurationMs": 1965,
+    "segs": [ {
+      "utf8": "I'm Buli. What's your name?"
+    } ]
+  }, {
+    "tStartMs": 45355,
+    "dDurationMs": 1262,
+    "segs": [ {
+      "utf8": "I'm Georgie."
+    } ]
+  }, {
+    "tStartMs": 47497,
+    "dDurationMs": 1680,
+    "segs": [ {
+      "utf8": "Nice to meet you, Georgie!"
+    } ]
+  }, {
+    "tStartMs": 53550,
+    "dDurationMs": 1402,
+    "segs": [ {
+      "utf8": "Where are they from?"
+    } ]
+  }, {
+    "tStartMs": 55327,
+    "dDurationMs": 657,
+    "segs": [ {
+      "utf8": "I'm from..."
+    } ]
+  }, {
+    "tStartMs": 56602,
+    "dDurationMs": 1899,
+    "segs": [ {
+      "utf8": "And where do they live?"
+    } ]
+  }, {
+    "tStartMs": 58801,
+    "dDurationMs": 873,
+    "segs": [ {
+      "utf8": "I live..."
+    } ]
+  }, {
+    "tStartMs": 59880,
+    "dDurationMs": 1774,
+    "segs": [ {
+      "utf8": "Find out in the next video!"
+    } ]
+  }, {
+    "tStartMs": 65627,
+    "dDurationMs": 1235,
+    "segs": [ {
+      "utf8": "What's his name?"
+    } ]
+  }, {
+    "tStartMs": 67025,
+    "dDurationMs": 1220,
+    "segs": [ {
+      "utf8": "His name's Tim."
+    } ]
+  }, {
+    "tStartMs": 68649,
+    "dDurationMs": 1612,
+    "segs": [ {
+      "utf8": "Lovely to meet you, Tim."
+    } ]
+  }, {
+    "tStartMs": 70986,
+    "dDurationMs": 1835,
+    "segs": [ {
+      "utf8": "Now, what's her name?"
+    } ]
+  }, {
+    "tStartMs": 72933,
+    "dDurationMs": 1382,
+    "segs": [ {
+      "utf8": "Her name's Sian."
+    } ]
+  }, {
+    "tStartMs": 75161,
+    "dDurationMs": 1759,
+    "segs": [ {
+      "utf8": "Oh, she's Sian."
+    } ]
+  }, {
+    "tStartMs": 77371,
+    "dDurationMs": 1073,
+    "segs": [ {
+      "utf8": "Hello, Sian."
+    } ]
+  }, {
+    "tStartMs": 78444,
+    "dDurationMs": 1755,
+    "segs": [ {
+      "utf8": "Hello. Nice to meet you."
+    } ]
+  }, {
+    "tStartMs": 80199,
+    "dDurationMs": 1627,
+    "segs": [ {
+      "utf8": "Great to meet you too."
+    } ]
+  }, {
+    "tStartMs": 81826,
+    "dDurationMs": 2566,
+    "segs": [ {
+      "utf8": "So, I'm Buli,"
+    } ]
+  }, {
+    "tStartMs": 84658,
+    "dDurationMs": 2342,
+    "segs": [ {
+      "utf8": "her name's Sian,"
+    } ]
+  }, {
+    "tStartMs": 87000,
+    "dDurationMs": 1865,
+    "segs": [ {
+      "utf8": "her name's Georgie,"
+    } ]
+  }, {
+    "tStartMs": 89199,
+    "dDurationMs": 1807,
+    "segs": [ {
+      "utf8": "and his name's Tim."
+    } ]
+  }, {
+    "tStartMs": 91006,
+    "dDurationMs": 1242,
+    "segs": [ {
+      "utf8": "That's right."
+    } ]
+  }, {
+    "tStartMs": 92605,
+    "dDurationMs": 2582,
+    "segs": [ {
+      "utf8": "Oh, hello! What's your name?"
+    } ]
+  }, {
+    "tStartMs": 99606,
+    "dDurationMs": 2401,
+    "segs": [ {
+      "utf8": "I'm Sian. Nice to meet you."
+    } ]
+  }, {
+    "tStartMs": 107690,
+    "dDurationMs": 2000,
+    "segs": [ {
+      "utf8": "Her name's Georgie."
+    } ]
+  }, {
+    "tStartMs": 112524,
+    "dDurationMs": 2244,
+    "segs": [ {
+      "utf8": "His name's Tim."
+    } ]
+  }, {
+    "tStartMs": 115870,
+    "dDurationMs": 1852,
+    "segs": [ {
+      "utf8": "But what's his name?"
+    } ]
+  }, {
+    "tStartMs": 123739,
+    "dDurationMs": 1327,
+    "segs": [ {
+      "utf8": "That's right."
+    } ]
+  }, {
+    "tStartMs": 127099,
+    "dDurationMs": 1147,
+    "segs": [ {
+      "utf8": "Bye, Buli!"
+    } ]
+  }, {
+    "tStartMs": 128155,
+    "dDurationMs": 1363,
+    "segs": [ {
+      "utf8": "Goodbye!"
+    } ]
+  }, {
+    "tStartMs": 129840,
+    "dDurationMs": 872,
+    "segs": [ {
+      "utf8": "Bye!"
+    } ]
+  }, {
+    "tStartMs": 131042,
+    "dDurationMs": 1029,
+    "segs": [ {
+      "utf8": "Bye!"
+    } ]
+  }, {
+    "tStartMs": 134000,
+    "dDurationMs": 2459,
+    "segs": [ {
+      "utf8": "Oh, bye!"
+    } ]
+  }, {
+    "tStartMs": 139954,
+    "dDurationMs": 4850,
+    "segs": [ {
+      "utf8": "Click here to learn eight different ways to say 'How are you?'"
+    } ]
+  }, {
+    "tStartMs": 145014,
+    "dDurationMs": 3497,
+    "segs": [ {
+      "utf8": "And click here to subscribe to our channel."
+    } ]
+  }, {
+    "tStartMs": 150569,
+    "dDurationMs": 1808,
+    "segs": [ {
+      "utf8": "Bye!"
+    } ]
+  } ]
+}

@@ -1,0 +1,84 @@
+.admin-curriculum {
+  display: grid;
+  gap: 22px;
+  width: min(1400px, 100%);
+  margin: 0 auto;
+  color: var(--ea-text);
+}
+
+.admin-curriculum__runs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+.admin-curriculum__run {
+  display: grid;
+  gap: 8px;
+  width: 100%;
+  color: var(--ea-text);
+  text-align: left;
+}
+
+.admin-curriculum__run[aria-pressed="true"] {
+  border-color: var(--ea-primary-deep);
+  background: var(--ea-primary-soft);
+}
+
+.admin-curriculum__run span,
+.admin-curriculum__run small {
+  color: var(--ea-muted);
+}
+
+.admin-curriculum__run progress {
+  width: 100%;
+  accent-color: var(--ea-primary-deep);
+}
+
+.admin-curriculum__table {
+  overflow: auto;
+}
+
+.admin-curriculum table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-curriculum th,
+.admin-curriculum td {
+  padding: 13px 15px;
+  border-bottom: 1px solid var(--ea-border);
+  text-align: left;
+  white-space: nowrap;
+}
+
+.admin-curriculum th {
+  color: var(--ea-muted);
+  background: var(--ea-surface-soft);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.admin-curriculum tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.admin-curriculum td span {
+  font-weight: 800;
+}
+
+.admin-curriculum td span[data-status="Approved"],
+.admin-curriculum td span[data-status="Published"] {
+  color: var(--ea-success);
+}
+
+.admin-curriculum td span[data-status="FailedPermanent"],
+.admin-curriculum td span[data-status="NeedsHumanReview"] {
+  color: var(--ea-danger);
+}
+
+@media (max-width: 700px) {
+  .admin-curriculum__runs {
+    grid-template-columns: 1fr;
+  }
+}

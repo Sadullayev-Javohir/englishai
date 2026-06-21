@@ -1,0 +1,33 @@
+.listening-design { color:var(--ea-text); background:var(--ea-bg); font-family:var(--ea-font-body); min-width:0; }
+.listening-design--lesson {
+  height:100vh;
+  height:100dvh;
+  display:grid;
+  grid-template-rows:auto minmax(0,1fr);
+  overflow:hidden;
+}
+.listening-design--catalog { min-height:100dvh; padding-bottom:80px; }
+.listening-header { display:flex; align-items:center; justify-content:space-between; gap:16px; width:100%; min-width:0; padding:20px 64px; padding-top:max(20px,env(safe-area-inset-top)); }
+.listening-header__leading,.listening-header__status { display:flex; align-items:center; gap:12px; min-width:0; }
+.listening-header__back,.listening-header__bell { display:grid; place-items:center; width:44px; height:44px; flex:none; border-radius:50%; }
+.listening-header__back { border:1px solid var(--ea-border); color:var(--ea-muted-deep); }
+.listening-header__brand { flex:none; }
+.listening-header__xp,.listening-header__energy { display:flex; align-items:center; gap:6px; white-space:nowrap; padding:8px 12px; border-radius:16px; font-size:12px; font-weight:800; }
+.listening-header__xp,.listening-header__bell { color:var(--ea-primary); background:var(--ea-primary-soft); }
+.listening-header__energy { color:#91521f; background:#fff0dc; }
+.listening-header__bell { position:relative; }
+.listening-header__bell>span { position:absolute; right:-2px; top:-3px; border:2px solid var(--ea-bg); padding:0 4px; border-radius:10px; background:var(--ea-primary); color:var(--ea-on-primary); font-size:10px; }
+.listening-tag { display:inline-flex; width:fit-content; align-items:center; border-radius:20px; padding:5px 10px; color:var(--ea-primary); background:var(--ea-primary-soft); font-size:10px; font-weight:800; line-height:16px; }
+.listening-design :is(button,a,input,summary):focus-visible { outline:2px solid var(--ea-primary); outline-offset:3px; }
+@media(max-width:700px) {
+  .listening-header { gap:8px; padding:10px 20px; padding-top:max(10px,env(safe-area-inset-top)); }
+  .listening-header__leading,.listening-header__status { gap:8px; }
+  .listening-header__brand .ea-brand-name,.listening-header__module { display:none; }
+  .listening-header__xp,.listening-header__energy { font-size:11px; padding:7px 9px; }
+  .listening-header__back,.listening-header__bell { width:40px; height:40px; }
+}
+@media(max-width:360px) {
+  .listening-header { padding-inline:12px; }
+  .listening-header__leading,.listening-header__status { gap:6px; }
+  .listening-header__xp,.listening-header__energy { padding-inline:6px; }
+}

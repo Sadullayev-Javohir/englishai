@@ -1,0 +1,30 @@
+/*
+ * Welcome chrome. Card, feature panel and buttons come from the shared onboarding
+ * system (onboarding.css). This file handles the two start-choice actions and the
+ * mobile two-step reveal (intro → choice), preserving the welcome-page--step-N hook.
+ */
+
+.welcome-choice { gap: 20px; }
+
+.welcome-page__actions { display: grid; gap: 16px; }
+.welcome-page__action { display: grid; gap: 8px; }
+.welcome-page__action > span {
+  padding-left: 2px;
+  color: var(--ob-muted);
+  font-size: 12.5px;
+  font-weight: 650;
+  line-height: 1.45;
+}
+
+/* The "Keyingisi" advance button only exists in the stacked mobile flow. */
+.welcome-page__mobile-next { display: none; margin-top: auto; }
+
+@media (max-width: 900px) {
+  .welcome-page__mobile-next { display: block; }
+  /* Stack into one full-height column and let the active step fill the screen so
+     the hidden step never leaves an empty gap; "Keyingisi" pins to the bottom. */
+  .welcome-card { display: flex; flex-direction: column; }
+  .welcome-intro, .welcome-choice { flex: 1 1 auto; }
+  .welcome-page--step-1 .welcome-choice { display: none; }
+  .welcome-page--step-2 .welcome-intro { display: none; }
+}

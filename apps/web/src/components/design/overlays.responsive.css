@@ -1,0 +1,171 @@
+.ea-responsive-overlay {
+  box-sizing: border-box;
+  min-height: 100svh;
+  overscroll-behavior: contain;
+}
+
+@supports (height: 100dvh) {
+  .ea-responsive-overlay {
+    min-height: 100dvh;
+  }
+}
+
+.ea-responsive-overlay .ea-overlay__backdrop {
+  min-width: 44px;
+  min-height: 44px;
+  touch-action: manipulation;
+}
+
+.ea-responsive-overlay .ea-overlay__panel {
+  min-width: 0;
+  max-height: min(88dvh, 900px);
+  overscroll-behavior: contain;
+}
+
+.ea-responsive-overlay .ea-overlay__header,
+.ea-responsive-overlay .ea-overlay__footer {
+  flex: 0 0 auto;
+}
+
+.ea-responsive-overlay .ea-overlay__header > div:first-child,
+.ea-responsive-overlay .ea-overlay__body,
+.ea-responsive-overlay .ea-overlay__footer {
+  min-width: 0;
+}
+
+.ea-responsive-overlay .ea-overlay__header h2,
+.ea-responsive-overlay .ea-overlay__header p,
+.ea-responsive-overlay .ea-overlay__body,
+.ea-responsive-overlay .ea-confirm__message {
+  overflow-wrap: anywhere;
+}
+
+.ea-responsive-overlay .ea-overlay__body {
+  min-height: 0;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+.ea-responsive-overlay .ea-overlay__footer > * {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.ea-responsive-overlay .ea-confirm__button {
+  padding-inline: 24px;
+  padding-block: 13px;
+}
+
+.ea-responsive-toast-region {
+  position: fixed;
+  max-height: calc(100dvh - max(18px, env(safe-area-inset-top)) - max(18px, env(safe-area-inset-bottom)));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.ea-responsive-toast-region .ea-toast {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 700px){
+  .ea-responsive-overlay {
+    align-items: flex-end;
+    padding: max(8px, env(safe-area-inset-top)) max(8px, env(safe-area-inset-right)) 0 max(8px, env(safe-area-inset-left));
+  }
+
+  .ea-responsive-overlay .ea-overlay__panel,
+  .ea-responsive-overlay.ea-overlay--sheet .ea-overlay__panel {
+    width: 100%;
+    height: auto;
+    max-height: calc(100dvh - max(8px, env(safe-area-inset-top)));
+    border-radius: 24px 24px 0 0;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .ea-responsive-overlay .ea-overlay__header {
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .ea-responsive-overlay .ea-overlay__header h2 {
+    font-size: clamp(20px, 6vw, 24px);
+    line-height: 1.15;
+  }
+
+  .ea-responsive-overlay .ea-overlay__header p {
+    margin-top: 5px;
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  .ea-responsive-overlay .ea-overlay__body {
+    padding: 16px;
+  }
+
+  .ea-responsive-overlay .ea-overlay__footer {
+    position: sticky;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr));
+    gap: 10px;
+    padding: 12px 16px max(12px, env(safe-area-inset-bottom));
+    background: var(--ea-surface);
+  }
+
+  .ea-responsive-overlay .ea-overlay__footer > * {
+    width: 100%;
+  }
+
+  .ea-responsive-overlay .ea-confirm__button {
+    padding-inline: 18px;
+    padding-block: 14px;
+  }
+
+  .ea-responsive-toast-region {
+    top: auto;
+    right: max(12px, env(safe-area-inset-right));
+    bottom: calc(82px + env(safe-area-inset-bottom));
+    left: max(12px, env(safe-area-inset-left));
+    width: auto;
+    max-height: calc(100dvh - 110px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+  }
+}
+
+@media (hover: none) and (pointer: coarse){
+  .ea-tooltip__content {
+    display: none;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1180px){
+  .ea-responsive-overlay {
+    align-items: center;
+    justify-content: center;
+    padding: max(20px, env(safe-area-inset-top)) max(20px, env(safe-area-inset-right)) max(20px, env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left));
+  }
+
+  .ea-responsive-overlay .ea-overlay__panel,
+  .ea-responsive-overlay.ea-overlay--sheet .ea-overlay__panel {
+    width: min(100%, 680px);
+    height: auto;
+    max-height: calc(100dvh - 40px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+    border-radius: 26px;
+  }
+
+  .ea-responsive-overlay .ea-overlay__footer {
+    padding-bottom: max(20px, env(safe-area-inset-bottom));
+  }
+}
+
+@media (max-height: 560px) and (max-width: 1180px){
+  .ea-responsive-overlay {
+    align-items: stretch;
+    padding-block: max(4px, env(safe-area-inset-top)) max(4px, env(safe-area-inset-bottom));
+  }
+
+  .ea-responsive-overlay .ea-overlay__panel,
+  .ea-responsive-overlay.ea-overlay--sheet .ea-overlay__panel {
+    max-height: calc(100dvh - 8px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+  }
+}

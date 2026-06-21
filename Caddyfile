@@ -1,0 +1,50 @@
+# Caddy terminates TLS (automatic Let's Encrypt certificates) and reverse-proxies to the
+# backend and the frontend container. DOMAIN/ACME_EMAIL come from the compose environment.
+{
+	email {$ACME_EMAIL}
+}
+
+http://{$DOMAIN}, http://www.{$DOMAIN}, https://www.{$DOMAIN} {
+	redir https://{$DOMAIN}{uri} permanent
+}
+
+https://{$DOMAIN} {
+	encode zstd gzip
+
+	# Security headers applied to every proxied response (both the SPA and the API). These are
+	# the "safe" set - they harden against clickjacking, MIME-sniffing and protocol downgrade
+	# WITHOUT a Content-Security-Policy, which would need per-app tuning (Google sign-in, inline
+	# scripts) and is intentionally left for a later, tested step. Microphone is allowed for the
+	# same origin because the Speaking module records audio; camera/geolocation are denied.
+	header {
+		-Server
+		Strict-Transport-Security "max-age=31536000; includeSubDomains"
+		X-Content-Type-Options "nosniff"
+		X-Frame-Options "DENY"
+		# Keep the top-level page isolated while allowing Google Identity Services' account
+		# chooser popup to retain its opener channel across origins.
+		Cross-Origin-Opener-Policy "same-origin-allow-popups"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		Permissions-Policy "camera=(), geolocation=(), microphone=(self)"
+
+		# Content-Security-Policy in REPORT-ONLY mode: it blocks NOTHING - the browser only logs
+		# would-be violations to the DevTools console. This lets us watch real traffic (Google
+		# sign-in, SignalR WebSocket, audio blobs, the inline FOUC theme script) and confirm the
+		# policy is clean BEFORE switching the header name to the enforcing "Content-Security-Policy".
+		# 'unsafe-inline' in script-src is kept only because index.html ships an inline theme script;
+		# tighten to a hash/nonce when moving to enforcement.
+		Content-Security-Policy-Report-Only "default-src 'self'; script-src 'self' 'unsafe-inline' https://accounts.google.com https://apis.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https:; media-src 'self' data: blob:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://accounts.google.com https://www.googleapis.com wss:; frame-src https://accounts.google.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
+	}
+
+	# API, SignalR hubs (WebSocket) and the health probe go to the .NET backend.
+	# Caddy upgrades WebSocket connections automatically for reverse_proxy.
+	@backend path /api/* /v1/* /hubs/* /health /health/*
+	handle @backend {
+		reverse_proxy 127.0.0.1:8080
+	}
+
+	# Everything else is the React SPA served by its nginx container.
+	handle {
+		reverse_proxy 127.0.0.1:3000
+	}
+}

@@ -1,0 +1,105 @@
+# .NET build artifacts
+bin/
+obj/
+out/
+*.user
+*.suo
+
+# Rider / VS
+.idea/
+.vs/
+*.DotSettings.user
+
+# Test results
+[Tt]est[Rr]esult*/
+coverage*.json
+*.coverage
+
+# Secrets / local config
+appsettings.*.local.json
+.env
+*.env
+
+# Terraform state, plans, local backend and real variable files
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+terraform.plan
+terraform.plan.json
+backend.hcl
+*.auto.tfvars
+*.auto.tfvars.json
+terraform.tfvars
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ansible local secrets and generated runtime inventory
+**/.ansible/
+**/.cache/ansible-*
+**/group_vars/vault.yml
+**/.vault-password*
+ops/deploy/hetzner/ansible/inventories/generated/
+
+# OS
+.DS_Store
+Thumbs.db
+ops/tools/yt-dlp
+
+# Node sidecar (services/transcript)
+node_modules/
+services/transcript/node_modules/
+
+# Frontend
+apps/web/dist/
+apps/web/.vite/
+apps/web/.prerender/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Logs
+loglar/
+*.log
+
+# Local object-storage fallback data and private support uploads
+data/object-storage/
+
+# Firebase service-account private keys - must never be committed (server-side secret)
+*firebase-adminsdk*.json
+*service-account*.json
+
+# Local responsive-browser verification output
+apps/web/verify-harness/responsive-smoke/
+
+# Local verification output - never committed
+.playwright-cli/
+.artifacts/
+screenshots/
+output/
+exports/
+homepage-snapshot.md
+*-snap.yml
+# Ad-hoc verification screenshots dropped in the repo root by Playwright runs.
+# Only the root level - real assets (brand, Android splash) live in subfolders.
+/*.png
+
+# Verification harness build output (vite.verifyapp.config.ts qayta quradi)
+apps/web/.verifydist/
+apps/web/.verifyserve/
+apps/web/visual-output/
+
+# Android build output (Capacitor manbasi saqlanadi, build chiqindisi yo'q)
+apps/web/android/app/build/
+apps/web/android/.gradle/
+apps/web/android/build/
+apps/web/android/app/src/main/assets/public/
+
+# Generated architecture-audit snapshots (local verification output)
+data/architecture-audit/

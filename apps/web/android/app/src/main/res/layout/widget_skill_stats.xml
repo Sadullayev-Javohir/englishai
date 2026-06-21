@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/widget_root" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@drawable/widget_stats_background">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/widget_skill_stats_title" android:textColor="@color/widget_text" android:textSize="17sp" android:textStyle="bold" android:layout_marginBottom="6dp" />
+    <TextView android:id="@+id/widget_overall" style="@style/WidgetScoreRow" android:text="Umumiy progress  0%" android:textStyle="bold" />
+    <TextView android:id="@+id/widget_weekly" style="@style/WidgetScoreRow" android:text="Bu hafta  0 daqiqa" />
+    <TextView android:id="@+id/skill_1" style="@style/WidgetScoreRow" android:text="Gapirish                         78%" />
+    <TextView android:id="@+id/skill_2" style="@style/WidgetScoreRow" android:text="Tinglash                         84%" />
+    <TextView android:id="@+id/skill_3" style="@style/WidgetScoreRow" android:text="O‘qish                            91%" />
+    <TextView android:id="@+id/skill_4" style="@style/WidgetScoreRow" android:text="Yozish                            69%" />
+    <TextView android:id="@+id/skill_5" style="@style/WidgetScoreRow" android:text="Grammatika                   73%" />
+    <TextView android:id="@+id/skill_6" style="@style/WidgetScoreRow" android:text="Lug‘at                             87%" />
+</LinearLayout>

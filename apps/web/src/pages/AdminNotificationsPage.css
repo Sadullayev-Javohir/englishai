@@ -1,0 +1,282 @@
+.ea-admin-notifications {
+  min-height: 100%;
+  color: var(--ea-text);
+  background: var(--ea-bg);
+  font-family: var(--ea-font-body);
+}
+
+.ea-admin-notifications__shell {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 24px 0 72px;
+}
+
+.ea-admin-notifications__stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 20px 0 18px;
+}
+
+.ea-admin-notifications__workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(320px, .8fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.ea-admin-notifications__composer-card,
+.ea-admin-notifications__preview-card,
+.ea-admin-notifications__history {
+  display: grid;
+  gap: 18px;
+}
+
+.ea-admin-notifications__form {
+  display: grid;
+  gap: 15px;
+}
+
+.ea-admin-notifications__form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.ea-admin-notifications__audience {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px;
+  border: 1px solid var(--ea-border);
+  border-radius: var(--ea-radius-control);
+  background: var(--ea-surface-soft);
+}
+
+.ea-admin-notifications__audience-copy {
+  display: grid;
+  gap: 3px;
+}
+
+.ea-admin-notifications__field-label {
+  color: var(--ea-muted);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.ea-admin-notifications__audience-copy p,
+.ea-admin-notifications__composer-actions > span {
+  margin: 0;
+  color: var(--ea-muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.ea-admin-notifications__audience-badge,
+.ea-admin-notifications__status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 999px;
+  padding: 6px 9px;
+  color: var(--ea-purple-800);
+  background: var(--ea-purple-50);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.ea-admin-notifications__composer-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.ea-admin-notifications__phone {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid var(--ea-border);
+  border-radius: 22px;
+  background: var(--ea-surface-soft);
+}
+
+.ea-admin-notifications__phone-top,
+.ea-admin-notifications__history-card-top,
+.ea-admin-notifications__history-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.ea-admin-notifications__phone-top {
+  color: var(--ea-muted-deep);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.ea-admin-notifications__preview-notice {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid var(--ea-border);
+  border-radius: 18px;
+  background: var(--ea-surface);
+}
+
+.ea-admin-notifications__preview-icon,
+.ea-admin-notifications__dispatch-icon {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border-radius: 14px;
+  color: var(--ea-purple-600);
+  background: var(--ea-purple-50);
+}
+
+.ea-admin-notifications__preview-notice small,
+.ea-admin-notifications__preview-destination span,
+.ea-admin-notifications__dispatch small {
+  color: var(--ea-muted);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.ea-admin-notifications__preview-notice h3 {
+  margin: 4px 0;
+  font-family: var(--ea-font-display);
+  font-size: 16px;
+}
+
+.ea-admin-notifications__preview-notice p,
+.ea-admin-notifications__dispatch p {
+  margin: 0;
+  color: var(--ea-muted-deep);
+  font-size: 12px;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+.ea-admin-notifications__preview-destination {
+  display: grid;
+  gap: 3px;
+  padding: 12px 14px;
+  border: 1px solid var(--ea-border);
+  border-radius: 14px;
+  background: var(--ea-surface);
+}
+
+.ea-admin-notifications__dispatch {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid var(--ea-border);
+}
+
+.ea-admin-notifications__dispatch .ea-button {
+  grid-column: 1 / -1;
+  justify-self: start;
+}
+
+.ea-admin-notifications__dispatch em {
+  display: block;
+  margin-top: 7px;
+  color: var(--ea-success);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.ea-admin-notifications__dispatch em.is-error,
+.ea-admin-notifications__delete-error {
+  color: var(--ea-danger);
+}
+
+.ea-admin-notifications__history {
+  margin-top: 18px;
+}
+
+.ea-admin-notifications__history-header .ea-section-header {
+  flex: 1;
+}
+
+.ea-admin-notifications__history-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.ea-admin-notifications__history-card {
+  display: grid;
+  gap: 9px;
+}
+
+.ea-admin-notifications__history-card h3,
+.ea-admin-notifications__history-card p {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.ea-admin-notifications__history-card h3 {
+  font-family: var(--ea-font-display);
+  font-size: 15px;
+}
+
+.ea-admin-notifications__history-card > p {
+  color: var(--ea-muted-deep);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.ea-admin-notifications__status i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--ea-success);
+}
+
+.ea-admin-notifications__history-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 12px;
+  color: var(--ea-muted);
+  font-size: 10px;
+}
+
+.ea-admin-notifications__history-meta span {
+  display: inline-flex;
+  min-width: 0;
+  align-items: center;
+  gap: 4px;
+  overflow-wrap: anywhere;
+}
+
+.ea-admin-notifications__delete-error {
+  font-size: 11px;
+  font-weight: 800;
+}
+
+@media (max-width: 900px) {
+  .ea-admin-notifications__workspace { grid-template-columns: 1fr; }
+  .ea-admin-notifications__history-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 700px) {
+  .ea-admin-notifications__shell { width: min(100% - 20px, 1180px); padding-top: 12px; }
+  .ea-admin-notifications__stats,
+  .ea-admin-notifications__form-grid,
+  .ea-admin-notifications__history-grid { grid-template-columns: 1fr; }
+  .ea-admin-notifications__audience,
+  .ea-admin-notifications__composer-actions,
+  .ea-admin-notifications__history-header { align-items: stretch; flex-direction: column; }
+  .ea-admin-notifications__composer-actions .ea-button { width: 100%; }
+}

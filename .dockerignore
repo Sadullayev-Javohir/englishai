@@ -1,0 +1,20 @@
+# Keep the backend build context small and reproducible.
+**/bin/
+**/obj/
+**/node_modules/
+**/.artifacts/
+apps/web/dist/
+apps/web/.vite/
+**/__pycache__/
+*.pyc
+.git/
+.github/
+.idea/
+.vs/
+loglar/
+*.log
+reports/
+design-export/
+ops/tools/yt-dlp
+**/.env
+**/appsettings.*.local.json

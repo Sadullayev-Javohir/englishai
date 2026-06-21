@@ -1,0 +1,7 @@
+fastapi==0.141.1
+faster-whisper==1.2.0
+python-multipart==0.0.32
+# faster-whisper 1.2.0 imports `requests` in faster_whisper/utils.py but does not declare it,
+# so the import fails at build time unless it is pinned here explicitly.
+requests==2.32.5
+uvicorn==0.52.1

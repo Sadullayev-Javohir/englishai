@@ -1,0 +1,98 @@
+/*
+ * A deck contains one physical layer per following card, not a single shadow.
+ * At card 1/20 there are 19 backs; at 2/20 there are 18; at 20/20 none.
+ * Reserve the entire deck footprint so its depth never creates page scrolling.
+ */
+.vocabulary-design .vocabulary-card-stack.vocabulary-card-stack--deck {
+  --v-deck-step-x: min(2px, calc(38px / max(1, var(--v-deck-count))));
+  --v-deck-step-y: min(.7px, calc(14px / max(1, var(--v-deck-count))));
+  --v-deck-width: calc(var(--v-deck-count) * var(--v-deck-step-x));
+  --v-deck-height: calc(var(--v-deck-count) * var(--v-deck-step-y));
+  position: relative;
+  padding: 0 var(--v-deck-width) var(--v-deck-height) 0;
+  isolation: isolate;
+}
+.vocabulary-card-stack__layers {
+  position: absolute;
+  z-index: 0;
+  inset: 0 var(--v-deck-width) var(--v-deck-height) 0;
+  pointer-events: none;
+  user-select: none;
+}
+.vocabulary-card-stack__card {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  border: 1px solid #bca4e1;
+  border-radius: 24px;
+  background: var(--v-white);
+  color: var(--v-purple);
+  transform: translate(
+    calc(var(--v-card-depth) * var(--v-deck-step-x)),
+    calc(var(--v-card-depth) * var(--v-deck-step-y))
+  );
+}
+.vocabulary-card-stack__card:nth-child(even) { background: var(--v-lilac); }
+/* Only the next card can be exposed during a turn. Reuse its real front-face
+   imagery and eagerly load it, without fetching images for all hidden layers. */
+.vocabulary-card-stack__preview { pointer-events: none; }
+.vocabulary-card-stack--deck .vocabulary-flashcard {
+  position: relative;
+  z-index: 1;
+  perspective: 900px;
+  perspective-origin: 50% 42%;
+}
+.vocabulary-card-stack--deck .vocabulary-flashcard__rotor {
+  transform-style: preserve-3d;
+  transition: none;
+}
+.vocabulary-card-stack--deck .vocabulary-flashcard[data-has-turned="true"] .vocabulary-flashcard__rotor {
+  animation: vocabulary-deck-turn-front 560ms ease-in-out;
+}
+.vocabulary-card-stack--deck .vocabulary-flashcard.is-back[data-has-turned="true"] .vocabulary-flashcard__rotor {
+  animation-name: vocabulary-deck-turn-back;
+}
+/* Recede while turning so perspective never cuts off a corner or overlaps
+   the controls below. Resting card faces retain their full, readable size. */
+@keyframes vocabulary-deck-turn-back {
+  0% { transform: rotateY(0deg) scale(1); }
+  25% { transform: rotateY(45deg) scale(.78); }
+  50% { transform: rotateY(90deg) scale(.72); }
+  75% { transform: rotateY(135deg) scale(.78); }
+  100% { transform: rotateY(180deg) scale(1); }
+}
+@keyframes vocabulary-deck-turn-front {
+  0% { transform: rotateY(180deg) scale(1); }
+  25% { transform: rotateY(135deg) scale(.78); }
+  50% { transform: rotateY(90deg) scale(.72); }
+  75% { transform: rotateY(45deg) scale(.78); }
+  100% { transform: rotateY(0deg) scale(1); }
+}
+.vocabulary-card-stack--deck .vocabulary-flashcard__side {
+  /* Actual underlying cards replace the old 20px painted block shadow. */
+  box-shadow: none;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.vocabulary-card-stack--deck .vocabulary-flashcard__side--front { transform: translateZ(1px); }
+.vocabulary-card-stack--deck .vocabulary-flashcard__side--back { transform: rotateY(180deg) translateZ(1px); }
+
+@media (max-width: 700px) {
+  .vocabulary-design .vocabulary-card-stack.vocabulary-card-stack--deck {
+    --v-deck-step-x: min(1.5px, calc(28.5px / max(1, var(--v-deck-count))));
+    --v-deck-step-y: min(.5px, calc(10px / max(1, var(--v-deck-count))));
+  }
+  .vocabulary-card-stack__card { border-radius: 22px; }
+  .vocabulary-card-stack--deck .vocabulary-flashcard { perspective: 700px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  /* Explicit product requirement: a learner-triggered card turn must remain
+     visible even when Ubuntu/browser reduces motion. Scope this exception to
+     a card that was clicked; leave page, playback and decorative motion alone.
+     index.css globally reduces animation-duration to 0.01ms !important. */
+  .vocabulary-card-stack--deck .vocabulary-flashcard[data-has-turned="true"] .vocabulary-flashcard__rotor {
+    animation-duration: 560ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

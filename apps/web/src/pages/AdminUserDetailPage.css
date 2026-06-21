@@ -1,0 +1,233 @@
+.admin-user-detail {
+  display: grid;
+  gap: 24px;
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  color: var(--ea-text);
+}
+
+.admin-user-detail > .ea-card,
+.admin-user-detail__grid > .ea-card,
+.admin-user-detail__learning-grid > .ea-card {
+  padding: clamp(22px, 2.4vw, 30px);
+}
+
+.admin-user-detail__hero {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 18px;
+}
+
+.admin-user-detail__hero .ea-page-header {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.admin-user-detail__hero .ea-page-header h1 {
+  font-size: clamp(24px, 2.6vw, 34px);
+}
+
+.admin-user-detail__hero .ea-page-header p {
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.admin-user-detail__avatar {
+  display: grid;
+  width: 72px;
+  height: 72px;
+  overflow: hidden;
+  place-items: center;
+  border-radius: var(--ea-radius-lg);
+  color: var(--ea-primary-deep);
+  background: var(--ea-primary-soft);
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.admin-user-detail__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.admin-user-detail__summary,
+.admin-user-detail__metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.admin-user-detail__summary .ea-stat-card,
+.admin-user-detail__metrics .ea-stat-card {
+  gap: 16px;
+  padding: clamp(20px, 2vw, 26px);
+}
+
+.admin-user-detail__summary .ea-stat-card > strong,
+.admin-user-detail__metrics .ea-stat-card > strong {
+  font-size: clamp(24px, 2.6vw, 34px);
+  line-height: 1.05;
+}
+
+.admin-user-detail__learning {
+  display: grid;
+  gap: 24px;
+}
+
+.admin-user-detail__learning > .ea-section-header h2 {
+  font-size: clamp(20px, 2vw, 26px);
+}
+
+.admin-user-detail__skills {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.admin-user-detail__skills > .ea-card {
+  padding: 20px;
+}
+
+.admin-user-detail__skills article header {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.admin-user-detail__skills article header span {
+  color: var(--ea-primary-deep);
+  font-weight: 900;
+}
+
+.admin-user-detail__skills article > div {
+  height: 8px;
+  margin: 10px 0 7px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--ea-border);
+}
+
+.admin-user-detail__skills article > div i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--ea-primary-deep);
+}
+
+.admin-user-detail__skills small {
+  color: var(--ea-muted);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.admin-user-detail__grid,
+.admin-user-detail__learning-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.admin-user-detail__panel {
+  overflow: hidden;
+}
+
+.admin-user-detail__panel > header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 18px;
+  color: var(--ea-primary-deep);
+}
+
+.admin-user-detail__panel h2 {
+  margin: 0;
+  font: 800 clamp(16px, 1.5vw, 18px) "Nunito", "Plus Jakarta Sans", sans-serif;
+  letter-spacing: -.02em;
+}
+
+.admin-user-detail__panel dl {
+  margin: 0;
+}
+
+.admin-user-detail__panel dl div {
+  display: grid;
+  grid-template-columns: minmax(130px, .75fr) minmax(0, 1fr);
+  gap: 20px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--ea-border);
+}
+
+.admin-user-detail__panel dl div:last-child {
+  border-bottom: 0;
+}
+
+.admin-user-detail__panel dt {
+  color: var(--ea-muted);
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.admin-user-detail__panel dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+  font-size: 13px;
+  font-weight: 800;
+  text-align: right;
+}
+
+.admin-user-detail__state-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media (max-width: 900px) {
+  .admin-user-detail__summary,
+  .admin-user-detail__metrics,
+  .admin-user-detail__skills {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .admin-user-detail__grid,
+  .admin-user-detail__learning-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .admin-user-detail > .ea-card,
+  .admin-user-detail__grid > .ea-card,
+  .admin-user-detail__learning-grid > .ea-card {
+    padding: 20px;
+  }
+
+  .admin-user-detail__hero {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-user-detail__avatar {
+    width: 62px;
+    height: 62px;
+  }
+
+  .admin-user-detail__summary,
+  .admin-user-detail__metrics,
+  .admin-user-detail__skills {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-user-detail__panel dl div {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .admin-user-detail__panel dd {
+    text-align: left;
+  }
+}

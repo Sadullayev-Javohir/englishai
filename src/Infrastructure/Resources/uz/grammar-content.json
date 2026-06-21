@@ -1,0 +1,127 @@
+{
+  "grammar.tobe.explanation": "'to be' fe'li (am/is/are) inglizcha har bir gapning asosi. O'zbekchada \"men talaba\" deb fe'lsiz aytamiz, ammo inglizchada fe'l shart: 'I am a student'. Qoidasi: I bilan 'am'; he/she/it bilan 'is'; we/you/they bilan 'are'. Inkor uchun 'not' qo'shiladi (I am not, she isn't), savol uchun fe'l oldinga chiqadi (Are you ...?).",
+  "grammar.tobe.hint_i_am": "'I' bilan doim 'am' ishlatiladi - 'I am a teacher'.",
+  "grammar.tobe.hint_he_she_is": "he/she/it (bitta shaxs yoki narsa) bilan 'is' - 'She is my sister'.",
+  "grammar.tobe.hint_we_they_are": "we/you/they (ko'plik) bilan 'are' - 'We are happy'.",
+
+  "grammar.presentsimple.explanation": "Present Simple har kuni takrorlanadigan odat va doimiy haqiqatlar uchun ishlatiladi. Asosiy qiyinchilik: he/she/it bilan fe'lga -s qo'shiladi ('he works'), qolgan shaxslarda qo'shilmaydi ('I work'). -o, -ch, -sh, -ss bilan tugagan fe'llarga -es qo'shiladi ('goes', 'watches'). Inkor va savol uchun do/does yordamchi fe'li ishlatiladi.",
+  "grammar.presentsimple.hint_he_s": "he/she/it bilan fe'lga -s qo'shiladi - 'He drinks tea'.",
+  "grammar.presentsimple.hint_i_no_s": "'I' bilan fe'lga -s qo'shilmaydi - 'I live', 'I lives' emas.",
+  "grammar.presentsimple.hint_go_goes": "'go' fe'li -o bilan tugagani uchun -es oladi - 'She goes'.",
+
+  "grammar.plurals.explanation": "Ko'plik sonni yasash: ko'p so'zlarga -s qo'shiladi (cat → cats). -s, -ch, -sh, -x, -o bilan tugaganlarga -es (box → boxes, watch → watches). Undosh + -y bilan tugaganlarda -y → -ies (city → cities). Ba'zi so'zlar tartibsiz (irregular): child → children, man → men, woman → women, foot → feet.",
+  "grammar.plurals.hint_es": "-x bilan tugagani uchun -es qo'shiladi - 'box' → 'boxes'.",
+  "grammar.plurals.hint_irregular": "'child' tartibsiz ko'plikka ega - 'children' (childs emas).",
+  "grammar.plurals.hint_y_ies": "Undosh + y bilan tugasa, y → ies - 'city' → 'cities'.",
+
+  "grammar.thereis.explanation": "'There is/There are' biror narsaning mavjudligini bildiradi (o'zbekchadagi \"... bor\"). Bitta narsa uchun 'There is' (There is a book), ko'plik uchun 'There are' (There are two windows). Savol uchun is/are oldinga chiqadi: 'Is there ...?', 'Are there ...?'. Sanalmaydigan so'zlar bilan 'There is' ishlatiladi (There is some water).",
+  "grammar.thereis.hint_singular": "Bitta narsa uchun 'There is' - 'There is a book'.",
+  "grammar.thereis.hint_plural": "Ko'plik uchun 'There are' - 'There are two windows'.",
+  "grammar.thereis.hint_question": "Savolda 'is' oldinga chiqadi - 'Is there any milk?'.",
+
+  "grammar.articles.explanation": "Inglizchada artikllar (a/an/the) o'zbek tilida bevosita ekvivalenti yo'q - shuning uchun ular eng qiyin mavzu. 'a/an' - noma'lum, birinchi marta tilga olinayotgan sanaladigan narsa uchun; undosh tovush oldidan 'a', unli tovush oldidan 'an'. 'the' - tinglovchi ham qaysi narsa haqida gap ketayotganini bilganda (aniq, oldin aytilgan yoki yagona narsa) ishlatiladi.",
+  "grammar.articles.hint_an": "Unli tovush bilan boshlangan so'z oldidan 'an' qo'yiladi: 'an apple' ('a apple' emas).",
+  "grammar.articles.hint_honest": "'honest' so'zida 'h' o'qilmaydi, talaffuz unli tovushdan boshlanadi - shuning uchun 'an honest'.",
+  "grammar.articles.hint_specific": "Tinglovchi qaysi eshik ekanini bilgani uchun aniq narsa - 'the door'.",
+
+  "grammar.prepositions.explanation": "Vaqt predloglari o'zbekchaga to'g'ridan-to'g'ri tarjima qilinmaydi, ularni qoidasi bilan yodlash kerak: 'at' - aniq soat (at 9 o'clock); 'on' - kun yoki sana (on Monday); 'in' - oy, yil, fasl yoki uzoq davr (in July, in 2026).",
+  "grammar.prepositions.hint_at_time": "Aniq soat uchun 'at' ishlatiladi - 'at 3 p.m.'.",
+  "grammar.prepositions.hint_in_month": "Oy nomi bilan 'in' ishlatiladi - 'in July'.",
+  "grammar.prepositions.hint_on_day": "Hafta kuni bilan 'on' ishlatiladi - 'on Friday'.",
+
+  "grammar.pastsimple.explanation": "Past Simple o'tmishda tugagan, aniq vaqtdagi harakat uchun ishlatiladi (yesterday, last week, in 2010). To'g'ri (regular) fe'llarga -ed qo'shiladi (play → played, visit → visited). Tartibsiz (irregular) fe'llarning maxsus shakli bor (go → went, eat → ate, see → saw) - ularni yodlash kerak. Savol va inkorda 'did' yordamchi fe'li ishlatiladi va asosiy fe'l o'zak shaklga qaytadi: 'Did you see?', 'I didn't go'.",
+  "grammar.pastsimple.hint_regular_ed": "To'g'ri fe'lga -ed qo'shiladi - 'play' → 'played'.",
+  "grammar.pastsimple.hint_irregular": "'go' tartibsiz fe'l - o'tmishda 'went' (goed emas).",
+  "grammar.pastsimple.hint_did_base": "Savolda 'did' bor, shuning uchun fe'l o'zak shaklda - 'Did you see?'.",
+
+  "grammar.presentcontinuous.explanation": "Present Continuous (am/is/are + fe'l-ing) ayni hozir, gapirayotgan paytda davom etayotgan harakat uchun ishlatiladi ('I am writing now'), shuningdek hozirgi davrdagi vaqtinchalik holatlar uchun ('These days I am studying English'). Present Simple esa odat va doimiy haqiqatlar uchun. 'now', 'at the moment', 'Look!' kabi so'zlar Continuous belgisidir.",
+  "grammar.presentcontinuous.hint_now": "'now' bor - hozir davom etayotgan harakat, 'is raining'.",
+  "grammar.presentcontinuous.hint_are_ing": "Ko'plik bilan 'are' + fe'l-ing - 'They are watching'.",
+  "grammar.presentcontinuous.hint_vs_simple": "Ayni hozirgi harakat Continuous bo'ladi - 'I am reading now'.",
+
+  "grammar.comparatives.explanation": "Narsalarni taqqoslash uchun: qisqa (1 bo'g'inli) sifatlarga -er + than qo'shiladi (big → bigger than), eng yuqori daraja uchun the + -est (the biggest). Uzun sifatlar bilan 'more' va 'the most' ishlatiladi (more beautiful, the most beautiful). Undosh + y → -ier/-iest (easy → easier → the easiest). Ba'zilari tartibsiz: good → better → the best.",
+  "grammar.comparatives.hint_er_than": "Qisqa sifatga -er + than - 'heavier than'.",
+  "grammar.comparatives.hint_the_est": "Eng yuqori daraja uchun the + -est - 'the tallest'.",
+  "grammar.comparatives.hint_short_long": "'easy' qisqa sifat, -ier oladi - 'easier' (more easy emas).",
+
+  "grammar.quantifiers.explanation": "Sanaladigan (countable) va sanalmaydigan (uncountable) otlar miqdor so'zlarini tanlashga ta'sir qiladi. 'many' va 'How many' - sanaladigan ko'plik bilan (many apples); 'much' va 'How much' - sanalmaydigan bilan (much water). 'some' odatda tasdiqda, 'any' inkor va savolda ishlatiladi (There is some bread; There isn't any milk; Is there any sugar?).",
+  "grammar.quantifiers.hint_much_uncount": "'water' sanalmaydi, shuning uchun 'much' - 'How much water'.",
+  "grammar.quantifiers.hint_any_negative": "Inkorda 'any' ishlatiladi - 'aren't any apples'.",
+  "grammar.quantifiers.hint_many_count": "'friends' sanaladi, shuning uchun 'many' - 'many friends'.",
+
+  "grammar.tense.explanation": "Present Perfect (have/has + V3) o'tmish bilan hozirni bog'laydi: aniq vaqt ko'rsatilmaydi, natija yoki davomiylik muhim ('I have lived here for ten years'). Past Simple (V2) esa aniq, tugagan o'tmishdagi vaqt uchun ishlatiladi ('I visited it last year'). O'zbek tilida bu farq boshqacha ifodalanadi, shuning uchun e'tibor bering.",
+  "grammar.tense.hint_finished": "Aniq o'tmish vaqti ('yesterday') borligi uchun Past Simple - 'I saw that film yesterday'.",
+  "grammar.tense.hint_since": "'since 2019' - o'tmishdan hozirgacha davom etgan holat, shuning uchun Present Perfect: 'has worked'.",
+  "grammar.tense.hint_for": "Harakat o'tmishda boshlanib hozir ham davom etyapti - 'have worked here for three years'.",
+
+  "grammar.gerundinfinitive.explanation": "Ba'zi fe'llardan keyin gerund (-ing), ba'zilaridan keyin infinitiv (to + fe'l) keladi. Masalan 'enjoy', 'like', 'finish' dan keyin -ing shakli ('enjoy reading'); 'want', 'decide', 'hope' dan keyin 'to' shakli ('want to learn'). Bu fe'llarni guruh sifatida yodlash foydali.",
+  "grammar.gerundinfinitive.hint_enjoy": "'enjoy' dan keyin -ing shakli keladi - 'enjoy listening'.",
+  "grammar.gerundinfinitive.hint_want": "'want' dan keyin 'to' + fe'l keladi - 'want to become'.",
+  "grammar.gerundinfinitive.hint_decide": "'decide' dan keyin infinitiv keladi - 'decided to go'.",
+
+  "grammar.future.explanation": "Kelasi zamonni ifodalashning uchta asosiy yo'li bor. 'will' - gapirayotgan paytda qabul qilingan qaror yoki bashorat uchun ('I think I will help you'). 'going to' - oldindan rejalashtirilgan niyat yoki ko'rinib turgan dalil asosidagi bashorat uchun ('Look at the clouds - it's going to rain'). Present Continuous - aniq vaqtga belgilangan kelishuv uchun ('I'm meeting Ali at 5').",
+  "grammar.future.hint_evidence": "Ko'rinib turgan dalil (bulutlar) bor - 'is going to rain'.",
+  "grammar.future.hint_decision": "Hozir qabul qilingan qaror uchun 'will' - 'I will go to bed'.",
+  "grammar.future.hint_arrangement": "Aniq vaqtga belgilangan kelishuv Present Continuous bilan - 'I'm meeting Ali at 5'.",
+
+  "grammar.conditionals.explanation": "First Conditional real, ehtimoli bor kelajak holatlar uchun: 'If + Present Simple, ... will + fe'l' ('If it rains, I will stay home'). Second Conditional hozir yoki kelajakdagi noreal, xayoliy holatlar uchun: 'If + Past Simple, ... would + fe'l' ('If I had more time, I would travel'). 'were' barcha shaxslar bilan ishlatiladi: 'If I were you'.",
+  "grammar.conditionals.hint_first": "Real qonuniyat/kelajak uchun First Conditional - 'it will melt'.",
+  "grammar.conditionals.hint_second_were": "Noreal holatda barcha shaxslar bilan 'were' - 'If I were rich'.",
+  "grammar.conditionals.hint_real_unreal": "Xayoliy holat Second Conditional bilan - 'If I won..., I would buy...'.",
+
+  "grammar.placeprep.explanation": "O'rin predloglari: 'in' - yopiq yoki chegaralangan joy ichida (in the box, in the room, in Tashkent); 'on' - sirt ustida (on the table, on the wall); 'at' - aniq nuqta yoki manzil (at the door, at the bus stop, at home); 'under' - biror narsaning ostida (under the chair). Ularni vaziyat bilan birga yodlash foydali.",
+  "grammar.placeprep.hint_on_surface": "Sirt (devor) ustida - 'on the wall'.",
+  "grammar.placeprep.hint_in_enclosed": "Yopiq joy (muzlatkich) ichida - 'in the fridge'.",
+  "grammar.placeprep.hint_at_point": "Aniq nuqta (bekat) uchun 'at' - 'at the bus stop'.",
+
+  "grammar.modals.explanation": "Modal fe'llar nozik farqlarga ega: 'can' - hozirgi qobiliyat yoki ruxsat; 'could' - o'tmishdagi qobiliyat yoki muloyim iltimos; 'may' - rasmiy ruxsat yoki ehtimol; 'might' - kamroq ishonchli ehtimol. Modaldan keyin fe'l asosiy (to'siz) shaklda keladi.",
+  "grammar.modals.hint_might": "Ehtimollik (aniq emas) uchun 'might' - 'It might rain'.",
+  "grammar.modals.hint_polite": "Muloyim iltimos uchun 'Could you ..., please?' shakli eng mos.",
+  "grammar.modals.hint_past_ability": "O'tmishdagi qobiliyat uchun 'could' - 'I could run very fast'.",
+
+  "grammar.passive.explanation": "Majhul nisbat (passive) harakatni kim bajarganidan ko'ra harakatning o'ziga yoki natijaga e'tibor qaratganda ishlatiladi. Tuzilishi: 'be' fe'li + asosiy fe'lning 3-shakli (V3): 'English is spoken', 'The bridge was built in 1990'. Bajaruvchi muhim bo'lsa, 'by' bilan ko'rsatiladi ('written by Navoiy'). Zamon 'be' fe'li orqali o'zgaradi (is built / was built / will be built).",
+  "grammar.passive.hint_be_v3": "Passive = be + V3 - 'is visited by'.",
+  "grammar.passive.hint_past_passive": "O'tmish passive = was/were + V3 - 'was built'.",
+  "grammar.passive.hint_recognise": "Ega harakatni boshidan kechiradi (bajarmaydi) - 'My bike was stolen'.",
+
+  "grammar.reported.explanation": "O'zga gapni (reported speech) yetkazganda zamon odatda bir pog'ona orqaga suriladi (backshift): Present Simple → Past Simple (am → was), will → would, Present Perfect → Past Perfect. So'roq gaplarni yetkazganda so'z tartibi to'g'ri (tasdiq) tartibga qaytadi va do/did tushib qoladi: 'Where do you live?' → 'She asked where I lived'.",
+  "grammar.reported.hint_backshift": "Present → Past suriladi - 'am' → 'was'.",
+  "grammar.reported.hint_will_would": "'will' yetkazilganda 'would' bo'ladi - 'he would call'.",
+  "grammar.reported.hint_question_order": "Yetkazilgan savolda to'g'ri tartib - 'where I lived' (did yo'q).",
+
+  "grammar.relative.explanation": "Nisbiy ergash gaplar (relative clauses) ot haqida qo'shimcha ma'lumot beradi. 'who' - odamlar uchun (the man who lives here); 'which' - narsa va hayvonlar uchun (the book which I read); 'that' - odam va narsalar uchun, ayniqsa to'ldiruvchi o'rnida ishlatish mumkin (the film that we saw). 'whose' - egalikni bildiradi (the boy whose father is a doctor).",
+  "grammar.relative.hint_who_people": "Odam uchun 'who' - 'the woman who teaches'.",
+  "grammar.relative.hint_which_things": "Narsa uchun 'which' - 'a book which explains'.",
+  "grammar.relative.hint_that_object": "To'ldiruvchi o'rnida 'that' ishlatiladi - 'the house that I bought'.",
+
+  "grammar.thirdconditional.explanation": "Third Conditional o'tmishdagi noreal holat va afsus uchun ishlatiladi: 'If + Past Perfect, ... would have + V3' ('If I had studied, I would have passed'). Mixed Conditional o'tmishdagi shartni hozirgi natija bilan bog'laydi: 'If I had saved money, I would be rich now' (shart o'tmishda, natija hozir). Bular o'zgartirib bo'lmaydigan o'tmish haqida.",
+  "grammar.thirdconditional.hint_form": "Third Conditional natijasi = would have + V3 - 'would have caught'.",
+  "grammar.thirdconditional.hint_mixed": "O'tmish shart, hozirgi natija (mixed) - 'would be rich now'.",
+  "grammar.thirdconditional.hint_regret": "O'tmishdagi afsus Third Conditional bilan - 'would have helped'.",
+
+  "grammar.inversion.explanation": "Inversiya (inversion) gapni rasmiy va ta'sirchan qilish uchun ishlatiladi: inkor ma'noli so'z gap boshiga chiqsa (Never, Rarely, Not only, Seldom), undan keyin so'z tartibi savolnikiga o'xshab teskari bo'ladi - yordamchi fe'l egadan oldinga o'tadi: 'Never have I seen ...', 'Rarely do we get ...'. Bu asosan yozma va rasmiy uslubda qo'llaniladi.",
+  "grammar.inversion.hint_negative_front": "'Never' boshda - yordamchi fe'l oldinga: 'have I seen'.",
+  "grammar.inversion.hint_not_only": "'Not only' dan keyin teskari tartib - 'was he late'.",
+  "grammar.inversion.hint_rarely": "'Rarely' boshda - 'do we see' (savol tartibi).",
+
+  "grammar.mistake.missing_article": "Artikl (a/an/the) tushirib qoldiriladi - o'zbek tilida artikl umuman yo'q, lekin inglizchada sanaladigan ot oldida deyarli har doim kerak.",
+  "grammar.mistake.article_a_an_confusion": "'a' va 'an' tanlashda xato qilinadi - tanlov so'zning harfiga emas, birinchi tovushiga qarab qilinadi (masalan 'an hour', chunki 'h' o'qilmaydi).",
+  "grammar.mistake.no_tense_marker": "O'zbek tilida ba'zan fe'l zamoni kontekstdan tushuniladi, lekin inglizchada fe'l shakli har doim aniq ko'rsatilishi shart - zamon belgisi tushirib qoldirilmaydi.",
+  "grammar.mistake.irregular_past_form": "Tartibsiz (irregular) fe'llarning o'tgan zamon shakli -ed qo'shib yasalmaydi, alohida yodlanadi - masalan 'goed' emas, 'went'.",
+  "grammar.mistake.present_perfect_vs_past_simple": "Present Perfect va Past Simple farqlanmay ishlatiladi - aniq o'tmish vaqt bo'lsa (yesterday, last year) Past Simple, natija yoki tajriba haqida gap ketsa Present Perfect kerak.",
+  "grammar.mistake.preposition_direct_translation": "Predlog o'zbek tilidan so'zma-so'z tarjima qilinadi, lekin inglizcha predloglar boshqa mantiqqa ega - har bir holatni alohida yodlash kerak.",
+  "grammar.mistake.time_preposition_confusion": "Vaqt predloglari (at/on/in) chalkashtiriladi - aniq soat uchun 'at', kun uchun 'on', oy yoki yil uchun 'in' ishlatiladi.",
+  "grammar.mistake.gerund_after_preposition": "Predlogdan keyin fe'l -ing shaklida bo'lishi kerak, lekin o'rniga infinitiv ('to' + fe'l) ishlatiladi - masalan 'before to eat' emas, 'before eating'.",
+  "grammar.mistake.verb_plus_wrong_form": "Ba'zi fe'llardan keyin -ing, ba'zilaridan keyin 'to' + fe'l keladi - bu tasodifiy emas, har bir fe'l uchun alohida yodlanishi kerak (masalan 'enjoy reading', lekin 'want to read').",
+  "grammar.mistake.double_modal": "Ikkita modal fe'l ketma-ket ishlatiladi (masalan 'will can'), lekin inglizchada bitta gapda faqat bitta modal fe'l bo'lishi mumkin.",
+  "grammar.mistake.modal_plus_to": "Modal fe'ldan keyin 'to' qo'shiladi, lekin to'g'ri shakl modal + fe'lning o'zak shakli - 'can to go' emas, 'can go'.",
+  "grammar.mistake.third_person_s_missing": "He/she/it bilan Present Simple fe'liga -s yoki -es qo'shilmaydi, lekin bu qoida majburiy - 'he go' emas, 'he goes'.",
+  "grammar.mistake.be_verb_mismatch": "'to be' fe'li (am/is/are) ega bilan mos tanlanmaydi - har bir shaxs uchun to'g'ri shaklni eslab qolish kerak (I am, he is, we are).",
+  "grammar.mistake.adjective_order": "Sifatlar tartibi o'zbekchadan farq qiladi - inglizchada aniq tartib bor (masalan miqdor, keyin sifat, keyin ot: 'two big houses').",
+  "grammar.mistake.question_inversion_missing": "Savol gapida yordamchi fe'l ega oldiga chiqarilmaydi - 'You go where?' emas, 'Where do you go?'.",
+  "grammar.mistake.false_friend": "So'z tashqi ko'rinishiga yoki tarjimasiga qarab tanlanadi, lekin ma'nosi yoki qo'llanish o'rni boshqacha bo'lishi mumkin.",
+  "grammar.mistake.word_repetition": "Bir xil so'z gap ichida keragidan ortiq takrorlanadi - sinonim yoki olmosh ishlatish matnni tabiiyroq qiladi.",
+  "grammar.mistake.double_letter_omission": "Ingliz so'zlarida qo'sh undosh harflar tushirib qoldiriladi - masalan 'runing' emas, 'running'.",
+  "grammar.mistake.silent_letter_omission": "Talaffuz qilinmaydigan harflar (silent letters) yozuvda tushirib qoldiriladi - masalan 'nife' emas, 'knife'.",
+  "grammar.mistake.general_uzbek_interference": "Bu xato o'zbek tili qurilishining to'g'ridan-to'g'ri inglizchaga ko'chirilishidan kelib chiqadi - ikki til grammatikasi bu nuqtada boshqacha ishlaydi."
+}

@@ -1,0 +1,20 @@
+/* Target vocabulary words inside a passage. Colour is themeable via `--hp-accent` so each skill can
+   tint its highlights (Vocabulary → teal by default); the shared matching logic stays identical. */
+.hp-word {
+  --hp-accent: var(--ea-mod-vocab);
+  color: var(--hp-accent);
+  font-weight: 600;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: color-mix(in srgb, var(--hp-accent), transparent 45%);
+  text-underline-offset: 4px;
+  border-radius: 4px;
+  transition: background-color 140ms ease, text-decoration-color 140ms ease;
+}
+.hp-word--interactive {
+  cursor: pointer;
+}
+.hp-word--interactive:hover {
+  text-decoration-style: solid;
+  background: color-mix(in srgb, var(--hp-accent), transparent 88%);
+}

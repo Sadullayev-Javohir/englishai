@@ -1,0 +1,11 @@
+node_modules
+dist
+dist-ssr
+*.local
+.vite
+# tsc -b artifacts of the composite vite.config.ts project
+vite.config.js
+vite.config.d.ts
+*.tsbuildinfo
+.artifacts/playwright-report
+.artifacts/playwright-results

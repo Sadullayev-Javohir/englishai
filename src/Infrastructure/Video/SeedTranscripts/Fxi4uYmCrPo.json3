@@ -1,0 +1,673 @@
+{
+  "wireMagic": "pb3",
+  "pens": [ {
+  
+  } ],
+  "wsWinStyles": [ {
+  
+  } ],
+  "wpWinPositions": [ {
+  
+  } ],
+  "events": [ {
+    "tStartMs": 160,
+    "dDurationMs": 3000,
+    "segs": [ {
+      "utf8": "Hello and welcome\nto Real Easy English,"
+    } ]
+  }, {
+    "tStartMs": 3160,
+    "dDurationMs": 3160,
+    "segs": [ {
+      "utf8": "the podcast\nwhere we have real conversations"
+    } ]
+  }, {
+    "tStartMs": 6320,
+    "dDurationMs": 2280,
+    "segs": [ {
+      "utf8": "in easy English to help you learn."
+    } ]
+  }, {
+    "tStartMs": 8600,
+    "dDurationMs": 2600,
+    "segs": [ {
+      "utf8": "I'm Neil and with me is Georgie."
+    } ]
+  }, {
+    "tStartMs": 11200,
+    "dDurationMs": 4760,
+    "segs": [ {
+      "utf8": "Hello. Did you know that you can\nnow watch a video of this podcast?"
+    } ]
+  }, {
+    "tStartMs": 15960,
+    "dDurationMs": 3320,
+    "segs": [ {
+      "utf8": "And you can read along with a\ntranscript on our website."
+    } ]
+  }, {
+    "tStartMs": 19280,
+    "dDurationMs": 2840,
+    "segs": [ {
+      "utf8": "Visit bbclearningenglish.com."
+    } ]
+  }, {
+    "tStartMs": 27880,
+    "dDurationMs": 1240,
+    "segs": [ {
+      "utf8": "Hi, Georgie. How are you?"
+    } ]
+  }, {
+    "tStartMs": 29120,
+    "dDurationMs": 2080,
+    "segs": [ {
+      "utf8": "I'm very well, thank you,\nNeil. How are you?"
+    } ]
+  }, {
+    "tStartMs": 31200,
+    "dDurationMs": 1840,
+    "segs": [ {
+      "utf8": "How was your journey into work?"
+    } ]
+  }, {
+    "tStartMs": 33040,
+    "dDurationMs": 3440,
+    "segs": [ {
+      "utf8": "My journey into work\nwas very good today, actually."
+    } ]
+  }, {
+    "tStartMs": 36480,
+    "dDurationMs": 3400,
+    "segs": [ {
+      "utf8": "And we're actually talking\nabout transport today."
+    } ]
+  }, {
+    "tStartMs": 39880,
+    "dDurationMs": 2040,
+    "segs": [ {
+      "utf8": "How was your journey to work?"
+    } ]
+  }, {
+    "tStartMs": 41920,
+    "dDurationMs": 2200,
+    "segs": [ {
+      "utf8": "My journey was quite easy\nthis morning,"
+    } ]
+  }, {
+    "tStartMs": 44120,
+    "dDurationMs": 2240,
+    "segs": [ {
+      "utf8": "actually. It isn't always."
+    } ]
+  }, {
+    "tStartMs": 46360,
+    "dDurationMs": 3440,
+    "segs": [ {
+      "utf8": "And, Neil, we actually have\na very similar commute, don't we?"
+    } ]
+  }, {
+    "tStartMs": 49800,
+    "dDurationMs": 6960,
+    "segs": [ {
+      "utf8": "I get the Tube to work, which\nin the UK is the underground train."
+    } ]
+  }, {
+    "tStartMs": 56760,
+    "dDurationMs": 3560,
+    "segs": [ {
+      "utf8": "So, I walk to the station\naround 15 to 20 minutes,"
+    } ]
+  }, {
+    "tStartMs": 60320,
+    "dDurationMs": 3360,
+    "segs": [ {
+      "utf8": "and then I get the underground train,\none train,"
+    } ]
+  }, {
+    "tStartMs": 63680,
+    "dDurationMs": 4400,
+    "segs": [ {
+      "utf8": "and then I change and then get\nanother one, and then I walk to work."
+    } ]
+  }, {
+    "tStartMs": 68080,
+    "dDurationMs": 1320,
+    "segs": [ {
+      "utf8": "What about you?"
+    } ]
+  }, {
+    "tStartMs": 69400,
+    "dDurationMs": 2120,
+    "segs": [ {
+      "utf8": "I do that, but before,"
+    } ]
+  }, {
+    "tStartMs": 71520,
+    "dDurationMs": 1680,
+    "segs": [ {
+      "utf8": "before your bit,"
+    } ]
+  }, {
+    "tStartMs": 73200,
+    "dDurationMs": 2400,
+    "segs": [ {
+      "utf8": "I have to get a bus as well."
+    } ]
+  }, {
+    "tStartMs": 75600,
+    "dDurationMs": 3520,
+    "segs": [ {
+      "utf8": "Are you that far away\nfrom the station?"
+    } ]
+  }, {
+    "tStartMs": 79120,
+    "dDurationMs": 1720,
+    "segs": [ {
+      "utf8": "A couple of miles."
+    } ]
+  }, {
+    "tStartMs": 80840,
+    "dDurationMs": 840,
+    "segs": [ {
+      "utf8": "OK."
+    } ]
+  }, {
+    "tStartMs": 81680,
+    "dDurationMs": 1280,
+    "segs": [ {
+      "utf8": "Three kilometres."
+    } ]
+  }, {
+    "tStartMs": 82960,
+    "dDurationMs": 1400,
+    "segs": [ {
+      "utf8": "A bit too far to walk, then."
+    } ]
+  }, {
+    "tStartMs": 84360,
+    "dDurationMs": 1160,
+    "segs": [ {
+      "utf8": "A bit too far to walk."
+    } ]
+  }, {
+    "tStartMs": 85520,
+    "dDurationMs": 4440,
+    "segs": [ {
+      "utf8": "I have walked when the\npublic transport has been unreliable."
+    } ]
+  }, {
+    "tStartMs": 89960,
+    "dDurationMs": 5520,
+    "segs": [ {
+      "utf8": "But normally I...\nI get the bus to the Tube stop,"
+    } ]
+  }, {
+    "tStartMs": 95480,
+    "dDurationMs": 3400,
+    "segs": [ {
+      "utf8": "and then I get on the Tube\ninto work."
+    } ]
+  }, {
+    "tStartMs": 98880,
+    "dDurationMs": 1880,
+    "segs": [ {
+      "utf8": "Lovely. And do you like the Tube?"
+    } ]
+  }, {
+    "tStartMs": 100760,
+    "dDurationMs": 2120,
+    "segs": [ {
+      "utf8": "What do you think about it?"
+    } ]
+  }, {
+    "tStartMs": 102880,
+    "dDurationMs": 4080,
+    "segs": [ {
+      "utf8": "I think the Tube is\nvery convenient, actually,"
+    } ]
+  }, {
+    "tStartMs": 106960,
+    "dDurationMs": 3360,
+    "segs": [ {
+      "utf8": "because the trains go\nvery frequently."
+    } ]
+  }, {
+    "tStartMs": 110320,
+    "dDurationMs": 6040,
+    "segs": [ {
+      "utf8": "So if you miss one, you can wait just a\ncouple of minutes and get the next one."
+    } ]
+  }, {
+    "tStartMs": 116360,
+    "dDurationMs": 5480,
+    "segs": [ {
+      "utf8": "And it's probably the quickest\nway to get into central London"
+    } ]
+  }, {
+    "tStartMs": 121840,
+    "dDurationMs": 2240,
+    "segs": [ {
+      "utf8": "because there's so much traffic."
+    } ]
+  }, {
+    "tStartMs": 124080,
+    "dDurationMs": 2480,
+    "segs": [ {
+      "utf8": "Driving is a really bad idea."
+    } ]
+  }, {
+    "tStartMs": 126560,
+    "dDurationMs": 3080,
+    "segs": [ {
+      "utf8": "Yeah, I agree with you."
+    } ]
+  }, {
+    "tStartMs": 129640,
+    "dDurationMs": 1560,
+    "segs": [ {
+      "utf8": "It is very reliable."
+    } ]
+  }, {
+    "tStartMs": 131200,
+    "dDurationMs": 1840,
+    "segs": [ {
+      "utf8": "It's usually very easy."
+    } ]
+  }, {
+    "tStartMs": 133040,
+    "dDurationMs": 5280,
+    "segs": [ {
+      "utf8": "The thing I don't like about it,\nespecially in the morning at rush hour,"
+    } ]
+  }, {
+    "tStartMs": 138320,
+    "dDurationMs": 3240,
+    "segs": [ {
+      "utf8": "is the number of people on the Tube."
+    } ]
+  }, {
+    "tStartMs": 141560,
+    "dDurationMs": 4520,
+    "segs": [ {
+      "utf8": "The... the underground trains\nin London are very old."
+    } ]
+  }, {
+    "tStartMs": 146080,
+    "dDurationMs": 1760,
+    "segs": [ {
+      "utf8": "They're very small."
+    } ]
+  }, {
+    "tStartMs": 147840,
+    "dDurationMs": 3680,
+    "segs": [ {
+      "utf8": "And they are very\ncrowded in the mornings."
+    } ]
+  }, {
+    "tStartMs": 151520,
+    "dDurationMs": 2880,
+    "segs": [ {
+      "utf8": "So 'crowded' means\nthere's lots of people."
+    } ]
+  }, {
+    "tStartMs": 154400,
+    "dDurationMs": 2880,
+    "segs": [ {
+      "utf8": "We can also say 'packed'."
+    } ]
+  }, {
+    "tStartMs": 157280,
+    "dDurationMs": 3760,
+    "segs": [ {
+      "utf8": "Yeah, and I really don't like\nbeing in a tight space"
+    } ]
+  }, {
+    "tStartMs": 161040,
+    "dDurationMs": 4240,
+    "segs": [ {
+      "utf8": "with lots of people in the mornings,\nso early in the morning."
+    } ]
+  }, {
+    "tStartMs": 165280,
+    "dDurationMs": 4760,
+    "segs": [ {
+      "utf8": "Yeah, I agree, but I'm lucky because\nI get on the Tube at the first stop,"
+    } ]
+  }, {
+    "tStartMs": 170040,
+    "dDurationMs": 2080,
+    "segs": [ {
+      "utf8": "so I always get a seat,"
+    } ]
+  }, {
+    "tStartMs": 172120,
+    "dDurationMs": 5000,
+    "segs": [ {
+      "utf8": "but then by the time you get on,\nit is usually really packed."
+    } ]
+  }, {
+    "tStartMs": 177120,
+    "dDurationMs": 4680,
+    "segs": [ {
+      "utf8": "And the closer you get into central\nLondon, the more packed it is."
+    } ]
+  }, {
+    "tStartMs": 181800,
+    "dDurationMs": 2400,
+    "segs": [ {
+      "utf8": "You're squashed up against strangers."
+    } ]
+  }, {
+    "tStartMs": 184200,
+    "dDurationMs": 1320,
+    "segs": [ {
+      "utf8": "It's not always fun."
+    } ]
+  }, {
+    "tStartMs": 185520,
+    "dDurationMs": 1600,
+    "segs": [ {
+      "utf8": "I hate it.\nWhat about buses?"
+    } ]
+  }, {
+    "tStartMs": 187120,
+    "dDurationMs": 2800,
+    "segs": [ {
+      "utf8": "Do you like buses?"
+    } ]
+  }, {
+    "tStartMs": 189920,
+    "dDurationMs": 1800,
+    "segs": [ {
+      "utf8": "Buses are OK."
+    } ]
+  }, {
+    "tStartMs": 191720,
+    "dDurationMs": 2240,
+    "segs": [ {
+      "utf8": "They, in London again,"
+    } ]
+  }, {
+    "tStartMs": 193960,
+    "dDurationMs": 2520,
+    "segs": [ {
+      "utf8": "they are quite frequent"
+    } ]
+  }, {
+    "tStartMs": 196480,
+    "dDurationMs": 1680,
+    "segs": [ {
+      "utf8": "and that's convenient."
+    } ]
+  }, {
+    "tStartMs": 198160,
+    "dDurationMs": 3160,
+    "segs": [ {
+      "utf8": "Not always.\nI mean, they are – they're frequent,"
+    } ]
+  }, {
+    "tStartMs": 201320,
+    "dDurationMs": 3320,
+    "segs": [ {
+      "utf8": "but they're more unreliable\nthan trains, aren't they?"
+    } ]
+  }, {
+    "tStartMs": 204640,
+    "dDurationMs": 3400,
+    "segs": [ {
+      "utf8": "There always seems to be roadworks\nnear where I live,"
+    } ]
+  }, {
+    "tStartMs": 208040,
+    "dDurationMs": 3320,
+    "segs": [ {
+      "utf8": "and when there are roadworks,\nthere are traffic lights and"
+    } ]
+  }, {
+    "tStartMs": 211360,
+    "dDurationMs": 2600,
+    "segs": [ {
+      "utf8": "then there are delays on the buses."
+    } ]
+  }, {
+    "tStartMs": 213960,
+    "dDurationMs": 5040,
+    "segs": [ {
+      "utf8": "So, in the city,\npublic transport can be great."
+    } ]
+  }, {
+    "tStartMs": 219000,
+    "dDurationMs": 3880,
+    "segs": [ {
+      "utf8": "But what about when we go outside\nof the city?"
+    } ]
+  }, {
+    "tStartMs": 222880,
+    "dDurationMs": 5200,
+    "segs": [ {
+      "utf8": "What do you use to go\nto other parts of the UK?"
+    } ]
+  }, {
+    "tStartMs": 228080,
+    "dDurationMs": 1680,
+    "segs": [ {
+      "utf8": "If it's quite far,"
+    } ]
+  }, {
+    "tStartMs": 229760,
+    "dDurationMs": 4800,
+    "segs": [ {
+      "utf8": "so if I'm going really far north,\nmaybe to Scotland or to,"
+    } ]
+  }, {
+    "tStartMs": 234560,
+    "dDurationMs": 3320,
+    "segs": [ {
+      "utf8": "I don't know,\nManchester or a northern city,"
+    } ]
+  }, {
+    "tStartMs": 237880,
+    "dDurationMs": 4000,
+    "segs": [ {
+      "utf8": "it's probably better to get the train\nbecause it's faster"
+    } ]
+  }, {
+    "tStartMs": 241880,
+    "dDurationMs": 2240,
+    "segs": [ {
+      "utf8": "and I really like trains.\nYou can relax."
+    } ]
+  }, {
+    "tStartMs": 244120,
+    "dDurationMs": 2320,
+    "segs": [ {
+      "utf8": "It's a relaxing experience."
+    } ]
+  }, {
+    "tStartMs": 246440,
+    "dDurationMs": 5960,
+    "segs": [ {
+      "utf8": "Some of my best travel experiences\nhave been on long-distance trains."
+    } ]
+  }, {
+    "tStartMs": 252400,
+    "dDurationMs": 840,
+    "segs": [ {
+      "utf8": "Yeah?"
+    } ]
+  }, {
+    "tStartMs": 253240,
+    "dDurationMs": 840,
+    "segs": [ {
+      "utf8": "Yeah."
+    } ]
+  }, {
+    "tStartMs": 254080,
+    "dDurationMs": 1440,
+    "segs": [ {
+      "utf8": "Can you... Where have you been"
+    } ]
+  }, {
+    "tStartMs": 255520,
+    "dDurationMs": 2040,
+    "segs": [ {
+      "utf8": "that's been so fantastic on a train?"
+    } ]
+  }, {
+    "tStartMs": 257560,
+    "dDurationMs": 4680,
+    "segs": [ {
+      "utf8": "Well, I once went from Prague\nto Moscow on a train."
+    } ]
+  }, {
+    "tStartMs": 262240,
+    "dDurationMs": 680,
+    "segs": [ {
+      "utf8": "Wow!"
+    } ]
+  }, {
+    "tStartMs": 262920,
+    "dDurationMs": 680,
+    "segs": [ {
+      "utf8": "Yeah."
+    } ]
+  }, {
+    "tStartMs": 263600,
+    "dDurationMs": 1440,
+    "segs": [ {
+      "utf8": "What was that like?"
+    } ]
+  }, {
+    "tStartMs": 265040,
+    "dDurationMs": 1920,
+    "segs": [ {
+      "utf8": "Really exciting."
+    } ]
+  }, {
+    "tStartMs": 266960,
+    "dDurationMs": 920,
+    "segs": [ {
+      "utf8": "Why?"
+    } ]
+  }, {
+    "tStartMs": 267880,
+    "dDurationMs": 5000,
+    "segs": [ {
+      "utf8": "It took about three days,\nand I was with some friends,"
+    } ]
+  }, {
+    "tStartMs": 272880,
+    "dDurationMs": 2800,
+    "segs": [ {
+      "utf8": "and we could eat and drink\nand look out the window."
+    } ]
+  }, {
+    "tStartMs": 275680,
+    "dDurationMs": 2720,
+    "segs": [ {
+      "utf8": "The landscape changed frequently."
+    } ]
+  }, {
+    "tStartMs": 278400,
+    "dDurationMs": 1880,
+    "segs": [ {
+      "utf8": "It was just exciting."
+    } ]
+  }, {
+    "tStartMs": 284800,
+    "dDurationMs": 3640,
+    "segs": [ {
+      "utf8": "Let's recap the vocabulary we heard\nin this podcast,"
+    } ]
+  }, {
+    "tStartMs": 288440,
+    "dDurationMs": 4880,
+    "segs": [ {
+      "utf8": "starting with some useful adjectives\nto describe public transport."
+    } ]
+  }, {
+    "tStartMs": 293320,
+    "dDurationMs": 3760,
+    "segs": [ {
+      "utf8": "For example, we had 'crowded',\nwhich means very busy."
+    } ]
+  }, {
+    "tStartMs": 297080,
+    "dDurationMs": 1960,
+    "segs": [ {
+      "utf8": "We also hear 'packed'."
+    } ]
+  }, {
+    "tStartMs": 299040,
+    "dDurationMs": 4080,
+    "segs": [ {
+      "utf8": "We had 'reliable', which describes\nsomething you can trust,"
+    } ]
+  }, {
+    "tStartMs": 303120,
+    "dDurationMs": 3880,
+    "segs": [ {
+      "utf8": "and 'unreliable', which describes\nsomething you can't trust."
+    } ]
+  }, {
+    "tStartMs": 307000,
+    "dDurationMs": 5400,
+    "segs": [ {
+      "utf8": "We heard 'frequent', which describes\nsomething that happens often."
+    } ]
+  }, {
+    "tStartMs": 312400,
+    "dDurationMs": 1960,
+    "segs": [ {
+      "utf8": "And we also heard 'delayed',"
+    } ]
+  }, {
+    "tStartMs": 314360,
+    "dDurationMs": 4760,
+    "segs": [ {
+      "utf8": "which means something, like public\ntransport, comes later than expected."
+    } ]
+  }, {
+    "tStartMs": 319120,
+    "dDurationMs": 2800,
+    "segs": [ {
+      "utf8": "That's it for this episode\nof Real Easy English."
+    } ]
+  }, {
+    "tStartMs": 321920,
+    "dDurationMs": 1720,
+    "segs": [ {
+      "utf8": "Don't forget to go to our website"
+    } ]
+  }, {
+    "tStartMs": 323640,
+    "dDurationMs": 4560,
+    "segs": [ {
+      "utf8": "where you can get a free worksheet to\ndownload to test what you've learnt."
+    } ]
+  }, {
+    "tStartMs": 328200,
+    "dDurationMs": 1893,
+    "segs": [ {
+      "utf8": "It's at bbclearningenglish.com."
+    } ]
+  }, {
+    "tStartMs": 330093,
+    "dDurationMs": 881,
+    "segs": [ {
+      "utf8": "See you then."
+    } ]
+  }, {
+    "tStartMs": 330974,
+    "dDurationMs": 777,
+    "segs": [ {
+      "utf8": "Goodbye."
+    } ]
+  }, {
+    "tStartMs": 331751,
+    "dDurationMs": 989,
+    "segs": [ {
+      "utf8": "Bye."
+    } ]
+  } ]
+}

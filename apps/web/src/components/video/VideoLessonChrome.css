@@ -1,0 +1,39 @@
+.video-lesson-page {
+  --vl-bg: #fffcf7;
+  --vl-muted: #6d647c;
+  --vl-good: #4e762f;
+  --vl-good-bg: #e9f4d7;
+  --vl-good-border: #9ec278;
+  --vl-wrong: #a63b48;
+  --vl-wrong-bg: #fbe9ec;
+  min-height: 100dvh;
+  background: var(--vl-bg);
+  color: var(--ea-text);
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.video-lesson-header { display:flex; align-items:center; gap:14px; max-width:1440px; padding:12px 22px; margin:0 auto; min-height:60px; }
+.video-lesson-back { display:grid; place-items:center; width:28px; height:36px; flex:none; color:var(--ea-muted); }
+.video-lesson-wordmark { color:var(--ea-text); font:900 24px/1.5 "Nunito",sans-serif; }
+.video-lesson-wordmark span { color:var(--ea-primary); }
+.video-lesson-body { display:flex; flex-direction:column; gap:24px; width:100%; max-width:1004px; margin:0 auto; padding:22px 22px 30px; }
+.video-lesson-heading { display:flex; flex-direction:column; align-items:flex-start; gap:10px; }
+.video-lesson-tag { display:inline-flex; width:fit-content; max-width:100%; padding:7px 12px; border-radius:20px; color:var(--ea-primary); background:var(--ea-primary-soft); font-size:10px; font-weight:800; letter-spacing:.5px; line-height:15px; overflow-wrap:anywhere; }
+.video-lesson-heading h1 { font:900 32px/1.05 "Nunito",sans-serif; margin:0; overflow-wrap:anywhere; }
+.video-lesson-progress { display:flex; gap:14px; align-items:center; font-size:11px; color:var(--vl-muted); }
+.video-lesson-progress>button { flex:none; color:var(--ea-muted); }
+.video-lesson-progress__track { display:flex; flex:1; min-width:0; gap:4px; }
+.video-lesson-progress__track>span { flex:1; height:7px; border-radius:4px; background:var(--ea-border); }
+.video-lesson-progress__track>span.is-done { background:var(--ea-primary); }
+.video-lesson-hearts { display:flex; gap:5px; align-items:center; font-size:12px; font-weight:800; color:var(--ea-text); }
+.video-lesson-hearts svg { color:var(--ea-danger); }
+.video-lesson-primary { display:flex; align-items:center; justify-content:center; gap:14px; width:100%; min-height:56px; border:0; border-bottom:5px solid var(--ea-primary-deep); border-radius:18px; padding:16px 22px; background:var(--ea-primary); color:var(--ea-on-primary); font:800 16px/20px "Plus Jakarta Sans",sans-serif; }
+.video-lesson-primary:hover:not(:disabled) { background:var(--ea-primary-deep); }
+.video-lesson-primary:disabled { opacity:.45; cursor:not-allowed; }
+.video-lesson-secondary { align-self:center; color:var(--vl-muted); font:600 11px/1.5 "Plus Jakarta Sans",sans-serif; }
+.video-lesson-page :is(button,a):focus-visible { outline:2px solid var(--ea-primary); outline-offset:4px; }
+@media (min-width:701px) {
+  .video-lesson-header { padding:22px 64px; min-height:86px; }
+  .video-lesson-wordmark { font-size:28px; }
+  .video-lesson-body { padding:28px 22px 44px; }
+  .video-lesson-heading h1 { font-size:44px; }
+}

@@ -1,0 +1,12 @@
+{
+  "hint.daily_time": "Ma'ruzachi kun tartibini aytganda aniq vaqtga e'tibor bering.",
+  "hint.daily_evening": "Kechqurun nima qilishini aytgan jumlani tinglang.",
+  "hint.plans_when": "Vaqtni bildiruvchi so'zga e'tibor bering ('this weekend').",
+  "hint.plans_since": "'since' so'zidan keyin kelgan vaqtni qayd eting.",
+  "hint.tech_where": "Odamlar qayerda ishlashi haqidagi jumlani eslang.",
+  "hint.tech_key": "Ma'ruzachi muvaffaqiyat kaliti deb nimani atadi?",
+  "hint.ai_consistency": "Ma'ruzachi 'consistency' (doimiylik) so'zini bir necha bor ta'kidladi.",
+  "hint.ai_human": "Algoritmlardan tashqari nimani egallash kerakligini tinglang.",
+  "hint.climate_data": "Olimlar nimaga tayanishi haqidagi birinchi jumlaga qarang.",
+  "hint.climate_simplify": "Dalillarni soddalashtirish qanday oqibatga olib kelishini eslang."
+}

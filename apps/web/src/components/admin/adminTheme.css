@@ -1,0 +1,146 @@
+/* ---------------------------------------------------------------------------
+   Admin design layer — "Professional Indigo" applied to the operator workspace.
+
+   The learner /home was rebuilt in the ProfessionalHome (`ph-*`) language:
+   airy 22px panels, soft shadows, primary-tinted eyebrows, colourful per-module
+   icon tiles, display-font headings. The admin area still rendered the older,
+   flatter design-system primitives. Rather than rewrite every admin page, this
+   file re-skins the shared primitives (`.ea-page-header`, `.ea-section-header`,
+   `.ea-card`, `.ea-stat-card`, `.ea-eyebrow`, buttons) *only inside*
+   `.ea-admin-unified-scope` (the class AdminShell wraps every admin route in),
+   so all 17 admin pages inherit the new look at once.
+
+   Everything here is UNLAYERED on purpose: the primitives it overrides live in
+   `@layer components` (index.css), so these rules win without specificity wars.
+   Colours come exclusively from the canonical `--ea-*` tokens — no hardcoded hex.
+   --------------------------------------------------------------------------- */
+
+.ea-admin-unified-scope {
+  --admin-panel-radius: 22px;
+  --admin-tile-radius: 16px;
+}
+
+/* --- Eyebrows: quiet grey → confident primary, wider tracking (matches ph) --- */
+.ea-admin-unified-scope .ea-eyebrow {
+  color: var(--ea-primary);
+  font-weight: 850;
+  letter-spacing: 0.16em;
+}
+
+/* --- Headings: display face, tighter tracking, generous first-child spacing --- */
+.ea-admin-unified-scope .ea-page-header {
+  padding-block: clamp(6px, 2vw, 16px) clamp(10px, 2.4vw, 20px);
+}
+.ea-admin-unified-scope .ea-page-header h1 {
+  letter-spacing: -0.03em;
+}
+.ea-admin-unified-scope .ea-section-header h2 {
+  letter-spacing: -0.045em;
+}
+
+/* --- Panels & cards: 22px radius, soft raised shadow, primary hover lift --- */
+.ea-admin-unified-scope .ea-card {
+  border-radius: var(--admin-panel-radius);
+  box-shadow: var(--ea-shadow-card);
+}
+.ea-admin-unified-scope .ea-card--interactive {
+  transition: border-color 0.16s ease, background-color 0.16s ease,
+    box-shadow 0.16s ease, transform 0.12s ease;
+}
+.ea-admin-unified-scope .ea-card--interactive:hover {
+  border-color: var(--ea-primary);
+  background: var(--ea-surface);
+  box-shadow: var(--ea-shadow-card-raised);
+  transform: translateY(-2px);
+}
+.ea-admin-unified-scope .ea-card--interactive:active {
+  transform: translateY(0);
+}
+
+/* --- Stat cards: solid primary-soft icon chip + display value, uppercase head - */
+.ea-admin-unified-scope .ea-stat-card {
+  gap: 14px;
+}
+.ea-admin-unified-scope .ea-stat-card__head {
+  color: var(--ea-muted);
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.ea-admin-unified-scope .ea-stat-card__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 13px;
+  /* Consumes the inherited accent vars, so setting `data-accent` on ANY ancestor
+     (e.g. the stat grid wrapper) colours every stat icon beneath it. Falls back
+     to the primary chip when no accent is in scope. */
+  background: var(--accent-soft, var(--ea-primary-soft));
+  color: var(--accent, var(--ea-primary-deep));
+}
+.ea-admin-unified-scope .ea-stat-card > strong {
+  letter-spacing: -0.04em;
+}
+
+/* Tone-accented stat cards / tiles. `data-accent` keys the icon chip colour off
+   the module ramps so operators can scan by colour, exactly like ph module tiles.
+   Learner modules reuse their canonical ramp; operational areas get a distinct
+   status colour so nothing collides. */
+.ea-admin-unified-scope [data-accent] {
+  --accent: var(--ea-primary-deep);
+  --accent-soft: var(--ea-primary-soft);
+}
+.ea-admin-unified-scope [data-accent="users"] { --accent: rgb(var(--ea-mod-reading-rgb)); --accent-soft: rgb(var(--ea-mod-reading-soft-rgb)); }
+.ea-admin-unified-scope [data-accent="metrics"] { --accent: rgb(var(--ea-mod-speaking-rgb)); --accent-soft: rgb(var(--ea-mod-speaking-soft-rgb)); }
+.ea-admin-unified-scope [data-accent="support"] { --accent: rgb(var(--ea-mod-listening-rgb)); --accent-soft: rgb(var(--ea-mod-listening-soft-rgb)); }
+.ea-admin-unified-scope [data-accent="vocabulary"] { --accent: rgb(var(--ea-mod-vocab-rgb)); --accent-soft: rgb(var(--ea-mod-vocab-soft-rgb)); }
+.ea-admin-unified-scope [data-accent="curriculum"] { --accent: rgb(var(--ea-mod-vocab-rgb)); --accent-soft: rgb(var(--ea-mod-vocab-soft-rgb)); }
+.ea-admin-unified-scope [data-accent="grammar"] { --accent: rgb(var(--ea-mod-grammar-rgb)); --accent-soft: rgb(var(--ea-mod-grammar-soft-rgb)); }
+.ea-admin-unified-scope [data-accent="listening"] { --accent: rgb(var(--ea-mod-listening-rgb)); --accent-soft: rgb(var(--ea-mod-listening-soft-rgb)); }
+.ea-admin-unified-scope [data-accent="reading"] { --accent: rgb(var(--ea-mod-reading-rgb)); --accent-soft: rgb(var(--ea-mod-reading-soft-rgb)); }
+.ea-admin-unified-scope [data-accent="notifications"] { --accent: rgb(var(--ea-mod-video-rgb)); --accent-soft: rgb(var(--ea-mod-video-soft-rgb)); }
+.ea-admin-unified-scope [data-accent="sections"] { --accent: rgb(var(--ea-mod-roleplay-rgb)); --accent-soft: rgb(var(--ea-mod-roleplay-soft-rgb)); }
+.ea-admin-unified-scope [data-accent="server"] { --accent: rgb(var(--ea-mod-books-rgb)); --accent-soft: rgb(var(--ea-mod-books-soft-rgb)); }
+
+/* --- Breadcrumb (shared across admin pages, not just the hub) --- */
+.ea-admin-unified-scope .ea-admin-hub__breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--ea-muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+.ea-admin-unified-scope .ea-admin-hub__breadcrumb a,
+.ea-admin-unified-scope .ea-admin-hub__breadcrumb button {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ea-primary-deep);
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+.ea-admin-unified-scope .ea-admin-hub__breadcrumb a:hover,
+.ea-admin-unified-scope .ea-admin-hub__breadcrumb button:hover {
+  text-decoration: underline;
+}
+.ea-admin-unified-scope .ea-admin-hub__breadcrumb .material-symbols-rounded {
+  font-size: 15px;
+}
+
+/* --- Count pill helper (matches ph-section-head > strong) --- */
+.ea-admin-unified-scope .ea-count-pill {
+  display: grid;
+  min-width: 38px;
+  height: 34px;
+  padding: 0 12px;
+  place-items: center;
+  border: 1px solid var(--ea-border);
+  border-radius: 999px;
+  background: var(--ea-surface-soft);
+  color: var(--ea-muted-deep, var(--ea-muted));
+  font-size: 11px;
+  font-weight: 850;
+  white-space: nowrap;
+}

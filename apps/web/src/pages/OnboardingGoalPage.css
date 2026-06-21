@@ -1,0 +1,15 @@
+/*
+ * Goal-picker chrome. Card, feature panel, option tiles and buttons come from the
+ * shared onboarding system (onboarding.css). This file only lays out the goal grid
+ * and the sticky-feeling footer actions.
+ */
+
+.goal-panel { justify-content: flex-start; }
+.goal-grid { align-content: start; }
+.goal-footer { margin-top: auto; display: grid; gap: 14px; padding-top: 6px; }
+.goal-actions { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.goal-continue { flex: 1; max-width: 260px; }
+
+@media (max-width: 700px) {
+  .goal-continue { max-width: none; }
+}

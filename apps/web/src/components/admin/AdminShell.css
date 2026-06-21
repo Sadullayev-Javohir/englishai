@@ -1,0 +1,91 @@
+.ea-admin-shell {
+  --admin-ink: var(--ea-text);
+  --admin-muted: var(--ea-muted);
+  --admin-border: var(--ea-border);
+  --admin-bg: var(--ea-bg);
+  --admin-surface: var(--ea-surface);
+  --admin-primary: var(--ea-primary);
+  min-height: 100dvh;
+  color: var(--admin-ink);
+  background: var(--admin-bg);
+  font-family: var(--ea-font-body);
+}
+
+.ea-admin-shell__sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: 45;
+  width: 248px;
+  display: flex;
+  flex-direction: column;
+  padding: 22px 16px 18px;
+  border-right: 1px solid var(--admin-border);
+  background: var(--ea-bg);
+  
+}
+
+.ea-admin-shell__brand { display: inline-flex; align-items: center; gap: 10px; padding: 2px 8px 20px; color: var(--admin-ink); text-decoration: none; }
+.ea-admin-shell__brand strong { display: inline-flex; align-items: baseline; flex-wrap: nowrap; font: 700 20px/1 "Nunito", "Plus Jakarta Sans", sans-serif; letter-spacing: -.045em; white-space: nowrap; }
+.ea-admin-shell__brand strong span { display: inline; color: var(--ea-primary-end); font: inherit; white-space: nowrap;  }
+
+.ea-admin-shell__nav { min-height: 0; flex: 1 1 auto; display: grid; align-content: start; gap: 6px; overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain; padding: 6px 0 16px; }
+.ea-admin-shell__nav-link { min-height: 46px; display: flex; align-items: center; gap: 12px; padding: 10px 13px; border: 1px solid transparent; border-radius: 15px; color: var(--ea-muted-deep); text-decoration: none; font-size: 13px; font-weight: 800; transition: .18s ease; }
+.ea-admin-shell__nav-link .material-symbols-rounded { font-size: 21px; }
+.ea-admin-shell__nav-link:hover { color: var(--admin-ink); background: var(--ea-surface-soft); }
+.ea-admin-shell__nav-link.is-active { color: var(--ea-primary); border-color: transparent; background: var(--ea-primary-soft); box-shadow: none; }
+.ea-admin-shell__back { min-height: 46px; display: flex; align-items: center; justify-content: center; gap: 9px; margin-top: auto; border: 1px solid var(--admin-border); border-radius: 15px; color: var(--admin-ink); background: var(--ea-surface-soft); text-decoration: none; font-size: 13px; font-weight: 800; }
+.ea-admin-shell__theme-toggle { width: 38px; height: 38px; flex: 0 0 auto; border: 1px solid var(--admin-border); color: var(--admin-ink); background: var(--ea-surface-soft); }
+.ea-admin-shell__theme-toggle:hover { color: var(--ea-primary-deep); background: var(--ea-primary-soft); }
+
+.ea-admin-shell__workspace { min-height: 100dvh; margin-left: 248px; }
+.ea-admin-shell__workspace--content { margin-left: 0; }
+.ea-admin-shell__topbar { position: sticky; top: 0; z-index: 40; min-height: 74px; display: flex; align-items: center; gap: 14px; padding: max(12px, env(safe-area-inset-top)) 28px 12px; border-bottom: 1px solid rgb(var(--ea-border-rgb) / .9); background: rgb(var(--ea-bg-rgb) / .88);  }
+.ea-admin-shell__topbar-copy { display: grid; margin-right: auto; }
+.ea-admin-shell__topbar-copy span { color: var(--admin-muted); font-size: 10px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.ea-admin-shell__topbar-copy strong { font: 800 20px/1.2 "Nunito", "Plus Jakarta Sans", sans-serif; }
+.ea-admin-shell__topbar-back { min-height: 44px; display: inline-flex; align-items: center; gap: 8px; padding: 0 14px; border: 1px solid var(--admin-border); border-radius: 14px; color: var(--admin-ink); background: var(--admin-surface); text-decoration: none; font-size: 12px; font-weight: 800; }
+.ea-admin-shell__profile { position: relative; display: flex; align-items: center; gap: 9px; }
+.ea-admin-shell__profile > button { min-height: 46px; display: flex; align-items: center; gap: 9px; padding: 5px 8px 5px 6px; border: 1px solid var(--admin-border); border-radius: 16px; color: var(--admin-ink); background: var(--admin-surface); }
+.ea-admin-shell__profile img, .ea-admin-shell__avatar { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 12px; object-fit: cover; color: var(--ea-on-primary); background: var(--ea-primary); }
+.ea-admin-shell__profile-copy { display: grid; max-width: 170px; text-align: left; }
+.ea-admin-shell__profile-copy strong, .ea-admin-shell__profile-copy small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ea-admin-shell__profile-copy strong { font-size: 12px; }
+.ea-admin-shell__profile-copy small { color: var(--admin-muted); font-size: 10px; }
+.ea-admin-shell__menu { position: absolute; top: calc(100% + 8px); right: 0; width: 220px; display: grid; gap: 5px; padding: 8px; border: 1px solid var(--admin-border); border-radius: 16px; background: var(--admin-surface); box-shadow: var(--ea-shadow-overlay); }
+.ea-admin-shell__menu a, .ea-admin-shell__menu button { min-height: 44px; display: flex; align-items: center; gap: 10px; padding: 0 11px; border: 0; border-radius: 11px; color: var(--admin-ink); background: transparent; text-decoration: none; font: 800 12px "Plus Jakarta Sans", sans-serif; }
+.ea-admin-shell__menu a:hover, .ea-admin-shell__menu button:hover { background: var(--ea-bg); }
+.ea-admin-shell__menu button:last-child { color: var(--ea-danger); }
+.ea-admin-shell__main { min-width: 0; padding: 24px 28px 42px; }
+.ea-admin-shell__mobile-nav { display: none; }
+
+@media (max-width: 1180px){
+  .ea-admin-shell__sidebar { display: none; }
+  .ea-admin-shell__workspace { min-height: 100svh; margin-left: 0; padding-bottom: calc(88px + env(safe-area-inset-bottom)); }
+  .ea-admin-shell__main { padding: 20px 20px 36px; }
+  .ea-admin-shell__mobile-nav { position: fixed; inset: auto 12px max(10px, env(safe-area-inset-bottom)) 12px; z-index: 50; display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; padding: 7px; border: 1px solid var(--admin-border); border-radius: 20px; background: rgb(var(--ea-surface-rgb) / .96); box-shadow: var(--ea-shadow-card);  }
+  .ea-admin-shell__mobile-nav a, .ea-admin-shell__mobile-nav button { min-width: 0; min-height: 54px; display: grid; place-items: center; align-content: center; gap: 2px; padding: 0 2px; border: 0; border-radius: 14px; color: var(--admin-muted); background: transparent; text-decoration: none; }
+  .ea-admin-shell__mobile-nav a.is-active, .ea-admin-shell__mobile-nav button.is-active { color: var(--ea-on-primary); background: var(--admin-primary); box-shadow: none; }
+  .ea-admin-shell__mobile-nav span { max-width: 100%; overflow: hidden; font-size: 8px; font-weight: 800; text-overflow: ellipsis; white-space: nowrap; }
+}
+
+.ea-admin-shell__more-nav { display: grid; gap: 8px; }
+.ea-admin-shell__more-nav a { min-height: 58px; display: grid; grid-template-columns: 42px minmax(0, 1fr) 24px; align-items: center; gap: 12px; padding: 8px 10px; border: 1px solid var(--admin-border); border-radius: 16px; color: var(--admin-ink); background: var(--admin-surface); text-decoration: none; font-size: 14px; font-weight: 800; }
+.ea-admin-shell__more-nav a > i { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 13px; color: var(--ea-muted-deep); background: var(--ea-surface-soft); font-style: normal; }
+.ea-admin-shell__more-nav a > .material-symbols-rounded:last-child { color: var(--admin-muted); font-size: 20px; }
+.ea-admin-shell__more-nav a.is-active { border-color: var(--admin-primary); background: var(--ea-primary-soft); box-shadow: none; }
+.ea-admin-shell__more-nav a.is-active > i { color: var(--ea-on-primary); background: var(--admin-primary); }
+
+@media (min-width: 1181px){
+  .ea-admin-shell__more-sheet { display: none; }
+}
+
+@media (max-width: 700px){
+  .ea-admin-shell__topbar { min-height: 64px; padding-inline: 14px; }
+  .ea-admin-shell__topbar-copy span, .ea-admin-shell__profile-copy, .ea-admin-shell__topbar-back span { display: none; }
+  .ea-admin-shell__topbar-back { width: 44px; padding: 0; justify-content: center; font-size: 0; }
+  .ea-admin-shell__profile > button { min-width: 44px; padding: 4px; }
+  .ea-admin-shell__theme-toggle--topbar { width: 44px; height: 44px; }
+  .ea-admin-shell__profile > button > .material-symbols-rounded:last-child { display: none; }
+  .ea-admin-shell__menu { position: fixed; top: calc(64px + env(safe-area-inset-top)); right: 14px; width: min(260px, calc(100vw - 28px)); max-height: calc(100dvh - 88px - env(safe-area-inset-top) - env(safe-area-inset-bottom)); overflow-y: auto; }
+  .ea-admin-shell__main { padding: 16px 14px calc(28px + env(safe-area-inset-bottom)); }
+}

@@ -1,0 +1,23 @@
+.vocabulary-pronunciation { display:flex; flex-direction:column; gap:24px; width:calc(100% - 80px); max-width:960px; margin:0 auto; padding:28px 0 44px; }
+.vocabulary-pronunciation__practice { display:flex; flex-direction:column; align-items:center; gap:22px; }
+.vocabulary-pronunciation h1 { font:900 64px/70px "Nunito",sans-serif; }
+.vocabulary-pronunciation__ipa { font-size:17px; line-height:26px; color:var(--v-muted); }
+.vocabulary-voice { width:100%; padding:24px; border-radius:22px; background:var(--v-lilac); color:var(--v-purple); }
+.vocabulary-voice__player { display:flex; gap:18px; align-items:center; }
+.vocabulary-voice__player>button:first-child { width:48px; height:48px; border-radius:15px; display:grid; place-items:center; background:var(--v-purple); color:white; }
+.vocabulary-voice__wave { display:flex; flex:1; align-items:center; gap:4px; }
+.vocabulary-voice__wave>span { flex:1; background:var(--v-purple); }
+.vocabulary-voice__wave>span:nth-child(n+9) { opacity:.3; }
+.vocabulary-voice__speed { font-size:12px; line-height:18px; }
+.vocabulary-voice__caption { display:flex; justify-content:space-between; margin-top:16px; color:var(--v-muted); font-size:11px; line-height:17px; }
+.vocabulary-voice__caption>button { display:flex; align-items:center; gap:4px; color:var(--v-purple); }
+.vocabulary-pronunciation__score { width:100%; display:flex; flex-direction:column; gap:18px; padding:22px; border-radius:22px; background:var(--v-lilac); text-align:center; }
+.vocabulary-pronunciation__score>strong { font:900 50px/55px "Nunito",sans-serif; color:var(--v-purple); }
+.vocabulary-pronunciation__score p { font-size:13px; line-height:20px; color:var(--v-muted); }
+.vocabulary-pronunciation__phonemes { display:flex; gap:12px; width:100%; }
+.vocabulary-pronunciation__phonemes>div { flex:1; padding:20px; text-align:center; border-radius:20px; background:var(--v-mint); color:var(--v-green); }
+.vocabulary-pronunciation__phonemes>.is-review { background:var(--v-peach); color:var(--v-brown); }
+.vocabulary-pronunciation__phonemes strong { font:900 30px/35px "Nunito",sans-serif; }
+.vocabulary-pronunciation__tip { color:var(--v-muted); font-size:13px; line-height:20px; }
+.vocabulary-pronunciation__empty { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:22px; width:100%; min-height:242px; padding:32px; border-radius:22px; background:var(--v-lilac); color:var(--v-purple); text-align:center; }
+.vocabulary-pronunciation__empty p { color:var(--v-muted); font-size:15px; line-height:24px; }

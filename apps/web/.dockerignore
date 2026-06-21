@@ -1,0 +1,7 @@
+node_modules/
+.artifacts/
+dist/
+.vite/
+*.log
+.env
+.env.*

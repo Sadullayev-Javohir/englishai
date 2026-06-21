@@ -1,0 +1,124 @@
+.leaderboard-pen {
+  --leaderboard-ink: #2c2144;
+  --leaderboard-muted: #6d647c;
+  --leaderboard-line: #e9e2ee;
+  --leaderboard-violet: #7545e8;
+  --leaderboard-violet-deep: #5126b8;
+  --leaderboard-lilac: #efe7ff;
+  --leaderboard-peach: #ffe4d5;
+  --leaderboard-green: #e9f4d7;
+  color: var(--leaderboard-ink);
+  font-family: "Plus Jakarta Sans", var(--ea-font-body), sans-serif;
+}
+
+.leaderboard-pen *, .leaderboard-pen *::before, .leaderboard-pen *::after { box-sizing: border-box; }
+.leaderboard-pen h1, .leaderboard-pen h2, .leaderboard-pen p { margin: 0; }
+.leaderboard-pen button { border: 0; font: inherit; }
+.leaderboard-pen button:focus-visible { outline: 3px solid rgb(117 69 232 / 32%); outline-offset: 3px; }
+
+.leaderboard-pen__mobile-actions { display: none; }
+.leaderboard-pen__heading { display: grid; gap: 8px; min-height: 111px; }
+.leaderboard-pen__heading > span { color: var(--leaderboard-violet); font-size: 10px; font-weight: 800; letter-spacing: .12em; line-height: 1.5; }
+.leaderboard-pen__heading h1, .leaderboard-pen h2 { font-family: "Nunito", var(--ea-font-display), sans-serif; font-weight: 900; letter-spacing: -.045em; }
+.leaderboard-pen__heading h1 { font-size: 42px; line-height: 1.12; }
+.leaderboard-pen__heading p { color: var(--leaderboard-muted); font-size: 15px; font-weight: 500; line-height: 1.5; }
+
+.leaderboard-pen__periods { display: flex; gap: 12px; margin-top: 24px; }
+.leaderboard-pen__periods button { min-height: 31px; border-radius: 999px; background: #fff; color: var(--leaderboard-muted); cursor: pointer; font-size: 11px; font-weight: 800; line-height: 1.5; padding: 7px 11px; }
+.leaderboard-pen__periods button[aria-pressed="true"] { background: var(--leaderboard-violet); color: #fff; }
+
+.leaderboard-pen__league { display: grid; gap: 16px; margin-top: 24px; border-radius: 24px; background: var(--leaderboard-lilac); padding: 24px; }
+.leaderboard-pen__league-title, .leaderboard-pen__summary-title { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.leaderboard-pen__league-icon { display: grid; width: 34px; height: 34px; flex: 0 0 34px; place-items: center; color: var(--leaderboard-violet); }
+.leaderboard-pen__league-icon .material-symbols-rounded { font-size: 27px; }
+.leaderboard-pen__league-title > div { display: grid; gap: 2px; min-width: 0; }
+.leaderboard-pen__league-title small { color: var(--leaderboard-muted); font-size: 9px; font-weight: 800; letter-spacing: .08em; line-height: 1.25; }
+.leaderboard-pen__league h2 { font-size: 25px; line-height: 1.1; }
+.leaderboard-pen__countdown { margin-left: auto; border-radius: 999px; background: #fff; color: var(--leaderboard-violet); font-size: 10px; font-weight: 800; padding: 7px 11px; white-space: nowrap; }
+.leaderboard-pen__league p { color: var(--leaderboard-muted); font-size: 13px; font-weight: 500; line-height: 1.5; }
+
+.leaderboard-pen__podium { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 24px; }
+.leaderboard-pen__podium-card { display: grid; min-width: 0; min-height: 220px; place-items: center; align-content: center; gap: 10px; border-radius: 24px; padding: 24px 12px; text-align: center; }
+.leaderboard-pen__podium-card--winner { background: var(--leaderboard-peach); }
+.leaderboard-pen__podium-card--runner-up { background: var(--leaderboard-lilac); }
+.leaderboard-pen__podium-card--third { background: var(--leaderboard-green); }
+.leaderboard-pen__podium-medal { color: var(--leaderboard-violet); font-size: 30px; }
+.leaderboard-pen__podium-avatar { width: 56px; height: 56px; border-radius: 50%; background: #fff; color: var(--leaderboard-violet); font-size: 14px; }
+.leaderboard-pen__podium-card strong { min-width: 0; overflow: hidden; color: var(--leaderboard-ink); font-family: "Nunito", var(--ea-font-display), sans-serif; font-size: 18px; font-weight: 900; letter-spacing: -.035em; line-height: 1.12; text-overflow: ellipsis; white-space: nowrap; }
+.leaderboard-pen__podium-card > span { color: var(--leaderboard-violet); font-size: 12px; font-weight: 800; line-height: 1.5; }
+.leaderboard-pen__podium-card b { color: var(--leaderboard-ink); font-family: "Nunito", var(--ea-font-display), sans-serif; font-size: 28px; font-weight: 900; letter-spacing: -.045em; line-height: 1.1; }
+
+.leaderboard-pen__leaders { margin-top: 24px; }
+.leaderboard-pen__leaders > h2 { font-size: 23px; line-height: 1.12; }
+.leaderboard-pen__rank-list { display: grid; gap: 12px; margin-top: 24px; }
+.leaderboard-pen__rank-row { display: grid; width: 100%; min-width: 0; grid-template-columns: 24px 32px minmax(0, 1fr) auto auto; align-items: center; gap: 12px; border-bottom: 1px solid var(--leaderboard-line); background: #fff; color: var(--leaderboard-ink); cursor: pointer; padding: 16px 20px; text-align: left; }
+.leaderboard-pen__rank-row:hover { background: #fbf8ff; }
+.leaderboard-pen__rank-row.is-current { border: 2px solid var(--leaderboard-violet); border-radius: 14px; background: var(--leaderboard-lilac); padding: 14px 18px; }
+.leaderboard-pen__rank-number { color: var(--leaderboard-muted); font-size: 13px; font-weight: 800; text-align: center; }
+.leaderboard-pen__rank-avatar { width: 32px; height: 32px; border-radius: 50%; background: var(--leaderboard-lilac); color: var(--leaderboard-violet); font-size: 10px; }
+.leaderboard-pen__rank-name { min-width: 0; overflow: hidden; font-size: 12px; font-weight: 800; line-height: 1.5; text-overflow: ellipsis; white-space: nowrap; }
+.leaderboard-pen__rank-row.is-current .leaderboard-pen__rank-name { color: var(--leaderboard-violet); }
+.leaderboard-pen__rank-score { color: var(--leaderboard-violet); font-size: 11px; font-weight: 800; line-height: 1.5; white-space: nowrap; }
+.leaderboard-pen__rank-change { color: #4e762f; font-size: 11px; font-weight: 700; line-height: 1.5; min-width: 24px; text-align: right; white-space: nowrap; }
+.leaderboard-pen__rank-change.is-down { color: #a65d32; }
+
+.leaderboard-pen__summary { display: grid; gap: 16px; margin-top: 24px; border-radius: 24px; background: var(--leaderboard-green); padding: 24px; }
+.leaderboard-pen__summary-title .material-symbols-rounded { color: var(--leaderboard-violet); font-size: 24px; }
+.leaderboard-pen__summary h2 { font-size: 23px; line-height: 1.12; }
+.leaderboard-pen__summary p { color: var(--leaderboard-muted); font-size: 13px; font-weight: 500; line-height: 1.5; }
+.leaderboard-pen__summary button, .leaderboard-pen__state button { display: inline-flex; width: fit-content; min-height: 48px; align-items: center; justify-content: center; gap: 8px; border-bottom: 3px solid var(--leaderboard-violet-deep); border-radius: 14px; background: var(--leaderboard-violet); color: #fff; cursor: pointer; font-size: 13px; font-weight: 800; padding: 12px 18px 14px; }
+.leaderboard-pen__summary button:hover, .leaderboard-pen__state button:hover { background: var(--leaderboard-violet-deep); }
+.leaderboard-pen__summary button .material-symbols-rounded, .leaderboard-pen__state button .material-symbols-rounded { font-size: 18px; }
+
+.leaderboard-pen__state { display: grid; min-height: 330px; place-items: center; align-content: center; gap: 12px; border-radius: 24px; background: #fff; color: var(--leaderboard-muted); text-align: center; }
+.leaderboard-pen__state > .material-symbols-rounded { color: var(--leaderboard-violet); font-size: 32px; }
+.leaderboard-pen__state h1 { color: var(--leaderboard-ink); font-family: "Nunito", var(--ea-font-display), sans-serif; font-size: 24px; font-weight: 900; }
+.leaderboard-pen__state p { font-size: 13px; }
+
+@media (min-width: 901px) {
+  body:has(.leaderboard-pen) .play-topbar { min-height: 84px; padding: 20px 40px; }
+  body:has(.leaderboard-pen) .play-sidebar { inset-top: 84px; width: 240px; padding: 28px 16px; }
+  body:has(.leaderboard-pen) .play-sidebar__notifications { display: none; }
+  body:has(.leaderboard-pen) .play-workspace { margin-left: 0; padding-top: 84px; }
+  body:has(.leaderboard-pen) .play-page-content { max-width: none; padding: 36px 40px 44px; }
+}
+
+@media (max-width: 900px) {
+  body:has(.leaderboard-pen) .play-topbar { min-height: 76px; padding: 16px; }
+  body:has(.leaderboard-pen) .play-workspace { padding-top: 76px; }
+  .leaderboard-pen__mobile-actions { display: block; margin: 6px 0 36px; }
+  .leaderboard-pen__mobile-actions button { display: inline-flex; min-height: 48px; align-items: center; gap: 8px; border: 1px solid var(--leaderboard-line); border-radius: 14px; background: #fff; color: var(--leaderboard-violet); cursor: pointer; font-size: 13px; font-weight: 800; padding: 12px 18px; }
+  .leaderboard-pen__mobile-actions .material-symbols-rounded { font-size: 18px; }
+  .leaderboard-pen__heading h1 { font-size: 30px; }
+  .leaderboard-pen__heading p { font-size: 13px; }
+  .leaderboard-pen__league { padding: 24px; }
+  .leaderboard-pen__league h2 { font-size: 23px; }
+  .leaderboard-pen__podium-card { min-height: 204px; gap: 8px; padding: 12px 6px; }
+  .leaderboard-pen__podium-medal { font-size: 28px; }
+  .leaderboard-pen__podium-card strong { font-size: 15px; }
+  .leaderboard-pen__podium-card > span { font-size: 11px; }
+  .leaderboard-pen__podium-card b { font-size: 26px; }
+  .leaderboard-pen__rank-row { grid-template-columns: 16px 32px minmax(0, 1fr) auto auto; gap: 8px; padding: 16px 12px; }
+  .leaderboard-pen__rank-row.is-current { padding: 14px 10px; }
+  .leaderboard-pen__rank-number { font-size: 12px; }
+  .leaderboard-pen__rank-score, .leaderboard-pen__rank-change { font-size: 10px; }
+}
+
+@media (max-width: 420px) {
+  .leaderboard-pen__podium { gap: 8px; }
+  .leaderboard-pen__podium-card { min-height: 190px; }
+  .leaderboard-pen__podium-avatar { width: 48px; height: 48px; }
+  .leaderboard-pen__podium-card strong { font-size: 14px; }
+  .leaderboard-pen__rank-row { gap: 7px; }
+}
+
+.leaderboard-pen-topbar { min-height: 84px; padding: 20px 40px; }
+.leaderboard-pen-topbar .lvmap-shell-topbar__brand { display: flex; align-items: center; gap: 8px; }
+.leaderboard-pen-topbar .lvmap-shell-topbar__back { display: grid; width: 44px; height: 44px; place-items: center; border: 0; border-radius: 12px; background: transparent; color: var(--ea-primary); cursor: pointer; }
+.leaderboard-pen-topbar .lvmap-shell-topbar__back:hover { background: var(--leaderboard-lilac); }
+.leaderboard-pen-topbar .lvmap-shell-topbar__back .material-symbols-rounded { font-size: 22px; }
+
+@media (max-width: 900px) {
+  .leaderboard-pen-topbar { min-height: 76px; padding: 16px; }
+  .leaderboard-pen-topbar .lvmap-shell-topbar__back { width: 44px; height: 44px; }
+}

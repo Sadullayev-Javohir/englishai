@@ -1,0 +1,265 @@
+.lvmap {
+  min-height: 100%;
+  color: #2c2144;
+  font-family: var(--ea-font-body, "Plus Jakarta Sans", system-ui, sans-serif);
+}
+
+.lvmap-container { width: min(100%, 1120px); margin: 0 auto; }
+.lvmap-stack { display: flex; flex-direction: column; gap: 24px; }
+.lvmap-heading { display: grid; gap: 10px; }
+
+.lvmap-shell-topbar__brand { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.lvmap-shell-topbar__back {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border: 1px solid #e9e2ee;
+  border-radius: 14px;
+  background: #fffcf7;
+  color: #2c2144;
+  cursor: pointer;
+}
+
+.lvmap-shell-topbar__back:hover { border-color: #c7b0f5; color: #7545e8; }
+
+.lvmap-eyebrow,
+.lvmap-guide__heading > span,
+.lvmap-panel__eyebrow {
+  color: #7545e8;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+}
+
+.lvmap-heading h1 {
+  margin: 0;
+  color: #2c2144;
+  font-family: var(--ea-font-display, "Nunito", sans-serif);
+  font-size: clamp(30px, 3vw, 42px);
+  font-weight: 900;
+  letter-spacing: -0.035em;
+  line-height: 1.12;
+}
+
+.lvmap-heading p { margin: 0; color: #6d647c; font-size: 15px; line-height: 1.5; }
+.lvmap-levels { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; }
+
+.lvmap-level-pill {
+  min-width: 42px;
+  min-height: 32px;
+  padding: 7px 11px;
+  border: 1px solid #e9e2ee;
+  border-radius: 999px;
+  background: #fff;
+  color: #6d647c;
+  cursor: pointer;
+  font: 800 11px/1 var(--ea-font-body, "Plus Jakarta Sans", sans-serif);
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.lvmap-level-pill:hover:not(:disabled) { border-color: #c7b0f5; color: #7545e8; }
+.lvmap-level-pill.is-active { border-color: #7545e8; background: #7545e8; color: #fff; }
+.lvmap-level-pill.is-locked { cursor: not-allowed; opacity: 0.48; }
+
+.lvmap-progress-card { display: grid; gap: 14px; padding: 24px; border-radius: 24px; background: #efe7ff; }
+.lvmap-progress-card__meta { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.lvmap-progress-card__meta span { padding: 7px 11px; border-radius: 999px; background: rgb(255 255 255 / 44%); color: #7545e8; font-size: 11px; font-weight: 800; }
+.lvmap-progress-card__meta strong { color: #7545e8; font-size: 12px; font-weight: 800; }
+
+.lvmap-progress-card h2 {
+  margin: 0;
+  color: #2c2144;
+  font-family: var(--ea-font-display, "Nunito", sans-serif);
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: -0.035em;
+  line-height: 1.12;
+}
+
+.lvmap-progress-card p { margin: -5px 0 0; color: #6d647c; font-size: 13px; line-height: 1.5; }
+.lvmap-progress-bar { height: 8px; overflow: hidden; border-radius: 999px; background: #dcd2ea; }
+.lvmap-progress-bar i { display: block; height: 100%; min-width: 6px; border-radius: inherit; background: #7545e8; transition: width 240ms ease; }
+.lvmap-progress-card small { margin-top: -4px; color: #7545e8; font-size: 11px; font-weight: 700; }
+
+.lvmap-road-grid { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(280px, 0.8fr); align-items: start; gap: 24px; }
+.lvmap-current-chapter { min-width: 0; }
+.lvmap-current-chapter__heading { margin-bottom: 12px; }
+
+.lvmap-current-chapter__heading h2,
+.lvmap-guide__heading h2 {
+  margin: 0;
+  color: #2c2144;
+  font-family: var(--ea-font-display, "Nunito", sans-serif);
+  font-size: 23px;
+  font-weight: 900;
+  letter-spacing: -0.035em;
+  line-height: 1.18;
+}
+
+.lvmap-chapter__rows,
+.lvmap-panel__grid { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.lvmap-topic { list-style: none; }
+
+.lvmap-card {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 72px;
+  padding: 14px;
+  border: 1px solid #e9e2ee;
+  border-radius: 16px;
+  background: #fff;
+  color: #2c2144;
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 160ms ease, background-color 160ms ease, transform 160ms ease;
+}
+
+.lvmap-card:hover:not(:disabled) { border-color: #c7b0f5; }
+.lvmap-card:active:not(:disabled) { transform: scale(0.995); }
+.lvmap-card:disabled { cursor: not-allowed; }
+
+.lvmap-card:focus-visible,
+.lvmap-guide-row:focus-visible,
+.lvmap-step:focus-visible,
+.lvmap-panel__cta:focus-visible,
+.lvmap-guide__more:focus-visible { outline: 3px solid rgb(117 69 232 / 28%); outline-offset: 2px; }
+
+.lvmap-card--active { padding: 13px; border: 2px solid #7545e8; background: #efe7ff; }
+.lvmap-card--locked { background: #fff; color: #958ca2; }
+
+.lvmap-card__state {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid #e9e2ee;
+  border-radius: 14px;
+  background: #fff;
+  color: #6d647c;
+  font: 800 13px/1 var(--ea-font-body, "Plus Jakarta Sans", sans-serif);
+}
+
+.lvmap-card--mastered .lvmap-card__state { border-color: #d5eab5; background: #e9f4d7; color: #4e762f; }
+.lvmap-card--active .lvmap-card__state { border-color: #7545e8; background: #7545e8; color: #fff; }
+.lvmap-card--locked .lvmap-card__state { background: #fffcf7; color: #958ca2; }
+
+.lvmap-card__body { display: grid; min-width: 0; gap: 2px; }
+.lvmap-card__title { overflow: hidden; color: #2c2144; font-family: var(--ea-font-display, "Nunito", sans-serif); font-size: 15px; font-weight: 900; line-height: 1.2; text-overflow: ellipsis; white-space: nowrap; }
+.lvmap-card__subtitle { overflow: hidden; color: #6d647c; font-size: 11px; line-height: 1.3; text-overflow: ellipsis; white-space: nowrap; }
+.lvmap-card__skills { display: flex; gap: 4px; margin-top: 5px; }
+.lvmap-skill-dot { display: grid; width: 15px; height: 15px; place-items: center; border-radius: 5px; background: #f2eef6; color: #a89faf; }
+.lvmap-skill-dot--done { background: #e9f4d7; color: #4e762f; }
+.lvmap-skill-dot--current { background: #7545e8; color: #fff; }
+.lvmap-skill-dot--locked { background: #f3eff5; color: #b5aebb; }
+.lvmap-card__aside { display: grid; justify-items: end; gap: 4px; }
+.lvmap-badge { padding: 6px 9px; border-radius: 999px; background: #efe7ff; color: #7545e8; font-size: 10px; font-weight: 800; line-height: 1; white-space: nowrap; }
+.lvmap-badge--mastered { background: #e9f4d7; color: #4e762f; }
+.lvmap-badge--locked { background: #f3eff5; color: #958ca2; }
+.lvmap-card__caret { color: #8f849a; font-size: 17px; transition: transform 160ms ease; }
+.lvmap-card__caret.is-open { transform: rotate(180deg); }
+
+.lvmap-panel { display: grid; gap: 12px; margin: 6px 0 8px; padding: 20px; border-radius: 24px; background: #efe7ff; }
+.lvmap-panel__grid { gap: 6px; }
+
+.lvmap-step {
+  display: grid;
+  grid-template-columns: 20px 34px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  min-height: 48px;
+  padding: 7px 10px;
+  border: 0;
+  border-radius: 12px;
+  background: transparent;
+  color: #2c2144;
+  cursor: pointer;
+  text-align: left;
+}
+
+.lvmap-step:hover:not(:disabled) { background: rgb(255 255 255 / 58%); }
+.lvmap-step:disabled { cursor: not-allowed; opacity: 0.55; }
+.lvmap-step__number { color: #967bdb; font-size: 11px; font-weight: 800; }
+.lvmap-step__icon { display: grid; width: 34px; height: 34px; place-items: center; border-radius: 10px; background: #fff; color: #7545e8; }
+.lvmap-step--done .lvmap-step__icon { background: #e9f4d7; color: #4e762f; }
+.lvmap-step--current .lvmap-step__icon { background: #7545e8; color: #fff; }
+.lvmap-step__title { overflow: hidden; font-family: var(--ea-font-display, "Nunito", sans-serif); font-size: 13px; font-weight: 900; text-overflow: ellipsis; white-space: nowrap; }
+.lvmap-step__status { color: #7545e8; font-size: 10px; font-weight: 700; white-space: nowrap; }
+.lvmap-step--done .lvmap-step__status { color: #4e762f; }
+.lvmap-step--locked .lvmap-step__status { color: #8f849a; }
+
+.lvmap-panel__cta { display: inline-flex; min-height: 44px; align-items: center; justify-content: center; gap: 8px; padding: 12px 16px; border: 0; border-bottom: 3px solid #5126b8; border-radius: 14px; background: #7545e8; color: #fff; cursor: pointer; font-family: var(--ea-font-body, "Plus Jakarta Sans", sans-serif); font-size: 13px; font-weight: 800; }
+.lvmap-panel__cta:active { transform: translateY(1px); }
+
+.lvmap-guide { display: grid; gap: 16px; }
+.lvmap-guide__card,
+.lvmap-finish { border: 1px solid #e9e2ee; border-radius: 24px; background: #fff; }
+.lvmap-guide__card { padding: 24px; }
+.lvmap-guide__heading { display: grid; gap: 5px; margin-bottom: 8px; }
+.lvmap-guide__heading h2 { font-size: 22px; }
+.lvmap-guide__list { display: grid; }
+
+.lvmap-guide-row { display: grid; grid-template-columns: 26px minmax(0, 1fr) auto; align-items: center; gap: 10px; width: 100%; min-height: 58px; padding: 11px 0; border: 0; border-bottom: 1px solid #eee8f0; background: transparent; color: #2c2144; cursor: pointer; text-align: left; }
+.lvmap-guide-row:last-child { border-bottom: 0; }
+.lvmap-guide-row__number { color: #7545e8; font-family: var(--ea-font-display, "Nunito", sans-serif); font-size: 12px; font-weight: 900; }
+.lvmap-guide-row strong,
+.lvmap-guide-row small { display: block; }
+.lvmap-guide-row strong { overflow: hidden; color: #2c2144; font-size: 12px; font-weight: 800; text-overflow: ellipsis; white-space: nowrap; }
+.lvmap-guide-row small { margin-top: 2px; color: #8f849a; font-size: 10px; }
+.lvmap-guide-row > svg { color: #9f94aa; }
+.lvmap-guide__more { display: inline-flex; align-items: center; justify-content: center; gap: 5px; width: 100%; margin-top: 10px; padding: 9px; border: 0; border-radius: 10px; background: #f7f3ff; color: #7545e8; cursor: pointer; font-size: 11px; font-weight: 800; }
+
+.lvmap-finish { display: grid; gap: 12px; padding: 24px; background: #ffe4d5; border-color: #ffe4d5; }
+.lvmap-finish__node { display: grid; width: 32px; height: 32px; place-items: center; color: #7545e8; }
+.lvmap-finish__eyebrow { display: none; }
+.lvmap-finish__title { margin: 0; color: #2c2144; font-family: var(--ea-font-display, "Nunito", sans-serif); font-size: 20px; font-weight: 900; letter-spacing: -0.025em; }
+.lvmap-finish__message { margin: 6px 0 0; color: #6d647c; font-size: 12px; line-height: 1.45; }
+.lvmap-finish__checks { display: none; }
+.lvmap-finish__cta { width: 100%; margin-top: 4px; }
+
+.lvmap-empty,
+.lvmap-error { display: grid; place-items: center; gap: 10px; min-height: 180px; margin: 0; padding: 24px; border: 1px solid #e9e2ee; border-radius: 24px; background: #fff; color: #6d647c; text-align: center; }
+
+@media (max-width: 900px) {
+  .lvmap-container { width: 100%; }
+  .lvmap-road-grid { grid-template-columns: 1fr; }
+  .lvmap-guide { grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr); align-items: start; }
+}
+
+@media (max-width: 640px) {
+  .lvmap-stack { gap: 20px; }
+  .lvmap-heading { gap: 8px; }
+  .lvmap-heading h1 { font-size: 30px; }
+  .lvmap-heading p { font-size: 13px; }
+  .lvmap-progress-card,
+  .lvmap-panel,
+  .lvmap-guide__card,
+  .lvmap-finish { padding: 20px; border-radius: 20px; }
+  .lvmap-progress-card h2 { font-size: 27px; }
+  .lvmap-road-grid { gap: 20px; }
+  .lvmap-current-chapter__heading h2 { font-size: 23px; }
+  .lvmap-card { grid-template-columns: 42px minmax(0, 1fr) auto; gap: 10px; padding: 12px; }
+  .lvmap-card--active { padding: 11px; }
+  .lvmap-card__aside { gap: 0; }
+  .lvmap-card__caret { display: none; }
+  .lvmap-badge { padding: 6px 8px; font-size: 9px; }
+  .lvmap-panel { padding: 16px; }
+  .lvmap-step { grid-template-columns: 18px 32px minmax(0, 1fr) auto; gap: 7px; padding-inline: 7px; }
+  .lvmap-step__icon { width: 32px; height: 32px; }
+  .lvmap-step__status { font-size: 9px; }
+  .lvmap-guide { grid-template-columns: 1fr; gap: 12px; }
+  .lvmap-shell-topbar__brand { gap: 6px; }
+  .lvmap-shell-topbar__back { width: 36px; height: 36px; border-radius: 12px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lvmap-level-pill,
+  .lvmap-card,
+  .lvmap-progress-bar i,
+  .lvmap-card__caret { transition: none; }
+}

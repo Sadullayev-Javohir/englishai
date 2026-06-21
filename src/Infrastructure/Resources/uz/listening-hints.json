@@ -1,0 +1,31 @@
+{
+  "lhint.intro_age": "Audioda 'I am twelve years old' deyilgan - Laylo o'n ikki yoshda.",
+  "lhint.intro_likes": "Laylo musiqa va futbolni yaxshi ko'radi ('I like music and football').",
+  "lhint.cafe_order": "U bir piyola choy va bir bo'lak tort buyurtma qildi ('a cup of tea and a piece of cake').",
+  "lhint.cafe_time": "Suhbat 'Good morning' bilan boshlanadi - bu ertalab sodir bo'ladi.",
+
+  "lhint.weekend_sat": "Shanba kuni so'zlovchi qishloqdagi bobosi va buvisinikiga bordi ('in the village').",
+  "lhint.weekend_sun": "Yakshanba kuni u uyda akasi bilan film ko'rdi ('watched a film').",
+  "lhint.dir_turn": "Bankdan chap tomonga buriling deyilgan ('turn left at the bank').",
+  "lhint.dir_time": "Piyoda taxminan besh daqiqa vaqt oladi ('about five minutes on foot').",
+
+  "lhint.interview_job": "Nomzod ikki yil sotuvchi-konsultant bo'lib ishlagan ('sales assistant for two years').",
+  "lhint.interview_contact": "Kompaniya keyingi hafta bog'lanadi ('contact you next week').",
+  "lhint.trip_transport": "So'zlovchi tezyurar poyezdda boradi ('the fast train'), chunki u avtobusdan qulayroq.",
+  "lhint.trip_days": "U uch kun qoladi ('stay for three days').",
+
+  "lhint.weather_morning": "Ertalab bulutli va shimolda yengil yomg'ir kutilmoqda ('cloudy with a chance of light rain').",
+  "lhint.weather_temp": "Tushdan keyin harorat taxminan yigirma besh darajagacha ko'tariladi.",
+  "lhint.eating_cost": "So'zlovchining aytishicha, sog'lom ovqatlanish har doim ham qimmat emas.",
+  "lhint.eating_home": "Uyda pishirish yaxshiroq, chunki restoran taomlarida ko'proq tuz va shakar bo'ladi.",
+
+  "lhint.memory_main": "Asosiy fikr: xotira voqealarni aniq yozib olmaydi, balki har safar qayta quradi (reconstructs).",
+  "lhint.memory_witness": "Xotira har safar eslaganda qayta qurilgani uchun ikki guvoh bir voqeani turlicha eslaydi.",
+  "lhint.remotework_challenge": "Yangi xodimlar jamoaning bir qismi bo'lib his qilishda qiynalishi mumkin.",
+  "lhint.remotework_managers": "Menejerlar umumiy maqsad hissini saqlash uchun ko'proq mehnat qilishi kerak.",
+
+  "lhint.boredom_main": "Asosiy fikr: zerikish ijodkorlik uchun zarur bo'lishi mumkin - bo'sh ong sayr qila boshlaydi va eng original g'oyalar aynan shu paytda paydo bo'ladi.",
+  "lhint.boredom_phones": "Zerikkan zahoti telefonga qo'l cho'zish bizni ijodkorlik gullab-yashnaydigan sharoitdan mahrum qilishi mumkin.",
+  "lhint.ai_danger": "Tanqidchilarga ko'ra asosiy xavf - sun'iy intellektga shu qadar tayanib qolamizki, uning xulosalariga shubha qilish qobiliyatini asta-sekin yo'qotamiz.",
+  "lhint.ai_proponents": "Tarafdorlar sun'iy intellekt misli ko'rilmagan samaradorlik kelajagini va'da qilishini ta'kidlaydi ('unprecedented efficiency')."
+}

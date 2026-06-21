@@ -1,0 +1,28 @@
+{
+  "hint.family_where": "Matnda 'I live in Tashkent' deyilgan - Bobur Toshkentda yashaydi.",
+  "hint.family_mother": "Matnga ko'ra, onasi o'qituvchi ('my mother is a teacher').",
+  "hint.zoo_when": "Matn 'On Sunday' bilan boshlanadi - ular yakshanba kuni boradi.",
+  "hint.zoo_brother": "Matnda 'My little brother likes the elephants best' - ukasi fillarni yaxshi ko'radi.",
+
+  "hint.market_when": "Matnda 'On Saturday morning' deyilgan - Aziza shanba kuni ertalab bozorga boradi.",
+  "hint.market_lunch": "Xarid qilgandan keyin u oilasiga sog'lom tushlik tayyorlaydi.",
+  "hint.season_weather": "Matnga ko'ra, kuzda ob-havo na juda issiq, na juda sovuq.",
+  "hint.season_school": "Matnda 'school starts again' - kuzda o'quv yili qaytadan boshlanadi.",
+
+  "hint.sleep_brain": "Matnga ko'ra, uyqu paytida miya xotiralarni tartibga soladi.",
+  "hint.sleep_hours": "Olimlar kattalarga tunda yetti-to'qqiz soat uyqu tavsiya qiladi.",
+  "hint.lang_daily": "Matnning asosiy fikri: haftada bir marta ko'p emas, har kuni ozdan mashq qilish muhimroq.",
+  "hint.lang_mistakes": "Matnga ko'ra, xatolar - o'rganishning tabiiy qismi.",
+
+  "hint.habits_small": "Matnning asosiy fikri: keskin o'zgarishlardan ko'ra izchil kichik odatlar muhimroq.",
+  "hint.habits_motivation": "Muallifning aytishicha, motivatsiya so'nadi - shuning uchun unga tayanib bo'lmaydi.",
+  "hint.habits_systems": "Maqsadlarga emas, tizimlarga (systems) e'tibor qaratish kerak.",
+  "hint.remote_benefit": "Matnda masofaviy ish 'saving hours once lost to commuting' deyilgan - qatnashga ketadigan vaqt tejaladi.",
+  "hint.remote_challenge": "Matnga ko'ra, u ish va shaxsiy hayot o'rtasidagi chegarani xiralashtiradi.",
+
+  "hint.habit_effort": "Matnda 'Habits are the brain's way of saving effort' - miya kuch tejash uchun odat hosil qiladi.",
+  "hint.habit_neutral": "Matnga ko'ra, mexanizm neytral - bir xil tarzda foydali va zararli odatlarni ham mustahkamlaydi.",
+  "hint.habit_cue": "Matnda turtkini (cue) tushunish - odatni o'zgartirishning birinchi qadami deyilgan.",
+  "hint.city_heat": "Urban heat island - shaharlarning atrofdagi qishloq joylarga qaraganda issiqroq bo'lishi.",
+  "hint.city_solution": "Matnda yashil tomlar va jamoat transporti yechim sifatida keltirilgan."
+}

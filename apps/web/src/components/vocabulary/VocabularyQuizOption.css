@@ -1,0 +1,32 @@
+@import "../lesson/LessonQuizOption.css";
+
+/* Vocabulary-only input and responsive prompt behavior. */
+.vocabulary-answer-field { position: relative; }
+.vocabulary-answer-field > svg { position: absolute; right: 18px; top: 50%; transform: translateY(-50%); color: var(--v-green); }
+.vocabulary-design .vocabulary-answer-field[data-answer-state="correct"] input {
+  padding-right: 54px;
+  border-color: var(--v-green);
+  background: var(--v-mint);
+  color: var(--v-green);
+  opacity: 1;
+}
+.vocabulary-design .vocabulary-exercise__feedback .vocabulary-feedback { min-height: 0; }
+.vocabulary-design .vocabulary-exercise__feedback .vocabulary-feedback h2 > svg { flex: none; }
+.vocabulary-design .vocabulary-exercise__feedback .vocabulary-feedback p { overflow-wrap: anywhere; }
+
+@media (max-width: 700px) {
+  /* Once answered, compact the prompt, not the answer targets. This leaves
+     the Next action clear of the fixed assistant launcher at the bottom. */
+  .vocabulary-design .vocabulary-exercise[data-answered="true"] .vocabulary-recall { flex-direction: row; flex-wrap: wrap; padding: 12px; gap: 10px; }
+  .vocabulary-design .vocabulary-exercise[data-answered="true"] .vocabulary-recall h2 { font-size: 32px; line-height: 1.1; }
+}
+@media (max-width: 700px) and (max-height: 700px) {
+  .vocabulary-design .vocabulary-exercise--mc .vocabulary-recall { padding-block: 10px; }
+  .vocabulary-design .vocabulary-exercise--mc .vocabulary-heading { gap: 4px; }
+  .vocabulary-design .vocabulary-exercise--mc .vocabulary-exercise__feedback .vocabulary-feedback { gap: 3px; padding: 9px 12px; }
+  .vocabulary-design .vocabulary-exercise--mc .vocabulary-exercise__feedback .vocabulary-feedback h2 { font-size: 18px; line-height: 23px; }
+  .vocabulary-design .vocabulary-exercise--mc[data-answered="true"] { gap: 8px; }
+  .vocabulary-design .vocabulary-exercise[data-answered="true"] .vocabulary-recall { padding: 8px; }
+  .vocabulary-design .vocabulary-exercise[data-answered="true"] .vocabulary-recall h2 { font-size: 28px; }
+  .vocabulary-design .vocabulary-exercise--mc[data-answered="true"] .vocabulary-heading > p { display: none; }
+}

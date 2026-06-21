@@ -1,0 +1,168 @@
+/* Pen 22–30: one viewport owned by GrammarChrome. Only genuine content overflow scrolls. */
+.grammar-lesson { min-height:0; min-width:0; overflow:hidden; padding:28px max(22px,calc((100vw - 960px)/2)) 28px; color:var(--g-ink); }
+.grammar-lesson__inner { display:flex; flex-direction:column; gap:24px; width:100%; height:100%; min-height:0; }
+.grammar-progress__stop>button { min-width:24px; width:24px; height:24px; min-height:24px; padding:0; border:0; background:transparent; color:var(--g-muted); }
+.grammar-progress__stop>button>span { font-size:0; }
+.grammar-progress__stop>button .inline-flex { gap:0; }
+.grammar-progress__stop>button svg { width:18px; height:18px; }
+.grammar-lesson__body { display:flex; flex-direction:column; gap:24px; min-height:0; flex:0 1 auto; overflow-y:auto; overflow-x:hidden; overscroll-behavior:contain; padding:1px 2px 4px; scrollbar-width:thin; scrollbar-color:var(--g-border) transparent; }
+.grammar-lesson__body>* { flex-shrink:0; }
+.grammar-lesson__actions { display:flex; flex-direction:column; gap:14px; flex-shrink:0; padding-bottom:env(safe-area-inset-bottom); }
+.grammar-context { display:flex; flex-direction:column; gap:24px; padding:30px; border:1px solid var(--g-border); border-radius:22px; background:var(--ea-surface); }
+.grammar-context__visual { display:flex; align-items:center; gap:24px; }
+.grammar-context__photo { width:300px; height:200px; flex:none; border-radius:16px; overflow:hidden; }
+.grammar-context__photo img { width:100%; height:100%; object-fit:cover; }
+.grammar-context__text { min-width:0; font-size:20px; line-height:1.7; white-space:pre-line; overflow-wrap:anywhere; }
+.grammar-context__text p::first-line { font-weight:800; color:var(--g-purple); }
+.grammar-context__translation { color:var(--g-muted); font-size:14px; line-height:1.5; }
+.grammar-feedback { display:flex; flex-direction:column; gap:10px; padding:20px; border-radius:20px; color:var(--g-green); background:var(--g-mint); }
+.grammar-feedback h2 { display:flex; align-items:center; gap:10px; font:900 24px/1.25 "Nunito",sans-serif; }
+.grammar-feedback h2 svg { flex:none; }
+.grammar-feedback p { font-size:14px; line-height:1.5; overflow-wrap:anywhere; }
+.grammar-feedback--wrong { background:var(--g-peach); color:#96592f; }
+.grammar-formula { display:flex; flex-direction:column; align-items:center; gap:18px; padding:30px; border-radius:22px; background:var(--g-lilac); text-align:center; }
+.grammar-formula .grammar-tag { background:var(--ea-surface); }
+.grammar-formula>strong { font:900 44px/1.2 "Nunito",sans-serif; color:var(--g-purple); overflow-wrap:anywhere; }
+.grammar-formula>p { color:var(--g-muted); font-size:13px; line-height:1.5; }
+.grammar-rules { display:flex; flex-direction:column; gap:16px; padding:22px; border:1px solid var(--g-border); border-radius:22px; background:var(--ea-surface); }
+.grammar-rules article { display:grid; grid-template-columns:minmax(140px,1fr) 2fr; align-items:start; gap:18px; }
+.grammar-rules h2 { font:800 17px/1.4 "Nunito",sans-serif; }
+.grammar-rules p { font-size:14px; line-height:1.6; white-space:pre-line; }
+.grammar-rule-notes { display:grid; gap:8px; padding:22px; border:1px solid var(--g-border); border-radius:20px; color:var(--g-purple); font-size:14px; line-height:1.6; }
+.grammar-examples { display:grid; gap:18px; }
+.grammar-example { display:flex; flex-direction:column; gap:12px; padding:24px; border-radius:22px; background:var(--g-mint); }
+.grammar-example--1 { background:var(--g-peach); }
+.grammar-example--2 { background:var(--g-lilac); }
+.grammar-example>span { font-size:10px; font-weight:800; color:var(--g-muted); letter-spacing:.06em; }
+.grammar-example h2 { font:900 28px/1.3 "Nunito",sans-serif; }
+.grammar-example p { font-size:14px; line-height:1.5; color:var(--g-muted); }
+.grammar-question { padding:30px; border-radius:22px; background:var(--g-lilac); }
+.grammar-question h2 { font:900 40px/1.15 "Nunito",sans-serif; max-width:700px; white-space:pre-line; overflow-wrap:anywhere; }
+.grammar-options { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; padding-bottom:4px; }
+.grammar-answer-form { display:flex; flex-direction:column; gap:10px; }
+.grammar-answer-form>label { font-size:11px; color:var(--g-muted); font-weight:800; }
+.grammar-answer-field { display:flex; align-items:center; gap:12px; padding:18px; border:2px solid var(--g-border); border-radius:16px; background:var(--ea-surface); }
+.grammar-answer-field:focus-within { border-color:var(--g-purple); }
+.grammar-answer-field[data-answer-state="correct"] { border-color:var(--g-green); background:var(--g-mint); color:var(--g-green); }
+.grammar-answer-field[data-answer-state="correct"] :is(input,textarea,svg) { color:inherit; opacity:1; }
+.grammar-answer-field input,.grammar-answer-field textarea { width:100%; min-width:0; border:0; outline:0; background:transparent; color:var(--g-ink); font-size:16px; line-height:1.5; }
+/* The wrapper owns the single visible focus border, including keyboard focus.
+   Override the module-wide :focus-visible ring only for these nested controls. */
+.grammar-design .grammar-answer-field :is(input,textarea):focus { outline:none; box-shadow:none; }
+.grammar-answer-field textarea { resize:vertical; min-height:60px; }
+.grammar-answer-field svg { color:var(--g-muted); flex:none; }
+.grammar-answer-count { color:var(--g-muted); font-size:11px; }
+.grammar-correction { display:grid; gap:22px; border:1px solid var(--g-border); padding:30px; border-radius:22px; background:var(--ea-surface); }
+.grammar-correction>p { text-decoration:line-through; color:#b8664c; font-size:20px; overflow-wrap:anywhere; }
+.grammar-correction>strong { padding:24px; border-radius:16px; background:var(--g-mint); color:var(--g-green); font:900 36px/1.2 "Nunito",sans-serif; overflow-wrap:anywhere; }
+.grammar-error { color:var(--ea-danger); font-size:14px; line-height:1.5; }
+.grammar-lesson-state { display:flex; min-height:0; flex-direction:column; justify-content:center; align-items:center; gap:20px; padding:24px; overflow:auto; text-align:center; }
+.grammar-lesson-state h1 { font:900 28px/1.2 "Nunito",sans-serif; }
+.grammar-lesson-state .grammar-primary { max-width:400px; }
+.grammar-lesson__body--result { flex:1; }
+.grammar-result { display:flex; flex-direction:column; align-items:center; gap:22px; width:100%; max-width:960px; margin-inline:auto; }
+.grammar-result__mascot { width:230px; height:192px; object-fit:contain; }
+.grammar-result h1 { font:900 44px/1.1 "Nunito",sans-serif; text-align:center; letter-spacing:-.8px; }
+.grammar-result__metrics { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); width:100%; gap:12px; text-align:center; }
+.grammar-result__metrics>div { display:grid; gap:8px; padding:22px 12px; border-radius:20px; background:var(--g-mint); }
+.grammar-result__metrics>div:nth-child(2) { background:var(--g-lilac); }
+.grammar-result__metrics>div:nth-child(3) { background:var(--g-peach); }
+.grammar-result__metrics dd { font:900 36px/1.15 "Nunito",sans-serif; }
+.grammar-result__metrics dt { color:var(--g-muted); font-size:12px; }
+.grammar-result>.grammar-feedback,.grammar-result__formula { width:100%; }
+.grammar-result__formula { padding:22px; border-radius:22px; background:var(--g-lilac); color:var(--g-purple); text-align:center; font:900 36px/1.2 "Nunito",sans-serif; overflow-wrap:anywhere; }
+.grammar-result__review { display:grid; gap:16px; width:100%; }
+.grammar-result__review article { display:grid; gap:12px; padding:20px; border:1px solid var(--g-border); border-radius:20px; background:var(--ea-surface); }
+.grammar-result__review h2 { font:800 22px/1.3 "Nunito",sans-serif; }
+@media(max-width:1100px) { .grammar-lesson { padding-inline:40px; } .grammar-context__photo { width:240px; height:160px; } }
+@media(max-width:700px) {
+  .grammar-lesson { padding:22px 22px max(20px,env(safe-area-inset-bottom)); }
+  .grammar-lesson__inner,.grammar-lesson__body { gap:20px; }
+  .grammar-context { padding:22px; gap:20px; }
+  .grammar-context__visual { flex-direction:column; align-items:stretch; gap:20px; }
+  .grammar-context__photo { width:100%; height:min(14dvh,160px); }
+  .grammar-context__text { font-size:17px; line-height:1.6; }
+  .grammar-context__translation { font-size:12px; }
+  .grammar-feedback { padding:18px; }
+  .grammar-feedback h2 { font-size:21px; }
+  .grammar-feedback p { font-size:12px; }
+  .grammar-formula { padding:22px; gap:14px; }
+  .grammar-formula>strong { font-size:32px; }
+  .grammar-rules { padding:18px; }
+  .grammar-rules article { grid-template-columns:1fr; gap:6px; }
+  .grammar-examples { gap:14px; }
+  .grammar-example { padding:20px; gap:10px; }
+  .grammar-example h2 { font-size:24px; }
+  .grammar-question { padding:24px; }
+  .grammar-question h2 { font-size:32px; }
+  .grammar-options { grid-template-columns:1fr; gap:10px; }
+  .grammar-correction { padding:22px; }
+  .grammar-correction>strong { font-size:28px; padding:18px; }
+  .grammar-result { gap:18px; }
+  .grammar-result h1 { font-size:32px; }
+  .grammar-result__mascot { width:190px; height:160px; }
+  .grammar-result__metrics { gap:10px; }
+  .grammar-result__metrics>div { padding:16px 8px; gap:6px; }
+  .grammar-result__metrics dd { font-size:26px; }
+  .grammar-result__metrics dt { font-size:10px; }
+  .grammar-result__formula { font-size:28px; padding:20px; }
+}
+/* Compress spacing and illustration, not text or touch targets, on short screens. */
+@media(max-height:900px) {
+  .grammar-lesson { padding-top:20px; padding-bottom:20px; }
+  .grammar-lesson__inner,.grammar-lesson__body { gap:18px; }
+  .grammar-lesson--quiz .grammar-heading h1 { font-size:clamp(28px,3.2vw,38px); }
+  .grammar-question { padding:24px; }
+  .grammar-result { gap:14px; }
+  .grammar-result__mascot { width:180px; height:150px; }
+  .grammar-result__metrics>div { padding-block:16px; }
+  .grammar-result__formula { padding-block:16px; }
+}
+@media(max-height:820px) {
+  .grammar-lesson { padding-top:14px; padding-bottom:14px; }
+  .grammar-lesson__inner,.grammar-lesson__body { gap:12px; }
+  .grammar-lesson .grammar-heading { gap:6px; }
+  .grammar-lesson .grammar-heading h1 { font-size:28px; }
+  .grammar-lesson .grammar-tag { padding-block:4px; }
+  .grammar-context { padding:22px; gap:16px; }
+  .grammar-context__photo { height:140px; width:230px; }
+  .grammar-question { padding:18px; }
+  .grammar-question h2 { font-size:28px; }
+  .grammar-options { gap:8px; }
+  .grammar-feedback { padding:14px; gap:6px; }
+  .grammar-feedback h2 { font-size:20px; }
+  .grammar-feedback p { font-size:12px; }
+  .grammar-lesson .grammar-primary { min-height:48px; padding-block:11px; }
+  .grammar-result { gap:10px; }
+  .grammar-result__mascot { width:120px; height:100px; }
+  .grammar-result h1 { font-size:28px; }
+  .grammar-result__metrics>div { padding-block:12px; }
+  .grammar-result__metrics dd { font-size:26px; }
+  .grammar-result__formula { padding:14px; font-size:28px; }
+}
+@media(max-width:700px) and (max-height:820px) {
+  .grammar-lesson--quiz .grammar-lesson__inner { gap:10px; }
+  .grammar-lesson--quiz .grammar-lesson__body { gap:10px; }
+  .grammar-lesson--quiz .grammar-question { padding:16px; }
+  .grammar-context { padding:16px; gap:12px; }
+  .grammar-context__visual { gap:12px; }
+  .grammar-context__photo { height:90px; width:100%; }
+  .grammar-context__text { font-size:15px; line-height:1.5; }
+  .grammar-context__translation { font-size:11px; }
+  .grammar-result { gap:8px; }
+  .grammar-result__mascot { width:90px; height:75px; }
+  .grammar-result__metrics>div { padding-block:8px; }
+  .grammar-result__formula { padding-block:10px; font-size:26px; }
+}
+@media(max-width:700px) and (max-height:900px) {
+  /* Keep the common answer targets unchanged. Recover space from the prompt
+     and feedback once an answer is shown, just as Vocabulary does. */
+  .grammar-lesson--quiz[data-answered="true"] .grammar-lesson__body { gap:8px; }
+  .grammar-lesson--quiz[data-answered="true"] .grammar-question { padding:10px 14px; }
+  .grammar-lesson--quiz[data-answered="true"] .grammar-question h2 { font-size:26px; }
+  .grammar-lesson--quiz[data-answered="true"] .grammar-feedback { padding:10px 12px; gap:4px; }
+  .grammar-lesson--quiz[data-answered="true"] .grammar-lesson__actions { gap:8px; }
+}
+@media(max-width:1000px) {
+  body:has(.grammar-design--lesson) .ea-assistant-trigger { bottom:max(88px,calc(env(safe-area-inset-bottom) + 88px)); }
+}

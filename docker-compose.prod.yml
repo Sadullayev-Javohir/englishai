@@ -1,0 +1,679 @@
+# Production stack for EnglishAI.uz - single VPS, everything behind Caddy (TLS).
+#   Pulls pre-built backend/frontend images from GHCR (pushed by CI).
+#   Secrets/config come from a server-side .env file (see .env.prod.example).
+#
+#   docker compose -f docker-compose.prod.yml --env-file .env up -d
+#
+# Every first-party image is pinned to an exact tested commit SHA. `latest` may
+# exist in GHCR as a convenience alias, but Compose never uses it as deployment
+# source of truth.
+services:
+  caddy:
+    image: caddy:2-alpine
+    container_name: englishai-caddy
+    restart: unless-stopped
+    mem_limit: ${CADDY_MEMORY_LIMIT:-256m}
+    logging:
+      driver: json-file
+      options:
+        max-size: ${DOCKER_LOG_MAX_SIZE:-20m}
+        max-file: ${DOCKER_LOG_MAX_FILES:-5}
+    network_mode: host
+    environment:
+      DOMAIN: ${DOMAIN}
+      ACME_EMAIL: ${ACME_EMAIL}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+  frontend:
+    image: ghcr.io/${GHCR_OWNER}/englishai-frontend:${FRONTEND_IMAGE_SHA:?FRONTEND_IMAGE_SHA must be an exact commit SHA}
+    container_name: englishai-frontend
+    restart: unless-stopped
+    mem_limit: ${FRONTEND_MEMORY_LIMIT:-128m}
+    logging:
+      driver: json-file
+      options:
+        max-size: ${DOCKER_LOG_MAX_SIZE:-20m}
+        max-file: ${DOCKER_LOG_MAX_FILES:-5}
+    ports:
+      - "127.0.0.1:3000:80"
+
+  backend:
+    image: ghcr.io/${GHCR_OWNER}/englishai-backend:${BACKEND_IMAGE_SHA:?BACKEND_IMAGE_SHA must be an exact commit SHA}
+    container_name: englishai-backend
+    restart: unless-stopped
+    mem_limit: ${BACKEND_MEMORY_LIMIT:-1200m}
+    logging:
+      driver: json-file
+      options:
+        max-size: ${DOCKER_LOG_MAX_SIZE:-20m}
+        max-file: ${DOCKER_LOG_MAX_FILES:-5}
+    stop_signal: SIGTERM
+    stop_grace_period: ${APP_DRAIN_SECONDS:-120}s
+    ports:
+      - "127.0.0.1:8080:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      Host__ShutdownTimeoutSeconds: ${APP_DRAIN_SECONDS:-120}
+      # Host-header allow-list (defence against Host-header injection / cache poisoning). Caddy
+      # forwards the client's original Host, so the public domain must be listed; "localhost" MUST
+      # stay so the in-container Docker healthcheck (curl http://localhost:8080/health/live) is not
+      # rejected with a 400 and the container flapped as unhealthy. Ports are ignored in matching.
+      AllowedHosts: "${DOMAIN};localhost"
+      ConnectionStrings__Postgres: "Host=postgres;Port=5432;Database=${POSTGRES_DB};Username=${POSTGRES_USER};Password=${POSTGRES_PASSWORD};Include Error Detail=false"
+      ConnectionStrings__HangfirePostgres: "Host=postgres;Port=5432;Database=${POSTGRES_DB};Username=${POSTGRES_USER};Password=${POSTGRES_PASSWORD};Include Error Detail=false"
+      Postgres__CommandTimeoutSeconds: ${POSTGRES_COMMAND_TIMEOUT_SECONDS:-30}
+      Postgres__MaxRetryCount: ${POSTGRES_MAX_RETRY_COUNT:-0}
+      Postgres__MaxRetryDelaySeconds: ${POSTGRES_MAX_RETRY_DELAY_SECONDS:-2}
+      Postgres__PoolSize: ${POSTGRES_DB_CONTEXT_POOL_SIZE:-24}
+      Postgres__ServerConnectionBudget: ${POSTGRES_SERVER_CONNECTION_BUDGET:-24}
+      Postgres__RequireTransactionPooling: "false"
+      Hangfire__DatabaseConnectionBudget: ${BACKEND_HANGFIRE_DB_BUDGET:-8}
+      Redis__Environment: production
+      Redis__Critical__ConnectionString: "redis:6379,abortConnect=false"
+      Redis__Cache__ConnectionString: "redis:6379,abortConnect=false"
+      ForwardedHeaders__KnownProxy: "172.17.0.1"
+      # youtubei.js transcript sidecar - the FIRST provider in the transcript fallback chain. Fetches
+      # captions via the InnerTube API; the orchestrator falls through to yt-dlp / cookie yt-dlp /
+      # Supadata when it cannot return a transcript.
+      Youtubei__BaseUrl: "http://transcript-service:8080"
+      Hangfire__Enabled: "true"
+      Hangfire__UseInMemoryStorage: "false"
+      Observability__MetricsToken: ${OBSERVABILITY_METRICS_TOKEN:-}
+      Operations__BotToken: ${OPERATIONS_BOT_TOKEN}
+      OTEL_SERVICE_NAME: ${OTEL_SERVICE_NAME:-EnglishAI.Web}
+      Auth__Google__ClientId: ${GOOGLE_CLIENT_ID}
+      Auth__Jwt__SigningKey: ${JWT_SIGNING_KEY}
+      Auth__Jwt__Issuer: "EnglishAI"
+      Auth__Jwt__Audience: "EnglishAI"
+      DataProtection__KeysPath: "/app/data-protection-keys"
+      DataProtection__CertificatePath: "/app/secrets/data-protection/keys.pfx"
+      DataProtection__CertificatePassword: ${DATA_PROTECTION_CERTIFICATE_PASSWORD}
+      ObjectStorage__Enabled: "false"
+      ObjectStorage__ServiceUrl: ${OBJECT_STORAGE_SERVICE_URL}
+      ObjectStorage__Region: ${OBJECT_STORAGE_REGION:-fsn1}
+      ObjectStorage__AccessKey: ${OBJECT_STORAGE_ACCESS_KEY}
+      ObjectStorage__SecretKey: ${OBJECT_STORAGE_SECRET_KEY}
+      ObjectStorage__PublicBucket: ${OBJECT_STORAGE_PUBLIC_BUCKET}
+      ObjectStorage__PrivateBucket: ${OBJECT_STORAGE_PRIVATE_BUCKET}
+      ObjectStorage__PublicBaseUrl: ${OBJECT_STORAGE_PUBLIC_BASE_URL}
+      ObjectStorage__KeyPrefix: ${OBJECT_STORAGE_KEY_PREFIX:-englishai}
+      # PRIMARY LLM backend for Speaking, Writing, Video and every other text-intelligence feature.
+      # This URL stays on the private Compose network; browsers never reach Hermes directly.
+      HermesGateway__Endpoint: "http://hermes-router:8642/v1"
+      HermesGateway__ApiKey: ${HERMES_GATEWAY_API_KEY}
+      HermesGateway__Model: ${HERMES_API_MODEL:-hermes-agent}
+      HermesGateway__RequestTimeoutSeconds: ${HERMES_REQUEST_TIMEOUT_SECONDS:-90}
+      HermesGateway__MaxConcurrency: ${HERMES_MAX_CONCURRENCY:-32}
+      HermesGateway__MaxQueueLength: ${HERMES_MAX_QUEUE_LENGTH:-2000}
+      HermesGateway__QueueTimeoutSeconds: ${HERMES_QUEUE_TIMEOUT_SECONDS:-45}
+      HermesGateway__CircuitFailureThreshold: ${HERMES_CIRCUIT_FAILURE_THRESHOLD:-5}
+      HermesGateway__CircuitBreakSeconds: ${HERMES_CIRCUIT_BREAK_SECONDS:-30}
+      SolPrimary__Enabled: ${SOL_PRIMARY_ENABLED:-true}
+      SolPrimary__Endpoint: ${SOL_PRIMARY_ENDPOINT:-}
+      SolPrimary__ApiKey: ${SOL_PRIMARY_API_KEY:-}
+      SolPrimary__Model: ${SOL_PRIMARY_MODEL:-gpt-5.6-sol}
+      # Only these features reach the paid model; everything else (notably the high-volume,
+      # 96-token speaking tutor) runs on the self-hosted gateway at zero marginal cost.
+      AiRouting__PremiumFeatures: ${AI_ROUTING_PREMIUM_FEATURES:-WritingAssessment,Assistant}
+      # Learners who joined before checkout existed keep full access while payments are OFF, so the
+      # 7-day trial change cannot strand the cohort the product already has. Self-retiring: the
+      # condition is false the moment Subscription__PaymentsEnabled flips to true.
+      LegacyAccess__GrantedForAccountsCreatedBefore: ${LEGACY_ACCESS_ACCOUNTS_CREATED_BEFORE:-}
+      SolPrimary__RequestTimeoutSeconds: ${SOL_PRIMARY_REQUEST_TIMEOUT_SECONDS:-20}
+      SolPrimary__MaxConcurrency: ${SOL_PRIMARY_MAX_CONCURRENCY:-1}
+      SolPrimary__TokenLimitPerWindow: ${SOL_PRIMARY_TOKEN_LIMIT_PER_WINDOW:-1000000}
+      SolPrimary__TokenReservationPerRequest: ${SOL_PRIMARY_TOKEN_RESERVATION_PER_REQUEST:-200000}
+      SolPrimary__TokenSafetyReserve: ${SOL_PRIMARY_TOKEN_SAFETY_RESERVE:-100000}
+      SolPrimary__TokenWindowSeconds: ${SOL_PRIMARY_TOKEN_WINDOW_SECONDS:-60}
+      ProjectAssistant__RequestTimeoutSeconds: ${PROJECT_ASSISTANT_REQUEST_TIMEOUT_SECONDS:-90}
+      AiAdmission__GlobalConcurrency: ${AI_GLOBAL_CONCURRENCY:-32}
+      AiAdmission__ProReservedConcurrency: ${AI_PRO_RESERVED_CONCURRENCY:-8}
+      AiAdmission__MaxConcurrentPerCaller: ${AI_MAX_CONCURRENT_PER_CALLER:-2}
+      AiAdmission__MaxQueueLength: ${AI_MAX_QUEUE_LENGTH:-128}
+      AiAdmission__QueueTimeoutSeconds: ${AI_QUEUE_TIMEOUT_SECONDS:-15}
+      AiAdmission__FreeRequestsPerMinute: ${AI_FREE_REQUESTS_PER_MINUTE:-15}
+      AiAdmission__ProRequestsPerMinute: ${AI_PRO_REQUESTS_PER_MINUTE:-30}
+      AiAdmission__AssistantFreeRequestsPerMinute: ${AI_ASSISTANT_FREE_REQUESTS_PER_MINUTE:-20}
+      AiAdmission__AssistantProRequestsPerMinute: ${AI_ASSISTANT_PRO_REQUESTS_PER_MINUTE:-40}
+      AiAdmission__DailyBudgetUsd: ${AI_DAILY_BUDGET_USD:-25}
+      AiAdmission__BudgetWarningRatio: ${AI_BUDGET_WARNING_RATIO:-0.8}
+      # Bounds one account before it can shed every other free learner via the global budget.
+      AiAdmission__FreeDailyBudgetPerLearnerUsd: ${AI_FREE_DAILY_BUDGET_PER_LEARNER_USD:-0.60}
+      AiAdmission__ProDailyBudgetPerLearnerUsd: ${AI_PRO_DAILY_BUDGET_PER_LEARNER_USD:-3.00}
+      AiAdmission__PricingConfigured: ${AI_PRICING_CONFIGURED:?AI_PRICING_CONFIGURED is required}
+      AiAdmission__EstimatedInputCostPerMillionTokensUsd: ${AI_INPUT_COST_PER_MILLION_TOKENS_USD:-0}
+      AiAdmission__EstimatedOutputCostPerMillionTokensUsd: ${AI_OUTPUT_COST_PER_MILLION_TOKENS_USD:-0}
+      # Public developer API upstream. EnglishAI-issued eai_* keys remain validated by the .NET
+      # /v1 endpoint, which then proxies to the same internal Hermes gateway.
+      DeveloperAi__BaseUrl: "http://hermes-router:8642/v1"
+      DeveloperAi__Model: ${HERMES_API_MODEL:-hermes-agent}
+      DeveloperAi__ApiKeys__0: ${HERMES_GATEWAY_API_KEY}
+      DeveloperAi__MaxRequestBytes: ${DEVELOPER_AI_MAX_REQUEST_BYTES:-65536}
+      DeveloperAi__MaxConcurrentRequests: ${DEVELOPER_AI_MAX_CONCURRENT_REQUESTS:-4}
+      DeveloperAi__RequestTimeoutSeconds: ${DEVELOPER_AI_REQUEST_TIMEOUT_SECONDS:-120}
+      RateLimiting__DeveloperPermitPerMinute: ${DEVELOPER_API_REQUESTS_PER_MINUTE:-12}
+      RateLimiting__AiPermitPerMinute: ${AI_REQUESTS_PER_MINUTE:-40}
+      RateLimiting__TranslationPermitPerMinute: ${TRANSLATION_REQUESTS_PER_MINUTE:-30}
+      RateLimiting__GlobalEmergencyPermitPerMinute: ${GLOBAL_EMERGENCY_REQUESTS_PER_MINUTE:-10000}
+      # No third-party LLM provider keys: the self-hosted Hermes gateway above is the only LLM backend
+      # (2026-07-28). Groq, OpenRouter and Google AI Studio were removed from the codebase, so
+      # GROQ_API_KEY / GOOGLE_AI_STUDIO_API_KEY / GEMINI_API_KEY / OPENROUTER_API_KEY are no longer read
+      # and can be dropped from the deployment .env.
+      AzureSpeech__Key: ${AZURE_SPEECH_KEY}
+      AzureSpeech__Region: ${AZURE_SPEECH_REGION}
+      AzureSpeech__PricingConfigured: ${AZURE_SPEECH_PRICING_CONFIGURED:?AZURE_SPEECH_PRICING_CONFIGURED is required}
+      AzureSpeech__SpeechToTextCostPerAudioHourUsd: ${AZURE_SPEECH_STT_COST_PER_AUDIO_HOUR_USD:?AZURE_SPEECH_STT_COST_PER_AUDIO_HOUR_USD is required}
+      AzureSpeech__TextToSpeechCostPerMillionCharactersUsd: ${AZURE_SPEECH_TTS_COST_PER_MILLION_CHARACTERS_USD:?AZURE_SPEECH_TTS_COST_PER_MILLION_CHARACTERS_USD is required}
+      AzureSpeech__PronunciationCostPerAudioHourUsd: ${AZURE_SPEECH_PRONUNCIATION_COST_PER_AUDIO_HOUR_USD:?AZURE_SPEECH_PRONUNCIATION_COST_PER_AUDIO_HOUR_USD is required}
+      # Realtime Voice Live pricing + caps. The two required vars mirror the AzureSpeech style:
+      # the browser streams straight to Azure, so if these are wrong the spend is invisible.
+      AzureVoiceLive__PricingConfigured: ${AZURE_VOICE_LIVE_PRICING_CONFIGURED:?AZURE_VOICE_LIVE_PRICING_CONFIGURED is required}
+      AzureVoiceLive__CostPerAudioHourUsd: ${AZURE_VOICE_LIVE_COST_PER_AUDIO_HOUR_USD:?AZURE_VOICE_LIVE_COST_PER_AUDIO_HOUR_USD is required}
+      AzureVoiceLive__MaxSessionMinutes: ${AZURE_VOICE_LIVE_MAX_SESSION_MINUTES:-10}
+      AzureVoiceLive__ReservationMinutes: ${AZURE_VOICE_LIVE_RESERVATION_MINUTES:-2}
+      AzureVoiceLive__DailyMinutesPerLearner: ${AZURE_VOICE_LIVE_DAILY_MINUTES_PER_LEARNER:-30}
+      AzureAccentTutors__Enabled: ${AZURE_ACCENT_TUTORS_ENABLED:-false}
+      AzureAccentTutors__Endpoint: ${AZURE_ACCENT_TUTORS_ENDPOINT:-}
+      # Service-principal credentials for the accent-tutor Azure AI Foundry agents. Bound both to the
+      # config section (ClientSecretCredential path) and to the process env (DefaultAzureCredential
+      # fallback) from the same variables, so either code path authenticates.
+      AzureAccentTutors__TenantId: ${AZURE_TENANT_ID:-}
+      AzureAccentTutors__ClientId: ${AZURE_CLIENT_ID:-}
+      AzureAccentTutors__ClientSecret: ${AZURE_CLIENT_SECRET:-}
+      AZURE_TENANT_ID: ${AZURE_TENANT_ID:-}
+      AZURE_CLIENT_ID: ${AZURE_CLIENT_ID:-}
+      AZURE_CLIENT_SECRET: ${AZURE_CLIENT_SECRET:-}
+      SpeakingLive__Enabled: ${SPEAKING_LIVE_ENABLED:-false}
+      YouTube__ApiKey: ${YOUTUBE_API_KEY}
+      Images__UnsplashAccessKey: ${UNSPLASH_ACCESS_KEY}
+      ImageModeration__Enabled: "true"
+      ImageModeration__RequireSafetyApproval: ${IMAGE_MODERATION_REQUIRE_APPROVAL:-true}
+      ImageModeration__BaseUrl: "http://image-moderation:8080"
+      WhisperStt__Enabled: ${WHISPER_ENABLED:-false}
+      WhisperStt__BaseUrl: "http://speech-stt:8080"
+      WhisperStt__TimeoutSeconds: ${WHISPER_TIMEOUT_SECONDS:-30}
+      WhisperStt__MinimumConfidence: ${WHISPER_MINIMUM_CONFIDENCE:-0.25}
+      ImageModeration__TimeoutSeconds: ${IMAGE_MODERATION_TIMEOUT_SECONDS:-20}
+      Backfill__AdminToken: ${BACKFILL_ADMIN_TOKEN}
+      # Interactive video transcript - PRIMARY source. Supadata is a managed transcript REST API: the
+      # server calls only Supadata and they fetch captions from their own (unblocked) infrastructure,
+      # so this VPS's datacenter IP never touches YouTube and the bot wall does not apply. With this key
+      # set, Supadata is tried first and yt-dlp (below) is the free fallback. Get a key at supadata.ai.
+      Supadata__ApiKey: ${SUPADATA_API_KEY}
+      # Interactive video transcript (yt-dlp) - FALLBACK. From this VPS's datacenter IP YouTube serves a bot
+      # challenge, so browser impersonation alone is often not enough and the transcript never loads.
+      # Drop a Netscape cookies.txt (exported from a browser signed in to a throwaway YouTube account)
+      # at ./secrets/youtube-cookies.txt on the host; yt-dlp uses it to get past the block. An absent
+      # file → cookie-less fetch (logged), so this is safe to leave unpopulated where the IP isn't blocked.
+      YtDlp__CookiesPath: /app/secrets/youtube-cookies.txt
+      # Optional cookie POOL: drop several exported cookie files (one per throwaway account) in
+      # ./secrets/cookies on the host. The central CookieManager picks the freshest usable file and
+      # auto-rotates to the next when YouTube rejects one (no restart needed). Leave the dir empty to
+      # use only the single YtDlp__CookiesPath file above, or no cookies at all.
+      YouTubeCookies__Directory: /app/secrets/cookies
+      # Native push (FCM). Drop the Firebase service-account private-key JSON at
+      # ./secrets/firebase-service-account.json on the host; the FCM sender authenticates with it
+      # (the project id is read from the JSON). Absent file → push is disabled (NullPushNotifier), so
+      # in-app notifications keep working and this is safe to leave unpopulated.
+      Fcm__ServiceAccountJsonPath: /app/secrets/firebase-service-account.json
+    volumes:
+      - data-protection-keys:/app/data-protection-keys
+      # Host ./secrets holds the YouTube cookies file(s) (and any other operator-dropped secrets),
+      # mounted read-only. If the directory/file is absent the app logs a warning and fetches without
+      # cookies (the CookieManager reports NeedsRefresh via the admin transcript-health probe).
+      - ./secrets:/app/secrets:ro
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      hermes-router:
+        condition: service_healthy
+      image-moderation:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8080/health/ready"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  worker-critical:
+    image: ghcr.io/${GHCR_OWNER}/englishai-worker:${WORKER_IMAGE_SHA:?WORKER_IMAGE_SHA must be an exact commit SHA}
+    container_name: englishai-worker-critical
+    restart: unless-stopped
+    mem_limit: ${WORKER_CRITICAL_MEMORY_LIMIT:-640m}
+    logging:
+      driver: json-file
+      options:
+        max-size: ${DOCKER_LOG_MAX_SIZE:-20m}
+        max-file: ${DOCKER_LOG_MAX_FILES:-5}
+    stop_signal: SIGTERM
+    stop_grace_period: ${WORKER_DRAIN_SECONDS:-300}s
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      Host__ShutdownTimeoutSeconds: ${WORKER_DRAIN_SECONDS:-300}
+      ConnectionStrings__Postgres: "Host=postgres;Port=5432;Database=${POSTGRES_DB};Username=${POSTGRES_USER};Password=${POSTGRES_PASSWORD};Include Error Detail=false"
+      ConnectionStrings__HangfirePostgres: "Host=postgres;Port=5432;Database=${POSTGRES_DB};Username=${POSTGRES_USER};Password=${POSTGRES_PASSWORD};Include Error Detail=false"
+      Postgres__CommandTimeoutSeconds: ${POSTGRES_COMMAND_TIMEOUT_SECONDS:-30}
+      Postgres__MaxRetryCount: ${POSTGRES_MAX_RETRY_COUNT:-0}
+      Postgres__MaxRetryDelaySeconds: ${POSTGRES_MAX_RETRY_DELAY_SECONDS:-2}
+      Postgres__PoolSize: ${CRITICAL_WORKER_DB_CONTEXT_POOL_SIZE:-4}
+      Postgres__ServerConnectionBudget: ${POSTGRES_SERVER_CONNECTION_BUDGET:-24}
+      Postgres__RequireTransactionPooling: "false"
+      Redis__Environment: production
+      Redis__Critical__ConnectionString: "redis:6379,abortConnect=false"
+      Redis__Cache__ConnectionString: "redis:6379,abortConnect=false"
+      Hangfire__Enabled: "true"
+      Hangfire__UseInMemoryStorage: "false"
+      Hangfire__Queues: "critical"
+      Hangfire__WorkerCount: ${HANGFIRE_CRITICAL_WORKERS:-2}
+      Hangfire__DatabaseConnectionBudget: ${HANGFIRE_CRITICAL_DB_BUDGET:-8}
+      Hangfire__RetryAttempts: ${HANGFIRE_RETRY_ATTEMPTS:-5}
+      Hangfire__RetryDelaysSeconds: ${HANGFIRE_RETRY_DELAYS_SECONDS:-15,60,300,900,3600}
+      Observability__MetricsToken: ${OBSERVABILITY_METRICS_TOKEN:-}
+      AiAdmission__DailyBudgetUsd: ${AI_DAILY_BUDGET_USD:-25}
+      AiAdmission__BudgetWarningRatio: ${AI_BUDGET_WARNING_RATIO:-0.8}
+      # Bounds one account before it can shed every other free learner via the global budget.
+      AiAdmission__FreeDailyBudgetPerLearnerUsd: ${AI_FREE_DAILY_BUDGET_PER_LEARNER_USD:-0.60}
+      AiAdmission__ProDailyBudgetPerLearnerUsd: ${AI_PRO_DAILY_BUDGET_PER_LEARNER_USD:-3.00}
+      # Same routing and legacy-access settings as the API: the workers run the content backfill
+      # and the trial/retention jobs, so an operator override has to mean the same thing here.
+      AiRouting__PremiumFeatures: ${AI_ROUTING_PREMIUM_FEATURES:-WritingAssessment,Assistant}
+      LegacyAccess__GrantedForAccountsCreatedBefore: ${LEGACY_ACCESS_ACCOUNTS_CREATED_BEFORE:-}
+      AiAdmission__PricingConfigured: ${AI_PRICING_CONFIGURED:?AI_PRICING_CONFIGURED is required}
+      AiAdmission__EstimatedInputCostPerMillionTokensUsd: ${AI_INPUT_COST_PER_MILLION_TOKENS_USD:-0}
+      AiAdmission__EstimatedOutputCostPerMillionTokensUsd: ${AI_OUTPUT_COST_PER_MILLION_TOKENS_USD:-0}
+      OTEL_SERVICE_NAME: EnglishAI.Worker.Critical
+      Fcm__ServiceAccountJsonPath: /app/secrets/firebase-service-account.json
+      Images__UnsplashAccessKey: ${UNSPLASH_ACCESS_KEY}
+      ImageModeration__Enabled: "true"
+      ImageModeration__RequireSafetyApproval: ${IMAGE_MODERATION_REQUIRE_APPROVAL:-true}
+      ImageModeration__BaseUrl: "http://image-moderation:8080"
+      WhisperStt__Enabled: ${WHISPER_ENABLED:-false}
+      WhisperStt__BaseUrl: "http://speech-stt:8080"
+      WhisperStt__TimeoutSeconds: ${WHISPER_TIMEOUT_SECONDS:-30}
+      WhisperStt__MinimumConfidence: ${WHISPER_MINIMUM_CONFIDENCE:-0.25}
+      ImageModeration__TimeoutSeconds: ${IMAGE_MODERATION_TIMEOUT_SECONDS:-20}
+    volumes:
+      - ./secrets:/app/secrets:ro
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      image-moderation:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8080/health/ready"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  worker-general:
+    image: ghcr.io/${GHCR_OWNER}/englishai-worker:${WORKER_IMAGE_SHA:?WORKER_IMAGE_SHA must be an exact commit SHA}
+    container_name: englishai-worker-general
+    restart: unless-stopped
+    mem_limit: ${WORKER_GENERAL_MEMORY_LIMIT:-768m}
+    logging:
+      driver: json-file
+      options:
+        max-size: ${DOCKER_LOG_MAX_SIZE:-20m}
+        max-file: ${DOCKER_LOG_MAX_FILES:-5}
+    stop_signal: SIGTERM
+    stop_grace_period: ${WORKER_DRAIN_SECONDS:-300}s
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      Host__ShutdownTimeoutSeconds: ${WORKER_DRAIN_SECONDS:-300}
+      ConnectionStrings__Postgres: "Host=postgres;Port=5432;Database=${POSTGRES_DB};Username=${POSTGRES_USER};Password=${POSTGRES_PASSWORD};Include Error Detail=false"
+      ConnectionStrings__HangfirePostgres: "Host=postgres;Port=5432;Database=${POSTGRES_DB};Username=${POSTGRES_USER};Password=${POSTGRES_PASSWORD};Include Error Detail=false"
+      Postgres__CommandTimeoutSeconds: ${POSTGRES_COMMAND_TIMEOUT_SECONDS:-30}
+      Postgres__MaxRetryCount: ${POSTGRES_MAX_RETRY_COUNT:-0}
+      Postgres__MaxRetryDelaySeconds: ${POSTGRES_MAX_RETRY_DELAY_SECONDS:-2}
+      Postgres__PoolSize: ${GENERAL_WORKER_DB_CONTEXT_POOL_SIZE:-8}
+      Postgres__ServerConnectionBudget: ${POSTGRES_SERVER_CONNECTION_BUDGET:-24}
+      Postgres__RequireTransactionPooling: "false"
+      Redis__Environment: production
+      Redis__Critical__ConnectionString: "redis:6379,abortConnect=false"
+      Redis__Cache__ConnectionString: "redis:6379,abortConnect=false"
+      Hangfire__Enabled: "true"
+      Hangfire__UseInMemoryStorage: "false"
+      Hangfire__Queues: "notifications,analytics,content,maintenance"
+      Hangfire__WorkerCount: ${HANGFIRE_GENERAL_WORKERS:-8}
+      Hangfire__DatabaseConnectionBudget: ${HANGFIRE_GENERAL_DB_BUDGET:-16}
+      Hangfire__RetryAttempts: ${HANGFIRE_RETRY_ATTEMPTS:-5}
+      Hangfire__RetryDelaysSeconds: ${HANGFIRE_RETRY_DELAYS_SECONDS:-15,60,300,900,3600}
+      Observability__MetricsToken: ${OBSERVABILITY_METRICS_TOKEN:-}
+      AiAdmission__DailyBudgetUsd: ${AI_DAILY_BUDGET_USD:-25}
+      AiAdmission__BudgetWarningRatio: ${AI_BUDGET_WARNING_RATIO:-0.8}
+      # Bounds one account before it can shed every other free learner via the global budget.
+      AiAdmission__FreeDailyBudgetPerLearnerUsd: ${AI_FREE_DAILY_BUDGET_PER_LEARNER_USD:-0.60}
+      AiAdmission__ProDailyBudgetPerLearnerUsd: ${AI_PRO_DAILY_BUDGET_PER_LEARNER_USD:-3.00}
+      # Same routing and legacy-access settings as the API: the workers run the content backfill
+      # and the trial/retention jobs, so an operator override has to mean the same thing here.
+      AiRouting__PremiumFeatures: ${AI_ROUTING_PREMIUM_FEATURES:-WritingAssessment,Assistant}
+      LegacyAccess__GrantedForAccountsCreatedBefore: ${LEGACY_ACCESS_ACCOUNTS_CREATED_BEFORE:-}
+      AiAdmission__PricingConfigured: ${AI_PRICING_CONFIGURED:?AI_PRICING_CONFIGURED is required}
+      AiAdmission__EstimatedInputCostPerMillionTokensUsd: ${AI_INPUT_COST_PER_MILLION_TOKENS_USD:-0}
+      AiAdmission__EstimatedOutputCostPerMillionTokensUsd: ${AI_OUTPUT_COST_PER_MILLION_TOKENS_USD:-0}
+      OTEL_SERVICE_NAME: EnglishAI.Worker.General
+      Fcm__ServiceAccountJsonPath: /app/secrets/firebase-service-account.json
+      ObjectStorage__Enabled: "false"
+      ObjectStorage__ServiceUrl: ${OBJECT_STORAGE_SERVICE_URL}
+      ObjectStorage__Region: ${OBJECT_STORAGE_REGION:-fsn1}
+      ObjectStorage__AccessKey: ${OBJECT_STORAGE_ACCESS_KEY}
+      ObjectStorage__SecretKey: ${OBJECT_STORAGE_SECRET_KEY}
+      ObjectStorage__PublicBucket: ${OBJECT_STORAGE_PUBLIC_BUCKET}
+      ObjectStorage__PrivateBucket: ${OBJECT_STORAGE_PRIVATE_BUCKET}
+      ObjectStorage__PublicBaseUrl: ${OBJECT_STORAGE_PUBLIC_BASE_URL}
+      ObjectStorage__KeyPrefix: ${OBJECT_STORAGE_KEY_PREFIX:-englishai}
+      Images__UnsplashAccessKey: ${UNSPLASH_ACCESS_KEY}
+      ImageModeration__Enabled: "true"
+      ImageModeration__RequireSafetyApproval: ${IMAGE_MODERATION_REQUIRE_APPROVAL:-true}
+      ImageModeration__BaseUrl: "http://image-moderation:8080"
+      WhisperStt__Enabled: ${WHISPER_ENABLED:-false}
+      WhisperStt__BaseUrl: "http://speech-stt:8080"
+      WhisperStt__TimeoutSeconds: ${WHISPER_TIMEOUT_SECONDS:-30}
+      WhisperStt__MinimumConfidence: ${WHISPER_MINIMUM_CONFIDENCE:-0.25}
+      ImageModeration__TimeoutSeconds: ${IMAGE_MODERATION_TIMEOUT_SECONDS:-20}
+    volumes:
+      - ./secrets:/app/secrets:ro
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      image-moderation:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8080/health/ready"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  database-migrate:
+    image: ghcr.io/${GHCR_OWNER}/englishai-backend:${BACKEND_IMAGE_SHA:?BACKEND_IMAGE_SHA must be an exact commit SHA}
+    profiles: ["operations"]
+    restart: "no"
+    logging:
+      driver: json-file
+      options:
+        max-size: ${DOCKER_LOG_MAX_SIZE:-20m}
+        max-file: ${DOCKER_LOG_MAX_FILES:-5}
+    command:
+      - database
+      - migrate
+      - --lock-timeout-seconds
+      - ${DATABASE_MIGRATION_LOCK_TIMEOUT_SECONDS:-300}
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      ConnectionStrings__Postgres: Host=postgres;Port=5432;Database=${POSTGRES_DB};Username=${POSTGRES_USER};Password=${POSTGRES_PASSWORD};Pooling=true;Include Error Detail=false
+      ConnectionStrings__MigrationPostgres: Host=postgres;Port=5432;Database=${POSTGRES_DB};Username=${POSTGRES_USER};Password=${POSTGRES_PASSWORD};Pooling=true;Include Error Detail=false
+      Postgres__CommandTimeoutSeconds: ${POSTGRES_COMMAND_TIMEOUT_SECONDS:-30}
+      Postgres__MaxRetryCount: "0"
+      Postgres__PoolSize: "24"
+      Postgres__ServerConnectionBudget: "24"
+      Postgres__RequireTransactionPooling: "false"
+      Hangfire__Enabled: "false"
+      Redis__ConnectionString: ""
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  leaderboard-rebuild:
+    image: ghcr.io/${GHCR_OWNER}/englishai-backend:${BACKEND_IMAGE_SHA:?BACKEND_IMAGE_SHA must be an exact commit SHA}
+    profiles: ["operations"]
+    restart: "no"
+    logging:
+      driver: json-file
+      options:
+        max-size: ${DOCKER_LOG_MAX_SIZE:-20m}
+        max-file: ${DOCKER_LOG_MAX_FILES:-5}
+    command: ["leaderboard", "rebuild"]
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      ConnectionStrings__Postgres: Host=postgres;Port=5432;Database=${POSTGRES_DB};Username=${POSTGRES_USER};Password=${POSTGRES_PASSWORD};Pooling=true;Include Error Detail=false
+      Postgres__CommandTimeoutSeconds: ${POSTGRES_COMMAND_TIMEOUT_SECONDS:-30}
+      Postgres__MaxRetryCount: "0"
+      Postgres__PoolSize: "4"
+      Postgres__ServerConnectionBudget: ${POSTGRES_SERVER_CONNECTION_BUDGET:-24}
+      Postgres__RequireTransactionPooling: "false"
+      Hangfire__Enabled: "false"
+      Redis__Environment: production
+      Redis__Critical__ConnectionString: "redis:6379,abortConnect=false"
+      Redis__Cache__ConnectionString: "redis:6379,abortConnect=false"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  hermes-router:
+    image: haproxy:3.0-alpine
+    container_name: englishai-hermes-router
+    restart: unless-stopped
+    mem_limit: ${HERMES_ROUTER_MEMORY_LIMIT:-128m}
+    logging:
+      driver: json-file
+      options:
+        max-size: ${DOCKER_LOG_MAX_SIZE:-20m}
+        max-file: ${DOCKER_LOG_MAX_FILES:-5}
+    volumes:
+      - ./ops/deploy/haproxy-hermes.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro
+    depends_on:
+      hermes-agent:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:8404/hermes-health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  hermes-agent:
+    # Self-hosted Hermes Agent OpenAI-compatible API. It is not published to the internet;
+    # backend reaches it only over Compose DNS at hermes-agent:8642.
+    image: ${HERMES_IMAGE:-nousresearch/hermes-agent:latest}
+    container_name: englishai-hermes-agent
+    command: gateway run
+    restart: unless-stopped
+    cpus: ${HERMES_CPUS:-1.50}
+    mem_limit: ${HERMES_MEMORY_LIMIT:-1536m}
+    mem_reservation: ${HERMES_MEMORY_RESERVATION:-512m}
+    pids_limit: ${HERMES_PIDS_LIMIT:-256}
+    stop_grace_period: 30s
+    security_opt:
+      - no-new-privileges:true
+    environment:
+      HERMES_HOME: /home/hermes/.hermes
+      API_SERVER_ENABLED: "true"
+      API_SERVER_HOST: "0.0.0.0"
+      API_SERVER_PORT: "8642"
+      API_SERVER_KEY: ${HERMES_GATEWAY_API_KEY}
+      API_SERVER_MODEL_NAME: ${HERMES_API_MODEL:-hermes-agent}
+      HERMES_MODEL: ${HERMES_UPSTREAM_MODEL:-stepfun/step-3.7-flash:free}
+      # Hermes' built-in Nous provider expects an interactive Portal OAuth login. The custom
+      # inference endpoint derives NOUSRESEARCH_API_KEY from inference-api.nousresearch.com.
+      NOUSRESEARCH_API_KEY: ${DEVELOPER_AI_API_KEY_1}
+    volumes:
+      - hermes-home:/home/hermes/.hermes
+      # Hermes migrates config schemas at startup; the bind mount must be writable.
+      - ./ops/deploy/hermes-config.yaml:/home/hermes/.hermes/config.yaml
+    logging:
+      driver: json-file
+      options:
+        max-size: ${HERMES_LOG_MAX_SIZE:-20m}
+        max-file: ${HERMES_LOG_MAX_FILES:-5}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8642/health', timeout=5)"]
+      interval: 30s
+      timeout: 10s
+      start_period: 60s
+      retries: 5
+
+  hermes-agent-2:
+    image: ${HERMES_IMAGE:-nousresearch/hermes-agent:latest}
+    container_name: englishai-hermes-agent-2
+    command: gateway run
+    restart: unless-stopped
+    cpus: ${HERMES_CPUS:-1.50}
+    mem_limit: ${HERMES_MEMORY_LIMIT:-1536m}
+    mem_reservation: ${HERMES_MEMORY_RESERVATION:-512m}
+    pids_limit: ${HERMES_PIDS_LIMIT:-256}
+    stop_grace_period: 30s
+    security_opt:
+      - no-new-privileges:true
+    environment:
+      HERMES_HOME: /home/hermes/.hermes
+      API_SERVER_ENABLED: "true"
+      API_SERVER_HOST: "0.0.0.0"
+      API_SERVER_PORT: "8642"
+      API_SERVER_KEY: ${HERMES_GATEWAY_API_KEY}
+      API_SERVER_MODEL_NAME: ${HERMES_API_MODEL:-hermes-agent}
+      HERMES_MODEL: ${HERMES_UPSTREAM_MODEL:-stepfun/step-3.7-flash:free}
+      NOUSRESEARCH_API_KEY: ${DEVELOPER_AI_API_KEY_2}
+    volumes:
+      - hermes-home-2:/home/hermes/.hermes
+      - ./ops/deploy/hermes-config-2.yaml:/home/hermes/.hermes/config.yaml
+    logging:
+      driver: json-file
+      options:
+        max-size: ${HERMES_LOG_MAX_SIZE:-20m}
+        max-file: ${HERMES_LOG_MAX_FILES:-5}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8642/health', timeout=5)"]
+      interval: 30s
+      timeout: 10s
+      start_period: 60s
+      retries: 5
+
+  transcript-service:
+    # youtubei.js YouTube-transcript sidecar (first provider in the transcript fallback chain).
+    image: ghcr.io/${GHCR_OWNER}/englishai-transcript:${TRANSCRIPT_IMAGE_SHA:?TRANSCRIPT_IMAGE_SHA must be an exact commit SHA}
+    container_name: englishai-transcript
+    restart: unless-stopped
+    mem_limit: ${TRANSCRIPT_MEMORY_LIMIT:-384m}
+    logging:
+      driver: json-file
+      options:
+        max-size: ${DOCKER_LOG_MAX_SIZE:-20m}
+        max-file: ${DOCKER_LOG_MAX_FILES:-5}
+    stop_signal: SIGTERM
+    stop_grace_period: ${TRANSCRIPT_DRAIN_SECONDS:-30}s
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://localhost:8080/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 10s
+      start_period: 20s
+      retries: 5
+
+  speech-stt:
+    # Self-hosted speech-to-text for the FREE tier. Azure bills per audio hour, which no realistic
+    # free-tier conversion rate can carry; free learners transcribe here, where a request costs CPU
+    # we already own. Premium keeps Azure - its accented-speech accuracy and pronunciation scoring
+    # are what the subscription buys. Set WHISPER_ENABLED=false to send everyone back to Azure.
+    # Deliberately NOT in the backend's depends_on: the API must boot and serve Azure while this
+    # container is still loading its model.
+    image: ghcr.io/${GHCR_OWNER}/englishai-speech-stt:${SPEECH_STT_IMAGE_SHA:-${BACKEND_IMAGE_SHA:?BACKEND_IMAGE_SHA must be an exact commit SHA}}
+    container_name: englishai-speech-stt
+    restart: unless-stopped
+    environment:
+      WHISPER_MODEL: ${WHISPER_MODEL:-base.en}
+      WHISPER_COMPUTE_TYPE: ${WHISPER_COMPUTE_TYPE:-int8}
+      WHISPER_BEAM_SIZE: ${WHISPER_BEAM_SIZE:-1}
+      MAX_AUDIO_BYTES: ${WHISPER_MAX_AUDIO_BYTES:-2097152}
+      # Bounded so transcription cannot starve Hermes and Postgres of CPU on a shared box.
+      OMP_NUM_THREADS: ${WHISPER_THREADS:-2}
+    mem_limit: ${WHISPER_MEMORY_LIMIT:-1024m}
+    cpus: ${WHISPER_CPUS:-2.00}
+    logging:
+      driver: json-file
+      options:
+        max-size: ${DOCKER_LOG_MAX_SIZE:-20m}
+        max-file: ${DOCKER_LOG_MAX_FILES:-5}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8080/health', timeout=5)"]
+      interval: 30s
+      timeout: 10s
+      # The model is baked into the image, so this only covers process start and model load.
+      start_period: 120s
+      retries: 5
+
+  image-moderation:
+    image: ghcr.io/${GHCR_OWNER}/englishai-image-moderation:${IMAGE_MODERATION_IMAGE_SHA:-${BACKEND_IMAGE_SHA:?BACKEND_IMAGE_SHA must be an exact commit SHA}}
+    container_name: englishai-image-moderation
+    restart: unless-stopped
+    environment:
+      UNSAFE_SCORE_THRESHOLD: ${IMAGE_MODERATION_UNSAFE_THRESHOLD:-0.20}
+      MODEL_VERSION: nudenet-3.4.2
+    mem_limit: ${IMAGE_MODERATION_MEMORY_LIMIT:-768m}
+    cpus: ${IMAGE_MODERATION_CPUS:-1.00}
+    logging:
+      driver: json-file
+      options:
+        max-size: ${DOCKER_LOG_MAX_SIZE:-20m}
+        max-file: ${DOCKER_LOG_MAX_FILES:-5}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8080/health', timeout=5)"]
+      interval: 30s
+      timeout: 10s
+      start_period: 120s
+      retries: 5
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: englishai-postgres
+    restart: unless-stopped
+    mem_limit: ${POSTGRES_MEMORY_LIMIT:-1g}
+    logging:
+      driver: json-file
+      options:
+        max-size: ${DOCKER_LOG_MAX_SIZE:-20m}
+        max-file: ${DOCKER_LOG_MAX_FILES:-5}
+    command: ["postgres", "-c", "max_connections=${POSTGRES_MAX_CONNECTIONS:-100}"]
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: englishai-redis
+    restart: unless-stopped
+    mem_limit: ${REDIS_MEMORY_LIMIT:-512m}
+    logging:
+      driver: json-file
+      options:
+        max-size: ${DOCKER_LOG_MAX_SIZE:-20m}
+        max-file: ${DOCKER_LOG_MAX_FILES:-5}
+    command: ["redis-server", "--appendonly", "yes", "--appendfsync", "everysec"]
+    volumes:
+      - redisdata:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  pgdata:
+  redisdata:
+  caddy-data:
+  caddy-config:
+  hermes-home:
+  hermes-home-2:
+  data-protection-keys:
+
+networks:
+  default:
+    name: englishai-prod
+    ipam:
+      config:
+        - subnet: 172.30.0.0/24

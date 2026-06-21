@@ -1,0 +1,1045 @@
+{
+  "wireMagic": "pb3",
+  "pens": [ {
+  
+  } ],
+  "wsWinStyles": [ {
+  
+  } ],
+  "wpWinPositions": [ {
+  
+  } ],
+  "events": [ {
+    "tStartMs": 7778,
+    "dDurationMs": 762,
+    "segs": [ {
+      "utf8": "Hello."
+    } ]
+  }, {
+    "tStartMs": 8540,
+    "dDurationMs": 1430,
+    "segs": [ {
+      "utf8": "This is 6 Minute English from"
+    } ]
+  }, {
+    "tStartMs": 9970,
+    "dDurationMs": 1440,
+    "segs": [ {
+      "utf8": "BBC Learning English."
+    } ]
+  }, {
+    "tStartMs": 11410,
+    "dDurationMs": 901,
+    "segs": [ {
+      "utf8": "I’m Neil."
+    } ]
+  }, {
+    "tStartMs": 12311,
+    "dDurationMs": 1189,
+    "segs": [ {
+      "utf8": "And I’m Beth."
+    } ]
+  }, {
+    "tStartMs": 13500,
+    "dDurationMs": 1990,
+    "segs": [ {
+      "utf8": "When I was a boy, I wanted to be"
+    } ]
+  }, {
+    "tStartMs": 15490,
+    "dDurationMs": 2230,
+    "segs": [ {
+      "utf8": "a fireman when I grew up."
+    } ]
+  }, {
+    "tStartMs": 17720,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": "How about you, Beth?"
+    } ]
+  }, {
+    "tStartMs": 18720,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": "Did you have"
+    } ]
+  }, {
+    "tStartMs": 19720,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": "any childhood dreams?"
+    } ]
+  }, {
+    "tStartMs": 20720,
+    "dDurationMs": 1830,
+    "segs": [ {
+      "utf8": "I wanted to be an astronaut"
+    } ]
+  }, {
+    "tStartMs": 22550,
+    "dDurationMs": 1920,
+    "segs": [ {
+      "utf8": "and fly to the Moon…"
+    } ]
+  }, {
+    "tStartMs": 24470,
+    "dDurationMs": 1670,
+    "segs": [ {
+      "utf8": "When we’re young most of us have"
+    } ]
+  }, {
+    "tStartMs": 26140,
+    "dDurationMs": 2780,
+    "segs": [ {
+      "utf8": "big dreams and plans for the future."
+    } ]
+  }, {
+    "tStartMs": 28920,
+    "dDurationMs": 2240,
+    "segs": [ {
+      "utf8": "Unfortunately, as we grow up these"
+    } ]
+  }, {
+    "tStartMs": 31160,
+    "dDurationMs": 2710,
+    "segs": [ {
+      "utf8": "childhood dreams often get lost in the"
+    } ]
+  }, {
+    "tStartMs": 33870,
+    "dDurationMs": 3109,
+    "segs": [ {
+      "utf8": "adult world of jobs, money,"
+    } ]
+  }, {
+    "tStartMs": 36979,
+    "dDurationMs": 1540,
+    "segs": [ {
+      "utf8": "families and careers."
+    } ]
+  }, {
+    "tStartMs": 38519,
+    "dDurationMs": 1470,
+    "segs": [ {
+      "utf8": "But not for everyone…"
+    } ]
+  }, {
+    "tStartMs": 39989,
+    "dDurationMs": 2710,
+    "segs": [ {
+      "utf8": "Daisy, from New Zealand, and, Herman,"
+    } ]
+  }, {
+    "tStartMs": 42699,
+    "dDurationMs": 1511,
+    "segs": [ {
+      "utf8": "from Argentina are two"
+    } ]
+  }, {
+    "tStartMs": 44210,
+    "dDurationMs": 1399,
+    "segs": [ {
+      "utf8": "people who decided"
+    } ]
+  }, {
+    "tStartMs": 45609,
+    "dDurationMs": 2450,
+    "segs": [ {
+      "utf8": "to follow their childhood dreams."
+    } ]
+  }, {
+    "tStartMs": 48059,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": "They"
+    } ]
+  }, {
+    "tStartMs": 49059,
+    "dDurationMs": 2370,
+    "segs": [ {
+      "utf8": "wanted the world to become a utopia – a"
+    } ]
+  }, {
+    "tStartMs": 51429,
+    "dDurationMs": 2540,
+    "segs": [ {
+      "utf8": "perfect, ideal society where everyone is"
+    } ]
+  }, {
+    "tStartMs": 53969,
+    "dDurationMs": 2881,
+    "segs": [ {
+      "utf8": "happy and gets along with each other."
+    } ]
+  }, {
+    "tStartMs": 56850,
+    "dDurationMs": 1889,
+    "segs": [ {
+      "utf8": "In this programme, we’ll be hearing how"
+    } ]
+  }, {
+    "tStartMs": 58739,
+    "dDurationMs": 2771,
+    "segs": [ {
+      "utf8": "Daisy and Herman made their dreams"
+    } ]
+  }, {
+    "tStartMs": 61510,
+    "dDurationMs": 3119,
+    "segs": [ {
+      "utf8": "come true – not by changing the world,"
+    } ]
+  }, {
+    "tStartMs": 64629,
+    "dDurationMs": 1621,
+    "segs": [ {
+      "utf8": "but by changing themselves."
+    } ]
+  }, {
+    "tStartMs": 66250,
+    "dDurationMs": 1420,
+    "segs": [ {
+      "utf8": "And, as usual,"
+    } ]
+  }, {
+    "tStartMs": 67670,
+    "dDurationMs": 2760,
+    "segs": [ {
+      "utf8": "we’ll be learning some new vocabulary too."
+    } ]
+  }, {
+    "tStartMs": 70430,
+    "dDurationMs": 2200,
+    "segs": [ {
+      "utf8": "But before that I have a question"
+    } ]
+  }, {
+    "tStartMs": 72630,
+    "dDurationMs": 1790,
+    "segs": [ {
+      "utf8": "for you, Beth."
+    } ]
+  }, {
+    "tStartMs": 74420,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": "Following your dreams can"
+    } ]
+  }, {
+    "tStartMs": 75420,
+    "dDurationMs": 2650,
+    "segs": [ {
+      "utf8": "be tough, but not following them can leave"
+    } ]
+  }, {
+    "tStartMs": 78070,
+    "dDurationMs": 2250,
+    "segs": [ {
+      "utf8": "you regretting all the things you wanted"
+    } ]
+  }, {
+    "tStartMs": 80320,
+    "dDurationMs": 1960,
+    "segs": [ {
+      "utf8": "to do but didn’t."
+    } ]
+  }, {
+    "tStartMs": 82280,
+    "dDurationMs": 1850,
+    "segs": [ {
+      "utf8": "In 2012, Australian nurse,"
+    } ]
+  }, {
+    "tStartMs": 84130,
+    "dDurationMs": 2320,
+    "segs": [ {
+      "utf8": "Bronnie Ware, wrote her bestselling book,"
+    } ]
+  }, {
+    "tStartMs": 86450,
+    "dDurationMs": 2281,
+    "segs": [ {
+      "utf8": "The Top Five Regrets of the Dying, after"
+    } ]
+  }, {
+    "tStartMs": 88731,
+    "dDurationMs": 2539,
+    "segs": [ {
+      "utf8": "interviewing terminally ill patients about"
+    } ]
+  }, {
+    "tStartMs": 91270,
+    "dDurationMs": 1430,
+    "segs": [ {
+      "utf8": "their life regrets."
+    } ]
+  }, {
+    "tStartMs": 92700,
+    "dDurationMs": 1680,
+    "segs": [ {
+      "utf8": "So, what do you think"
+    } ]
+  }, {
+    "tStartMs": 94380,
+    "dDurationMs": 2180,
+    "segs": [ {
+      "utf8": "their top regret was?"
+    } ]
+  }, {
+    "tStartMs": 96560,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": "Was it:"
+    } ]
+  }, {
+    "tStartMs": 97560,
+    "dDurationMs": 2390,
+    "segs": [ {
+      "utf8": "a) I wish I hadn’t worked so hard?"
+    } ]
+  }, {
+    "tStartMs": 99950,
+    "dDurationMs": 2700,
+    "segs": [ {
+      "utf8": "b) I wish I had followed my dreams?"
+    } ]
+  }, {
+    "tStartMs": 102650,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": "or"
+    } ]
+  }, {
+    "tStartMs": 103650,
+    "dDurationMs": 1490,
+    "segs": [ {
+      "utf8": "c) I wish I’d made more money?"
+    } ]
+  }, {
+    "tStartMs": 105140,
+    "dDurationMs": 3160,
+    "segs": [ {
+      "utf8": "Well, I’ll guess it’s b) they wish they"
+    } ]
+  }, {
+    "tStartMs": 108300,
+    "dDurationMs": 1280,
+    "segs": [ {
+      "utf8": "had followed their dreams."
+    } ]
+  }, {
+    "tStartMs": 109580,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": "OK, Beth."
+    } ]
+  }, {
+    "tStartMs": 110580,
+    "dDurationMs": 1329,
+    "segs": [ {
+      "utf8": "I’ll reveal the correct answer"
+    } ]
+  }, {
+    "tStartMs": 111909,
+    "dDurationMs": 1841,
+    "segs": [ {
+      "utf8": "at the end of the programme."
+    } ]
+  }, {
+    "tStartMs": 113750,
+    "dDurationMs": 2450,
+    "segs": [ {
+      "utf8": "The first dreamer we’re going to meet lives"
+    } ]
+  }, {
+    "tStartMs": 116200,
+    "dDurationMs": 3290,
+    "segs": [ {
+      "utf8": "in Riverside, a peace-loving community in"
+    } ]
+  }, {
+    "tStartMs": 119490,
+    "dDurationMs": 1919,
+    "segs": [ {
+      "utf8": "New Zealand where everyone shares"
+    } ]
+  }, {
+    "tStartMs": 121409,
+    "dDurationMs": 1381,
+    "segs": [ {
+      "utf8": "everything."
+    } ]
+  }, {
+    "tStartMs": 122790,
+    "dDurationMs": 1350,
+    "segs": [ {
+      "utf8": "Riverside members work for"
+    } ]
+  }, {
+    "tStartMs": 124140,
+    "dDurationMs": 2400,
+    "segs": [ {
+      "utf8": "the community’s businesses, including"
+    } ]
+  }, {
+    "tStartMs": 126540,
+    "dDurationMs": 3570,
+    "segs": [ {
+      "utf8": "a farm, a hotel and a café."
+    } ]
+  }, {
+    "tStartMs": 130110,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": "All the money they"
+    } ]
+  }, {
+    "tStartMs": 131110,
+    "dDurationMs": 1930,
+    "segs": [ {
+      "utf8": "earn is collected and shared"
+    } ]
+  }, {
+    "tStartMs": 133040,
+    "dDurationMs": 1740,
+    "segs": [ {
+      "utf8": "between everyone equally."
+    } ]
+  }, {
+    "tStartMs": 134780,
+    "dDurationMs": 2429,
+    "segs": [ {
+      "utf8": "Daisy, who was born in East Germany,"
+    } ]
+  }, {
+    "tStartMs": 137209,
+    "dDurationMs": 2971,
+    "segs": [ {
+      "utf8": "joined Riverside in 2004."
+    } ]
+  }, {
+    "tStartMs": 140180,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": "Here she explains"
+    } ]
+  }, {
+    "tStartMs": 141180,
+    "dDurationMs": 1699,
+    "segs": [ {
+      "utf8": "her belief in sharing to BBC"
+    } ]
+  }, {
+    "tStartMs": 142879,
+    "dDurationMs": 3681,
+    "segs": [ {
+      "utf8": "World Service programme, The Documentary."
+    } ]
+  }, {
+    "tStartMs": 146560,
+    "dDurationMs": 2730,
+    "segs": [ {
+      "utf8": "What I think I always believed in is that"
+    } ]
+  }, {
+    "tStartMs": 149290,
+    "dDurationMs": 2500,
+    "segs": [ {
+      "utf8": "the sharing of resources can provide"
+    } ]
+  }, {
+    "tStartMs": 151790,
+    "dDurationMs": 1910,
+    "segs": [ {
+      "utf8": "a group of people with quite a great"
+    } ]
+  }, {
+    "tStartMs": 153700,
+    "dDurationMs": 2049,
+    "segs": [ {
+      "utf8": "advantage, but it doesn’t matter how"
+    } ]
+  }, {
+    "tStartMs": 155749,
+    "dDurationMs": 2000,
+    "segs": [ {
+      "utf8": "many hours you work or what work"
+    } ]
+  }, {
+    "tStartMs": 157749,
+    "dDurationMs": 1410,
+    "segs": [ {
+      "utf8": "you do, everyone is getting the"
+    } ]
+  }, {
+    "tStartMs": 159159,
+    "dDurationMs": 1660,
+    "segs": [ {
+      "utf8": "same amount."
+    } ]
+  }, {
+    "tStartMs": 160819,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": "And that is something"
+    } ]
+  }, {
+    "tStartMs": 161819,
+    "dDurationMs": 1601,
+    "segs": [ {
+      "utf8": "that many people outside of"
+    } ]
+  }, {
+    "tStartMs": 163420,
+    "dDurationMs": 2230,
+    "segs": [ {
+      "utf8": "Riverside struggle with, and where"
+    } ]
+  }, {
+    "tStartMs": 165650,
+    "dDurationMs": 2390,
+    "segs": [ {
+      "utf8": "we’re often getting this ‘communism’"
+    } ]
+  }, {
+    "tStartMs": 168040,
+    "dDurationMs": 3729,
+    "segs": [ {
+      "utf8": "label attached to us, because it’s so…"
+    } ]
+  }, {
+    "tStartMs": 171769,
+    "dDurationMs": 3080,
+    "segs": [ {
+      "utf8": "it seems so outlandish for people."
+    } ]
+  }, {
+    "tStartMs": 174849,
+    "dDurationMs": 2911,
+    "segs": [ {
+      "utf8": "Riverside isn’t a communist community."
+    } ]
+  }, {
+    "tStartMs": 177760,
+    "dDurationMs": 2830,
+    "segs": [ {
+      "utf8": "In fact, people with many different political"
+    } ]
+  }, {
+    "tStartMs": 180590,
+    "dDurationMs": 1610,
+    "segs": [ {
+      "utf8": "views live there."
+    } ]
+  }, {
+    "tStartMs": 182200,
+    "dDurationMs": 1709,
+    "segs": [ {
+      "utf8": "But Daisy says that local"
+    } ]
+  }, {
+    "tStartMs": 183909,
+    "dDurationMs": 2200,
+    "segs": [ {
+      "utf8": "people struggle with the idea that"
+    } ]
+  }, {
+    "tStartMs": 186109,
+    "dDurationMs": 1920,
+    "segs": [ {
+      "utf8": "everything is shared."
+    } ]
+  }, {
+    "tStartMs": 188029,
+    "dDurationMs": 1091,
+    "segs": [ {
+      "utf8": "If you struggle with"
+    } ]
+  }, {
+    "tStartMs": 189120,
+    "dDurationMs": 2310,
+    "segs": [ {
+      "utf8": "an idea, you find it difficult to"
+    } ]
+  }, {
+    "tStartMs": 191430,
+    "dDurationMs": 2069,
+    "segs": [ {
+      "utf8": "accept or think about it."
+    } ]
+  }, {
+    "tStartMs": 193499,
+    "dDurationMs": 2350,
+    "segs": [ {
+      "utf8": "Daisy also says some local people"
+    } ]
+  }, {
+    "tStartMs": 195849,
+    "dDurationMs": 2420,
+    "segs": [ {
+      "utf8": "call Riverside outlandish –"
+    } ]
+  }, {
+    "tStartMs": 198269,
+    "dDurationMs": 2030,
+    "segs": [ {
+      "utf8": "strange and unusual."
+    } ]
+  }, {
+    "tStartMs": 200299,
+    "dDurationMs": 1940,
+    "segs": [ {
+      "utf8": "Our second group of dreamers are"
+    } ]
+  }, {
+    "tStartMs": 202239,
+    "dDurationMs": 2491,
+    "segs": [ {
+      "utf8": "a family - the Zapps."
+    } ]
+  }, {
+    "tStartMs": 204730,
+    "dDurationMs": 1819,
+    "segs": [ {
+      "utf8": "In 2000, childhood"
+    } ]
+  }, {
+    "tStartMs": 206549,
+    "dDurationMs": 2520,
+    "segs": [ {
+      "utf8": "sweethearts, Herman and Candelaria Zapp,"
+    } ]
+  }, {
+    "tStartMs": 209069,
+    "dDurationMs": 2240,
+    "segs": [ {
+      "utf8": "bought a vintage car and set off"
+    } ]
+  }, {
+    "tStartMs": 211309,
+    "dDurationMs": 2220,
+    "segs": [ {
+      "utf8": "from Argentina to travel around"
+    } ]
+  }, {
+    "tStartMs": 213529,
+    "dDurationMs": 3680,
+    "segs": [ {
+      "utf8": "the world with less than 3.500 dollars"
+    } ]
+  }, {
+    "tStartMs": 217209,
+    "dDurationMs": 1651,
+    "segs": [ {
+      "utf8": "in their pockets."
+    } ]
+  }, {
+    "tStartMs": 218860,
+    "dDurationMs": 1439,
+    "segs": [ {
+      "utf8": "Twenty-two years and"
+    } ]
+  }, {
+    "tStartMs": 220299,
+    "dDurationMs": 2791,
+    "segs": [ {
+      "utf8": "three children later they have visited"
+    } ]
+  }, {
+    "tStartMs": 223090,
+    "dDurationMs": 2420,
+    "segs": [ {
+      "utf8": "over a hundred countries, meeting"
+    } ]
+  }, {
+    "tStartMs": 225510,
+    "dDurationMs": 1440,
+    "segs": [ {
+      "utf8": "with countless people and"
+    } ]
+  }, {
+    "tStartMs": 226950,
+    "dDurationMs": 2099,
+    "segs": [ {
+      "utf8": "experiences on the way."
+    } ]
+  }, {
+    "tStartMs": 229049,
+    "dDurationMs": 2381,
+    "segs": [ {
+      "utf8": "Here, Herman Zapp explains to BBC"
+    } ]
+  }, {
+    "tStartMs": 231430,
+    "dDurationMs": 2340,
+    "segs": [ {
+      "utf8": "World Service’s, The Documentary, how"
+    } ]
+  }, {
+    "tStartMs": 233770,
+    "dDurationMs": 1639,
+    "segs": [ {
+      "utf8": "following his dream has"
+    } ]
+  }, {
+    "tStartMs": 235409,
+    "dDurationMs": 1730,
+    "segs": [ {
+      "utf8": "changed him for the better."
+    } ]
+  }, {
+    "tStartMs": 237139,
+    "dDurationMs": 3121,
+    "segs": [ {
+      "utf8": "I am so happy with the Herman there is now,"
+    } ]
+  }, {
+    "tStartMs": 240260,
+    "dDurationMs": 2259,
+    "segs": [ {
+      "utf8": "that I know now – not the one who"
+    } ]
+  }, {
+    "tStartMs": 242519,
+    "dDurationMs": 1920,
+    "segs": [ {
+      "utf8": "wanted to conquer the world, but the one"
+    } ]
+  }, {
+    "tStartMs": 244439,
+    "dDurationMs": 1760,
+    "segs": [ {
+      "utf8": "who was conquered by the world."
+    } ]
+  }, {
+    "tStartMs": 246199,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": "I learn"
+    } ]
+  }, {
+    "tStartMs": 247199,
+    "dDurationMs": 1691,
+    "segs": [ {
+      "utf8": "so much from people, and it’s"
+    } ]
+  }, {
+    "tStartMs": 248890,
+    "dDurationMs": 1559,
+    "segs": [ {
+      "utf8": "amazing how the more you meet people,"
+    } ]
+  }, {
+    "tStartMs": 250449,
+    "dDurationMs": 1820,
+    "segs": [ {
+      "utf8": "the more you know stories, how"
+    } ]
+  }, {
+    "tStartMs": 252269,
+    "dDurationMs": 2351,
+    "segs": [ {
+      "utf8": "much more humble you become because"
+    } ]
+  }, {
+    "tStartMs": 254620,
+    "dDurationMs": 2440,
+    "segs": [ {
+      "utf8": "you notice that you are a beautiful, tiny"
+    } ]
+  }, {
+    "tStartMs": 257060,
+    "dDurationMs": 3400,
+    "segs": [ {
+      "utf8": "piece of sand, but a very important piece"
+    } ]
+  }, {
+    "tStartMs": 260460,
+    "dDurationMs": 2980,
+    "segs": [ {
+      "utf8": "of sand like everyone is, right?"
+    } ]
+  }, {
+    "tStartMs": 263440,
+    "dDurationMs": 2000,
+    "segs": [ {
+      "utf8": "After many years travelling, meeting"
+    } ]
+  }, {
+    "tStartMs": 265440,
+    "dDurationMs": 2990,
+    "segs": [ {
+      "utf8": "new people and hearing their stories,"
+    } ]
+  }, {
+    "tStartMs": 268430,
+    "dDurationMs": 2950,
+    "segs": [ {
+      "utf8": "Herman is more humble – not proud or"
+    } ]
+  }, {
+    "tStartMs": 271380,
+    "dDurationMs": 1380,
+    "segs": [ {
+      "utf8": "arrogant."
+    } ]
+  }, {
+    "tStartMs": 272760,
+    "dDurationMs": 1180,
+    "segs": [ {
+      "utf8": "He no longer wants to"
+    } ]
+  }, {
+    "tStartMs": 273940,
+    "dDurationMs": 2930,
+    "segs": [ {
+      "utf8": "conquer the world – to control it by force;"
+    } ]
+  }, {
+    "tStartMs": 276870,
+    "dDurationMs": 1990,
+    "segs": [ {
+      "utf8": "rather, he has been conquered"
+    } ]
+  }, {
+    "tStartMs": 278860,
+    "dDurationMs": 2180,
+    "segs": [ {
+      "utf8": "by his experiences."
+    } ]
+  }, {
+    "tStartMs": 281040,
+    "dDurationMs": 2190,
+    "segs": [ {
+      "utf8": "Herman compares himself to a beautiful"
+    } ]
+  }, {
+    "tStartMs": 283230,
+    "dDurationMs": 3530,
+    "segs": [ {
+      "utf8": "but tiny piece of sand and uses the phrase"
+    } ]
+  }, {
+    "tStartMs": 286760,
+    "dDurationMs": 2510,
+    "segs": [ {
+      "utf8": "'a grain of sand' to describe things which"
+    } ]
+  }, {
+    "tStartMs": 289270,
+    "dDurationMs": 2680,
+    "segs": [ {
+      "utf8": "are insignificant in themselves, but"
+    } ]
+  }, {
+    "tStartMs": 291950,
+    "dDurationMs": 2210,
+    "segs": [ {
+      "utf8": "at the same time are an important"
+    } ]
+  }, {
+    "tStartMs": 294160,
+    "dDurationMs": 1540,
+    "segs": [ {
+      "utf8": "part of the whole."
+    } ]
+  }, {
+    "tStartMs": 295700,
+    "dDurationMs": 2420,
+    "segs": [ {
+      "utf8": "Daisy and Herman are rare examples"
+    } ]
+  }, {
+    "tStartMs": 298120,
+    "dDurationMs": 2470,
+    "segs": [ {
+      "utf8": "of dreamers who followed their dream"
+    } ]
+  }, {
+    "tStartMs": 300590,
+    "dDurationMs": 2170,
+    "segs": [ {
+      "utf8": "and found a happy life, lived without"
+    } ]
+  }, {
+    "tStartMs": 302760,
+    "dDurationMs": 2000,
+    "segs": [ {
+      "utf8": "regret – which reminds me"
+    } ]
+  }, {
+    "tStartMs": 304760,
+    "dDurationMs": 1120,
+    "segs": [ {
+      "utf8": "of your question, Neil."
+    } ]
+  }, {
+    "tStartMs": 305880,
+    "dDurationMs": 5480,
+    "segs": [ {
+      "utf8": "Yes, I asked about Bronnie Ware’s book,\nThe Top Five Regrets of the Dying."
+    } ]
+  }, {
+    "tStartMs": 311360,
+    "dDurationMs": 3060,
+    "segs": [ {
+      "utf8": "What do you think the number one regret was,\nBeth?"
+    } ]
+  }, {
+    "tStartMs": 314420,
+    "dDurationMs": 3630,
+    "segs": [ {
+      "utf8": "I guessed it was b) not following your dreams."
+    } ]
+  }, {
+    "tStartMs": 318050,
+    "dDurationMs": 2590,
+    "segs": [ {
+      "utf8": "Which was the right answer!"
+    } ]
+  }, {
+    "tStartMs": 320640,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": "Not having"
+    } ]
+  }, {
+    "tStartMs": 321640,
+    "dDurationMs": 1860,
+    "segs": [ {
+      "utf8": "the courage to follow your dreams was"
+    } ]
+  }, {
+    "tStartMs": 323500,
+    "dDurationMs": 3060,
+    "segs": [ {
+      "utf8": "listed as the top life regret."
+    } ]
+  }, {
+    "tStartMs": 326560,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": "At least we"
+    } ]
+  }, {
+    "tStartMs": 327560,
+    "dDurationMs": 1180,
+    "segs": [ {
+      "utf8": "have people like Daisy and Herman"
+    } ]
+  }, {
+    "tStartMs": 328740,
+    "dDurationMs": 2250,
+    "segs": [ {
+      "utf8": "to remind us dreams can come true!"
+    } ]
+  }, {
+    "tStartMs": 330990,
+    "dDurationMs": 2800,
+    "segs": [ {
+      "utf8": "OK, let’s recap the vocabulary from"
+    } ]
+  }, {
+    "tStartMs": 333790,
+    "dDurationMs": 1690,
+    "segs": [ {
+      "utf8": "this programme, starting with"
+    } ]
+  }, {
+    "tStartMs": 335480,
+    "dDurationMs": 2770,
+    "segs": [ {
+      "utf8": "'utopia' – a perfect world where"
+    } ]
+  }, {
+    "tStartMs": 338250,
+    "dDurationMs": 1410,
+    "segs": [ {
+      "utf8": "everyone is happy."
+    } ]
+  }, {
+    "tStartMs": 339660,
+    "dDurationMs": 1810,
+    "segs": [ {
+      "utf8": "If you 'struggle with an idea',"
+    } ]
+  }, {
+    "tStartMs": 341470,
+    "dDurationMs": 2100,
+    "segs": [ {
+      "utf8": "you find it difficult to accept."
+    } ]
+  }, {
+    "tStartMs": 343570,
+    "dDurationMs": 2270,
+    "segs": [ {
+      "utf8": "The adjective, outlandish, means"
+    } ]
+  }, {
+    "tStartMs": 345840,
+    "dDurationMs": 2180,
+    "segs": [ {
+      "utf8": "strange and unusual."
+    } ]
+  }, {
+    "tStartMs": 348020,
+    "dDurationMs": 1540,
+    "segs": [ {
+      "utf8": "'To conquer' something means"
+    } ]
+  }, {
+    "tStartMs": 349560,
+    "dDurationMs": 2230,
+    "segs": [ {
+      "utf8": "to control it by force."
+    } ]
+  }, {
+    "tStartMs": 351790,
+    "dDurationMs": 1520,
+    "segs": [ {
+      "utf8": "Someone who is 'humble' is"
+    } ]
+  }, {
+    "tStartMs": 353310,
+    "dDurationMs": 2090,
+    "segs": [ {
+      "utf8": "not proud or arrogant."
+    } ]
+  }, {
+    "tStartMs": 355400,
+    "dDurationMs": 2300,
+    "segs": [ {
+      "utf8": "And finally, the phrase 'a grain of sand'"
+    } ]
+  }, {
+    "tStartMs": 357700,
+    "dDurationMs": 1860,
+    "segs": [ {
+      "utf8": "describes something which is both"
+    } ]
+  }, {
+    "tStartMs": 359560,
+    "dDurationMs": 3130,
+    "segs": [ {
+      "utf8": "insignificant yet somehow important."
+    } ]
+  }, {
+    "tStartMs": 362690,
+    "dDurationMs": 2262,
+    "segs": [ {
+      "utf8": "Once again, our six minutes are up."
+    } ]
+  }, {
+    "tStartMs": 364952,
+    "dDurationMs": 767,
+    "segs": [ {
+      "utf8": "Bye for now!"
+    } ]
+  }, {
+    "tStartMs": 365719,
+    "dDurationMs": 971,
+    "segs": [ {
+      "utf8": "Goodbye!"
+    } ]
+  } ]
+}

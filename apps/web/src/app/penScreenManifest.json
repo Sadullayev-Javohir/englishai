@@ -1,0 +1,2115 @@
+[
+  {
+    "nodeId": "R7DK2v",
+    "number": "01",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/ · /landing",
+    "title": "EnglishAI Play"
+  },
+  {
+    "nodeId": "bedO5",
+    "number": "01",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/ · /landing",
+    "title": "EnglishAI Play"
+  },
+  {
+    "nodeId": "r9cjI0",
+    "number": "02",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/login",
+    "title": "Google orqali kirish"
+  },
+  {
+    "nodeId": "jAAgT",
+    "number": "02",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/login",
+    "title": "Google orqali kirish"
+  },
+  {
+    "nodeId": "cggyT",
+    "number": "03",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/username",
+    "title": "Foydalanuvchi nomi"
+  },
+  {
+    "nodeId": "y7RAv",
+    "number": "03",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/username",
+    "title": "Foydalanuvchi nomi"
+  },
+  {
+    "nodeId": "T6jR6",
+    "number": "04",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/onboarding/profile-details",
+    "title": "Profil ma’lumotlari"
+  },
+  {
+    "nodeId": "IF7JA",
+    "number": "04",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/onboarding/profile-details",
+    "title": "Profil ma’lumotlari"
+  },
+  {
+    "nodeId": "Q3gBN",
+    "number": "05",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/onboarding/goal",
+    "title": "O‘rganish maqsadi"
+  },
+  {
+    "nodeId": "glpjU",
+    "number": "05",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/onboarding/goal",
+    "title": "O‘rganish maqsadi"
+  },
+  {
+    "nodeId": "Z0JTDb",
+    "number": "06",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/welcome",
+    "title": "Boshlanish nuqtasi"
+  },
+  {
+    "nodeId": "P1k6J",
+    "number": "06",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/welcome",
+    "title": "Boshlanish nuqtasi"
+  },
+  {
+    "nodeId": "Hv5B9",
+    "number": "07",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/assessment",
+    "title": "Darajani aniqlashga tayyorlanish"
+  },
+  {
+    "nodeId": "p6cyQC",
+    "number": "07",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/assessment",
+    "title": "Darajani aniqlashga tayyorlanish"
+  },
+  {
+    "nodeId": "f2Koa",
+    "number": "08",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/placement",
+    "title": "Adaptiv test · Grammar"
+  },
+  {
+    "nodeId": "p5aaWm",
+    "number": "08",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/placement",
+    "title": "Adaptiv test · Grammar"
+  },
+  {
+    "nodeId": "RP5Xp",
+    "number": "09",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/placement/result",
+    "title": "Daraja natijasi · B1"
+  },
+  {
+    "nodeId": "d6UiI",
+    "number": "09",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/placement/result",
+    "title": "Daraja natijasi · B1"
+  },
+  {
+    "nodeId": "tXX6o",
+    "number": "61",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/home",
+    "title": "Bugungi o‘quv markazi"
+  },
+  {
+    "nodeId": "vPyd6",
+    "number": "61",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/home",
+    "title": "Bugungi o‘quv markazi"
+  },
+  {
+    "nodeId": "Ar7vt",
+    "number": "11",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/app/vocabulary/topics",
+    "title": "01 · Mavzular"
+  },
+  {
+    "nodeId": "Q5ea9",
+    "number": "11",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/app/vocabulary/topics",
+    "title": "01 · Mavzular"
+  },
+  {
+    "nodeId": "t3ufq",
+    "number": "12",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/app/vocabulary/topic/:topicId",
+    "title": "02 · Darsga kirish"
+  },
+  {
+    "nodeId": "RivBo",
+    "number": "12",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/app/vocabulary/topic/:topicId",
+    "title": "02 · Darsga kirish"
+  },
+  {
+    "nodeId": "fMZWR",
+    "number": "13",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/app/vocabulary/topic/:topicId",
+    "title": "03 · Kontekst matni"
+  },
+  {
+    "nodeId": "TL64f",
+    "number": "13",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/app/vocabulary/topic/:topicId",
+    "title": "03 · Kontekst matni"
+  },
+  {
+    "nodeId": "CSnnO",
+    "number": "16",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/app/vocabulary/topic/:topicId",
+    "title": "20 flashcards · Old tomon"
+  },
+  {
+    "nodeId": "A3H6K",
+    "number": "16",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/app/vocabulary/topic/:topicId",
+    "title": "20 flashcards · Old tomon"
+  },
+  {
+    "nodeId": "ZpqSX",
+    "number": "16B",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/app/vocabulary/topic/:topicId",
+    "title": "Orqa tomon · so‘z va sound"
+  },
+  {
+    "nodeId": "AeUqb",
+    "number": "16B",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/app/vocabulary/topic/:topicId",
+    "title": "Orqa tomon · so‘z va sound"
+  },
+  {
+    "nodeId": "PWlgc",
+    "number": "16C",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/app/vocabulary/topic/:topicId",
+    "title": "20/20 · Test ochildi"
+  },
+  {
+    "nodeId": "aCtbN",
+    "number": "16C",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/app/vocabulary/topic/:topicId",
+    "title": "20/20 · Test ochildi"
+  },
+  {
+    "nodeId": "uiYHV",
+    "number": "17",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/app/vocabulary/topic/:topicId",
+    "title": "07 · So‘zni yozish"
+  },
+  {
+    "nodeId": "nsUrK",
+    "number": "17",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/app/vocabulary/topic/:topicId",
+    "title": "07 · So‘zni yozish"
+  },
+  {
+    "nodeId": "gpVLt",
+    "number": "18",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/app/vocabulary/topic/:topicId",
+    "title": "08 · Xato va tuzatish"
+  },
+  {
+    "nodeId": "nAQMk",
+    "number": "18",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/app/vocabulary/topic/:topicId",
+    "title": "08 · Xato va tuzatish"
+  },
+  {
+    "nodeId": "k9wz8",
+    "number": "19",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/app/vocabulary/topic/:topicId/pronunciation/:wordIndex",
+    "title": "09 · Talaffuz natijasi"
+  },
+  {
+    "nodeId": "sg86b",
+    "number": "19",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/app/vocabulary/topic/:topicId/pronunciation/:wordIndex",
+    "title": "09 · Talaffuz natijasi"
+  },
+  {
+    "nodeId": "hxkAK",
+    "number": "20",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/app/vocabulary/topic/:topicId",
+    "title": "10 · Dars yakuni"
+  },
+  {
+    "nodeId": "R6Xv2h",
+    "number": "20",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/app/vocabulary/topic/:topicId",
+    "title": "10 · Dars yakuni"
+  },
+  {
+    "nodeId": "dEXDV",
+    "number": "21",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/app/grammar",
+    "title": "01 · Mavzular"
+  },
+  {
+    "nodeId": "GagE7",
+    "number": "21",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/app/grammar",
+    "title": "01 · Mavzular"
+  },
+  {
+    "nodeId": "t7ORAO",
+    "number": "22",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/app/grammar/topic/:topicId",
+    "title": "02 · Kontekst"
+  },
+  {
+    "nodeId": "s19m78",
+    "number": "22",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/app/grammar/topic/:topicId",
+    "title": "02 · Kontekst"
+  },
+  {
+    "nodeId": "n8bPID",
+    "number": "23",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/app/grammar/topic/:topicId",
+    "title": "03 · Qoida"
+  },
+  {
+    "nodeId": "mXBRP",
+    "number": "23",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/app/grammar/topic/:topicId",
+    "title": "03 · Qoida"
+  },
+  {
+    "nodeId": "VZDG3",
+    "number": "24",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/app/grammar/topic/:topicId",
+    "title": "04 · Misollar"
+  },
+  {
+    "nodeId": "QGRi4",
+    "number": "24",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/app/grammar/topic/:topicId",
+    "title": "04 · Misollar"
+  },
+  {
+    "nodeId": "NKqen",
+    "number": "25",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/app/grammar/topic/:topicId",
+    "title": "05 · Variant tanlash"
+  },
+  {
+    "nodeId": "gZYFT",
+    "number": "25",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/app/grammar/topic/:topicId",
+    "title": "05 · Variant tanlash"
+  },
+  {
+    "nodeId": "pakQR",
+    "number": "26",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/app/grammar/topic/:topicId",
+    "title": "06 · To‘g‘ri javob"
+  },
+  {
+    "nodeId": "pfpHU",
+    "number": "26",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/app/grammar/topic/:topicId",
+    "title": "06 · To‘g‘ri javob"
+  },
+  {
+    "nodeId": "Kb6qG",
+    "number": "27",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/app/grammar/topic/:topicId",
+    "title": "07 · Bo‘shliqni yozib to‘ldirish"
+  },
+  {
+    "nodeId": "T76Tw",
+    "number": "27",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/app/grammar/topic/:topicId",
+    "title": "07 · Bo‘shliqni yozib to‘ldirish"
+  },
+  {
+    "nodeId": "GdVpF",
+    "number": "28",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/app/grammar/topic/:topicId",
+    "title": "08 · Xato javob izohi"
+  },
+  {
+    "nodeId": "mxcFY",
+    "number": "28",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/app/grammar/topic/:topicId",
+    "title": "08 · Xato javob izohi"
+  },
+  {
+    "nodeId": "D01w9",
+    "number": "29",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/app/grammar/topic/:topicId",
+    "title": "09 · Gapni qayta tuzish"
+  },
+  {
+    "nodeId": "lTviH",
+    "number": "29",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/app/grammar/topic/:topicId",
+    "title": "09 · Gapni qayta tuzish"
+  },
+  {
+    "nodeId": "p0HR9",
+    "number": "30",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/app/grammar/topic/:topicId",
+    "title": "10 · Grammar yakuni"
+  },
+  {
+    "nodeId": "UhDRg",
+    "number": "30",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/app/grammar/topic/:topicId",
+    "title": "10 · Grammar yakuni"
+  },
+  {
+    "nodeId": "H3iaM",
+    "number": "31",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/reading",
+    "title": "01 · Matnlar katalogi"
+  },
+  {
+    "nodeId": "jAWPn",
+    "number": "31",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/reading",
+    "title": "01 · Matnlar katalogi"
+  },
+  {
+    "nodeId": "UpaFh",
+    "number": "32",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/reading/topic/:topicId",
+    "title": "02 · Matn va so‘z tarjimasi"
+  },
+  {
+    "nodeId": "iQrpQ",
+    "number": "32",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/reading/topic/:topicId",
+    "title": "02 · Matn va so‘z tarjimasi"
+  },
+  {
+    "nodeId": "H8ZcOi",
+    "number": "33",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/reading/topic/:topicId",
+    "title": "03 · Tushunish mashqi"
+  },
+  {
+    "nodeId": "i0hYp3",
+    "number": "33",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/reading/topic/:topicId",
+    "title": "03 · Tushunish mashqi"
+  },
+  {
+    "nodeId": "QJkzm",
+    "number": "34",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/reading/topic/:topicId",
+    "title": "04 · Javob va matndagi dalil"
+  },
+  {
+    "nodeId": "cqHFH",
+    "number": "34",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/reading/topic/:topicId",
+    "title": "04 · Javob va matndagi dalil"
+  },
+  {
+    "nodeId": "HJePX",
+    "number": "35",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/reading/topic/:topicId",
+    "title": "05 · Reading yakuni"
+  },
+  {
+    "nodeId": "G9aO0f",
+    "number": "35",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/reading/topic/:topicId",
+    "title": "05 · Reading yakuni"
+  },
+  {
+    "nodeId": "RQzWo",
+    "number": "36",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/listening",
+    "title": "01 · Audiolar katalogi"
+  },
+  {
+    "nodeId": "e2hZa",
+    "number": "36",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/listening",
+    "title": "01 · Audiolar katalogi"
+  },
+  {
+    "nodeId": "k1qMf",
+    "number": "37",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/listening/topic/:topicId",
+    "title": "02 · Audio darsi"
+  },
+  {
+    "nodeId": "Z5pUvG",
+    "number": "37",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/listening/topic/:topicId",
+    "title": "02 · Audio darsi"
+  },
+  {
+    "nodeId": "bBuci",
+    "number": "38",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/listening/topic/:topicId",
+    "title": "03 · Tinglab tushunish mashqi"
+  },
+  {
+    "nodeId": "d0rSH",
+    "number": "38",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/listening/topic/:topicId",
+    "title": "03 · Tinglab tushunish mashqi"
+  },
+  {
+    "nodeId": "J73TGR",
+    "number": "39",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/listening/topic/:topicId",
+    "title": "04 · Xato javob va transkript"
+  },
+  {
+    "nodeId": "kTR2V",
+    "number": "39",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/listening/topic/:topicId",
+    "title": "04 · Xato javob va transkript"
+  },
+  {
+    "nodeId": "WvOP4",
+    "number": "40",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/listening/topic/:topicId",
+    "title": "05 · Listening yakuni"
+  },
+  {
+    "nodeId": "JKSKi",
+    "number": "40",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/listening/topic/:topicId",
+    "title": "05 · Listening yakuni"
+  },
+  {
+    "nodeId": "TABZ7",
+    "number": "46",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/app/speaking",
+    "title": "01 · Speaking markazi"
+  },
+  {
+    "nodeId": "N36Guv",
+    "number": "46",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/app/speaking",
+    "title": "01 · Speaking markazi"
+  },
+  {
+    "nodeId": "vfsCi",
+    "number": "47",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/app/speaking/topic/:topicId",
+    "title": "02 · Suhbatga tayyorgarlik"
+  },
+  {
+    "nodeId": "uZG7I",
+    "number": "47",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/app/speaking/topic/:topicId",
+    "title": "02 · Suhbatga tayyorgarlik"
+  },
+  {
+    "nodeId": "ODuMb",
+    "number": "48",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/app/speaking/topic/:topicId",
+    "title": "03 · Jonli ovozli suhbat"
+  },
+  {
+    "nodeId": "MNcWh",
+    "number": "48",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/app/speaking/topic/:topicId",
+    "title": "03 · Jonli ovozli suhbat"
+  },
+  {
+    "nodeId": "FMGaH",
+    "number": "48a",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/app/speaking/practice-words",
+    "title": "Xatolardan mashqqa"
+  },
+  {
+    "nodeId": "s3lel",
+    "number": "48a",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/app/speaking/practice-words",
+    "title": "Xatolardan mashqqa"
+  },
+  {
+    "nodeId": "g3Cpbz",
+    "number": "49",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/app/speaking/pronunciation/going",
+    "title": "Talaffuz mashqi"
+  },
+  {
+    "nodeId": "f8fZV",
+    "number": "49",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/app/speaking/pronunciation/going",
+    "title": "Talaffuz mashqi"
+  },
+  {
+    "nodeId": "C4xLCD",
+    "number": "50",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/app/speaking/topic/:topicId",
+    "title": "05 · Suhbat natijasi"
+  },
+  {
+    "nodeId": "D6t1R",
+    "number": "50",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/app/speaking/topic/:topicId",
+    "title": "05 · Suhbat natijasi"
+  },
+  {
+    "nodeId": "feMgE",
+    "number": "41",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/writing",
+    "title": "01 · Yozuv topshiriqlari"
+  },
+  {
+    "nodeId": "GZ8VQ",
+    "number": "41",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/writing",
+    "title": "01 · Yozuv topshiriqlari"
+  },
+  {
+    "nodeId": "KkzFw",
+    "number": "42",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/writing/topic/:topicId",
+    "title": "02 · Topshiriq va namuna"
+  },
+  {
+    "nodeId": "H4semr",
+    "number": "42",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/writing/topic/:topicId",
+    "title": "02 · Topshiriq va namuna"
+  },
+  {
+    "nodeId": "YAieR",
+    "number": "43",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/writing/task/:topicId",
+    "title": "03 · Matn yozish"
+  },
+  {
+    "nodeId": "xF9GC",
+    "number": "43",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/writing/task/:topicId",
+    "title": "03 · Matn yozish"
+  },
+  {
+    "nodeId": "jkXy7",
+    "number": "44",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/writing/task/:topicId",
+    "title": "04 · AI izohi va tuzatishlar"
+  },
+  {
+    "nodeId": "HPT19",
+    "number": "44",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/writing/task/:topicId",
+    "title": "04 · AI izohi va tuzatishlar"
+  },
+  {
+    "nodeId": "CuW3B",
+    "number": "45",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/writing/task/:topicId",
+    "title": "05 · Yakuniy matn va natija"
+  },
+  {
+    "nodeId": "gov1I",
+    "number": "45",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/writing/task/:topicId",
+    "title": "05 · Yakuniy matn va natija"
+  },
+  {
+    "nodeId": "htErH",
+    "number": "56",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/video",
+    "title": "01 · Video katalogi"
+  },
+  {
+    "nodeId": "t23V0v",
+    "number": "56",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/video",
+    "title": "01 · Video katalogi"
+  },
+  {
+    "nodeId": "EpEpK",
+    "number": "56A",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/video/search",
+    "title": "Film va multfilm qidiruvi"
+  },
+  {
+    "nodeId": "KZBSQ",
+    "number": "56A",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/video/search",
+    "title": "Film va multfilm qidiruvi"
+  },
+  {
+    "nodeId": "s9lkf4",
+    "number": "56B",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/video/import",
+    "title": "YouTube link qo‘shish"
+  },
+  {
+    "nodeId": "KpWua",
+    "number": "56B",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/video/import",
+    "title": "YouTube link qo‘shish"
+  },
+  {
+    "nodeId": "FBYip",
+    "number": "56C",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/video/playlists/demo-peppa-full",
+    "title": "30 qismli playlist"
+  },
+  {
+    "nodeId": "lf4dt",
+    "number": "56C",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/video/playlists/demo-peppa-full",
+    "title": "30 qismli playlist"
+  },
+  {
+    "nodeId": "CJFuS",
+    "number": "56D",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/video/search",
+    "title": "To‘liq video topilmadi"
+  },
+  {
+    "nodeId": "FJFuD",
+    "number": "56D",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/video/search",
+    "title": "To‘liq video topilmadi"
+  },
+  {
+    "nodeId": "cDyTn",
+    "number": "57",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/video/:id/play",
+    "title": "Transcript + video + AI"
+  },
+  {
+    "nodeId": "NODpI",
+    "number": "57",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/video/:id/play",
+    "title": "Transcript + inline translation + AI"
+  },
+  {
+    "nodeId": "o1L1pV",
+    "number": "58",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/video/:id/play",
+    "title": "03 · Shadowing mashqi"
+  },
+  {
+    "nodeId": "M3jPS",
+    "number": "58",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/video/:id/play",
+    "title": "03 · Shadowing mashqi"
+  },
+  {
+    "nodeId": "YQme7",
+    "number": "59",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/video/:id/quiz",
+    "title": "04 · Video savoli"
+  },
+  {
+    "nodeId": "gTSfu",
+    "number": "59",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/video/:id/quiz",
+    "title": "04 · Video savoli"
+  },
+  {
+    "nodeId": "DRM8b",
+    "number": "60",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/video/:id/quiz",
+    "title": "05 · Javoblar va natija"
+  },
+  {
+    "nodeId": "fYQRd",
+    "number": "60",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/video/:id/quiz",
+    "title": "05 · Javoblar va natija"
+  },
+  {
+    "nodeId": "z5FQXC",
+    "number": "51",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/books",
+    "title": "01 · Kutubxona"
+  },
+  {
+    "nodeId": "UjfKz",
+    "number": "51",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/books",
+    "title": "01 · Kutubxona"
+  },
+  {
+    "nodeId": "a6il6I",
+    "number": "52",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/books/:bookId",
+    "title": "02 · Kitob va boblar"
+  },
+  {
+    "nodeId": "p3kHu3",
+    "number": "52",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/books/:bookId",
+    "title": "02 · Kitob va boblar"
+  },
+  {
+    "nodeId": "yYByT",
+    "number": "53",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/books/:bookId?section=:sectionId",
+    "title": "03 · Bobni o‘qish"
+  },
+  {
+    "nodeId": "DaHTy",
+    "number": "53",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/books/:bookId?section=:sectionId",
+    "title": "03 · Bobni o‘qish"
+  },
+  {
+    "nodeId": "gwGAI",
+    "number": "54",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/books/:bookId?section=:sectionId",
+    "title": "04 · Bob savoli"
+  },
+  {
+    "nodeId": "dQcHR",
+    "number": "54",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/books/:bookId?section=:sectionId",
+    "title": "04 · Bob savoli"
+  },
+  {
+    "nodeId": "BbU48",
+    "number": "55",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/books/:bookId?section=:sectionId",
+    "title": "05 · Javob va bob yakuni"
+  },
+  {
+    "nodeId": "CW4pu",
+    "number": "55",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/books/:bookId?section=:sectionId",
+    "title": "05 · Javob va bob yakuni"
+  },
+  {
+    "nodeId": "TZqu6",
+    "number": "62",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/levels",
+    "title": "Darajalar va o‘quv yo‘li"
+  },
+  {
+    "nodeId": "z3A6y",
+    "number": "62",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/levels",
+    "title": "Darajalar va o‘quv yo‘li"
+  },
+  {
+    "nodeId": "uUx7E",
+    "number": "63",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/progress",
+    "title": "Natijalar va rivojlanish"
+  },
+  {
+    "nodeId": "iuogP",
+    "number": "63",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/progress",
+    "title": "Natijalar va rivojlanish"
+  },
+  {
+    "nodeId": "r9seGL",
+    "number": "64",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/leaderboard",
+    "title": "Haftalik reyting"
+  },
+  {
+    "nodeId": "o9wLSI",
+    "number": "64",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/leaderboard",
+    "title": "Haftalik reyting"
+  },
+  {
+    "nodeId": "j1ML6",
+    "number": "66",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/app/vocabulary/saved",
+    "title": "Topiclar · 3 / 7 / 21"
+  },
+  {
+    "nodeId": "TuKxJ",
+    "number": "66",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/app/vocabulary/saved",
+    "title": "Topiclar · 3 / 7 / 21"
+  },
+  {
+    "nodeId": "QVkWj",
+    "number": "66B",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/app/vocabulary/saved/:topicId/practice",
+    "title": "3-kun testi · 20 savol"
+  },
+  {
+    "nodeId": "QTZc7",
+    "number": "66B",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/app/vocabulary/saved/:topicId/practice",
+    "title": "3-kun testi · 20 savol"
+  },
+  {
+    "nodeId": "uh1bR",
+    "number": "66C",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/app/vocabulary/saved/:topicId/practice",
+    "title": "3-kun natijasi · 18/20"
+  },
+  {
+    "nodeId": "H2evh",
+    "number": "66C",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/app/vocabulary/saved/:topicId/practice",
+    "title": "3-kun natijasi · 18/20"
+  },
+  {
+    "nodeId": "YtKoB",
+    "number": "81",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/profile",
+    "title": "LIGHT — Profil va sozlamalar"
+  },
+  {
+    "nodeId": "LcEqh",
+    "number": "81",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/profile",
+    "title": "LIGHT — Profil va sozlamalar"
+  },
+  {
+    "nodeId": "uD3SX",
+    "number": "81",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/profile",
+    "title": "DARK — Profil va sozlamalar"
+  },
+  {
+    "nodeId": "o7VTTC",
+    "number": "81",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/profile",
+    "title": "DARK — Profil va sozlamalar"
+  },
+  {
+    "nodeId": "EmJ9W",
+    "number": "61A",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/home",
+    "title": "Kunlik mini-mashq"
+  },
+  {
+    "nodeId": "oqhkK",
+    "number": "61A",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/home",
+    "title": "Kunlik mini-mashq"
+  },
+  {
+    "nodeId": "oWKyJ",
+    "number": "61B",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/home",
+    "title": "3-kun takrorlash eslatmasi"
+  },
+  {
+    "nodeId": "WDXcA",
+    "number": "61B",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/home",
+    "title": "3-kun takrorlash eslatmasi"
+  },
+  {
+    "nodeId": "FoCLa",
+    "number": "61C",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/home",
+    "title": "7 kunlik yutuq"
+  },
+  {
+    "nodeId": "ItZpZ",
+    "number": "61C",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/home",
+    "title": "7 kunlik yutuq"
+  },
+  {
+    "nodeId": "E20upW",
+    "number": "61D",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/home",
+    "title": "Video tavsiyasi"
+  },
+  {
+    "nodeId": "T8PY6",
+    "number": "61D",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/home",
+    "title": "Video tavsiyasi"
+  },
+  {
+    "nodeId": "i61uMN",
+    "number": "67",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/home",
+    "title": "AI yordamchi · ochiq modal"
+  },
+  {
+    "nodeId": "DJGy3",
+    "number": "67",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/home",
+    "title": "AI yordamchi · ochiq modal"
+  },
+  {
+    "nodeId": "GjldB",
+    "number": "68",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/home",
+    "title": "Bildirishnomalar · yangi xabarlar"
+  },
+  {
+    "nodeId": "kmW5W",
+    "number": "68",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/home",
+    "title": "Bildirishnomalar · yangi xabarlar"
+  },
+  {
+    "nodeId": "nLJuO",
+    "number": "71",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "Energiya / 01 · Boshlang‘ich holat — energiya to‘liq"
+  },
+  {
+    "nodeId": "t9zqh",
+    "number": "71",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "Energiya / 01 · Boshlang‘ich holat — energiya to‘liq"
+  },
+  {
+    "nodeId": "FeO0j",
+    "number": "72",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "Energiya / 02 · Video ochildi — 5 → 4 · −1 energiya"
+  },
+  {
+    "nodeId": "AsrA0",
+    "number": "72",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "Energiya / 02 · Video ochildi — 5 → 4 · −1 energiya"
+  },
+  {
+    "nodeId": "oA3sm",
+    "number": "73",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "Energiya / 03 · Speaking boshlandi — 4 → 3 · −1 energiya"
+  },
+  {
+    "nodeId": "nY8ku",
+    "number": "73",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "Energiya / 03 · Speaking boshlandi — 4 → 3 · −1 energiya"
+  },
+  {
+    "nodeId": "b1ysTW",
+    "number": "74",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "Energiya / 04 · Energiya tugadi — yangi mashq bloklandi"
+  },
+  {
+    "nodeId": "pWRZp",
+    "number": "74",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "Energiya / 04 · Energiya tugadi — yangi mashq bloklandi"
+  },
+  {
+    "nodeId": "jEQfI",
+    "number": "75",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "Energiya / 05 · 36 daqiqa o‘tdi — 1/5 tiklandi"
+  },
+  {
+    "nodeId": "J3dle",
+    "number": "75",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "Energiya / 05 · 36 daqiqa o‘tdi — 1/5 tiklandi"
+  },
+  {
+    "nodeId": "tjXlZ",
+    "number": "76",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "Energiya / 06 · 1 soat 12 daqiqa — 2/5 tiklandi"
+  },
+  {
+    "nodeId": "O458r",
+    "number": "76",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "Energiya / 06 · 1 soat 12 daqiqa — 2/5 tiklandi"
+  },
+  {
+    "nodeId": "P1PBzW",
+    "number": "77",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "Energiya / 07 · 1 soat 48 daqiqa — 3/5 tiklandi"
+  },
+  {
+    "nodeId": "b69Qm",
+    "number": "77",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "Energiya / 07 · 1 soat 48 daqiqa — 3/5 tiklandi"
+  },
+  {
+    "nodeId": "nx5ms",
+    "number": "78",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "Energiya / 08 · 2 soat 24 daqiqa — 4/5 tiklandi"
+  },
+  {
+    "nodeId": "YvVWU",
+    "number": "78",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "Energiya / 08 · 2 soat 24 daqiqa — 4/5 tiklandi"
+  },
+  {
+    "nodeId": "KMUjV",
+    "number": "79",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "Energiya / 09 · 3 soat — 5/5 to‘liq tiklandi"
+  },
+  {
+    "nodeId": "vIpiY",
+    "number": "79",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "Energiya / 09 · 3 soat — 5/5 to‘liq tiklandi"
+  },
+  {
+    "nodeId": "hxaH5",
+    "number": "81",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/home",
+    "title": "Internet aloqasi yo‘q"
+  },
+  {
+    "nodeId": "xSbCO",
+    "number": "81",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/home",
+    "title": "Internet aloqasi yo‘q"
+  },
+  {
+    "nodeId": "uXQhB",
+    "number": "65",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/admin",
+    "title": "Boshqaruv markazi"
+  },
+  {
+    "nodeId": "X4Hxy",
+    "number": "65",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/admin",
+    "title": "Boshqaruv markazi"
+  },
+  {
+    "nodeId": "fQ7wu",
+    "number": "92",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/admin/users",
+    "title": "Foydalanuvchilar boshqaruvi"
+  },
+  {
+    "nodeId": "bJBwN",
+    "number": "100",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/admin/users",
+    "title": "Foydalanuvchilar"
+  },
+  {
+    "nodeId": "vwXcR",
+    "number": "93",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/admin/users/:id",
+    "title": "Foydalanuvchi to‘liq profili"
+  },
+  {
+    "nodeId": "UjarT",
+    "number": "101",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/admin/users/:id",
+    "title": "To‘liq profil"
+  },
+  {
+    "nodeId": "taS4z",
+    "number": "94",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/admin/analytics",
+    "title": "Loyiha statistikasi"
+  },
+  {
+    "nodeId": "aJq9I",
+    "number": "95",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/admin/startup",
+    "title": "Startup o‘sishi va moliya"
+  },
+  {
+    "nodeId": "pBlsh",
+    "number": "83",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/admin/ai",
+    "title": "Azure Foundry model sozlamalari"
+  },
+  {
+    "nodeId": "JikKr",
+    "number": "82",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/admin/backfill",
+    "title": "AI bilan kontent to‘ldirish"
+  },
+  {
+    "nodeId": "q44ZBH",
+    "number": "90",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/admin/backfill",
+    "title": "AI bilan to‘ldirish"
+  },
+  {
+    "nodeId": "lmsdD",
+    "number": "84",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/admin/backfill/:jobId",
+    "title": "Yaratish jarayoni"
+  },
+  {
+    "nodeId": "rbD1V",
+    "number": "85",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/admin/content",
+    "title": "Kontent boshqaruvi"
+  },
+  {
+    "nodeId": "KPXFa",
+    "number": "86",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/admin/content/:id/edit",
+    "title": "Materialni tahrirlash"
+  },
+  {
+    "nodeId": "hySIi",
+    "number": "89",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/admin/content",
+    "title": "Materialni o‘chirish tasdig‘i"
+  },
+  {
+    "nodeId": "HzvKS",
+    "number": "87",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/admin/youtube",
+    "title": "Transkript yuklash monitoringi"
+  },
+  {
+    "nodeId": "vWZuC",
+    "number": "91",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/admin/youtube",
+    "title": "Yuklash monitoringi"
+  },
+  {
+    "nodeId": "D5r9Je",
+    "number": "88",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/admin/youtube/:id",
+    "title": "Transkriptni ko‘rish"
+  },
+  {
+    "nodeId": "mVO4I",
+    "number": "96",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/admin/settings",
+    "title": "Loyihaning texnik sozlamalari"
+  },
+  {
+    "nodeId": "axt8F",
+    "number": "99",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/admin/settings",
+    "title": "Production o‘zgarishlarini tasdiqlash"
+  },
+  {
+    "nodeId": "fOSb7",
+    "number": "97",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/admin/system",
+    "title": "Server va xizmatlar monitoringi"
+  },
+  {
+    "nodeId": "NQHmO",
+    "number": "102",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/admin/system",
+    "title": "Server monitoringi"
+  },
+  {
+    "nodeId": "PCDPj",
+    "number": "98",
+    "viewport": "WEB",
+    "width": 1440,
+    "route": "/admin/system/:service",
+    "title": "Xizmat holati va loglar"
+  },
+  {
+    "nodeId": "Btvhh",
+    "number": "00.1",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/welcome/1",
+    "title": "Splash 1/5 · Xush kelibsiz"
+  },
+  {
+    "nodeId": "v0zX0U",
+    "number": "00.2",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/welcome/2",
+    "title": "Splash 2/5 · So‘z boyligi"
+  },
+  {
+    "nodeId": "UJc2F",
+    "number": "00.3",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/welcome/3",
+    "title": "Splash 3/5 · AI bilan suhbat"
+  },
+  {
+    "nodeId": "e1lM7",
+    "number": "00.4",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/welcome/4",
+    "title": "Splash 4/5 · Ko‘nikmalar"
+  },
+  {
+    "nodeId": "Oz3zc",
+    "number": "00.5",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/welcome/5",
+    "title": "Splash 5/5 · Kundalik rivojlanish"
+  },
+  {
+    "nodeId": "P9qWRo",
+    "number": "00.0",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "App launch",
+    "title": "Loader · Ilova ochilmoqda"
+  },
+  {
+    "nodeId": "B8804H",
+    "number": "00f",
+    "viewport": "MOBILE",
+    "width": 1240,
+    "route": "Widgets & push notification components"
+  },
+  {
+    "nodeId": "QXl76",
+    "number": "01w",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "Android home",
+    "title": "EnglishAI · 3-in-1 widget"
+  },
+  {
+    "nodeId": "NN9to",
+    "number": "02w",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "/settings/widgets",
+    "title": "Widget qo‘shish"
+  },
+  {
+    "nodeId": "daHRa",
+    "number": "03n",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "Android lock screen",
+    "title": "Push notification"
+  },
+  {
+    "nodeId": "h7jIQV",
+    "number": "04n",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "Android heads-up",
+    "title": "Notification kelishi"
+  },
+  {
+    "nodeId": "HjQUr",
+    "number": "05n",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "Android notifications",
+    "title": "Expanded push & actions"
+  },
+  {
+    "nodeId": "uDFff",
+    "number": "01w.2",
+    "viewport": "MOBILE",
+    "width": 390,
+    "route": "Android home page 2",
+    "title": "YouTube video widget"
+  },
+  {
+    "nodeId": "Kdc5f",
+    "number": "57P.01",
+    "viewport": "WEB",
+    "route": "/video/playlists/demo-peppa-full/01",
+    "title": "Muddy Puddles"
+  },
+  {
+    "nodeId": "d5JQz2",
+    "number": "57P.01",
+    "viewport": "MOBILE",
+    "route": "/video/playlists/demo-peppa-full/01",
+    "title": "Muddy Puddles"
+  },
+  {
+    "nodeId": "dKBL5",
+    "number": "57P.02",
+    "viewport": "WEB",
+    "route": "/video/playlists/demo-peppa-full/02",
+    "title": "Mr Dinosaur Is Lost"
+  },
+  {
+    "nodeId": "L8KJRk",
+    "number": "57P.02",
+    "viewport": "MOBILE",
+    "route": "/video/playlists/demo-peppa-full/02",
+    "title": "Mr Dinosaur Is Lost"
+  },
+  {
+    "nodeId": "I1qhgo",
+    "number": "57P.03",
+    "viewport": "WEB",
+    "route": "/video/playlists/demo-peppa-full/03",
+    "title": "Best Friend"
+  },
+  {
+    "nodeId": "J9R8o",
+    "number": "57P.03",
+    "viewport": "MOBILE",
+    "route": "/video/playlists/demo-peppa-full/03",
+    "title": "Best Friend"
+  },
+  {
+    "nodeId": "vsiqw",
+    "number": "57P.04",
+    "viewport": "WEB",
+    "route": "/video/playlists/demo-peppa-full/04",
+    "title": "Polly Parrot"
+  },
+  {
+    "nodeId": "Ces5I",
+    "number": "57P.04",
+    "viewport": "MOBILE",
+    "route": "/video/playlists/demo-peppa-full/04",
+    "title": "Polly Parrot"
+  },
+  {
+    "nodeId": "uubte",
+    "number": "57P.05",
+    "viewport": "WEB",
+    "route": "/video/playlists/demo-peppa-full/05",
+    "title": "Hide and Seek"
+  },
+  {
+    "nodeId": "m9v79",
+    "number": "57P.05",
+    "viewport": "MOBILE",
+    "route": "/video/playlists/demo-peppa-full/05",
+    "title": "Hide and Seek"
+  },
+  {
+    "nodeId": "eBbgK",
+    "number": "57P.06",
+    "viewport": "WEB",
+    "route": "/video/playlists/demo-peppa-full/06",
+    "title": "The Playgroup"
+  },
+  {
+    "nodeId": "NWX6B",
+    "number": "57P.06",
+    "viewport": "MOBILE",
+    "route": "/video/playlists/demo-peppa-full/06",
+    "title": "The Playgroup"
+  },
+  {
+    "nodeId": "txDpA",
+    "number": "57P.07",
+    "viewport": "WEB",
+    "route": "/video/playlists/demo-peppa-full/07",
+    "title": "Mummy Pig at Work"
+  },
+  {
+    "nodeId": "snRz5",
+    "number": "57P.07",
+    "viewport": "MOBILE",
+    "route": "/video/playlists/demo-peppa-full/07",
+    "title": "Mummy Pig at Work"
+  },
+  {
+    "nodeId": "f38X1K",
+    "number": "57P.08",
+    "viewport": "WEB",
+    "route": "/video/playlists/demo-peppa-full/08",
+    "title": "Piggy in the Middle"
+  },
+  {
+    "nodeId": "jDZ5o",
+    "number": "57P.08",
+    "viewport": "MOBILE",
+    "route": "/video/playlists/demo-peppa-full/08",
+    "title": "Piggy in the Middle"
+  },
+  {
+    "nodeId": "e1kdoM",
+    "number": "57P.09",
+    "viewport": "WEB",
+    "route": "/video/playlists/demo-peppa-full/09",
+    "title": "Daddy Loses His Glasses"
+  },
+  {
+    "nodeId": "cCsPu",
+    "number": "57P.09",
+    "viewport": "MOBILE",
+    "route": "/video/playlists/demo-peppa-full/09",
+    "title": "Daddy Loses His Glasses"
+  },
+  {
+    "nodeId": "AzqDn",
+    "number": "57P.10",
+    "viewport": "WEB",
+    "route": "/video/playlists/demo-peppa-full/10",
+    "title": "Gardening"
+  },
+  {
+    "nodeId": "d4vfxf",
+    "number": "57P.10",
+    "viewport": "MOBILE",
+    "route": "/video/playlists/demo-peppa-full/10",
+    "title": "Gardening"
+  },
+  {
+    "nodeId": "aGiWO",
+    "number": "57P.11",
+    "viewport": "WEB",
+    "route": "/video/playlists/demo-peppa-full/11",
+    "title": "Hiccups"
+  },
+  {
+    "nodeId": "vGYvi",
+    "number": "57P.11",
+    "viewport": "MOBILE",
+    "route": "/video/playlists/demo-peppa-full/11",
+    "title": "Hiccups"
+  },
+  {
+    "nodeId": "k4Msr",
+    "number": "57P.12",
+    "viewport": "WEB",
+    "route": "/video/playlists/demo-peppa-full/12",
+    "title": "Bicycles"
+  },
+  {
+    "nodeId": "pz7y9",
+    "number": "57P.12",
+    "viewport": "MOBILE",
+    "route": "/video/playlists/demo-peppa-full/12",
+    "title": "Bicycles"
+  },
+  {
+    "nodeId": "SkJFV",
+    "number": "57P.13",
+    "viewport": "WEB",
+    "route": "/video/playlists/demo-peppa-full/13",
+    "title": "Secrets"
+  },
+  {
+    "nodeId": "peHXz",
+    "number": "57P.13",
+    "viewport": "MOBILE",
+    "route": "/video/playlists/demo-peppa-full/13",
+    "title": "Secrets"
+  },
+  {
+    "nodeId": "QIp0u",
+    "number": "57P.14",
+    "viewport": "WEB",
+    "route": "/video/playlists/demo-peppa-full/14",
+    "title": "Flying a Kite"
+  },
+  {
+    "nodeId": "aXZzE",
+    "number": "57P.14",
+    "viewport": "MOBILE",
+    "route": "/video/playlists/demo-peppa-full/14",
+    "title": "Flying a Kite"
+  },
+  {
+    "nodeId": "YQyIO",
+    "number": "57P.15",
+    "viewport": "WEB",
+    "route": "/video/playlists/demo-peppa-full/15",
+    "title": "Picnic"
+  },
+  {
+    "nodeId": "U3DLF",
+    "number": "57P.15",
+    "viewport": "MOBILE",
+    "route": "/video/playlists/demo-peppa-full/15",
+    "title": "Picnic"
+  },
+  {
+    "nodeId": "PPcKo",
+    "number": "57P.16",
+    "viewport": "WEB",
+    "route": "/video/playlists/demo-peppa-full/16",
+    "title": "Musical Instruments"
+  },
+  {
+    "nodeId": "i2N9j",
+    "number": "57P.16",
+    "viewport": "MOBILE",
+    "route": "/video/playlists/demo-peppa-full/16",
+    "title": "Musical Instruments"
+  },
+  {
+    "nodeId": "nNziS",
+    "number": "57P.17",
+    "viewport": "WEB",
+    "route": "/video/playlists/demo-peppa-full/17",
+    "title": "Frogs and Worms and Butterflies"
+  },
+  {
+    "nodeId": "C3Fotm",
+    "number": "57P.17",
+    "viewport": "MOBILE",
+    "route": "/video/playlists/demo-peppa-full/17",
+    "title": "Frogs and Worms and Butterflies"
+  },
+  {
+    "nodeId": "Vsial",
+    "number": "57P.18",
+    "viewport": "WEB",
+    "route": "/video/playlists/demo-peppa-full/18",
+    "title": "Dressing Up"
+  },
+  {
+    "nodeId": "kr495",
+    "number": "57P.18",
+    "viewport": "MOBILE",
+    "route": "/video/playlists/demo-peppa-full/18",
+    "title": "Dressing Up"
+  },
+  {
+    "nodeId": "rCkyJ",
+    "number": "57P.19",
+    "viewport": "WEB",
+    "route": "/video/playlists/demo-peppa-full/19",
+    "title": "New Shoes"
+  },
+  {
+    "nodeId": "o2Ze9",
+    "number": "57P.19",
+    "viewport": "MOBILE",
+    "route": "/video/playlists/demo-peppa-full/19",
+    "title": "New Shoes"
+  },
+  {
+    "nodeId": "NOfU5",
+    "number": "57P.20",
+    "viewport": "WEB",
+    "route": "/video/playlists/demo-peppa-full/20",
+    "title": "The School Fete"
+  },
+  {
+    "nodeId": "j78Oh0",
+    "number": "57P.20",
+    "viewport": "MOBILE",
+    "route": "/video/playlists/demo-peppa-full/20",
+    "title": "The School Fete"
+  },
+  {
+    "nodeId": "B7QLAs",
+    "number": "57P.21",
+    "viewport": "WEB",
+    "route": "/video/playlists/demo-peppa-full/21",
+    "title": "Mummy Pig’s Birthday"
+  },
+  {
+    "nodeId": "CzA5Q",
+    "number": "57P.21",
+    "viewport": "MOBILE",
+    "route": "/video/playlists/demo-peppa-full/21",
+    "title": "Mummy Pig’s Birthday"
+  },
+  {
+    "nodeId": "aovrM",
+    "number": "57P.22",
+    "viewport": "WEB",
+    "route": "/video/playlists/demo-peppa-full/22",
+    "title": "The Tooth Fairy"
+  },
+  {
+    "nodeId": "J3vng",
+    "number": "57P.22",
+    "viewport": "MOBILE",
+    "route": "/video/playlists/demo-peppa-full/22",
+    "title": "The Tooth Fairy"
+  },
+  {
+    "nodeId": "FRNNx",
+    "number": "57P.23",
+    "viewport": "WEB",
+    "route": "/video/playlists/demo-peppa-full/23",
+    "title": "The New Car"
+  },
+  {
+    "nodeId": "Qq8ca",
+    "number": "57P.23",
+    "viewport": "MOBILE",
+    "route": "/video/playlists/demo-peppa-full/23",
+    "title": "The New Car"
+  },
+  {
+    "nodeId": "SFvcx",
+    "number": "57P.24",
+    "viewport": "WEB",
+    "route": "/video/playlists/demo-peppa-full/24",
+    "title": "Treasure Hunt"
+  },
+  {
+    "nodeId": "d8XnE",
+    "number": "57P.24",
+    "viewport": "MOBILE",
+    "route": "/video/playlists/demo-peppa-full/24",
+    "title": "Treasure Hunt"
+  },
+  {
+    "nodeId": "Z0n0gq",
+    "number": "57P.25",
+    "viewport": "WEB",
+    "route": "/video/playlists/demo-peppa-full/25",
+    "title": "Not Very Well"
+  },
+  {
+    "nodeId": "bQfzr",
+    "number": "57P.25",
+    "viewport": "MOBILE",
+    "route": "/video/playlists/demo-peppa-full/25",
+    "title": "Not Very Well"
+  },
+  {
+    "nodeId": "C1D3or",
+    "number": "57P.26",
+    "viewport": "WEB",
+    "route": "/video/playlists/demo-peppa-full/26",
+    "title": "Snow"
+  },
+  {
+    "nodeId": "ZAnep",
+    "number": "57P.26",
+    "viewport": "MOBILE",
+    "route": "/video/playlists/demo-peppa-full/26",
+    "title": "Snow"
+  },
+  {
+    "nodeId": "QQLp7",
+    "number": "57P.27",
+    "viewport": "WEB",
+    "route": "/video/playlists/demo-peppa-full/27",
+    "title": "Windy Castle"
+  },
+  {
+    "nodeId": "OsPYF",
+    "number": "57P.27",
+    "viewport": "MOBILE",
+    "route": "/video/playlists/demo-peppa-full/27",
+    "title": "Windy Castle"
+  },
+  {
+    "nodeId": "H9Pth",
+    "number": "57P.28",
+    "viewport": "WEB",
+    "route": "/video/playlists/demo-peppa-full/28",
+    "title": "My Cousin Chloe"
+  },
+  {
+    "nodeId": "CrQtH",
+    "number": "57P.28",
+    "viewport": "MOBILE",
+    "route": "/video/playlists/demo-peppa-full/28",
+    "title": "My Cousin Chloe"
+  },
+  {
+    "nodeId": "whZ1v",
+    "number": "57P.29",
+    "viewport": "WEB",
+    "route": "/video/playlists/demo-peppa-full/29",
+    "title": "Pancakes"
+  },
+  {
+    "nodeId": "GpJxO",
+    "number": "57P.29",
+    "viewport": "MOBILE",
+    "route": "/video/playlists/demo-peppa-full/29",
+    "title": "Pancakes"
+  },
+  {
+    "nodeId": "u5BZx",
+    "number": "57P.30",
+    "viewport": "WEB",
+    "route": "/video/playlists/demo-peppa-full/30",
+    "title": "Babysitting"
+  },
+  {
+    "nodeId": "byhKW",
+    "number": "57P.30",
+    "viewport": "MOBILE",
+    "route": "/video/playlists/demo-peppa-full/30",
+    "title": "Babysitting"
+  }
+]

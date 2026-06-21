@@ -1,0 +1,80 @@
+<svg width="360" height="380" viewBox="0 0 360 380" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kitob ustidagi to'tiqush">
+  <defs>
+    <linearGradient id="hh-body" x1="80" y1="80" x2="270" y2="330" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3ad9bd"/>
+      <stop offset=".55" stop-color="#16b39c"/>
+      <stop offset="1" stop-color="#0e8577"/>
+    </linearGradient>
+    <linearGradient id="hh-wing" x1="110" y1="150" x2="200" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b79cff"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="hh-belly" x1="120" y1="150" x2="230" y2="330" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fffaf0"/>
+      <stop offset="1" stop-color="#ffe7bd"/>
+    </linearGradient>
+    <linearGradient id="hh-beak" x1="60" y1="140" x2="120" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffc541"/>
+      <stop offset="1" stop-color="#f38b0b"/>
+    </linearGradient>
+    <linearGradient id="hh-book" x1="60" y1="300" x2="300" y2="372" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e7dcff"/>
+    </linearGradient>
+    <radialGradient id="hh-cheek" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff8fa6" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#ff8fa6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- open book -->
+  <path d="M56 318c42-17 88-17 128 0 40-17 86-17 128 0v42c-42-17-88-17-128 0-40-17-86-17-128 0z" fill="url(#hh-book)"/>
+  <path d="M184 318v42" stroke="#c9bdf5" stroke-width="4" stroke-linecap="round"/>
+  <path d="M56 318c42-17 88-17 128 0v42c-40-17-86-17-128 0z" fill="#f3ecff"/>
+  <path d="M92 330h58M92 344h44" stroke="#d9ccf7" stroke-width="4" stroke-linecap="round"/>
+  <path d="M214 330h58M226 344h44" stroke="#d9ccf7" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- tail feathers -->
+  <path d="M232 250c30 26 74 40 122 30-22 30-66 44-110 30z" fill="#e11d48"/>
+  <path d="M240 236c30 20 70 26 112 14-20 28-60 40-104 28z" fill="#ff9e2c"/>
+  <path d="M246 224c28 14 62 16 98 6-18 24-52 34-92 24z" fill="#12b39c"/>
+
+  <!-- crest feathers (attached to crown) -->
+  <path d="M176 96c-4-26 4-46 22-58 6 22 0 44-22 58z" fill="#e11d48"/>
+  <path d="M172 98c-16-20-20-44-8-64 16 16 22 40 8 64z" fill="#7c3aed"/>
+  <path d="M158 104c-24-12-36-34-32-58 22 8 38 30 32 58z" fill="#12b39c"/>
+
+  <!-- body -->
+  <ellipse cx="176" cy="198" rx="112" ry="124" fill="url(#hh-body)"/>
+  <!-- top-left rim light -->
+  <path d="M92 128c14-22 34-38 58-46" stroke="#ffffff" stroke-opacity=".28" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- belly -->
+  <ellipse cx="188" cy="214" rx="76" ry="86" fill="url(#hh-belly)"/>
+  <ellipse cx="168" cy="196" rx="34" ry="44" fill="#fffdf6" opacity=".55"/>
+
+  <!-- wing -->
+  <path d="M118 150c-24 20-32 58-22 100 6 26 22 45 44 52-20-40-24-92-4-134 10-22 4-34-18-18z" fill="url(#hh-wing)"/>
+  <path d="M126 176c-10 32-9 68 6 100M144 168c-12 34-12 72 2 106" stroke="#5b21b6" stroke-opacity=".45" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- face patch -->
+  <circle cx="142" cy="156" r="56" fill="#fffaf0"/>
+
+  <!-- eye -->
+  <circle cx="138" cy="146" r="26" fill="#ffffff"/>
+  <circle cx="145" cy="150" r="15" fill="#1a1730"/>
+  <circle cx="151" cy="144" r="5.5" fill="#ffffff"/>
+  <circle cx="140" cy="156" r="2.6" fill="#ffffff"/>
+  <path d="M120 120c8-6 20-6 30 1" stroke="#0e8577" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- beak -->
+  <path d="M96 150c-9-1-14 6-12 15l3 16c1 7 3 11 12 13 12 3 24-3 30-13l-6-24c-2-8-9-13-16-15z" fill="url(#hh-beak)"/>
+  <path d="M95 182l24 4c7 2 10 8 6 15-4 6-13 7-19 2l-13-11c-5-4-4-11 2-10z" fill="#e0740a"/>
+  <circle cx="103" cy="160" r="2.4" fill="#c85e06"/>
+
+  <!-- cheek -->
+  <circle cx="116" cy="180" r="14" fill="url(#hh-cheek)"/>
+
+  <!-- feet -->
+  <path d="M158 300v18M150 318h18M170 302v18M162 320h18" stroke="#f38b0b" stroke-width="6" stroke-linecap="round"/>
+</svg>

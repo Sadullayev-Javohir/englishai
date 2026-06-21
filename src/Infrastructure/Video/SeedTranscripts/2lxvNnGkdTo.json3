@@ -1,0 +1,631 @@
+{
+  "wireMagic": "pb3",
+  "pens": [ {
+  
+  } ],
+  "wsWinStyles": [ {
+  
+  } ],
+  "wpWinPositions": [ {
+  
+  } ],
+  "events": [ {
+    "tStartMs": 7800,
+    "dDurationMs": 4240,
+    "segs": [ {
+      "utf8": "Hello, this is 6 Minute English\nfrom BBC Learning English. I'm Neil."
+    } ]
+  }, {
+    "tStartMs": 12040,
+    "dDurationMs": 1280,
+    "segs": [ {
+      "utf8": "And I'm Beth."
+    } ]
+  }, {
+    "tStartMs": 13320,
+    "dDurationMs": 3720,
+    "segs": [ {
+      "utf8": "It seems people around the world are\nin love with snacks!"
+    } ]
+  }, {
+    "tStartMs": 17040,
+    "dDurationMs": 4000,
+    "segs": [ {
+      "utf8": "From old favourites like popcorn\nand crisps to new inventions"
+    } ]
+  }, {
+    "tStartMs": 21040,
+    "dDurationMs": 3840,
+    "segs": [ {
+      "utf8": "like the chocolate sandwich,\nsnacks are big business,"
+    } ]
+  }, {
+    "tStartMs": 24880,
+    "dDurationMs": 6320,
+    "segs": [ {
+      "utf8": "with an estimated $1.5 trillion\na year spent globally on snacking."
+    } ]
+  }, {
+    "tStartMs": 31200,
+    "dDurationMs": 3520,
+    "segs": [ {
+      "utf8": "Let's listen\nas British food historian Annie Gray"
+    } ]
+  }, {
+    "tStartMs": 34720,
+    "dDurationMs": 4600,
+    "segs": [ {
+      "utf8": "and Argentinian chef Barbara Oievari\ntell BBC World Service programme"
+    } ]
+  }, {
+    "tStartMs": 39320,
+    "dDurationMs": 4360,
+    "segs": [ {
+      "utf8": "The Food Chain what\nthey like to snack on between meals."
+    } ]
+  }, {
+    "tStartMs": 43680,
+    "dDurationMs": 4280,
+    "segs": [ {
+      "utf8": "I like salted peanuts and I love a\nbanana – preferably together, actually."
+    } ]
+  }, {
+    "tStartMs": 47960,
+    "dDurationMs": 1920,
+    "segs": [ {
+      "utf8": "I find that they hit the spot."
+    } ]
+  }, {
+    "tStartMs": 49880,
+    "dDurationMs": 2400,
+    "segs": [ {
+      "utf8": "My favourite snack is called chipa."
+    } ]
+  }, {
+    "tStartMs": 52280,
+    "dDurationMs": 7160,
+    "segs": [ {
+      "utf8": "It's a small, round bun made with\ncassava, cheese, butter, milk and salt."
+    } ]
+  }, {
+    "tStartMs": 59440,
+    "dDurationMs": 4040,
+    "segs": [ {
+      "utf8": "Barbara's favourite snack is\na cheese bread called chipa,"
+    } ]
+  }, {
+    "tStartMs": 63480,
+    "dDurationMs": 3960,
+    "segs": [ {
+      "utf8": "while for Annie, it's the combination\nof peanuts and banana"
+    } ]
+  }, {
+    "tStartMs": 67440,
+    "dDurationMs": 4600,
+    "segs": [ {
+      "utf8": "that hits the spot – an idiom meaning\nthat it's exactly what you want."
+    } ]
+  }, {
+    "tStartMs": 72040,
+    "dDurationMs": 2040,
+    "segs": [ {
+      "utf8": "Neil, what's your favourite snack?"
+    } ]
+  }, {
+    "tStartMs": 74080,
+    "dDurationMs": 2320,
+    "segs": [ {
+      "utf8": "Well, I want\nto say something healthy,"
+    } ]
+  }, {
+    "tStartMs": 76400,
+    "dDurationMs": 3760,
+    "segs": [ {
+      "utf8": "but actually, you know,\nI really love a bag of crisps."
+    } ]
+  }, {
+    "tStartMs": 80160,
+    "dDurationMs": 1360,
+    "segs": [ {
+      "utf8": "Oh, me too!"
+    } ]
+  }, {
+    "tStartMs": 81520,
+    "dDurationMs": 1520,
+    "segs": [ {
+      "utf8": "Yeah, crisps are good."
+    } ]
+  }, {
+    "tStartMs": 83040,
+    "dDurationMs": 1800,
+    "segs": [ {
+      "utf8": "Well, whatever you like to nibble on,"
+    } ]
+  }, {
+    "tStartMs": 84840,
+    "dDurationMs": 4800,
+    "segs": [ {
+      "utf8": "in this episode we'll find out why\nwe are so in love with snack food."
+    } ]
+  }, {
+    "tStartMs": 89640,
+    "dDurationMs": 3520,
+    "segs": [ {
+      "utf8": "As usual, we'll learn\nsome useful new words and phrases."
+    } ]
+  }, {
+    "tStartMs": 93160,
+    "dDurationMs": 2320,
+    "segs": [ {
+      "utf8": "And remember –\nyou'll find all the vocabulary"
+    } ]
+  }, {
+    "tStartMs": 95480,
+    "dDurationMs": 4320,
+    "segs": [ {
+      "utf8": "and a quiz on our website,\nbbclearningenglish.com."
+    } ]
+  }, {
+    "tStartMs": 99800,
+    "dDurationMs": 2720,
+    "segs": [ {
+      "utf8": "OK. But first I have a question\nfor you, Beth."
+    } ]
+  }, {
+    "tStartMs": 102520,
+    "dDurationMs": 2840,
+    "segs": [ {
+      "utf8": "According to a recent YouGov survey,"
+    } ]
+  }, {
+    "tStartMs": 105360,
+    "dDurationMs": 4080,
+    "segs": [ {
+      "utf8": "which of the following snacks\nis most popular among Brits?"
+    } ]
+  }, {
+    "tStartMs": 109440,
+    "dDurationMs": 4120,
+    "segs": [ {
+      "utf8": "Is it: a) crisps,\nb) confectionery and chocolate,"
+    } ]
+  }, {
+    "tStartMs": 113560,
+    "dDurationMs": 3160,
+    "segs": [ {
+      "utf8": "or c) savoury snacks and biscuits?"
+    } ]
+  }, {
+    "tStartMs": 116720,
+    "dDurationMs": 4280,
+    "segs": [ {
+      "utf8": "Well, we both just said crisps\nso I'm going to say crisps."
+    } ]
+  }, {
+    "tStartMs": 121000,
+    "dDurationMs": 3280,
+    "segs": [ {
+      "utf8": "Well, we'll find out the answer later\nin the programme."
+    } ]
+  }, {
+    "tStartMs": 124280,
+    "dDurationMs": 4320,
+    "segs": [ {
+      "utf8": "Someone with a professional interest\nin snacking is Christine Cochran,"
+    } ]
+  }, {
+    "tStartMs": 128600,
+    "dDurationMs": 4960,
+    "segs": [ {
+      "utf8": "president of SNAC International, the\ntrade association for the industry."
+    } ]
+  }, {
+    "tStartMs": 133560,
+    "dDurationMs": 3800,
+    "segs": [ {
+      "utf8": "Here, Christine shares her ideas\nabout why we love to snack with"
+    } ]
+  }, {
+    "tStartMs": 137360,
+    "dDurationMs": 3400,
+    "segs": [ {
+      "utf8": "BBC World Service programme\nThe Food Chain."
+    } ]
+  }, {
+    "tStartMs": 140760,
+    "dDurationMs": 5240,
+    "segs": [ {
+      "utf8": "A snack is an affordable luxury,\nso if you've had a bad day"
+    } ]
+  }, {
+    "tStartMs": 146000,
+    "dDurationMs": 3800,
+    "segs": [ {
+      "utf8": "or money is tight, this is something\nthat you can turn to,"
+    } ]
+  }, {
+    "tStartMs": 149800,
+    "dDurationMs": 4080,
+    "segs": [ {
+      "utf8": "and I think that is why you see it\nas so popular."
+    } ]
+  }, {
+    "tStartMs": 153880,
+    "dDurationMs": 2480,
+    "segs": [ {
+      "utf8": "Consumers,\nespecially in the United States,"
+    } ]
+  }, {
+    "tStartMs": 156360,
+    "dDurationMs": 4280,
+    "segs": [ {
+      "utf8": "are looking for smaller,\nmore convenient portions."
+    } ]
+  }, {
+    "tStartMs": 160640,
+    "dDurationMs": 2160,
+    "segs": [ {
+      "utf8": "They're not always going to be able\nto sit down"
+    } ]
+  }, {
+    "tStartMs": 162800,
+    "dDurationMs": 2360,
+    "segs": [ {
+      "utf8": "and have three meals a day, right?"
+    } ]
+  }, {
+    "tStartMs": 165160,
+    "dDurationMs": 2640,
+    "segs": [ {
+      "utf8": "So, they're eating on the go,\nand the other thing that you see"
+    } ]
+  }, {
+    "tStartMs": 167800,
+    "dDurationMs": 4200,
+    "segs": [ {
+      "utf8": "is this desire for very specific\nfunctional ingredients, right?"
+    } ]
+  }, {
+    "tStartMs": 172000,
+    "dDurationMs": 5720,
+    "segs": [ {
+      "utf8": "So, mental clarity, gut health, muscle\ndevelopment, these sorts of things."
+    } ]
+  }, {
+    "tStartMs": 177720,
+    "dDurationMs": 4080,
+    "segs": [ {
+      "utf8": "Again, they're nicely packaged\nin snack sizes."
+    } ]
+  }, {
+    "tStartMs": 181800,
+    "dDurationMs": 3240,
+    "segs": [ {
+      "utf8": "Snacks are often seen\nas a little luxury,"
+    } ]
+  }, {
+    "tStartMs": 185040,
+    "dDurationMs": 4240,
+    "segs": [ {
+      "utf8": "but to be successful\na snack must also be affordable –"
+    } ]
+  }, {
+    "tStartMs": 189280,
+    "dDurationMs": 2920,
+    "segs": [ {
+      "utf8": "an adjective meaning not expensive."
+    } ]
+  }, {
+    "tStartMs": 192200,
+    "dDurationMs": 2920,
+    "segs": [ {
+      "utf8": "Snacks which are cheap enough\nfor most people to buy"
+    } ]
+  }, {
+    "tStartMs": 195120,
+    "dDurationMs": 4320,
+    "segs": [ {
+      "utf8": "will sell even if money is tight –\na phrase used to describe a situation"
+    } ]
+  }, {
+    "tStartMs": 199440,
+    "dDurationMs": 2680,
+    "segs": [ {
+      "utf8": "where there's only just enough money\nto live on."
+    } ]
+  }, {
+    "tStartMs": 202120,
+    "dDurationMs": 4920,
+    "segs": [ {
+      "utf8": "Thanks to snacks, today fewer\npeople sit down to eat a proper meal."
+    } ]
+  }, {
+    "tStartMs": 207040,
+    "dDurationMs": 2280,
+    "segs": [ {
+      "utf8": "Instead, they eat on the go."
+    } ]
+  }, {
+    "tStartMs": 209320,
+    "dDurationMs": 2280,
+    "segs": [ {
+      "utf8": "If you do something\non the go, you do it"
+    } ]
+  }, {
+    "tStartMs": 211600,
+    "dDurationMs": 4280,
+    "segs": [ {
+      "utf8": "while you're busy travelling\nor moving around, rather than at home."
+    } ]
+  }, {
+    "tStartMs": 215880,
+    "dDurationMs": 2960,
+    "segs": [ {
+      "utf8": "Many modern snacks target\na specific function."
+    } ]
+  }, {
+    "tStartMs": 218840,
+    "dDurationMs": 3880,
+    "segs": [ {
+      "utf8": "For example, an energy drink might\nclaim to improve your gut health"
+    } ]
+  }, {
+    "tStartMs": 222720,
+    "dDurationMs": 3360,
+    "segs": [ {
+      "utf8": "or your mental clarity –\na term describing a state of mind"
+    } ]
+  }, {
+    "tStartMs": 226080,
+    "dDurationMs": 3760,
+    "segs": [ {
+      "utf8": "which is focused and engaged,\nnot dull or foggy."
+    } ]
+  }, {
+    "tStartMs": 229840,
+    "dDurationMs": 3920,
+    "segs": [ {
+      "utf8": "But not everyone is a fan\nof modern packaged snacks,"
+    } ]
+  }, {
+    "tStartMs": 233760,
+    "dDurationMs": 4000,
+    "segs": [ {
+      "utf8": "such as the bags of crisps and\nchocolate bars which fill our shops."
+    } ]
+  }, {
+    "tStartMs": 237760,
+    "dDurationMs": 6160,
+    "segs": [ {
+      "utf8": "Originally from Argentina, Barbara\nOievari now lives in Florida, USA."
+    } ]
+  }, {
+    "tStartMs": 243920,
+    "dDurationMs": 3720,
+    "segs": [ {
+      "utf8": "Here, Barbara tells\nBBC World Service's The Food Chain"
+    } ]
+  }, {
+    "tStartMs": 247640,
+    "dDurationMs": 4440,
+    "segs": [ {
+      "utf8": "how she encourages her nine-year-old\nson to choose more natural snacks."
+    } ]
+  }, {
+    "tStartMs": 252080,
+    "dDurationMs": 5240,
+    "segs": [ {
+      "utf8": "Personally, I enjoy cooking and\neating more natural, simpler snacks,"
+    } ]
+  }, {
+    "tStartMs": 257320,
+    "dDurationMs": 2280,
+    "segs": [ {
+      "utf8": "but of course I can't swim\nagainst the current,"
+    } ]
+  }, {
+    "tStartMs": 259600,
+    "dDurationMs": 5040,
+    "segs": [ {
+      "utf8": "and if my nine-year-old wants to eat the\nlittle baked snacks that have cheddar..."
+    } ]
+  }, {
+    "tStartMs": 264640,
+    "dDurationMs": 2880,
+    "segs": [ {
+      "utf8": "ironically it is something baked\nwith cheese in it,"
+    } ]
+  }, {
+    "tStartMs": 267520,
+    "dDurationMs": 3840,
+    "segs": [ {
+      "utf8": "which is similar to what I enjoy –\nit's just the modern twist."
+    } ]
+  }, {
+    "tStartMs": 271360,
+    "dDurationMs": 3560,
+    "segs": [ {
+      "utf8": "Barbara wants her son to eat healthy,\nhomemade food,"
+    } ]
+  }, {
+    "tStartMs": 274920,
+    "dDurationMs": 3040,
+    "segs": [ {
+      "utf8": "although he prefers modern,\npackaged snacks."
+    } ]
+  }, {
+    "tStartMs": 277960,
+    "dDurationMs": 3720,
+    "segs": [ {
+      "utf8": "Barbara complains she can't swim\nagainst the current."
+    } ]
+  }, {
+    "tStartMs": 281680,
+    "dDurationMs": 2880,
+    "segs": [ {
+      "utf8": "The idiom, swim against the current,\nmeans to act differently"
+    } ]
+  }, {
+    "tStartMs": 284560,
+    "dDurationMs": 3960,
+    "segs": [ {
+      "utf8": "from other people, often because\nyou do not mind being different."
+    } ]
+  }, {
+    "tStartMs": 288520,
+    "dDurationMs": 3200,
+    "segs": [ {
+      "utf8": "Well, Neil, all these snacks\nhave made me hungry!"
+    } ]
+  }, {
+    "tStartMs": 291720,
+    "dDurationMs": 3160,
+    "segs": [ {
+      "utf8": "Now, isn't it time to reveal\nthe answer to your question?"
+    } ]
+  }, {
+    "tStartMs": 294880,
+    "dDurationMs": 1480,
+    "segs": [ {
+      "utf8": "Yes, it is. I asked:"
+    } ]
+  }, {
+    "tStartMs": 296360,
+    "dDurationMs": 2280,
+    "segs": [ {
+      "utf8": "According to\na recent YouGov survey,"
+    } ]
+  }, {
+    "tStartMs": 298640,
+    "dDurationMs": 3520,
+    "segs": [ {
+      "utf8": "which of the following snacks is\nthe most popular amongst Brits?"
+    } ]
+  }, {
+    "tStartMs": 302160,
+    "dDurationMs": 3960,
+    "segs": [ {
+      "utf8": "Crisps, confectionery and chocolate,\nor savoury snacks and biscuits."
+    } ]
+  }, {
+    "tStartMs": 306120,
+    "dDurationMs": 2680,
+    "segs": [ {
+      "utf8": "And the answer was..."
+    } ]
+  }, {
+    "tStartMs": 308800,
+    "dDurationMs": 5680,
+    "segs": [ {
+      "utf8": "b) confectionery and chocolate, which\n45% of Britons indulge in weekly,"
+    } ]
+  }, {
+    "tStartMs": 314480,
+    "dDurationMs": 1760,
+    "segs": [ {
+      "utf8": "according to that survey."
+    } ]
+  }, {
+    "tStartMs": 316240,
+    "dDurationMs": 2520,
+    "segs": [ {
+      "utf8": "OK. Let's recap the vocabulary\nwe've learned,"
+    } ]
+  }, {
+    "tStartMs": 318760,
+    "dDurationMs": 2600,
+    "segs": [ {
+      "utf8": "starting with the phrase,\nhits the spot,"
+    } ]
+  }, {
+    "tStartMs": 321360,
+    "dDurationMs": 4040,
+    "segs": [ {
+      "utf8": "which describes something which is\nexactly what you want or need."
+    } ]
+  }, {
+    "tStartMs": 325400,
+    "dDurationMs": 1800,
+    "segs": [ {
+      "utf8": "If something is affordable,"
+    } ]
+  }, {
+    "tStartMs": 327200,
+    "dDurationMs": 3520,
+    "segs": [ {
+      "utf8": "it's cheap enough that most\npeople have enough money to buy it."
+    } ]
+  }, {
+    "tStartMs": 330720,
+    "dDurationMs": 4880,
+    "segs": [ {
+      "utf8": "The phrase, money is tight, means you\nonly have just enough money to live."
+    } ]
+  }, {
+    "tStartMs": 335600,
+    "dDurationMs": 2320,
+    "segs": [ {
+      "utf8": "The idiom on the go\nmeans doing things"
+    } ]
+  }, {
+    "tStartMs": 337920,
+    "dDurationMs": 2600,
+    "segs": [ {
+      "utf8": "while you're busy travelling\nor moving around."
+    } ]
+  }, {
+    "tStartMs": 340520,
+    "dDurationMs": 3600,
+    "segs": [ {
+      "utf8": "Mental clarity is a state\nin which your mind is fully focused"
+    } ]
+  }, {
+    "tStartMs": 344120,
+    "dDurationMs": 2640,
+    "segs": [ {
+      "utf8": "and active, not dull or foggy."
+    } ]
+  }, {
+    "tStartMs": 346760,
+    "dDurationMs": 4280,
+    "segs": [ {
+      "utf8": "And finally, people who swim\nagainst the current, or the tide,"
+    } ]
+  }, {
+    "tStartMs": 351040,
+    "dDurationMs": 3560,
+    "segs": [ {
+      "utf8": "do or say things differently\nfrom most other people."
+    } ]
+  }, {
+    "tStartMs": 354600,
+    "dDurationMs": 2240,
+    "segs": [ {
+      "utf8": "Once again, our six minutes are up,"
+    } ]
+  }, {
+    "tStartMs": 356840,
+    "dDurationMs": 4480,
+    "segs": [ {
+      "utf8": "but why not head over to our website,\nbbclearningenglish.com,"
+    } ]
+  }, {
+    "tStartMs": 361320,
+    "dDurationMs": 3080,
+    "segs": [ {
+      "utf8": "to try the quiz and worksheets\nfor this episode."
+    } ]
+  }, {
+    "tStartMs": 364400,
+    "dDurationMs": 1480,
+    "segs": [ {
+      "utf8": "See you again soon!"
+    } ]
+  }, {
+    "tStartMs": 365880,
+    "dDurationMs": 1120,
+    "segs": [ {
+      "utf8": "Goodbye."
+    } ]
+  } ]
+}

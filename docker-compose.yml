@@ -1,0 +1,102 @@
+# Local development services for EnglishAI.uz
+# Non-standard host ports are used to avoid clashing with locally installed
+# PostgreSQL/Redis (see docs/development-guide.md section 16).
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: englishai-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: englishai
+      POSTGRES_PASSWORD: englishai_dev
+      POSTGRES_DB: englishai
+    ports:
+      - "5435:5432"
+    volumes:
+      - englishai-pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U englishai -d englishai"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: englishai-redis
+    restart: unless-stopped
+    ports:
+      - "6381:6379"
+    volumes:
+      - englishai-redisdata:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # youtubei.js YouTube-transcript sidecar - the FIRST provider in the transcript fallback chain.
+  # When the .NET app runs on the host in dev, set Youtubei:BaseUrl to http://localhost:8090.
+  transcript-service:
+    build: ./services/transcript
+    container_name: englishai-transcript
+    restart: unless-stopped
+    ports:
+      - "8090:8080"
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://localhost:8080/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 10s
+      start_period: 20s
+      retries: 5
+
+  image-moderation:
+    build: ./services/image-moderation
+    container_name: englishai-image-moderation
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8091:8080"
+    environment:
+      UNSAFE_SCORE_THRESHOLD: ${IMAGE_MODERATION_UNSAFE_THRESHOLD:-0.20}
+      MODEL_VERSION: nudenet-3.4.2
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8080/health', timeout=5)"]
+      interval: 30s
+      timeout: 10s
+      start_period: 90s
+      retries: 5
+
+  # Hermes Agent is EnglishAI's primary local LLM backend. The API is bound to
+  # loopback only; the public developer API remains the authenticated .NET /v1 proxy.
+  hermes-agent:
+    image: nousresearch/hermes-agent:latest
+    container_name: englishai-hermes-agent
+    command: gateway run
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8642:8642"
+    environment:
+      HERMES_HOME: /home/hermes/.hermes
+      API_SERVER_ENABLED: "true"
+      API_SERVER_HOST: "0.0.0.0"
+      API_SERVER_PORT: "8642"
+      # Loopback-only development default. Override it in .env before sharing the host.
+      API_SERVER_KEY: ${HERMES_GATEWAY_API_KEY:-englishai-local-hermes-change-me}
+      API_SERVER_MODEL_NAME: ${HERMES_MODEL:-hermes-agent}
+      HERMES_MODEL: ${HERMES_MODEL:-stepfun/step-3.7-flash:free}
+      # The custom Nous endpoint derives this variable from inference-api.nousresearch.com.
+      NOUSRESEARCH_API_KEY: ${DEVELOPER_AI_API_KEY_1:-}
+    volumes:
+      - englishai-hermes-home:/home/hermes/.hermes
+      # Hermes migrates config schemas at startup; the bind mount must be writable.
+      - ./ops/deploy/hermes-config.yaml:/home/hermes/.hermes/config.yaml
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8642/health', timeout=5)"]
+      interval: 30s
+      timeout: 10s
+      start_period: 60s
+      retries: 5
+
+volumes:
+  englishai-pgdata:
+  englishai-redisdata:
+  englishai-hermes-home:

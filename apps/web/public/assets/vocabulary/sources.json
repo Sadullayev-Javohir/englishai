@@ -1,0 +1,63 @@
+{
+  "provider": "Unsplash",
+  "usage": "Topic photography for the EnglishAI canvas; book-topic images are illustrative, not official published covers.",
+  "assets": [
+    {
+      "file": "my-mother.jpg",
+      "topics": [
+        "My Mother",
+        "Present Perfect",
+        "Someone Who Inspires Me"
+      ],
+      "sourceUrl": "https://images.unsplash.com/photo-1752652012237-ba62a2c65a76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxMTI1MDN8&ixlib=rb-4.1.0&q=80&w=1080",
+      "canvasNodeIds": [
+        "vmejw",
+        "GTDrd",
+        "d1lceO",
+        "pVzOj",
+        "zxbKe",
+        "Cy6Sm",
+        "Dm4ja",
+        "OHJpd",
+        "AKOc8",
+        "mwU93",
+        "SKHDa",
+        "ZvT99",
+        "U1QvNa"
+      ]
+    },
+    {
+      "file": "daily-routines.jpg",
+      "topics": [
+        "Daily Routines"
+      ],
+      "sourceUrl": "https://images.unsplash.com/photo-1556191041-c2401936d851?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxMTI1NDR8&ixlib=rb-4.1.0&q=80&w=1080",
+      "canvasNodeIds": [
+        "Uh4op",
+        "TvVbt"
+      ]
+    },
+    {
+      "file": "at-the-market.jpg",
+      "topics": [
+        "At the Market"
+      ],
+      "sourceUrl": "https://images.unsplash.com/photo-1627798133922-270bb80af5ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxMTI0ODV8&ixlib=rb-4.1.0&q=80&w=1080",
+      "canvasNodeIds": [
+        "FdBk0",
+        "RzqKq"
+      ]
+    },
+    {
+      "file": "travel-plans.jpg",
+      "topics": [
+        "Travel Plans"
+      ],
+      "sourceUrl": "https://images.unsplash.com/photo-1732605548227-5679cb62193b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxMTI4NTN8&ixlib=rb-4.1.0&q=80&w=1080",
+      "canvasNodeIds": [
+        "ubAlX",
+        "TdxLN"
+      ]
+    }
+  ]
+}

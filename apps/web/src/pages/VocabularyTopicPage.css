@@ -1,0 +1,112 @@
+.vocabulary-slide,.vocabulary-practice,.vocabulary-result { display:flex; flex-direction:column; gap:24px; width:calc(100% - 80px); max-width:960px; margin:0 auto; padding:28px 0 44px; }
+.vocabulary-slide__actions { display:flex; flex-direction:column; gap:16px; padding:4px 0; }
+.vocabulary-intro { display:grid; grid-template-columns:380px minmax(0,1fr); gap:32px; align-items:center; }
+.vocabulary-intro>.vocabulary-photo { height:260px; border-radius:28px; }
+.vocabulary-intro__promise { display:flex; flex-direction:column; align-items:flex-start; gap:20px; }
+.vocabulary-intro__promise h1 { font:900 48px/53px "Nunito",sans-serif; letter-spacing:-.7px; }
+.vocabulary-intro__promise p { font-size:15px; line-height:23px; color:var(--v-muted); }
+.vocabulary-intro__facts { display:flex; gap:12px; }
+.vocabulary-intro__steps { margin:0; list-style:none; padding:21px; display:flex; flex-direction:column; gap:18px; border:1px solid var(--v-border); border-radius:22px; background:var(--v-white,#fff); }
+.vocabulary-intro__steps li { display:flex; align-items:center; gap:12px; font-size:15px; line-height:23px; }
+.vocabulary-intro__steps svg { color:var(--v-purple); }
+.vocabulary-reading { padding:31px; border:1px solid var(--v-border); border-radius:22px; background:var(--v-white,#fff); }
+.vocabulary-reading__title { display:flex; align-items:center; justify-content:space-between; color:var(--v-muted); font-size:11px; line-height:15px; margin-bottom:22px; }
+.vocabulary-reading__title .vocabulary-tag { padding:6px 10px; line-height:14px; }
+.vocabulary-reading__paragraphs { display:flex; flex-direction:column; gap:10px; }
+.vocabulary-reading__passage { font-size:22px; line-height:38px; color:var(--v-ink); white-space:pre-line; }
+.vocabulary-reading .hp-word { color:var(--v-purple); background:var(--v-lilac); padding:0 3px; border-radius:4px; font-weight:600; }
+.vocabulary-reading__translate { display:flex; align-items:center; gap:8px; width:100%; margin-top:22px; color:var(--v-purple); font-size:13px; line-height:20px; }
+.vocabulary-reading__translate>svg:last-child { margin-left:auto; }
+.vocabulary-reading__translation { display:flex; flex-direction:column; gap:12px; margin-top:20px; padding-top:20px; border-top:1px solid var(--v-border); color:var(--v-muted); font-size:16px; line-height:1.6; }
+.vocabulary-reading__translation button { color:var(--v-purple); text-align:left; }
+.vocabulary-flashcards { max-width:1440px; margin:auto; padding:26px 80px 38px; }
+.vocabulary-flashcards__heading { display:flex; flex-direction:column; gap:8px; }
+.vocabulary-flashcards__heading>div { display:flex; align-items:center; justify-content:space-between; }
+.vocabulary-flashcards__heading h1 { font:900 40px/44px "Nunito",sans-serif; }
+.vocabulary-flashcards__heading p { color:var(--v-muted); font-size:13px; line-height:20px; }
+.vocabulary-flashcards__workspace { display:flex; justify-content:center; align-items:flex-start; gap:48px; margin-top:26px; }
+.vocabulary-collection { width:366px; flex-shrink:0; }
+.vocabulary-collection__heading { display:flex; justify-content:space-between; gap:12px; align-items:center; margin-bottom:14px; height:18px; }
+.vocabulary-collection__heading h2 { font:500 11px/17px "Plus Jakarta Sans",sans-serif; color:var(--v-muted); }
+.vocabulary-collection__heading>span { font-size:12px; line-height:18px; color:var(--v-purple); }
+.vocabulary-collection__rows { display:flex; flex-direction:column; gap:14px; }
+.vocabulary-collection__row { display:flex; gap:12px; }
+.vocabulary-collection__word { display:flex; align-items:center; gap:9px; width:177px; min-height:37px; padding:7px 10px; text-align:left; border-radius:6px; color:var(--v-ink); border-bottom:3px solid #d8cce8; }
+.vocabulary-collection__word--0 { background:var(--v-lilac); }
+.vocabulary-collection__word--1 { background:var(--v-peach); }
+.vocabulary-collection__word--2 { background:#e4effb; }
+.vocabulary-collection__word>span { font-size:10px; line-height:15px; opacity:.8; }
+.vocabulary-collection__word>strong { flex:1; font-size:12px; line-height:18px; font-weight:600; text-transform:capitalize; }
+.vocabulary-collection__word.is-active { background:var(--v-purple); color:var(--v-white,#fff); border-bottom-color:var(--v-purple-deep); }
+.vocabulary-collection__word.is-learned { background:var(--v-mint); color:var(--v-green); border-bottom-color:#c5dba9; }
+.vocabulary-collection>p { margin-top:14px; color:var(--v-muted); font-size:12px; line-height:19px; }
+.vocabulary-collection__back { display:flex; align-items:center; gap:7px; margin-top:16px; color:var(--v-muted); font-size:11px; }
+.vocabulary-reader { width:560px; flex-shrink:1; min-width:0; display:flex; flex-direction:column; gap:16px; }
+.vocabulary-card-stack { height:440px; margin:0 12px; padding:0 24px 24px 0; }
+.vocabulary-flashcard { height:416px; width:100%; padding:25px; border:1px solid #c7b0f1; border-radius:24px; background:var(--v-white,#fff); box-shadow:var(--ea-shadow-vocabulary-stack); }
+.vocabulary-flashcard__top { display:flex; justify-content:space-between; align-items:center; color:var(--v-purple); height:29px; }
+.vocabulary-flashcard__face { display:flex; flex-direction:column; align-items:center; width:100%; height:calc(100% - 29px); color:var(--v-ink); text-align:center; }
+.vocabulary-flashcard__picture { display:flex; align-items:center; justify-content:center; width:100%; height:258px; margin-top:28.5px; border-radius:18px; background:var(--v-peach); overflow:hidden; }
+.vocabulary-flashcard__picture>img { width:366px; max-width:100%; height:244px; object-fit:cover; border-radius:16px; }
+.vocabulary-word-photo { width:100%; height:100%; }
+.vocabulary-flashcard__hint { display:flex; align-items:center; justify-content:center; gap:8px; margin-top:28px; color:var(--v-purple); font-size:13px; line-height:20px; }
+.vocabulary-flashcard__sound { display:grid; place-items:center; width:44px; height:44px; border-radius:15px; background:var(--v-purple); color:var(--v-white,#fff); }
+.vocabulary-flashcard__word { font:900 56px/62px "Nunito",sans-serif; margin-top:28px; overflow-wrap:anywhere; }
+.vocabulary-flashcard__translation { color:var(--v-purple); font-size:25px; line-height:38px; margin-top:6px; }
+.vocabulary-flashcard__ipa { font-size:16px; line-height:24px; color:var(--v-muted); margin-top:6px; }
+.vocabulary-flashcard__example { display:flex; flex-direction:column; gap:8px; padding:16px; border-radius:16px; background:var(--v-lilac); width:100%; margin-top:28px; text-align:left; }
+.vocabulary-flashcard__example small { font-size:10px; line-height:15px; color:var(--v-purple); font-weight:800; }
+.vocabulary-flashcard__example>span { font-size:21px; line-height:30px; }
+.vocabulary-flashcard.is-back .vocabulary-flashcard__hint { color:var(--v-muted); font-size:10px; line-height:15px; }
+.vocabulary-card-nav { display:grid; grid-template-columns:44px minmax(0,1fr) 44px; gap:10px; height:48px; }
+.vocabulary-card-nav>button { display:flex; align-items:center; justify-content:center; border:1px solid var(--v-border); border-radius:14px; background:var(--v-white,#fff); color:var(--v-purple); }
+.vocabulary-card-nav>button:disabled { color:#b7abc9; background:#f1edf5; }
+.vocabulary-card-nav>.vocabulary-card-nav__primary { background:var(--v-purple); color:var(--v-white,#fff); border-color:var(--v-purple); font-size:14px; line-height:21px; font-weight:700; }
+.vocabulary-reader__locked { display:flex; align-items:center; gap:12px; padding:12px 14px; min-height:64px; border-radius:16px; background:#eeebf2; color:#756a80; text-align:left; }
+.vocabulary-reader__locked>span { display:flex; flex-direction:column; gap:3px; }
+.vocabulary-reader__locked strong { font-size:13px; line-height:20px; font-weight:500; }
+.vocabulary-reader__locked small { font-size:10px; line-height:15px; }
+.vocabulary-reader__pronunciation { color:var(--v-purple); font-size:11px; line-height:17px; align-self:center; }
+.vocabulary-reader__ready { display:flex; flex-direction:column; align-items:center; gap:20px; padding:32px; border-radius:24px; background:var(--v-mint); color:var(--v-green); text-align:center; }
+.vocabulary-reader__ready h2 { font:900 40px/44px "Nunito",sans-serif; }
+.vocabulary-reader__ready p { font-size:14px; line-height:21px; }
+.vocabulary-reader__ready-note { color:var(--v-green); text-align:center; font-size:11px; line-height:17px; }
+.vocabulary-reader__review { color:var(--v-purple); font-size:12px; line-height:18px; }
+.vocabulary-exercise { display:flex; flex-direction:column; gap:24px; }
+.vocabulary-recall { display:flex; flex-direction:column; align-items:center; gap:18px; border-radius:24px; background:var(--v-lilac); padding:32px; text-align:center; }
+.vocabulary-recall>.vocabulary-tag { background:var(--v-white,#fff); }
+.vocabulary-recall h2 { font:900 58px/64px "Nunito",sans-serif; }
+.vocabulary-typing { display:flex; flex-direction:column; gap:12px; }
+.vocabulary-typing label { font-size:13px; line-height:20px; }
+.vocabulary-typing input { width:100%; height:74px; padding:18px; background:var(--v-white,#fff); border:2px solid var(--v-purple); border-radius:16px; font:400 22px/33px "Plus Jakarta Sans",sans-serif; }
+.vocabulary-typing p { font-size:11px; line-height:17px; color:var(--v-muted); }
+.vocabulary-typing>.vocabulary-primary { margin-top:16px; }
+.vocabulary-exercise>.vocabulary-secondary { margin-top:-8px; }
+.vocabulary-topic__test-options { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.vocabulary-exercise__feedback { display:flex; flex-direction:column; gap:24px; }
+.vocabulary-correction { display:flex; flex-direction:column; gap:20px; padding:21px; border:1px solid var(--v-border); border-radius:22px; background:var(--v-white,#fff); }
+.vocabulary-correction p { font-size:17px; line-height:26px; color:var(--v-muted); }
+.vocabulary-correction del { font-size:40px; line-height:60px; color:var(--v-brown); font-weight:700; text-decoration:none; }
+.vocabulary-correction strong { font:900 56px/62px "Nunito",sans-serif; color:var(--v-green); }
+.vocabulary-correction>span { font-size:15px; line-height:23px; color:var(--v-muted); }
+.vocabulary-correction__example { padding:21px; border:1px solid var(--v-border); border-radius:22px; font-size:17px; line-height:26px; }
+.vocabulary-result__celebration { display:flex; flex-direction:column; align-items:center; gap:22px; }
+.vocabulary-result__celebration>img { width:230px; height:191.67px; }
+.vocabulary-result h1 { font:900 44px/48px "Nunito",sans-serif; text-align:center; }
+.vocabulary-result__metrics { display:flex; gap:12px; width:100%; margin:0; }
+.vocabulary-result__metrics>div { flex:1; display:flex; flex-direction:column; gap:8px; padding:22px; border-radius:20px; background:var(--v-mint); text-align:center; }
+.vocabulary-result__metrics>div:nth-child(2) { background:var(--v-lilac); }
+.vocabulary-result__metrics>div:nth-child(3) { background:var(--v-peach); }
+.vocabulary-result__metrics dd { font:900 36px/40px "Nunito",sans-serif; }
+.vocabulary-result__metrics dt { color:var(--v-muted); font-size:11px; line-height:17px; }
+.vocabulary-result__celebration>.vocabulary-feedback { width:100%; }
+.vocabulary-result__next { display:flex; flex-direction:column; gap:18px; padding:22px; border-radius:22px; background:var(--v-lilac); }
+.vocabulary-result__next>span { color:var(--v-purple); font-size:10px; line-height:15px; font-weight:800; }
+.vocabulary-result__next h2 { font:900 25px/28px "Nunito",sans-serif; }
+.vocabulary-result__credit { color:var(--v-muted); font-size:12px; line-height:18px; }
+
+.vocabulary-typing input:focus-visible { outline:none; border-color:var(--v-purple-deep); box-shadow:0 0 0 1px var(--v-purple); }
+
+.vocabulary-reading__title>span:first-child { font-weight:800; }
+.vocabulary-flashcard__translation { font-weight:700; }
+.vocabulary-intro__steps li { font-weight:700; }

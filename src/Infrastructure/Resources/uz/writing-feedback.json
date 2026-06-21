@@ -1,0 +1,13 @@
+{
+  "writing.issue.subject_verb_agreement": "Ega va kesim moslashmagan - masalan 'he go' emas, 'he goes' bo'lishi kerak.",
+  "writing.issue.missing_article": "Artikl tushib qolgan - sanaladigan ot oldida 'a/an' yoki 'the' kerak.",
+  "writing.issue.wrong_preposition": "Predlog noto'g'ri tanlangan - vaqt/joy uchun mos predlogni tekshiring (in/on/at).",
+  "writing.issue.verb_tense": "Fe'l zamoni mos emas - gap mazmuniga qarab to'g'ri zamonni tanlang.",
+  "writing.issue.gerund_infinitive": "Fe'ldan keyin noto'g'ri shakl - ba'zi fe'llar -ing, ba'zilari 'to' + fe'l talab qiladi.",
+  "writing.issue.word_choice": "So'z tanlovi noaniq yoki takrorlanyapti - boyroq yoki aniqroq so'z ishlating.",
+  "writing.issue.spelling": "Imlo xatosi - so'zning yozilishini tekshiring.",
+  "writing.issue.off_topic": "Bu qism topshiriq mavzusidan chetga chiqqan - savolga to'g'ridan-to'g'ri javob bering.",
+  "writing.issue.weak_coherence": "Fikrlar yetarlicha bog'lanmagan - bog'lovchi so'zlar (however, because, for example) qo'shing.",
+  "writing.issue.too_short": "Matn topshiriq uchun juda qisqa - fikringizni misollar bilan kengaytiring.",
+  "writing.issue.not_english": "Bu matn ingliz tilidagi javobga o'xshamaydi - topshiriqqa to'liq, mazmunli ingliz tilida javob yozing."
+}

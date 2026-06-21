@@ -1,0 +1,655 @@
+{
+  "wireMagic": "pb3",
+  "pens": [ {
+  
+  } ],
+  "wsWinStyles": [ {
+  
+  } ],
+  "wpWinPositions": [ {
+  
+  } ],
+  "events": [ {
+    "tStartMs": 7880,
+    "dDurationMs": 1280,
+    "segs": [ {
+      "utf8": "Hello. This is 6 Minute"
+    } ]
+  }, {
+    "tStartMs": 9160,
+    "dDurationMs": 1120,
+    "segs": [ {
+      "utf8": "English from BBC"
+    } ]
+  }, {
+    "tStartMs": 10280,
+    "dDurationMs": 3160,
+    "segs": [ {
+      "utf8": "Learning English.\nI'm Phil and I'm Georgie."
+    } ]
+  }, {
+    "tStartMs": 13440,
+    "dDurationMs": 3400,
+    "segs": [ {
+      "utf8": "We all know\nhow important exercise is to stay fit"
+    } ]
+  }, {
+    "tStartMs": 16840,
+    "dDurationMs": 2440,
+    "segs": [ {
+      "utf8": "and reduce the risk of heart disease."
+    } ]
+  }, {
+    "tStartMs": 19280,
+    "dDurationMs": 1240,
+    "segs": [ {
+      "utf8": "Do you exercise much, Phil?"
+    } ]
+  }, {
+    "tStartMs": 20520,
+    "dDurationMs": 1520,
+    "segs": [ {
+      "utf8": "I try to."
+    } ]
+  }, {
+    "tStartMs": 22040,
+    "dDurationMs": 2360,
+    "segs": [ {
+      "utf8": "I ride my bike at the weekend,"
+    } ]
+  }, {
+    "tStartMs": 24400,
+    "dDurationMs": 3680,
+    "segs": [ {
+      "utf8": "but to be honest, I do spend a lot\nof time sitting down."
+    } ]
+  }, {
+    "tStartMs": 28080,
+    "dDurationMs": 4880,
+    "segs": [ {
+      "utf8": "Sitting too much is becoming an\nincreasing problem in the modern world."
+    } ]
+  }, {
+    "tStartMs": 32960,
+    "dDurationMs": 2320,
+    "segs": [ {
+      "utf8": "Maybe you take the bus\nor train to work,"
+    } ]
+  }, {
+    "tStartMs": 35280,
+    "dDurationMs": 4200,
+    "segs": [ {
+      "utf8": "then sit at a desk all day,\nthen go home feeling tired and"
+    } ]
+  }, {
+    "tStartMs": 39480,
+    "dDurationMs": 4440,
+    "segs": [ {
+      "utf8": "just sit in front of the television\nall evening as well. Added together,"
+    } ]
+  }, {
+    "tStartMs": 43920,
+    "dDurationMs": 2800,
+    "segs": [ {
+      "utf8": "that's hours of sitting every single day."
+    } ]
+  }, {
+    "tStartMs": 46720,
+    "dDurationMs": 4520,
+    "segs": [ {
+      "utf8": "In this programme, we'll be finding out\nexactly how much sitting is too much"
+    } ]
+  }, {
+    "tStartMs": 51240,
+    "dDurationMs": 3760,
+    "segs": [ {
+      "utf8": "and of course, we'll be learning\nsome useful new vocabulary."
+    } ]
+  }, {
+    "tStartMs": 55000,
+    "dDurationMs": 2760,
+    "segs": [ {
+      "utf8": "But first,\nare you sitting comfortably, Phil?"
+    } ]
+  }, {
+    "tStartMs": 57760,
+    "dDurationMs": 4360,
+    "segs": [ {
+      "utf8": "Because I have a question for you.\nOn average, how many hours a day"
+    } ]
+  }, {
+    "tStartMs": 62120,
+    "dDurationMs": 2920,
+    "segs": [ {
+      "utf8": "do British adults spend sitting down?"
+    } ]
+  }, {
+    "tStartMs": 65040,
+    "dDurationMs": 6320,
+    "segs": [ {
+      "utf8": "Is it a) seven hours b) nine hours\nor c) twelve hours?"
+    } ]
+  }, {
+    "tStartMs": 71360,
+    "dDurationMs": 2680,
+    "segs": [ {
+      "utf8": "I'll guess it's seven hours."
+    } ]
+  }, {
+    "tStartMs": 74040,
+    "dDurationMs": 3240,
+    "segs": [ {
+      "utf8": "OK, Phil,\nI'll reveal the correct answer later."
+    } ]
+  }, {
+    "tStartMs": 77280,
+    "dDurationMs": 3840,
+    "segs": [ {
+      "utf8": "Charlotte Edwardson is a professor\nof health and behaviour studies,"
+    } ]
+  }, {
+    "tStartMs": 81120,
+    "dDurationMs": 3640,
+    "segs": [ {
+      "utf8": "who has investigated the link\nbetween sitting and health problems"
+    } ]
+  }, {
+    "tStartMs": 84760,
+    "dDurationMs": 2760,
+    "segs": [ {
+      "utf8": "in her lab at Leicester University."
+    } ]
+  }, {
+    "tStartMs": 87520,
+    "dDurationMs": 1920,
+    "segs": [ {
+      "utf8": "Here she talks to BBC"
+    } ]
+  }, {
+    "tStartMs": 89440,
+    "dDurationMs": 2400,
+    "segs": [ {
+      "utf8": "Radio Four programme 'Inside Health'."
+    } ]
+  }, {
+    "tStartMs": 91840,
+    "dDurationMs": 2200,
+    "segs": [ {
+      "utf8": "If we think\nabout our daily activities,"
+    } ]
+  }, {
+    "tStartMs": 94040,
+    "dDurationMs": 3200,
+    "segs": [ {
+      "utf8": "a lot of activities are done sitting\ndown. Movement in our everyday lives"
+    } ]
+  }, {
+    "tStartMs": 97240,
+    "dDurationMs": 2720,
+    "segs": [ {
+      "utf8": "has really been engineered out\nwith advances in technology"
+    } ]
+  }, {
+    "tStartMs": 99960,
+    "dDurationMs": 2280,
+    "segs": [ {
+      "utf8": "and our bodies just weren't designed\nto sit this much"
+    } ]
+  }, {
+    "tStartMs": 102240,
+    "dDurationMs": 2320,
+    "segs": [ {
+      "utf8": "so it's going to cause problems\nwith our health."
+    } ]
+  }, {
+    "tStartMs": 104560,
+    "dDurationMs": 1400,
+    "segs": [ {
+      "utf8": "So when you sit down,"
+    } ]
+  }, {
+    "tStartMs": 105960,
+    "dDurationMs": 2160,
+    "segs": [ {
+      "utf8": "you're not using the largest muscles\nin your body."
+    } ]
+  }, {
+    "tStartMs": 108120,
+    "dDurationMs": 2720,
+    "segs": [ {
+      "utf8": "So, these are the ones in your legs\nand your bum."
+    } ]
+  }, {
+    "tStartMs": 110840,
+    "dDurationMs": 2560,
+    "segs": [ {
+      "utf8": "So, that means\nthat your muscle activity goes down."
+    } ]
+  }, {
+    "tStartMs": 113400,
+    "dDurationMs": 4960,
+    "segs": [ {
+      "utf8": "When your muscle activity goes\ndown, your blood circulation reduces."
+    } ]
+  }, {
+    "tStartMs": 118360,
+    "dDurationMs": 4320,
+    "segs": [ {
+      "utf8": "Throughout history, humans have\nalways walked and moved their bodies."
+    } ]
+  }, {
+    "tStartMs": 122680,
+    "dDurationMs": 3280,
+    "segs": [ {
+      "utf8": "Now, modern technologies\nlike motorised vehicles"
+    } ]
+  }, {
+    "tStartMs": 125960,
+    "dDurationMs": 5200,
+    "segs": [ {
+      "utf8": "and office jobs means we spend more\nand more time sitting. Modern life"
+    } ]
+  }, {
+    "tStartMs": 131160,
+    "dDurationMs": 5080,
+    "segs": [ {
+      "utf8": "has engineered out the need for us to\nmove. When you engineer something out,"
+    } ]
+  }, {
+    "tStartMs": 136240,
+    "dDurationMs": 5280,
+    "segs": [ {
+      "utf8": "you design things in such a way that\nit is no longer required, for example"
+    } ]
+  }, {
+    "tStartMs": 141520,
+    "dDurationMs": 4680,
+    "segs": [ {
+      "utf8": "CD drives have been engineered\nout of laptops because downloads are"
+    } ]
+  }, {
+    "tStartMs": 146200,
+    "dDurationMs": 3520,
+    "segs": [ {
+      "utf8": "more popular.\nCharlotte says humans are not used"
+    } ]
+  }, {
+    "tStartMs": 149720,
+    "dDurationMs": 2560,
+    "segs": [ {
+      "utf8": "to sitting this much. Here,"
+    } ]
+  }, {
+    "tStartMs": 152280,
+    "dDurationMs": 4000,
+    "segs": [ {
+      "utf8": "the words\n'this much' mean 'in such large amounts'."
+    } ]
+  }, {
+    "tStartMs": 156280,
+    "dDurationMs": 2520,
+    "segs": [ {
+      "utf8": "It's a negative thing.\nOne negative"
+    } ]
+  }, {
+    "tStartMs": 158800,
+    "dDurationMs": 4080,
+    "segs": [ {
+      "utf8": "being the harm to blood circulation,\nthe flow of blood"
+    } ]
+  }, {
+    "tStartMs": 162880,
+    "dDurationMs": 4840,
+    "segs": [ {
+      "utf8": "through the heart and blood vessels,\nwhich carries oxygen around the body."
+    } ]
+  }, {
+    "tStartMs": 167720,
+    "dDurationMs": 1040,
+    "segs": [ {
+      "utf8": "When we sit,"
+    } ]
+  }, {
+    "tStartMs": 168760,
+    "dDurationMs": 3040,
+    "segs": [ {
+      "utf8": "we stop using important muscles."
+    } ]
+  }, {
+    "tStartMs": 171800,
+    "dDurationMs": 4320,
+    "segs": [ {
+      "utf8": "This reduces blood circulation\nand causes a range of other effects"
+    } ]
+  }, {
+    "tStartMs": 176120,
+    "dDurationMs": 5320,
+    "segs": [ {
+      "utf8": "like increased levels of glucose\nand fat and decreased energy levels."
+    } ]
+  }, {
+    "tStartMs": 181440,
+    "dDurationMs": 4320,
+    "segs": [ {
+      "utf8": "The body uses 20% more\nenergy when simply standing"
+    } ]
+  }, {
+    "tStartMs": 185760,
+    "dDurationMs": 5200,
+    "segs": [ {
+      "utf8": "than when sitting down and walking\nuses 92% more energy"
+    } ]
+  }, {
+    "tStartMs": 190960,
+    "dDurationMs": 3480,
+    "segs": [ {
+      "utf8": "and that's not to mention\nthe damage sitting too much causes"
+    } ]
+  }, {
+    "tStartMs": 194440,
+    "dDurationMs": 2120,
+    "segs": [ {
+      "utf8": "to muscle movement\nand blood pressure."
+    } ]
+  }, {
+    "tStartMs": 196560,
+    "dDurationMs": 4400,
+    "segs": [ {
+      "utf8": "But the hard truth is that sitting\nis a big part of modern life."
+    } ]
+  }, {
+    "tStartMs": 200960,
+    "dDurationMs": 2880,
+    "segs": [ {
+      "utf8": "Everything is geared around sitting."
+    } ]
+  }, {
+    "tStartMs": 203840,
+    "dDurationMs": 5520,
+    "segs": [ {
+      "utf8": "It's organised towards that particular\nactivity and that makes it hard to stop."
+    } ]
+  }, {
+    "tStartMs": 209360,
+    "dDurationMs": 2880,
+    "segs": [ {
+      "utf8": "Here's Professor Edwardson\nagain, talking"
+    } ]
+  }, {
+    "tStartMs": 212240,
+    "dDurationMs": 2640,
+    "segs": [ {
+      "utf8": "with James Gallagher,\npresenter of BBC"
+    } ]
+  }, {
+    "tStartMs": 214880,
+    "dDurationMs": 3480,
+    "segs": [ {
+      "utf8": "Radio Four programme 'Inside Health'."
+    } ]
+  }, {
+    "tStartMs": 218360,
+    "dDurationMs": 2120,
+    "segs": [ {
+      "utf8": "How much do you feel like you're just\nswimming against the tide"
+    } ]
+  }, {
+    "tStartMs": 220480,
+    "dDurationMs": 3400,
+    "segs": [ {
+      "utf8": "with all of this? Like the whole\nof society is like driving us more"
+    } ]
+  }, {
+    "tStartMs": 223880,
+    "dDurationMs": 3880,
+    "segs": [ {
+      "utf8": "and more towards, you know, sitting down\nall the time and you're like:"
+    } ]
+  }, {
+    "tStartMs": 227760,
+    "dDurationMs": 1080,
+    "segs": [ {
+      "utf8": "'please don't'."
+    } ]
+  }, {
+    "tStartMs": 228840,
+    "dDurationMs": 4640,
+    "segs": [ {
+      "utf8": "Sitting is so much part\nof our everyday activities."
+    } ]
+  }, {
+    "tStartMs": 233480,
+    "dDurationMs": 3600,
+    "segs": [ {
+      "utf8": "You know, you go into a meeting,\nsomeone's \"come and take a seat\"."
+    } ]
+  }, {
+    "tStartMs": 237080,
+    "dDurationMs": 1280,
+    "segs": [ {
+      "utf8": "You go in to your GP surgery -"
+    } ]
+  }, {
+    "tStartMs": 238360,
+    "dDurationMs": 6600,
+    "segs": [ {
+      "utf8": "\"come and take a seat\".\nEverything's geared around"
+    } ]
+  }, {
+    "tStartMs": 244960,
+    "dDurationMs": 400,
+    "segs": [ {
+      "utf8": "sitting. As technology advances and\nit tries to make our life easier, it"
+    } ]
+  }, {
+    "tStartMs": 245360,
+    "dDurationMs": 2480,
+    "segs": [ {
+      "utf8": "then leads to us sitting\neven more."
+    } ]
+  }, {
+    "tStartMs": 247840,
+    "dDurationMs": 4520,
+    "segs": [ {
+      "utf8": "James asks if Charlotte is swimming\nagainst the tide of modern life."
+    } ]
+  }, {
+    "tStartMs": 252360,
+    "dDurationMs": 2080,
+    "segs": [ {
+      "utf8": "If you're swimming against the tide,"
+    } ]
+  }, {
+    "tStartMs": 254440,
+    "dDurationMs": 3280,
+    "segs": [ {
+      "utf8": "you're doing the opposite\nof what most people are doing."
+    } ]
+  }, {
+    "tStartMs": 257720,
+    "dDurationMs": 5600,
+    "segs": [ {
+      "utf8": "He also says that society is driving us\ntowards sitting more. To drive someone"
+    } ]
+  }, {
+    "tStartMs": 263320,
+    "dDurationMs": 4200,
+    "segs": [ {
+      "utf8": "towards something means pushing them\nto accept a new situation."
+    } ]
+  }, {
+    "tStartMs": 267520,
+    "dDurationMs": 3000,
+    "segs": [ {
+      "utf8": "Even when the situation\nisn't so good."
+    } ]
+  }, {
+    "tStartMs": 270520,
+    "dDurationMs": 4120,
+    "segs": [ {
+      "utf8": "Luckily, there's some simple advice\nto help. Break up periods of sitting"
+    } ]
+  }, {
+    "tStartMs": 274640,
+    "dDurationMs": 4560,
+    "segs": [ {
+      "utf8": "30 minutes or more with a few\nminutes of walking or moving your arms."
+    } ]
+  }, {
+    "tStartMs": 279200,
+    "dDurationMs": 4640,
+    "segs": [ {
+      "utf8": "Also, try to spend less than half\nof your waking hours sitting down."
+    } ]
+  }, {
+    "tStartMs": 283840,
+    "dDurationMs": 3680,
+    "segs": [ {
+      "utf8": "Good to know. Now, about\nyour question, Georgie."
+    } ]
+  }, {
+    "tStartMs": 287520,
+    "dDurationMs": 1960,
+    "segs": [ {
+      "utf8": "Right, my question was"
+    } ]
+  }, {
+    "tStartMs": 289480,
+    "dDurationMs": 4400,
+    "segs": [ {
+      "utf8": "how long does the average British\nadult spend sitting each day?"
+    } ]
+  }, {
+    "tStartMs": 293880,
+    "dDurationMs": 3560,
+    "segs": [ {
+      "utf8": "Phil guessed it was seven hours,\nwhich was close,"
+    } ]
+  }, {
+    "tStartMs": 297440,
+    "dDurationMs": 2120,
+    "segs": [ {
+      "utf8": "but not right.\nI'm afraid."
+    } ]
+  }, {
+    "tStartMs": 299560,
+    "dDurationMs": 4640,
+    "segs": [ {
+      "utf8": "In fact, on average, we spend\nnine hours per day sitting down."
+    } ]
+  }, {
+    "tStartMs": 304200,
+    "dDurationMs": 3280,
+    "segs": [ {
+      "utf8": "That's about sixty percent\nof our waking life."
+    } ]
+  }, {
+    "tStartMs": 307480,
+    "dDurationMs": 4560,
+    "segs": [ {
+      "utf8": "So, remember to take regular breaks,\neven just a minute or two."
+    } ]
+  }, {
+    "tStartMs": 312040,
+    "dDurationMs": 2760,
+    "segs": [ {
+      "utf8": "OK, let's recap the vocabulary\nwe've learnt."
+    } ]
+  }, {
+    "tStartMs": 314800,
+    "dDurationMs": 3400,
+    "segs": [ {
+      "utf8": "Starting with to engineer\nsomething out,"
+    } ]
+  }, {
+    "tStartMs": 318200,
+    "dDurationMs": 3160,
+    "segs": [ {
+      "utf8": "meaning to design\nor plan in such a way"
+    } ]
+  }, {
+    "tStartMs": 321360,
+    "dDurationMs": 5200,
+    "segs": [ {
+      "utf8": "that something is no longer needed.\nThe phrase 'this much' or 'so much' means"
+    } ]
+  }, {
+    "tStartMs": 326560,
+    "dDurationMs": 2320,
+    "segs": [ {
+      "utf8": "in such large amounts."
+    } ]
+  }, {
+    "tStartMs": 328880,
+    "dDurationMs": 2040,
+    "segs": [ {
+      "utf8": "Blood circulation is\nthe movement of blood"
+    } ]
+  }, {
+    "tStartMs": 330920,
+    "dDurationMs": 4440,
+    "segs": [ {
+      "utf8": "through the heart and blood vessels\nwhich carries oxygen around the body."
+    } ]
+  }, {
+    "tStartMs": 335360,
+    "dDurationMs": 3960,
+    "segs": [ {
+      "utf8": "If things are geared\naround a certain activity or purpose,"
+    } ]
+  }, {
+    "tStartMs": 339320,
+    "dDurationMs": 5200,
+    "segs": [ {
+      "utf8": "they're organised to support it.\nThe idiom to swim against the tide"
+    } ]
+  }, {
+    "tStartMs": 344520,
+    "dDurationMs": 3080,
+    "segs": [ {
+      "utf8": "means to not follow\nwhat most people are doing."
+    } ]
+  }, {
+    "tStartMs": 347600,
+    "dDurationMs": 4880,
+    "segs": [ {
+      "utf8": "And finally, to drive someone towards\na new situation means to push them"
+    } ]
+  }, {
+    "tStartMs": 352480,
+    "dDurationMs": 2560,
+    "segs": [ {
+      "utf8": "towards accepting it. Once again,"
+    } ]
+  }, {
+    "tStartMs": 355040,
+    "dDurationMs": 1360,
+    "segs": [ {
+      "utf8": "our six minutes are up."
+    } ]
+  }, {
+    "tStartMs": 356400,
+    "dDurationMs": 1840,
+    "segs": [ {
+      "utf8": "Remember to join us again next time"
+    } ]
+  }, {
+    "tStartMs": 358240,
+    "dDurationMs": 4360,
+    "segs": [ {
+      "utf8": "for more topical discussion and\nuseful vocabulary here at 6 Minute."
+    } ]
+  }, {
+    "tStartMs": 362600,
+    "dDurationMs": 1920,
+    "segs": [ {
+      "utf8": "English. Goodbye for now."
+    } ]
+  }, {
+    "tStartMs": 364520,
+    "dDurationMs": 4720,
+    "segs": [ {
+      "utf8": "Bye."
+    } ]
+  } ]
+}

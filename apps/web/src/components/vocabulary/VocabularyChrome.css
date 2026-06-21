@@ -1,0 +1,61 @@
+.vocabulary-design {
+  --v-bg: #fffcf7;
+  --v-ink: #2c2144;
+  --v-muted: #6d647c;
+  --v-purple: #7545e8;
+  --v-purple-deep: #5830b6;
+  --v-lilac: #efe7ff;
+  --v-border: #e3dbea;
+  --v-green: #4e762f;
+  --v-mint: #e9f4d7;
+  --v-peach: #ffe4d5;
+  --v-brown: #96592f;
+  --v-white: #fff;
+  --ea-shadow-vocabulary-stack: 20px 20px 0 #e3ddea;
+  min-height: 100dvh;
+  color: var(--v-ink);
+  background: var(--v-bg);
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.vocabulary-design :is(h1,h2,h3,p) { margin: 0; }
+.vocabulary-design :is(button,a,input,summary):focus-visible { outline: 2px solid var(--v-purple); outline-offset: 4px; }
+.vocabulary-design button:disabled { cursor: not-allowed; }
+.vocabulary-header { display:flex; align-items:center; justify-content:space-between; height:88px; max-width:1440px; padding:22px 64px; margin:auto; }
+.vocabulary-header__leading { display:flex; align-items:center; gap:12px; }
+.vocabulary-header__back { display:grid; place-items:center; width:44px; height:44px; border:1px solid var(--v-border); border-radius:50%; color:var(--v-muted); }
+.vocabulary-header__brand .ea-brand-name { font:700 24px/1.1 "EnglishAI Manrope", sans-serif; font-family:"EnglishAI Manrope",sans-serif !important; color:#241a39; }
+.vocabulary-header__brand .ea-brand-logo { gap:8px; }
+.vocabulary-header__status { display:flex; align-items:center; gap:10px; }
+.vocabulary-header__status>span { white-space:nowrap; }
+.vocabulary-header__xp,.vocabulary-header__energy { display:flex; align-items:center; justify-content:center; gap:6px; height:36px; padding:8px 12px; border-radius:20px; font-size:12px; font-weight:800; background:var(--v-lilac); color:var(--v-purple); }
+.vocabulary-header__energy { background:#fff0dc; color:var(--v-brown); }
+.vocabulary-header__bell { position:relative; display:grid; place-items:center; width:44px; height:44px; border-radius:50%; background:var(--v-lilac); color:var(--v-purple); }
+.vocabulary-header__bell>span { position:absolute; right:-2px; top:-4px; border:2px solid var(--v-bg); border-radius:12px; padding:1px 4px; background:var(--v-purple); color:var(--v-white,#fff); font-size:9px; }
+.vocabulary-tag { display:inline-flex; align-items:center; width:fit-content; padding:7px 12px; border-radius:20px; background:var(--v-lilac,#efe7ff); color:var(--v-purple,#7545e8); font:800 10px/15px "Plus Jakarta Sans",sans-serif; }
+.vocabulary-tag--green { background:var(--v-mint); color:var(--v-green); }
+.vocabulary-heading { display:flex; flex-direction:column; align-items:flex-start; gap:10px; }
+.vocabulary-heading h1 { font:900 44px/48px "Nunito",sans-serif; letter-spacing:-.7px; color:var(--v-ink); }
+.vocabulary-heading p { font-size:15px; line-height:23px; color:var(--v-muted); }
+.vocabulary-progress { display:flex; align-items:center; gap:14px; height:20px; color:var(--v-muted); font-size:11px; }
+.vocabulary-progress>a,.vocabulary-progress>button { display:flex; flex:none; }
+.vocabulary-progress__track { display:flex; flex:1; gap:4px; min-width:0; }
+.vocabulary-progress__track>span { height:7px; flex:1; border-radius:4px; background:var(--v-border); }
+.vocabulary-progress__track>span.is-done { background:var(--v-purple); }
+.vocabulary-progress__hearts { display:flex; gap:5px; align-items:center; color:var(--v-ink); font-size:12px; }
+.vocabulary-progress__hearts svg { color:#e35c70; }
+.vocabulary-primary { display:flex; justify-content:center; align-items:center; gap:14px; width:100%; height:60px; padding:16px 22px; border:0; border-bottom:5px solid var(--v-purple-deep,#5830b6); border-radius:18px; background:var(--v-purple,#7545e8); color:var(--v-white,#fff); font:800 16px/20px "Plus Jakarta Sans",sans-serif; cursor:pointer; }
+.vocabulary-primary:hover:not(:disabled) { background:var(--v-purple-deep); }
+.vocabulary-primary:disabled { opacity:.5; }
+.vocabulary-secondary { display:block; width:fit-content; margin:0 auto; color:var(--v-muted); font-size:11px; line-height:17px; }
+.vocabulary-feedback { display:flex; flex-direction:column; gap:10px; padding:20px; min-height:104px; border-radius:20px; background:var(--v-mint); color:var(--v-green); }
+.vocabulary-feedback h2 { display:flex; align-items:center; gap:10px; font:900 24px/30px "Nunito",sans-serif; }
+.vocabulary-feedback p { font-size:14px; line-height:21px; }
+.vocabulary-feedback--wrong { background:#fff0e6; color:var(--v-brown); }
+.vocabulary-state { width:min(960px,calc(100% - 80px)); margin:60px auto; padding:40px; display:flex; align-items:center; flex-direction:column; gap:24px; text-align:center; }
+.vocabulary-state h1 { font:900 32px/1.2 "Nunito",sans-serif; }
+.vocabulary-state .vocabulary-primary { max-width:420px; }
+
+.vocabulary-photo { width:100%; height:100%; object-fit:cover; }
+
+.vocabulary-header__xp { min-width:86px; }
+.vocabulary-header__energy { min-width:72px; }
