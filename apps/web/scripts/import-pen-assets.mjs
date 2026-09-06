@@ -27,9 +27,19 @@ for (const [id, name] of [['TTwkH', 'mascot'], ['X6ZBze', 'parrot'], ['MDAzH', '
   const n = nodes.get(id);
   writeFileSync(resolve(out, `${name}.svg`), `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${n.width} ${n.height}" role="img">${render(n, true)}</svg>`);
 }
-const screens = pen.children.filter(n => / • (WEB|MOBILE) • /.test(n.name)).map(n => {
- const [number, viewport, route, title] = n.name.split(' • ');
- return { nodeId: n.id, number, viewport, width: n.width, route, title };
+const screenFrames = pen.children.filter(n => / • (WEB|MOBILE) • /.test(n.name));
+// The manifest is the canonical product inventory: 72 paired WEB/MOBILE states.
+// Later Pen frames document supplementary/admin/mobile/playlist explorations and
+// must not expand the route-audit contract.
+const canonicalRoute = route => {
+  if (route.startsWith('/app/speaking/pronunciation/')) return '/app/speaking/pronunciation/:word';
+  if (route === '/video/import') return '/video/search';
+  if (route.startsWith('/video/playlists/')) return '/video/playlists/:playlistId';
+  return route;
+};
+const screens = screenFrames.slice(0, 144).map(n => {
+  const [number, viewport, route, title] = n.name.split(' • ');
+ return { nodeId: n.id, number, viewport, width: n.width, route: canonicalRoute(route), title };
 });
 writeFileSync(resolve(root, 'src/app/penScreenManifest.json'), JSON.stringify(screens, null, 2) + '\n');
 console.log(`Imported 5 original vector assets and ${screens.length} screen references.`);
